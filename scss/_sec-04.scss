@@ -3,9 +3,11 @@
 #collection-03 {
   max-width: 1200px;
   margin: 0 auto;
+  text-align: center;
   h1 {
     @include h1Text;
     line-height: 0.85;
+    margin-top: 20px;
     @include desktop690 {
       font-size: 60px;
     }

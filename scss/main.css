@@ -848,6 +848,7 @@ SECTION 01
 #collection-03 {
   max-width: 1200px;
   margin: 0 auto;
+  text-align: center;
 }
 
 #collection-03 h1 {
@@ -858,6 +859,7 @@ SECTION 01
   color: #00171f;
   font-weight: 600;
   line-height: 0.85;
+  margin-top: 20px;
 }
 
 @media (min-width: 690px) {
