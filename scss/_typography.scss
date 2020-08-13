@@ -1,0 +1,155 @@
+/* ==========================================================================
+TYPOGRAPHY
+========================================================================== */
+
+// FONTS
+$sans-serif:
+Raleway,
+Verdana,
+Arial,
+sans-serif;
+$serif: Montserrat,
+Georgia,
+'Times New Roman',
+serif;
+
+// WEIGHTS
+$light: 300;
+$normal: 400;
+$semibold: 500;
+$bold: 650;
+$strong: 700;
+$italic: italic;
+
+// HEADINGS
+$font-size-h1: 40px;
+$font-size-h2: 19px;
+$font-size-h3: 20px;
+$font-size-h4: 15px;
+$font-size-h5: 13px;
+
+// OTHER
+$article-h2: 20px;
+$font-size-base: 15px;
+$font-size-footer: 14px;
+$font-size-nav: 17px;
+$font-size-search-input: 13px;
+$font-size-tag: 13px;
+$font-size-smalltext: 13px;
+$font-size-button: 13px; // Responsive Sizes
+$responsive-h1: 40px;
+
+$line-height-h1: 68px;
+$base-line-height: 18px;
+$line-height-article-header: 39px; // Styles
+
+/* BODYTEXT ========================================================================== */
+@mixin bodyText {
+
+    line-height: $base-line-height;
+    text-decoration: none;
+    color: #333;
+    color: $black;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+
+}
+
+/* LINKS ========================================================================== */
+@mixin links {
+    font-size: $font-size-nav;
+    letter-spacing: .23rem;
+    font-weight: 500;
+    color: #333;
+    color: $black-02;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* H1 TEXT ========================================================================== */
+@mixin h1Text {
+    font-family: var(--fontSans);
+    font-size: $font-size-h1;
+    line-height: $line-height-article-header;
+    color: #333;
+    color: $black-02;
+    font-weight: 600;
+}
+
+@mixin h1Text480 {
+    font-family: var(--fontSans);
+    font-size: $font-size-h1;
+    line-height: $line-height-article-header;
+    color: #333;
+    color: $black-02;
+    font-weight: 600;
+}
+
+@mixin h1Text690 {
+    font-weight: 700;
+    letter-spacing: .01rem;
+    font-size: 5.4rem;
+    line-height: 5rem;
+}
+
+@mixin h1Text767 {
+    font-weight: 700;
+    letter-spacing: .01rem;
+    font-size: 8.4rem;
+    line-height: 8rem;
+}
+
+/* H2 TEXT ========================================================================== */
+@mixin h2Text {
+    font-size: $font-size-h2;
+    line-height: 1.7rem;
+    font-weight: $semibold;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #000;
+    color: $black-02;
+}
+
+@mixin h2Text480 {
+    font-size: $font-size-h2;
+    line-height: 1.7rem;
+    font-weight: $semibold;
+    color: #000;
+    color: $black-02;
+}
+
+@mixin h2Text690 {
+    letter-spacing: .03rem;
+    font-size: 3rem;
+    line-height: 2.4rem;
+
+}
+
+@mixin h2Text767 {
+    letter-spacing: .03rem;
+    font-size: 4rem;
+    line-height: 3rem;
+}
+
+/* H3 TEXT ========================================================================== */
+@mixin h3Text {
+    line-height: 1.5em;
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-family: var(--fontStrait);
+    color: #333;
+    color: $black-02;
+}
+
+@mixin h3Text480 {
+    line-height: 1.5em;
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-family: var(--fontStrait);
+
+}
