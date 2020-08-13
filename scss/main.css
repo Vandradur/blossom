@@ -248,9 +248,6 @@ header .nav-bar.menu-open {
   opacity: 1;
 }
 
-/*
-* Green theme - Owl Carousel CSS File
-*/
 .bg-hidden {
   top: -100%;
   opacity: 0;
@@ -277,39 +274,240 @@ h1 {
   overflow: hidden;
 }
 
-.hero h1 {
-  position: absolute;
+.hero #hero-container {
+  text-align: center;
+  position: relative;
+  left: 50%;
   top: 50%;
-  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 100%;
   padding: 0.3em;
+}
+
+.hero #hero-container .herotext {
+  text-transform: uppercase;
+  visibility: hidden;
+  opacity: 0;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.hero #hero-container .herotext h2 {
   font-size: 3em;
   font-weight: bold;
-  font-family: "Helvetica Neue", sans-serif;
-  color: #151a31;
-  color: #33415c;
+  color: #00171f;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.3em;
 }
 
-.content-wrapper {
-  width: 80%;
-  height: 3000px;
-  padding: 1em 10%;
+.hero #hero-container #first {
+  -webkit-animation: fade-first 14s linear infinite;
+          animation: fade-first 14s linear infinite;
 }
 
-.content-wrapper h1 {
-  margin: 0;
-  color: #151a31;
-  color: #33415c;
+.hero #hero-container #second {
+  -webkit-animation: fade-second 14s linear infinite;
+          animation: fade-second 14s linear infinite;
 }
 
-.content-wrapper p {
-  text-indent: 1.5em;
+.hero #hero-container #third {
+  -webkit-animation: fade-third 14s linear infinite;
+          animation: fade-third 14s linear infinite;
 }
 
-.button {
+@-webkit-keyframes fade-first {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  3% {
+    opacity: 1;
+    visibility: visible;
+  }
+  30% {
+    opacity: 1;
+    visibility: visible;
+  }
+  33% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fade-first {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  3% {
+    opacity: 1;
+    visibility: visible;
+  }
+  30% {
+    opacity: 1;
+    visibility: visible;
+  }
+  33% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes fade-second {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  33% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  36% {
+    opacity: 1;
+    visibility: visible;
+  }
+  63% {
+    opacity: 1;
+    visibility: visible;
+  }
+  66% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fade-second {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  33% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  36% {
+    opacity: 1;
+    visibility: visible;
+  }
+  63% {
+    opacity: 1;
+    visibility: visible;
+  }
+  66% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes fade-third {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  66% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  69% {
+    opacity: 1;
+    visibility: visible;
+  }
+  96% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fade-third {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  66% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  69% {
+    opacity: 1;
+    visibility: visible;
+  }
+  96% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#news-wrapper {
+  height: 40vh;
+  -webkit-box-shadow: 3px 3px 2px #bebebe;
+          box-shadow: 3px 3px 2px #bebebe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/footer-1.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/footer-1.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#news-wrapper #news-content #news-title {
+  font-size: 3.5em;
+}
+
+#news-wrapper #news-content #news-text {
+  font-size: 1.3em;
+  margin-top: 2%;
+}
+
+#news-wrapper #news-button {
+  border: solid 2px white;
+  background-color: inherit;
+  color: white;
+  margin-top: 6%;
+  width: 25%;
+  height: 55px;
+  font-size: 15px;
+  border-radius: 10px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-family: montserrat;
@@ -321,7 +519,7 @@ h1 {
   transition: all 0.3s ease;
 }
 
-.button:hover {
+#news-wrapper #news-button:hover {
   background-color: #000;
   color: #fff;
   text-decoration: none;
