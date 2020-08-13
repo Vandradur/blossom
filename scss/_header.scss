@@ -164,11 +164,12 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
   #news-content {
     #news-title {
       font-size: 1.9em;
       @include desktop690 {
-        font-size: 4.5em;
+        font-size: 45px;
       }
     }
     #news-text {
@@ -177,27 +178,6 @@ header {
       @include desktop690 {
         font-size: 1.5em;
       }
-    }
-  }
-  #news-button {
-    margin-top: 6%;
-    width: 25%;
-    height: 55px;
-    font-size: 15px;
-    border-radius: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-family: montserrat;
-    font-size: 13px;
-    border: 2px solid $secondaryLight;
-    background-color: $white-02;
-    color: $black-03;
-    padding: 6px 20px;
-    transition: all 0.3s ease;
-    &:hover {
-      background-color: $black-03;
-      color: #fff;
-      text-decoration: none;
     }
   }
 }
@@ -209,6 +189,8 @@ header {
   background: url(../img/hero-2.png) no-repeat 50% 50% fixed;
   background-size: 130%;
   overflow: hidden;
+  filter: hue-rotate(-5deg) invert(9%) contrast(1.3) brightness(2.2) sepia(0.3)
+    saturate(1.4) drop-shadow(5px 20px 50px rgba(0, 0, 0, 0.7));
   @include desktop690 {
     width: 100%;
     height: 80%;
@@ -232,7 +214,7 @@ header {
       top: 50%;
       transform: translate(-50%, -50%);
       h2 {
-        font-size: 3em;
+        font-size: 45px;
         font-weight: bold;
         color: $black-03;
         text-transform: uppercase;
@@ -326,6 +308,26 @@ header {
 }
 
 /**** Parallax cards ****/
+
+#collection {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 2%;
+  padding: 1%;
+  display: flex;
+  width: 60%;
+  h1 {
+    font-size: 45px;
+  }
+
+  p {
+    padding: 1%;
+    margin-top: 1%;
+  }
+}
 
 .parallax-wrapper {
   width: 90%;
@@ -431,6 +433,28 @@ header {
   -webkit-perspective: inherit;
   perspective: inherit;
   z-index: 2;
+  #prdt-button {
+    margin-top: 6%;
+    width: 60%;
+    height: 45px;
+    font-size: 15px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: montserrat;
+    font-size: 13px;
+    border: 2px solid $secondaryLight;
+    background-color: $white-02;
+    color: $black-03;
+    padding: 6px 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      background-color: $black-03;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
 }
 
 .container .back {
@@ -501,5 +525,36 @@ header {
   .col {
     width: 100%;
     margin: 0 0 2rem 0;
+  }
+}
+
+/**** LOOSE FLOWERS ****/
+#collection-02 {
+  background: linear-gradient(rgba(black, 0.3), rgba(black, 0.3)),
+    url(../img/footer-8.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  .overlap-wrapper {
+    padding: 1rem;
+    @media (min-width: 600px) {
+      display: flex;
+      max-width: 950px;
+      margin: auto;
+      transform: translateY(300%);
+    }
+
+    .overlap-cards {
+      border: 2px solid #eee;
+      padding: 1rem;
+      background: #fff;
+      &:nth-child(2) {
+        margin: 1rem 0;
+        @media (min-width: 600px) {
+          margin: 0 1rem;
+        }
+      }
+    }
   }
 }

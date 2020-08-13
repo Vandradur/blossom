@@ -277,7 +277,7 @@ header .nav-bar.menu-open {
 
 @media (min-width: 690px) {
   #news-wrapper #news-content #news-title {
-    font-size: 4.5em;
+    font-size: 45px;
   }
 }
 
@@ -292,30 +292,6 @@ header .nav-bar.menu-open {
   }
 }
 
-#news-wrapper #news-button {
-  margin-top: 6%;
-  width: 25%;
-  height: 55px;
-  font-size: 15px;
-  border-radius: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-family: montserrat;
-  font-size: 13px;
-  border: 2px solid #7d8597;
-  background-color: #fffcf2;
-  color: #00171f;
-  padding: 6px 20px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-#news-wrapper #news-button:hover {
-  background-color: #00171f;
-  color: #fff;
-  text-decoration: none;
-}
-
 .hero {
   position: relative;
   width: 100%;
@@ -323,6 +299,8 @@ header .nav-bar.menu-open {
   background: url(../img/hero-2.png) no-repeat 50% 50% fixed;
   background-size: 130%;
   overflow: hidden;
+  -webkit-filter: hue-rotate(-5deg) invert(9%) contrast(1.3) brightness(2.2) sepia(0.3) saturate(1.4) drop-shadow(5px 20px 50px rgba(0, 0, 0, 0.7));
+          filter: hue-rotate(-5deg) invert(9%) contrast(1.3) brightness(2.2) sepia(0.3) saturate(1.4) drop-shadow(5px 20px 50px rgba(0, 0, 0, 0.7));
 }
 
 @media (min-width: 690px) {
@@ -356,7 +334,7 @@ header .nav-bar.menu-open {
 }
 
 .hero #hero-container .herotext h2 {
-  font-size: 3em;
+  font-size: 45px;
   font-weight: bold;
   color: #00171f;
   text-transform: uppercase;
@@ -526,6 +504,36 @@ header .nav-bar.menu-open {
 }
 
 /**** Parallax cards ****/
+#collection {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 2%;
+  padding: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+}
+
+#collection h1 {
+  font-size: 45px;
+}
+
+#collection p {
+  padding: 1%;
+  margin-top: 1%;
+}
+
 .parallax-wrapper {
   width: 90%;
   margin: 20px auto;
@@ -629,6 +637,31 @@ header .nav-bar.menu-open {
   z-index: 2;
 }
 
+.inner #prdt-button {
+  margin-top: 6%;
+  width: 60%;
+  height: 45px;
+  font-size: 15px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: montserrat;
+  font-size: 13px;
+  border: 2px solid #7d8597;
+  background-color: #fffcf2;
+  color: #00171f;
+  padding: 6px 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.inner #prdt-button:hover {
+  background-color: #00171f;
+  color: #fff;
+  text-decoration: none;
+}
+
 .container .back {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
@@ -697,6 +730,48 @@ header .nav-bar.menu-open {
   .col {
     width: 100%;
     margin: 0 0 2rem 0;
+  }
+}
+
+/**** LOOSE FLOWERS ****/
+#collection-02 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/footer-8.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/footer-8.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+}
+
+#collection-02 .overlap-wrapper {
+  padding: 1rem;
+}
+
+@media (min-width: 600px) {
+  #collection-02 .overlap-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 950px;
+    margin: auto;
+    -webkit-transform: translateY(300%);
+            transform: translateY(300%);
+  }
+}
+
+#collection-02 .overlap-wrapper .overlap-cards {
+  border: 2px solid #eee;
+  padding: 1rem;
+  background: #fff;
+}
+
+#collection-02 .overlap-wrapper .overlap-cards:nth-child(2) {
+  margin: 1rem 0;
+}
+
+@media (min-width: 600px) {
+  #collection-02 .overlap-wrapper .overlap-cards:nth-child(2) {
+    margin: 0 1rem;
   }
 }
 
