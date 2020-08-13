@@ -71,7 +71,7 @@ header .menu .bar::before {
 }
 
 header .menu .bar::after {
-  top: 1rem;
+  top: 2rem;
 }
 
 header .active .bar {
