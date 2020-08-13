@@ -156,11 +156,7 @@ header {
   top: 0;
   opacity: 1;
 }
-h1 {
-  text-align: center;
-  font-family: "Helvetica Neue", sans-serif;
-  letter-spacing: 1px;
-}
+
 .hero {
   position: relative;
   width: 100%;
@@ -174,7 +170,7 @@ h1 {
     text-align: center;
     position: relative;
     left: 50%;
-    top: 50%;
+    top: 80%;
     transform: translate(-50%, -50%);
     width: 100%;
     padding: 0.3em;
