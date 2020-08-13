@@ -845,12 +845,12 @@ SECTION 01
 }
 
 /**** HAND TIED ****/
-.collection-03 {
+#collection-03 {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.collection-03 h1 {
+#collection-03 h1 {
   font-family: var(--fontSans);
   font-size: 40px;
   line-height: 39px;
@@ -861,12 +861,12 @@ SECTION 01
 }
 
 @media (min-width: 690px) {
-  .collection-03 h1 {
+  #collection-03 h1 {
     font-size: 60px;
   }
 }
 
-.collection-03 p {
+#collection-03 p {
   padding: 1%;
   margin-top: 1%;
   line-height: 18px;
@@ -882,12 +882,12 @@ SECTION 01
 }
 
 @media (min-width: 690px) {
-  .collection-03 p {
+  #collection-03 p {
     font-size: 1.6em;
   }
 }
 
-.collection-03 .cards {
+#collection-03 .cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -898,14 +898,14 @@ SECTION 01
   padding: 0;
 }
 
-.collection-03 .cards .cards_item {
+#collection-03 .cards .cards_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 1rem;
 }
 
-.collection-03 .cards .cards_item .card {
+#collection-03 .cards .cards_item .card {
   background-color: #fefee3;
   border-radius: 0.25rem;
   -webkit-box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
@@ -920,13 +920,13 @@ SECTION 01
   overflow: hidden;
 }
 
-.collection-03 .cards .cards_item .card .card_content {
+#collection-03 .cards .cards_item .card .card_content {
   padding: 1rem;
   background: -webkit-gradient(linear, right top, left bottom, color-stop(40%, #33415c), to(#cb997e));
   background: linear-gradient(to bottom left, #33415c 40%, #cb997e 100%);
 }
 
-.collection-03 .cards .cards_item .card .card_content .card_title {
+#collection-03 .cards .cards_item .card .card_content .card_title {
   color: #fffcf2;
   font-size: 1.1rem;
   font-weight: 700;
