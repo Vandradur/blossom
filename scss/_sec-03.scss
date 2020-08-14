@@ -20,8 +20,30 @@ LOOSE FLOWERS
 
     .overlap-cards {
       border: 2px solid #eee;
-      padding: 1rem;
+      text-align: center;
+      padding: 0 25px 25px;
       background: #fff;
+      box-shadow: 0 3px 2px rgba(0, 0, 0, 0.8);
+      z-index: -1;
+      &:before {
+        top: 100px;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        border: 2px solid #bc4341;
+      }
+      h3 {
+        margin: 0 0 10px;
+        text-transform: uppercase;
+        color: #666;
+        position: relative;
+      }
+      p {
+        font-style: italic;
+        position: relative;
+      }
       &:nth-child(2) {
         margin: 1rem 0;
         @media (min-width: 600px) {
@@ -30,4 +52,15 @@ LOOSE FLOWERS
       }
     }
   }
+}
+.img {
+  background: transparent url("../img/footer-6.png");
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
 }

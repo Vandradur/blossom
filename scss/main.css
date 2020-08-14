@@ -840,8 +840,34 @@ LOOSE FLOWERS
 
 #collection-02 .overlap-wrapper .overlap-cards {
   border: 2px solid #eee;
-  padding: 1rem;
+  text-align: center;
+  padding: 0 25px 25px;
   background: #fff;
+  -webkit-box-shadow: 0 3px 2px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 3px 2px rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+#collection-02 .overlap-wrapper .overlap-cards:before {
+  top: 100px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  border: 2px solid #bc4341;
+}
+
+#collection-02 .overlap-wrapper .overlap-cards h3 {
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  color: #666;
+  position: relative;
+}
+
+#collection-02 .overlap-wrapper .overlap-cards p {
+  font-style: italic;
+  position: relative;
 }
 
 #collection-02 .overlap-wrapper .overlap-cards:nth-child(2) {
@@ -852,6 +878,18 @@ LOOSE FLOWERS
   #collection-02 .overlap-wrapper .overlap-cards:nth-child(2) {
     margin: 0 1rem;
   }
+}
+
+.img {
+  background: transparent url("../img/footer-6.png");
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
 }
 
 /* ==========================================================================
