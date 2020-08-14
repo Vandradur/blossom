@@ -855,7 +855,7 @@ LOOSE FLOWERS
   left: 0;
   top: 0;
   width: 100%;
-  border: 2px solid #bc4341;
+  border: 2px solid #fff;
 }
 
 #collection-02 .overlap-wrapper .overlap-cards h3 {
@@ -974,17 +974,32 @@ Hand Tied
 
 #collection-03 .cards .cards_item .card .card_content {
   padding: 1rem;
-  background: -webkit-gradient(linear, right top, left bottom, color-stop(40%, #33415c), to(#cb997e));
-  background: linear-gradient(to bottom left, #33415c 40%, #cb997e 100%);
+  background: -webkit-gradient(linear, right top, left bottom, color-stop(40%, #33415c), to(#00171f));
+  background: linear-gradient(to bottom left, #33415c 40%, #00171f 100%);
 }
 
 #collection-03 .cards .cards_item .card .card_content .card_title {
+  line-height: 1.5em;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-family: var(--fontStrait);
+  color: #333;
+  color: #484a47;
   color: #fffcf2;
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: capitalize;
-  margin: 0px;
+}
+
+#collection-03 .cards .cards_item .card .card_content .card_text {
+  line-height: 18px;
+  text-decoration: none;
+  color: #333;
+  color: #00171f;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #fffcf2;
 }
 
 img {
@@ -1003,6 +1018,7 @@ img {
   border: 2px solid #7d8597;
   background-color: #fffcf2;
   color: #00171f;
+  margin-top: 20px;
   padding: 6px 20px;
   font-weight: 400;
   display: block;

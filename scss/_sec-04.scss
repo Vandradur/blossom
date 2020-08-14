@@ -45,15 +45,15 @@ Hand Tied
           background: linear-gradient(
             to bottom left,
             $secondaryDark 40%,
-            $primaryDark 100%
+            $black-03 100%
           );
           .card_title {
+            @include h3Text;
             color: $white-02;
-            font-size: 1.1rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-transform: capitalize;
-            margin: 0px;
+          }
+          .card_text {
+            @include bodyText;
+            color: $white-02;
           }
         }
       }
@@ -77,6 +77,7 @@ img {
   border: 2px solid $secondaryLight;
   background-color: $white-02;
   color: $black-03;
+  margin-top: 20px;
   padding: 6px 20px;
   font-weight: 400;
   display: block;
