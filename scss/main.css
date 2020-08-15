@@ -714,6 +714,7 @@ Parallax cards
 }
 
 .inner #prdt-button {
+  display: inline-block;
   margin-top: 6%;
   width: 60%;
   height: 45px;
@@ -819,7 +820,6 @@ LOOSE FLOWERS
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 60vh;
 }
 
 #collection-02 .overlap-wrapper {
@@ -833,8 +833,8 @@ LOOSE FLOWERS
     display: flex;
     max-width: 950px;
     margin: auto;
-    -webkit-transform: translateY(130%);
-            transform: translateY(130%);
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 
@@ -880,8 +880,8 @@ LOOSE FLOWERS
   }
 }
 
-.img {
-  background: transparent url("../img/footer-6.png");
+#collection-02 .overlap-wrapper .overlap-cards .img-1 {
+  background: url("../img/footer-6.png");
   width: 200px;
   height: 200px;
   overflow: hidden;
@@ -890,6 +890,56 @@ LOOSE FLOWERS
   border-radius: 50%;
   position: relative;
   display: inline-block;
+}
+
+#collection-02 .overlap-wrapper .overlap-cards .img-2 {
+  background: url("../img/footer-2.png");
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+}
+
+#collection-02 .overlap-wrapper .overlap-cards .img-3 {
+  background: url("../img/footer-5.png");
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+}
+
+#collection-02 .overlap-wrapper .overlap-cards #prdt-button {
+  display: inline-block;
+  margin-top: 6%;
+  width: 60%;
+  height: 45px;
+  font-size: 15px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: montserrat;
+  font-size: 13px;
+  border: 2px solid #7d8597;
+  background-color: #fffcf2;
+  color: #00171f;
+  padding: 6px 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#collection-02 .overlap-wrapper .overlap-cards #prdt-button:hover {
+  background-color: #00171f;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* ==========================================================================
@@ -1009,28 +1059,29 @@ img {
 }
 
 .btn {
-  padding: 0.8rem;
-  border-radius: 3px;
+  display: inline-block;
+  margin-top: 6%;
+  width: 60%;
+  height: 45px;
   font-size: 15px;
+  border-radius: 2px;
+  text-transform: uppercase;
   letter-spacing: 0.1em;
   font-family: montserrat;
   font-size: 13px;
   border: 2px solid #7d8597;
-  background-color: #fffcf2;
-  color: #00171f;
-  margin-top: 20px;
+  background-color: #00171f;
+  color: #fffcf2;
   padding: 6px 20px;
-  font-weight: 400;
-  display: block;
-  width: 100%;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   cursor: pointer;
+  width: 100%;
 }
 
 .btn:hover {
-  background-color: #00171f;
-  color: #fff;
+  background-color: #fffcf2;
+  color: #484a47;
   text-decoration: none;
 }
 

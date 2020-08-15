@@ -8,14 +8,15 @@ LOOSE FLOWERS
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 60vh;
+
   .overlap-wrapper {
     padding: 1rem;
+
     @media (min-width: 600px) {
       display: flex;
       max-width: 950px;
       margin: auto;
-      transform: translateY(130%);
+      transform: translateY(0%);
     }
 
     .overlap-cards {
@@ -50,17 +51,45 @@ LOOSE FLOWERS
           margin: 0 1rem;
         }
       }
+      .img-1 {
+        background: url("../img/footer-6.png");
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        position: relative;
+        display: inline-block;
+      }
+      .img-2 {
+        background: url("../img/footer-2.png");
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        position: relative;
+        display: inline-block;
+      }
+      .img-3 {
+        background: url("../img/footer-5.png");
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        position: relative;
+        display: inline-block;
+      }
+      #prdt-button {
+        @include btn-primary;
+        &:hover {
+          @include btn-primary-hover;
+        }
+      }
     }
   }
-}
-.img {
-  background: transparent url("../img/footer-6.png");
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  background-position: center;
-  background-size: cover;
-  border-radius: 50%;
-  position: relative;
-  display: inline-block;
 }
