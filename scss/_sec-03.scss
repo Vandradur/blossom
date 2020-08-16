@@ -8,33 +8,25 @@ LOOSE FLOWERS
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin: 0 auto;
+  text-align: center;
 
   .overlap-wrapper {
-    padding: 1rem;
-
-    @media (min-width: 600px) {
-      display: flex;
-      max-width: 950px;
-      margin: auto;
-      transform: translateY(0%);
-    }
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8rem 0.1rem;
+    text-align: center;
     .overlap-cards {
       border: 2px solid #eee;
       text-align: center;
-      padding: 0 25px 25px;
-      background: #fff;
+      background: $white;
+      padding: 2rem;
+      margin: 0 0 2rem 0;
       box-shadow: 0 3px 2px rgba(0, 0, 0, 0.8);
-      z-index: -1;
-      &:before {
-        top: 100px;
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        border: 2px solid $white;
-      }
+      z-index: 1;
       h3 {
         margin: 0 0 10px;
         text-transform: uppercase;
@@ -45,38 +37,19 @@ LOOSE FLOWERS
         font-style: italic;
         position: relative;
       }
-      &:nth-child(2) {
-        margin: 1rem 0;
-        @media (min-width: 600px) {
-          margin: 0 1rem;
-        }
-      }
+
       .img-1 {
-        background: url("../img/footer-6.png");
-        width: 200px;
-        height: 200px;
-        overflow: hidden;
-        background-position: center;
-        background-size: cover;
-        border-radius: 50%;
-        position: relative;
-        display: inline-block;
+        background: url("../img/footer-2.png");
       }
       .img-2 {
-        background: url("../img/footer-2.png");
-        width: 200px;
-        height: 200px;
-        overflow: hidden;
-        background-position: center;
-        background-size: cover;
-        border-radius: 50%;
-        position: relative;
-        display: inline-block;
+        background: url("../img/footer-6.png");
       }
       .img-3 {
         background: url("../img/footer-5.png");
-        width: 200px;
-        height: 200px;
+      }
+      .img {
+        width: 120px;
+        height: 120px;
         overflow: hidden;
         background-position: center;
         background-size: cover;
@@ -91,5 +64,19 @@ LOOSE FLOWERS
         }
       }
     }
+  }
+}
+
+@media (min-width: 40rem) {
+  .overlap-cards {
+    width: calc(50% - 2rem);
+    background: $white-03;
+  }
+}
+
+@media (min-width: 56rem) {
+  .overlap-cards {
+    width: calc(33.333333% - 2rem);
+    background: $white-02;
   }
 }
