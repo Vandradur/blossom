@@ -23,4 +23,10 @@ $(document).ready(function () {
   });
 });
 
-/****   ****/
+/**** sec-06  ****/
+
+$(document).ready(function () {
+  $("ul").click(function () {
+    $("ul").toggleClass("active");
+  });
+});
