@@ -68,24 +68,27 @@
   width: 60%;
   height: 45px;
   font-size: 15px;
-  border-radius: 2px;
+  border-radius: 0.3em;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  outline: none;
   font-family: montserrat;
   font-size: 13px;
   border: 2px solid $secondaryLight;
   background-color: $black-03;
+  background: linear-gradient(to right, $secondaryLight, $secondaryDark);
   color: $white-02;
   padding: 6px 20px;
-  transition: all 0.3s ease;
+  transition: all 0.6s ease;
   cursor: pointer;
   width: 100%;
 }
 
 @mixin btn_normal_hover {
-  background-color: $white-02;
-  color: $black-02;
+  background: linear-gradient(to right, $primaryLight, $white-02);
+  color: $black-03;
   text-decoration: none;
+  border: none;
 }
 
 @mixin btn_normal_active {
