@@ -14,7 +14,7 @@ Parallax cards
   width: 60%;
   h1 {
     @include h1Text;
-    line-height: 0.85;
+    line-height: 0.95;
     @include desktop690 {
       font-size: 60px;
     }
@@ -26,7 +26,7 @@ Parallax cards
     @include bodyText;
     margin-top: 3%;
     @include desktop690 {
-      font-size: 1.6em;
+      font-size: 1.3em;
     }
   }
 }
@@ -78,7 +78,6 @@ Parallax cards
   min-height: 280px;
   height: auto;
   border-radius: 10px;
-  font-size: 1.5rem;
 }
 
 .back {
@@ -172,10 +171,17 @@ Parallax cards
 }
 
 .front .inner p {
-  font-size: 2rem;
+  font-size: 2em;
   margin-bottom: 2rem;
   position: relative;
+  @include h3Text;
   color: $white-02;
+}
+.back .inner p {
+  @include h3Text;
+  margin-bottom: 2rem;
+  position: relative;
+  color: $black;
 }
 
 .front .inner p:after {
@@ -192,6 +198,7 @@ Parallax cards
 }
 
 .front .inner span {
+  @include bodyText;
   color: $white-02;
   font-weight: 700;
 }

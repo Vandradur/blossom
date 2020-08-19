@@ -1,0 +1,89 @@
+#sec-50 {
+  .main-text {
+    text-align: center;
+    padding: 40px 27%;
+    h1 {
+      @include h1Text;
+      line-height: 0.98;
+      @include desktop690 {
+        font-size: 60px;
+      }
+    }
+    h2 {
+      @include h3Text;
+      color: $primaryDark;
+    }
+    h3 {
+      font-size: 1em;
+      margin: 1em 0;
+      text-transform: uppercase;
+      color: $secondaryDark;
+    }
+    p {
+      @include bodyText;
+      margin-top: 3%;
+      @include desktop690 {
+        font-size: 1.3em;
+      }
+    }
+  }
+  // Flexbox grid
+  .sec-50_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10%;
+    // The magic
+    .grid-item {
+      height: 350px;
+      width: 350px;
+      position: relative;
+      margin: 10px;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+      z-index: -1;
+      transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    h3 {
+      color: white;
+      font-size: 24px;
+      margin: 20px 0 0 20px;
+    }
+
+    p {
+      color: white;
+      font-weight: 400;
+      font-size: 16px;
+      align-self: end;
+      margin: 0 0 20px 20px;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  // Media queries
+  @media (max-width: 470px) {
+    .grid-item {
+      height: 300px;
+      width: 300px;
+    }
+  }
+}
+.grid-item:hover {
+  transform: scale(1.035, 1.035);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.grid-item:hover img {
+  transform: translateY(-10px);
+}

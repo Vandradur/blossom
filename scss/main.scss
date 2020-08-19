@@ -10,8 +10,11 @@
 @import "./sec-06";
 @import "./sec-32";
 @import "./sec-31";
+@import "./sec-30";
+@import "./sec-50";
 @import "./top-header";
 @import "./container";
+@import "./footer";
 
 /* GLOBAL */
 *,
@@ -23,6 +26,12 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+  font-family: "Playfair Display", serif;
+  font-size: 100%;
+  line-height: 1;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 /* CUSTOM */
@@ -31,7 +40,6 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-size: 10px;
   scroll-behavior: smooth;
   background: #fff;
 }

@@ -2,7 +2,7 @@
 SECTION 01
 ========================================================================== */
 #news-wrapper {
-  height: 40vh;
+  height: 100%;
   box-shadow: 3px 3px 2px #bebebe;
   display: flex;
   justify-content: center;
@@ -20,7 +20,7 @@ SECTION 01
     max-width: 70%;
     #news-title {
       @include h1Text;
-      line-height: 0.85;
+      line-height: 0.98;
       @include desktop690 {
         font-size: 60px;
       }
@@ -29,7 +29,7 @@ SECTION 01
       @include bodyText;
       margin-top: 3%;
       @include desktop690 {
-        font-size: 1.6em;
+        font-size: 1.3em;
       }
     }
   }
@@ -71,13 +71,18 @@ SECTION 01
       transform: translate(-50%, -50%);
 
       p {
-        @include h2Text;
-        letter-spacing: 0.3em;
+        @include h3Text;
+        letter-spacing: 0.08em;
         color: $white-02;
         text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+        @include desktop690 {
+          @include h2Text;
+          color: $white-02;
+        }
       }
       h2 {
         color: $black-02;
+        @include bodyText;
       }
     }
     #first {
