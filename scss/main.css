@@ -290,8 +290,8 @@ SECTION 01
           align-items: center;
   text-align: center;
   color: white;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.24)), to(rgba(0, 0, 0, 0.171))), url(../img/footer-7.png);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.171)), url(../img/footer-7.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.24)), to(rgba(0, 0, 0, 0.171))), url(../img/hero-01.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.171)), url(../img/hero-01.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -310,6 +310,7 @@ SECTION 01
   color: #333;
   color: #00171f;
   font-weight: 600;
+  color: #fffcf2;
   line-height: 0.98;
 }
 
@@ -332,6 +333,7 @@ SECTION 01
   font-weight: 500;
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
+  color: #fefee3;
   margin-top: 3%;
 }
 
@@ -345,7 +347,7 @@ SECTION 01
   position: relative;
   width: 100%;
   height: 100%;
-  background: url(../img/hero-2.png) no-repeat 50% 50% fixed;
+  background: url(../img/hero-01.jpg) no-repeat 50% 50% fixed;
   background-size: 130%;
   overflow: hidden;
   display: -webkit-box;
@@ -1190,8 +1192,7 @@ img {
 }
 
 .sec-06 .loose-flowers-wrapper {
-  width: 80%;
-  margin: 4% 10% 5% 10%;
+  width: 100%;
 }
 
 .sec-06 .loose-flowers-wrapper img {

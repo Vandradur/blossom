@@ -10,7 +10,7 @@ SECTION 01
   text-align: center;
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.171)),
-    url(../img/footer-7.png);
+    url(../img/hero-01.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -20,6 +20,7 @@ SECTION 01
     max-width: 70%;
     #news-title {
       @include h1Text;
+      color: $white-02;
       line-height: 0.98;
       @include desktop690 {
         font-size: 60px;
@@ -27,6 +28,7 @@ SECTION 01
     }
     #news-text {
       @include bodyText;
+      color: $white-03;
       margin-top: 3%;
       @include desktop690 {
         font-size: 1.3em;
@@ -39,7 +41,7 @@ SECTION 01
   position: relative;
   width: 100%;
   height: 100%;
-  background: url(../img/hero-2.png) no-repeat 50% 50% fixed;
+  background: url(../img/hero-01.jpg) no-repeat 50% 50% fixed;
   background-size: 130%;
   overflow: hidden;
   display: flex;
