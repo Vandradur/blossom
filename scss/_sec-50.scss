@@ -10,18 +10,18 @@
       }
     }
     h2 {
-      @include h3Text;
+      @include h2Text;
       color: $primaryDark;
+      margin-top: 10px;
     }
     h3 {
-      font-size: 1em;
+      @include h3Text;
       margin: 1em 0;
-      text-transform: uppercase;
       color: $secondaryDark;
     }
     p {
       @include bodyText;
-      margin-top: 3%;
+      margin-top: 2%;
       @include desktop690 {
         font-size: 1.3em;
       }

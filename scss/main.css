@@ -17,6 +17,7 @@ TYPOGRAPHY
 /* H1 TEXT ========================================================================== */
 /* H2 TEXT ========================================================================== */
 /* H3 TEXT ========================================================================== */
+/* H4 TEXT ========================================================================== */
 /* ==========================================================================
 HEADER
 ========================================================================== */
@@ -228,9 +229,11 @@ header .nav .nav-bar ul a {
   font-weight: 500;
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
   color: #000;
   color: #33415c;
   padding: 1.7rem 6rem;
+  font-family: "Montserrat", sans-serif;
   font-family: "Open Sans";
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -272,6 +275,7 @@ TYPOGRAPHY
 /* H1 TEXT ========================================================================== */
 /* H2 TEXT ========================================================================== */
 /* H3 TEXT ========================================================================== */
+/* H4 TEXT ========================================================================== */
 /* ==========================================================================
 SECTION 01
 ========================================================================== */
@@ -333,6 +337,7 @@ SECTION 01
   font-weight: 500;
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
   color: #fefee3;
   margin-top: 3%;
 }
@@ -395,10 +400,10 @@ SECTION 01
 
 .hero #hero-container .herotext p {
   line-height: 0.9em;
-  font-size: 1.25rem;
-  font-weight: 300;
+  font-size: 1em;
+  text-transform: uppercase;
   letter-spacing: 2px;
-  font-family: var(--fontStrait);
+  font-family: "Raleway", sans-serif;
   color: #333;
   color: #484a47;
   letter-spacing: 0.08em;
@@ -408,7 +413,7 @@ SECTION 01
 
 @media (min-width: 690px) {
   .hero #hero-container .herotext p {
-    font-size: 2.126em;
+    font-size: 1.526em;
     /* 2 x 1.063 = 2.126*/
     line-height: 0.9;
     /* 1.3 / 2.126 = 0.6 */
@@ -417,6 +422,8 @@ SECTION 01
     letter-spacing: 0.1rem;
     color: #000;
     color: #484a47;
+    font-family: "Raleway", sans-serif;
+    font-family: "Open Sans";
     color: #fffcf2;
   }
 }
@@ -435,6 +442,7 @@ SECTION 01
   font-weight: 500;
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
 }
 
 .hero #hero-container #first {
@@ -639,9 +647,36 @@ Parallax cards
   }
 }
 
+#collection h2 {
+  font-size: 1.526em;
+  /* 2 x 1.063 = 2.126*/
+  line-height: 0.9;
+  /* 1.3 / 2.126 = 0.6 */
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #000;
+  color: #484a47;
+  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans";
+  color: #cb997e;
+  margin-top: 10px;
+}
+
+#collection h3 {
+  line-height: 0.9em;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Raleway", sans-serif;
+  color: #333;
+  color: #484a47;
+  margin: 1em 0;
+  text-transform: uppercase;
+  color: #33415c;
+}
+
 #collection p {
-  padding: 1%;
-  margin-top: 1%;
   line-height: 18px;
   text-decoration: none;
   color: #333;
@@ -654,7 +689,7 @@ Parallax cards
   font-weight: 500;
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
-  margin-top: 3%;
+  font-family: "Arima Madurai", cursive;
 }
 
 @media (min-width: 690px) {
@@ -824,10 +859,10 @@ Parallax cards
   margin-bottom: 2rem;
   position: relative;
   line-height: 0.9em;
-  font-size: 1.25rem;
-  font-weight: 300;
+  font-size: 1em;
+  text-transform: uppercase;
   letter-spacing: 2px;
-  font-family: var(--fontStrait);
+  font-family: "Raleway", sans-serif;
   color: #333;
   color: #484a47;
   color: #fffcf2;
@@ -846,6 +881,7 @@ Parallax cards
   font-weight: 500;
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
   font-size: 0.68em;
   margin-bottom: 2rem;
   position: relative;
@@ -878,6 +914,7 @@ Parallax cards
   font-weight: 500;
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
   color: #fffcf2;
   font-weight: 700;
 }
@@ -1057,6 +1094,7 @@ Hand Tied
   font-weight: 500;
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
   margin-top: 3%;
 }
 
@@ -1107,10 +1145,10 @@ Hand Tied
 
 #collection-03 .cards .cards_item .card .card_content .card_title {
   line-height: 0.9em;
-  font-size: 1.25rem;
-  font-weight: 300;
+  font-size: 1em;
+  text-transform: uppercase;
   letter-spacing: 2px;
-  font-family: var(--fontStrait);
+  font-family: "Raleway", sans-serif;
   color: #333;
   color: #484a47;
   color: #fffcf2;
@@ -1129,6 +1167,7 @@ Hand Tied
   font-weight: 500;
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
   color: #fffcf2;
 }
 
@@ -1212,7 +1251,7 @@ img {
   text-align: center;
   color: #fffcf2;
   font-size: 8vw;
-  font-family: Fira Sans "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Arima Madurai", cursive;
   -webkit-text-stroke: 0.7px rgba(0, 0, 0, 0.4);
   text-stroke: 0.7px rgba(0, 0, 0, 0.4);
   background: -webkit-linear-gradient(#fff, #fffcf2);
@@ -1224,21 +1263,23 @@ img {
 .sec-06 .loose-flowers-wrapper .spl-text h2 {
   text-align: center;
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
-  line-height: 0.9em;
-  font-size: 1.25rem;
-  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans";
+  line-height: 0.7em;
+  font-size: 1.05rem;
+  font-weight: 600;
   letter-spacing: 2px;
-  font-family: var(--fontStrait);
-  color: #333;
-  color: #484a47;
   letter-spacing: 0.1em;
   color: #fffcf2;
+  font-family: "Raleway", sans-serif;
 }
 
 .sec-06 span:before {
   content: "p";
   -webkit-animation: animate infinite 8s;
           animation: animate infinite 8s;
+  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans";
 }
 
 @-webkit-keyframes animate {
@@ -1416,10 +1457,10 @@ img {
 
 #sec-30 .sec-30_header h2 {
   line-height: 0.9em;
-  font-size: 1.25rem;
-  font-weight: 300;
+  font-size: 1em;
+  text-transform: uppercase;
   letter-spacing: 2px;
-  font-family: var(--fontStrait);
+  font-family: "Raleway", sans-serif;
   color: #333;
   color: #484a47;
   color: #cb997e;
@@ -1445,6 +1486,7 @@ img {
   font-weight: 500;
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
   margin-top: 3%;
 }
 
@@ -1579,25 +1621,30 @@ img {
 
 .heading {
   font-family: "Libre Baskerville", serif;
+  font-family: "Arima Madurai", cursive;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1.2;
   margin-bottom: 1rem;
   color: #222222;
+  color: #00171f;
   font-size: 30px;
-  font-weight: 400;
   line-height: 1.25;
 }
 
 .description {
   font-family: "Raleway", sans-serif;
+  font-family: "Open Sans";
   font-size: 1rem;
   line-height: 1.5;
 }
 
 .description:nth-of-type(1):first-letter {
   float: left;
-  color: #7d8597;
+  color: #222222;
+  color: #00171f;
+  font-family: "Libre Baskerville", serif;
+  font-family: "Arima Madurai", cursive;
   padding: 0 6px 0 4px;
   font-size: 50px;
   line-height: 82px;
@@ -1683,20 +1730,30 @@ img {
 }
 
 #sec-50 .main-text h2 {
-  line-height: 0.9em;
-  font-size: 1.25rem;
-  font-weight: 300;
-  letter-spacing: 2px;
-  font-family: var(--fontStrait);
-  color: #333;
+  font-size: 1.526em;
+  /* 2 x 1.063 = 2.126*/
+  line-height: 0.9;
+  /* 1.3 / 2.126 = 0.6 */
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #000;
   color: #484a47;
+  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans";
   color: #cb997e;
+  margin-top: 10px;
 }
 
 #sec-50 .main-text h3 {
+  line-height: 0.9em;
   font-size: 1em;
-  margin: 1em 0;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Raleway", sans-serif;
+  color: #333;
+  color: #484a47;
+  margin: 1em 0;
   color: #33415c;
 }
 
@@ -1713,7 +1770,8 @@ img {
   font-weight: 500;
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
-  margin-top: 3%;
+  font-family: "Arima Madurai", cursive;
+  margin-top: 2%;
 }
 
 @media (min-width: 690px) {
@@ -1857,6 +1915,7 @@ img {
   font-weight: 500;
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
   margin-top: 3%;
 }
 
@@ -1908,7 +1967,7 @@ img {
 }
 
 #top-header .hero #hero-container .herotext p {
-  font-size: 2.126em;
+  font-size: 1.526em;
   /* 2 x 1.063 = 2.126*/
   line-height: 0.9;
   /* 1.3 / 2.126 = 0.6 */
@@ -1917,6 +1976,8 @@ img {
   letter-spacing: 0.1rem;
   color: #000;
   color: #484a47;
+  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans";
   letter-spacing: 0.3em;
   color: #fffcf2;
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
@@ -2066,6 +2127,7 @@ Hand Tied
   font-weight: 500;
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
   color: #fffcf2;
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
   margin-top: 3%;
@@ -2126,10 +2188,10 @@ Hand Tied
 
 #sec-33 #container .cards .cards_item .card .card_content .card_title {
   line-height: 0.9em;
-  font-size: 1.25rem;
-  font-weight: 300;
+  font-size: 1em;
+  text-transform: uppercase;
   letter-spacing: 2px;
-  font-family: var(--fontStrait);
+  font-family: "Raleway", sans-serif;
   color: #333;
   color: #484a47;
   color: #484a47;
@@ -2148,6 +2210,7 @@ Hand Tied
   font-weight: 500;
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
   color: #484a47;
 }
 
@@ -2260,6 +2323,7 @@ footer a {
   font-weight: 500;
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
   color: white;
   color: #7d8597;
   font-family: "Open Sans";

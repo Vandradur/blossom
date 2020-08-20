@@ -22,7 +22,7 @@
         text-align: center;
         color: $white-02;
         font-size: 8vw;
-        font-family: Fira Sans "Droid Sans", "Helvetica Neue", sans-serif;
+        font-family: "Arima Madurai", cursive;
         -webkit-text-stroke: 0.7px rgba(0, 0, 0, 0.4);
         text-stroke: 0.7px rgba(0, 0, 0, 0.4);
         background: -webkit-linear-gradient($white, $white-02);
@@ -33,9 +33,10 @@
       h2 {
         text-align: center;
         text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
-        @include h3Text;
+        @include h4Text;
         letter-spacing: 0.1em;
         color: $white-02;
+        font-family: "Raleway", sans-serif;
       }
     }
   }
@@ -43,6 +44,8 @@
 .sec-06 span:before {
   content: "p";
   animation: animate infinite 8s;
+  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans";
 }
 @keyframes animate {
   0% {

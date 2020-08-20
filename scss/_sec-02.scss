@@ -19,12 +19,21 @@ Parallax cards
       font-size: 60px;
     }
   }
+  h2 {
+    @include h2Text;
+    color: $primaryDark;
+    margin-top: 10px;
+  }
+  h3 {
+    @include h3Text;
+    margin: 1em 0;
+    text-transform: uppercase;
+    color: $secondaryDark;
+  }
 
   p {
-    padding: 1%;
-    margin-top: 1%;
     @include bodyText;
-    margin-top: 3%;
+
     @include desktop690 {
       font-size: 1.3em;
     }
