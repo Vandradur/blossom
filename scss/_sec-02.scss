@@ -178,7 +178,8 @@ Parallax cards
   color: $white-02;
 }
 .back .inner p {
-  @include h3Text;
+  @include bodyText;
+  font-size: 0.68em;
   margin-bottom: 2rem;
   position: relative;
   color: $black;

@@ -832,13 +832,19 @@ Parallax cards
 }
 
 .back .inner p {
-  line-height: 0.9em;
-  font-size: 1.25rem;
-  font-weight: 300;
-  letter-spacing: 2px;
-  font-family: var(--fontStrait);
+  line-height: 18px;
+  text-decoration: none;
   color: #333;
-  color: #484a47;
+  color: #00171f;
+  font-size: 1.063em;
+  /* 17px / 16px = 1.063em */
+  line-height: 1.25;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.68em;
   margin-bottom: 2rem;
   position: relative;
   color: #000;
