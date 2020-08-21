@@ -15,7 +15,7 @@ footer {
       grid-auto-flow: column;
     }
     .tag {
-      display: block;
+      display: none;
     }
   }
 
@@ -33,7 +33,7 @@ footer {
   }
 
   a:hover {
-    color: $white-03;
+    color: $black-03;
   }
 
   li:last-child {
@@ -41,35 +41,16 @@ footer {
     grid-row: 1 / 2;
   }
 
-  li:hover ~ li p {
-    animation: wave-animation 0.3s infinite;
-  }
-
-  /* below is just for demo styling */
-
   div {
     display: flex;
     height: 50vh;
     width: 100%;
-    background-color: $black-03;
-    .tag-wrap {
-      filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
-    }
+    background-color: $primary;
+
     .tag {
-      background: $primary;
-      display: none;
       color: $secondaryDark;
-      padding: 1rem 2rem 2rem 3rem;
-      font: bold 32px system-ui;
-      clip-path: polygon(
-        0% 20%,
-        60% 20%,
-        60% 0%,
-        100% 50%,
-        60% 100%,
-        60% 80%,
-        0% 80%
-      );
+      font-family: "Open Sans";
+      font-weight: 900;
     }
   }
 }

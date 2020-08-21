@@ -135,6 +135,8 @@ header {
           padding: 1.7rem 6rem;
           font-family: "Montserrat", sans-serif;
           font-family: "Open Sans";
+          color: $secondaryLight;
+          font-family: "Open Sans";
           text-transform: uppercase;
           letter-spacing: 5px;
           font-size: 12px;
@@ -144,7 +146,7 @@ header {
         }
         a:hover,
         a:active:hover {
-          color: $black;
+          color: $black-03;
         }
       }
     }

@@ -235,6 +235,8 @@ header .nav .nav-bar ul a {
   padding: 1.7rem 6rem;
   font-family: "Montserrat", sans-serif;
   font-family: "Open Sans";
+  color: #7d8597;
+  font-family: "Open Sans";
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 12px;
@@ -248,7 +250,7 @@ header .nav .nav-bar ul a {
 
 header .nav .nav-bar ul a:hover,
 header .nav .nav-bar ul a:active:hover {
-  color: #000;
+  color: #00171f;
 }
 
 header .nav-bar.menu-open {
@@ -2282,10 +2284,6 @@ Hand Tied
   }
 }
 
-footer {
-  /* below is just for demo styling */
-}
-
 footer ul {
   display: -ms-inline-grid;
   display: inline-grid;
@@ -2304,7 +2302,7 @@ footer ul li {
     grid-auto-flow: column;
   }
   footer .tag {
-    display: block;
+    display: none;
   }
 }
 
@@ -2333,7 +2331,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #fefee3;
+  color: #00171f;
 }
 
 footer li:last-child {
@@ -2345,33 +2343,19 @@ footer li:last-child {
   grid-row: 1 / 2;
 }
 
-footer li:hover ~ li p {
-  -webkit-animation: wave-animation 0.3s infinite;
-          animation: wave-animation 0.3s infinite;
-}
-
 footer div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 50vh;
   width: 100%;
-  background-color: #00171f;
-}
-
-footer div .tag-wrap {
-  -webkit-filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
-          filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+  background-color: #eddcd2;
 }
 
 footer div .tag {
-  background: #eddcd2;
-  display: none;
   color: #33415c;
-  padding: 1rem 2rem 2rem 3rem;
-  font: bold 32px system-ui;
-  -webkit-clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
-          clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+  font-family: "Open Sans";
+  font-weight: 900;
 }
 
 /* GLOBAL */
