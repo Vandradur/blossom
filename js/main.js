@@ -30,3 +30,5 @@ $(document).ready(function () {
     $("ul").toggleClass("active");
   });
 });
+
+/*** SVG ***/

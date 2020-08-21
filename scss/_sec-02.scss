@@ -12,6 +12,59 @@ Parallax cards
   padding: 1%;
   display: flex;
   width: 70%;
+  svg {
+    #leafs {
+      animation: col 6s linear infinite;
+      transform-origin: center;
+    }
+    #petals {
+      animation: col-2 6s linear infinite;
+      transform-origin: center;
+    }
+    #outLine {
+      animation: col-3 6s linear infinite;
+      transform-origin: center;
+    }
+  }
+  @keyframes col {
+    0%,
+    71% {
+      fill: #50c48a;
+    }
+    72% {
+      fill: #3c8f65;
+    }
+    75%,
+    100% {
+      fill: #3c8f65;
+    }
+  }
+  @keyframes col-2 {
+    0%,
+    71% {
+      fill: #dd7472;
+    }
+    72% {
+      fill: #b77f7e;
+    }
+    75%,
+    100% {
+      fill: #b77f7e;
+    }
+  }
+  @keyframes col-3 {
+    0%,
+    71% {
+      fill: #352627;
+    }
+    72% {
+      fill: #352627;
+    }
+    75%,
+    100% {
+      fill: #352627;
+    }
+  }
 
   h1 {
     @include h1Text;

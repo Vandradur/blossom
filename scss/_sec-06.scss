@@ -1,21 +1,24 @@
 .sec-06 {
   position: relative;
-  background-image: linear-gradient(-90deg, $white, $white-02);
+  background-image: url("../img/hero-09.jpg"), linear-gradient(#fff1e6, #fefee3);
   height: auto;
   overflow: hidden;
-  padding: 5rem;
+
+  padding: 5rem 2rem 6rem 2rem;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
   .loose-flowers-wrapper {
     width: 100%;
-    // margin: 4% 10% 5% 10%;
     img {
       width: 100%;
-      border: solid 0.4px rgba(0, 0, 0, 0.192);
       border-radius: 2px;
     }
     .spl-text {
       width: 100%;
-      margin-top: -30%;
+      margin-top: -20%;
       position: relative;
       padding: 2rem;
       h1 {

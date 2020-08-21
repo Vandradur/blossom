@@ -630,6 +630,111 @@ Parallax cards
   width: 70%;
 }
 
+#collection svg #leafs {
+  -webkit-animation: col 6s linear infinite;
+          animation: col 6s linear infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+#collection svg #petals {
+  -webkit-animation: col-2 6s linear infinite;
+          animation: col-2 6s linear infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+#collection svg #outLine {
+  -webkit-animation: col-3 6s linear infinite;
+          animation: col-3 6s linear infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@-webkit-keyframes col {
+  0%,
+  71% {
+    fill: #50c48a;
+  }
+  72% {
+    fill: #3c8f65;
+  }
+  75%,
+  100% {
+    fill: #3c8f65;
+  }
+}
+
+@keyframes col {
+  0%,
+  71% {
+    fill: #50c48a;
+  }
+  72% {
+    fill: #3c8f65;
+  }
+  75%,
+  100% {
+    fill: #3c8f65;
+  }
+}
+
+@-webkit-keyframes col-2 {
+  0%,
+  71% {
+    fill: #dd7472;
+  }
+  72% {
+    fill: #b77f7e;
+  }
+  75%,
+  100% {
+    fill: #b77f7e;
+  }
+}
+
+@keyframes col-2 {
+  0%,
+  71% {
+    fill: #dd7472;
+  }
+  72% {
+    fill: #b77f7e;
+  }
+  75%,
+  100% {
+    fill: #b77f7e;
+  }
+}
+
+@-webkit-keyframes col-3 {
+  0%,
+  71% {
+    fill: #352627;
+  }
+  72% {
+    fill: #352627;
+  }
+  75%,
+  100% {
+    fill: #352627;
+  }
+}
+
+@keyframes col-3 {
+  0%,
+  71% {
+    fill: #352627;
+  }
+  72% {
+    fill: #352627;
+  }
+  75%,
+  100% {
+    fill: #352627;
+  }
+}
+
 #collection h1 {
   font-family: var(--fontSans);
   font-size: 3.4em;
@@ -1228,11 +1333,12 @@ img {
 
 .sec-06 {
   position: relative;
-  background-image: -webkit-gradient(linear, right top, left top, from(#fff), to(#fffcf2));
-  background-image: linear-gradient(-90deg, #fff, #fffcf2);
+  background-image: url("../img/hero-09.jpg"), -webkit-gradient(linear, left top, left bottom, from(#fff1e6), to(#fefee3));
+  background-image: url("../img/hero-09.jpg"), linear-gradient(#fff1e6, #fefee3);
   height: auto;
   overflow: hidden;
-  padding: 5rem;
+  padding: 5rem 2rem 6rem 2rem;
+  background-size: cover;
 }
 
 .sec-06 .loose-flowers-wrapper {
@@ -1241,13 +1347,12 @@ img {
 
 .sec-06 .loose-flowers-wrapper img {
   width: 100%;
-  border: solid 0.4px rgba(0, 0, 0, 0.192);
   border-radius: 2px;
 }
 
 .sec-06 .loose-flowers-wrapper .spl-text {
   width: 100%;
-  margin-top: -30%;
+  margin-top: -20%;
   position: relative;
   padding: 2rem;
 }
