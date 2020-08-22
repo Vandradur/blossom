@@ -52,16 +52,16 @@ SECTION 01
     text-align: center;
     position: relative;
     left: 50%;
-    top: 20%;
+    top: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
     padding: 0.3em;
 
     svg {
       margin: auto;
-      margin-top: 50%;
+      padding: 30px 20px;
       width: 50%;
-      min-width: 320px;
+      min-width: 300px;
       max-height: 100%;
     }
 
@@ -70,47 +70,28 @@ SECTION 01
       mix-blend-mode: multiply;
     }
 
-    .shape {
-      height: 100%;
-      width: 50px;
-      shape-margin: 2.6px;
-    }
-
-    .shape-left {
-      float: left;
-      shape-outside: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/18515/circle-left.svg);
-    }
-
-    .shape-right {
-      float: right;
-      shape-outside: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/18515/circle-right.svg);
-    }
-
     .text {
-      font-size: 4.9px;
+      //font-size: 4.9px;
       width: 100px;
       height: 100%;
       text-align: center;
       line-height: 1.6;
       color: white;
-      hyphens: auto;
       text-shadow: 0 0.2px 0.3px rgba(0, 0, 0, 0.3);
+      p {
+        text-align: justify;
+        text-align-last: center;
+        @include bodyText;
+        color: white;
+        font-size: 4.9px;
+      }
+      h2 {
+        @include h2Text;
+        font-size: 2.5px;
+        color: $primary;
+      }
     }
 
-    p {
-      margin-bottom: 5px;
-      text-align: justify;
-      text-align-last: center;
-      @include bodyText;
-      color: white;
-    }
-
-    h1 {
-      font-size: 7.5px;
-      margin-bottom: 5px;
-      padding-top: 10px;
-      @include h2Text;
-    }
     /*
     svg {
       margin: auto;

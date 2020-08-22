@@ -372,7 +372,7 @@ SECTION 01
   text-align: center;
   position: relative;
   left: 50%;
-  top: 20%;
+  top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
@@ -423,9 +423,9 @@ SECTION 01
 
 .hero #hero-container svg {
   margin: auto;
-  margin-top: 50%;
+  padding: 30px 20px;
   width: 50%;
-  min-width: 320px;
+  min-width: 300px;
   max-height: 100%;
 }
 
@@ -434,37 +434,16 @@ SECTION 01
   mix-blend-mode: multiply;
 }
 
-.hero #hero-container .shape {
-  height: 100%;
-  width: 50px;
-  shape-margin: 2.6px;
-}
-
-.hero #hero-container .shape-left {
-  float: left;
-  shape-outside: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/18515/circle-left.svg);
-}
-
-.hero #hero-container .shape-right {
-  float: right;
-  shape-outside: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/18515/circle-right.svg);
-}
-
 .hero #hero-container .text {
-  font-size: 4.9px;
   width: 100px;
   height: 100%;
   text-align: center;
   line-height: 1.6;
   color: white;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
   text-shadow: 0 0.2px 0.3px rgba(0, 0, 0, 0.3);
 }
 
-.hero #hero-container p {
-  margin-bottom: 5px;
+.hero #hero-container .text p {
   text-align: justify;
   text-align-last: center;
   line-height: 18px;
@@ -481,12 +460,10 @@ SECTION 01
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
   color: white;
+  font-size: 4.9px;
 }
 
-.hero #hero-container h1 {
-  font-size: 7.5px;
-  margin-bottom: 5px;
-  padding-top: 10px;
+.hero #hero-container .text h2 {
   font-size: 0.9em;
   /* 2 x 1.063 = 2.126*/
   line-height: 0.9;
@@ -498,6 +475,8 @@ SECTION 01
   color: #484a47;
   font-family: "Raleway", sans-serif;
   font-family: "Open Sans";
+  font-size: 2.5px;
+  color: #eddcd2;
 }
 
 .hero #hero-container #first {
@@ -685,108 +664,44 @@ Parallax cards
   width: 70%;
 }
 
-#collection svg #leafs {
-  -webkit-animation: col 6s linear infinite;
-          animation: col 6s linear infinite;
-  -webkit-transform-origin: center;
-          transform-origin: center;
+#collection .flower-icon {
+  margin-top: 1rem;
 }
 
-#collection svg #petals {
-  -webkit-animation: col-2 6s linear infinite;
-          animation: col-2 6s linear infinite;
-  -webkit-transform-origin: center;
-          transform-origin: center;
+#collection .flower-icon svg {
+  height: 100%;
+  width: 100%;
 }
 
-#collection svg #outLine {
-  -webkit-animation: col-3 6s linear infinite;
-          animation: col-3 6s linear infinite;
-  -webkit-transform-origin: center;
-          transform-origin: center;
+#collection .flower-icon svg path {
+  stroke-dasharray: 100;
+  -webkit-animation: draw 7s infinite;
+          animation: draw 7s infinite;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 
-@-webkit-keyframes col {
-  0%,
-  71% {
-    fill: #50c48a;
+@-webkit-keyframes draw {
+  from {
+    stroke-dashoffset: 0;
   }
-  72% {
-    fill: #3c8f65;
-  }
-  75%,
-  100% {
-    fill: #3c8f65;
+  to {
+    stroke-dashoffset: 200;
   }
 }
 
-@keyframes col {
-  0%,
-  71% {
-    fill: #50c48a;
+@keyframes draw {
+  from {
+    stroke-dashoffset: 0;
   }
-  72% {
-    fill: #3c8f65;
-  }
-  75%,
-  100% {
-    fill: #3c8f65;
-  }
-}
-
-@-webkit-keyframes col-2 {
-  0%,
-  71% {
-    fill: #dd7472;
-  }
-  72% {
-    fill: #b77f7e;
-  }
-  75%,
-  100% {
-    fill: #b77f7e;
-  }
-}
-
-@keyframes col-2 {
-  0%,
-  71% {
-    fill: #dd7472;
-  }
-  72% {
-    fill: #b77f7e;
-  }
-  75%,
-  100% {
-    fill: #b77f7e;
-  }
-}
-
-@-webkit-keyframes col-3 {
-  0%,
-  71% {
-    fill: #352627;
-  }
-  72% {
-    fill: #352627;
-  }
-  75%,
-  100% {
-    fill: #352627;
-  }
-}
-
-@keyframes col-3 {
-  0%,
-  71% {
-    fill: #352627;
-  }
-  72% {
-    fill: #352627;
-  }
-  75%,
-  100% {
-    fill: #352627;
+  to {
+    stroke-dashoffset: 200;
   }
 }
 
@@ -1970,15 +1885,16 @@ img {
   position: relative;
   margin: 10px;
   overflow: hidden;
-  border-radius: 8px;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 2rem;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
   -webkit-transform-origin: 0 50%;
           transform-origin: 0 50%;
   -webkit-transform: rotateY(0);
           transform: rotateY(0);
   -webkit-transition: all 0.45s ease;
   transition: all 0.45s ease;
+  border: 4px solid #f0f0f0;
 }
 
 #sec-50 .sec-50_container img {

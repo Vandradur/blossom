@@ -12,57 +12,28 @@ Parallax cards
   padding: 1%;
   display: flex;
   width: 70%;
-  svg {
-    #leafs {
-      animation: col 6s linear infinite;
-      transform-origin: center;
-    }
-    #petals {
-      animation: col-2 6s linear infinite;
-      transform-origin: center;
-    }
-    #outLine {
-      animation: col-3 6s linear infinite;
-      transform-origin: center;
-    }
-  }
-  @keyframes col {
-    0%,
-    71% {
-      fill: #50c48a;
-    }
-    72% {
-      fill: #3c8f65;
-    }
-    75%,
-    100% {
-      fill: #3c8f65;
-    }
-  }
-  @keyframes col-2 {
-    0%,
-    71% {
-      fill: #dd7472;
-    }
-    72% {
-      fill: #b77f7e;
-    }
-    75%,
-    100% {
-      fill: #b77f7e;
-    }
-  }
-  @keyframes col-3 {
-    0%,
-    71% {
-      fill: #352627;
-    }
-    72% {
-      fill: #352627;
-    }
-    75%,
-    100% {
-      fill: #352627;
+  .flower-icon {
+    margin-top: 1rem;
+    svg {
+      height: 100%;
+      width: 100%;
+
+      path {
+        stroke-dasharray: 100;
+        animation: draw 7s infinite;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+      }
+      @keyframes draw {
+        from {
+          stroke-dashoffset: 0;
+        }
+        to {
+          stroke-dashoffset: 200;
+        }
+      }
     }
   }
 
