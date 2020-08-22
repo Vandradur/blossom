@@ -368,13 +368,6 @@ SECTION 01
           filter: hue-rotate(-1deg) invert(0.2%) contrast(0.97) brightness(0.93) sepia(0.1) saturate(0.8) drop-shadow(5px 20px 50px rgba(0, 0, 0, 0.7));
 }
 
-@media (min-width: 690px) {
-  .hero {
-    width: 100%;
-    height: 90%;
-  }
-}
-
 .hero #hero-container {
   text-align: center;
   position: relative;
@@ -384,52 +377,96 @@ SECTION 01
           transform: translate(-50%, -50%);
   width: 100%;
   padding: 0.3em;
+  /*
+    svg {
+      margin: auto;
+      width: 30%;
+      min-width: 320px;
+      max-height: 100%;
+    }
+    svg circle {
+      fill: rgb(221, 84, 60);
+      mix-blend-mode: multiply;
+    }
+    .herotext {
+      font-size: 3.9px;
+      width: 100px;
+      height: 100%;
+      text-align: center;
+      line-height: 1.6;
+      visibility: hidden;
+      opacity: 0;
+      margin: 0 auto;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      p {
+        margin: 0;
+        text-align: justify;
+        text-align-last: center;
+        @include h3Text;
+        // letter-spacing: 0.08em;
+        //  color: $white-02;
+        text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+        @include desktop690 {
+          //  @include h2Text;
+          // color: $white-02;
+        }
+      }
+      h2 {
+        color: $white;
+        @include bodyText;
+      }
+    }*/
 }
 
-.hero #hero-container .herotext {
-  text-transform: uppercase;
-  visibility: hidden;
-  opacity: 0;
-  margin: 0 auto;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+.hero #hero-container svg {
+  margin: auto;
+  margin-top: 50%;
+  width: 50%;
+  min-width: 320px;
+  max-height: 100%;
 }
 
-.hero #hero-container .herotext p {
-  line-height: 0.9em;
-  font-size: 1em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-family: "Raleway", sans-serif;
-  color: #333;
-  color: #484a47;
-  letter-spacing: 0.08em;
-  color: #fffcf2;
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+.hero #hero-container svg circle {
+  fill: #3b9b04;
+  mix-blend-mode: multiply;
 }
 
-@media (min-width: 690px) {
-  .hero #hero-container .herotext p {
-    font-size: 0.9em;
-    /* 2 x 1.063 = 2.126*/
-    line-height: 0.9;
-    /* 1.3 / 2.126 = 0.6 */
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    color: #000;
-    color: #484a47;
-    font-family: "Raleway", sans-serif;
-    font-family: "Open Sans";
-    color: #fffcf2;
-  }
+.hero #hero-container .shape {
+  height: 100%;
+  width: 50px;
+  shape-margin: 2.6px;
 }
 
-.hero #hero-container .herotext h2 {
-  color: #484a47;
+.hero #hero-container .shape-left {
+  float: left;
+  shape-outside: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/18515/circle-left.svg);
+}
+
+.hero #hero-container .shape-right {
+  float: right;
+  shape-outside: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/18515/circle-right.svg);
+}
+
+.hero #hero-container .text {
+  font-size: 4.9px;
+  width: 100px;
+  height: 100%;
+  text-align: center;
+  line-height: 1.6;
+  color: white;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  text-shadow: 0 0.2px 0.3px rgba(0, 0, 0, 0.3);
+}
+
+.hero #hero-container p {
+  margin-bottom: 5px;
+  text-align: justify;
+  text-align-last: center;
   line-height: 18px;
   text-decoration: none;
   color: #333;
@@ -443,6 +480,24 @@ SECTION 01
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
+  color: white;
+}
+
+.hero #hero-container h1 {
+  font-size: 7.5px;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  font-size: 0.9em;
+  /* 2 x 1.063 = 2.126*/
+  line-height: 0.9;
+  /* 1.3 / 2.126 = 0.6 */
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #000;
+  color: #484a47;
+  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans";
 }
 
 .hero #hero-container #first {
@@ -1337,6 +1392,10 @@ img {
   background-image: url("../img/hero-09.jpg"), linear-gradient(#fff1e6, #fefee3);
   height: auto;
   overflow: hidden;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 5rem 2rem 6rem 2rem;
   background-size: cover;
 }
@@ -1738,6 +1797,7 @@ img {
   color: #00171f;
   font-size: 30px;
   line-height: 1.25;
+  z-index: 3;
 }
 
 .description {
@@ -1750,12 +1810,18 @@ img {
 .description:nth-of-type(1):first-letter {
   float: left;
   color: #222222;
-  color: #00171f;
-  font-family: "Libre Baskerville", serif;
   font-family: "Arima Madurai", cursive;
-  padding: 0 6px 0 4px;
-  font-size: 50px;
-  line-height: 82px;
+  float: left;
+  font: 190px Arima Madurai;
+  line-height: 1;
+  /* 1 */
+  margin-right: -1000px;
+  /* 2 */
+  margin-left: -55px;
+  /* 3 */
+  margin-top: -70px;
+  /* 3 */
+  color: #eddcd2;
 }
 
 .theme-peach {
