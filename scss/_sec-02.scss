@@ -17,6 +17,22 @@ Parallax cards
     svg {
       height: 100%;
       width: 100%;
+      #pink {
+        animation: fadeIn 2s infinite;
+        transform-origin: 50% 50%;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+      }
+      #green {
+        animation: fadeIn 5s infinite;
+        transform-origin: 50% 50%;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+      }
 
       path {
         stroke-dasharray: 100;
@@ -32,6 +48,23 @@ Parallax cards
         }
         to {
           stroke-dashoffset: 200;
+        }
+      }
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+
+        50% {
+          opacity: 1;
+        }
+
+        75% {
+          opacity: 1;
+        }
+
+        100% {
+          opacity: 0;
         }
       }
     }
