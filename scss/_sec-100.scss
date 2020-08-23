@@ -1,0 +1,12 @@
+#owl-demo {
+  background: $primary;
+  padding-top: 1rem;
+  .item {
+    margin: 1rem;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

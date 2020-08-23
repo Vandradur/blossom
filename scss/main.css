@@ -1942,6 +1942,21 @@ img {
           box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }
 
+#owl-demo {
+  background: #eddcd2;
+  padding-top: 1rem;
+}
+
+#owl-demo .item {
+  margin: 1rem;
+}
+
+#owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 #top-header {
   width: 100%;
   height: 100%;
