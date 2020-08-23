@@ -283,8 +283,6 @@ SECTION 01
 ========================================================================== */
 #news-wrapper {
   height: 100%;
-  -webkit-box-shadow: 3px 3px 2px #bebebe;
-          box-shadow: 3px 3px 2px #bebebe;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -296,8 +294,8 @@ SECTION 01
           align-items: center;
   text-align: center;
   color: white;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.24)), to(rgba(0, 0, 0, 0.171))), url(../img/hero-01.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.171)), url(../img/hero-01.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff1e644), to(rgba(194, 214, 192, 0.349))), url(../img/hero-01.jpg);
+  background-image: linear-gradient(#fff1e644, rgba(194, 214, 192, 0.349)), url(../img/hero-01.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -314,7 +312,8 @@ SECTION 01
   color: #333;
   color: #484a47;
   font-weight: 900;
-  color: #fffcf2;
+  color: #fff1e6;
+  text-shadow: #474747 3px 5px 2px;
   line-height: 0.98;
 }
 
@@ -339,6 +338,7 @@ SECTION 01
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
   color: #fefee3;
+  text-shadow: #474747 1px 2px 1px;
   margin-top: 3%;
 }
 
@@ -358,94 +358,33 @@ SECTION 01
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-filter: hue-rotate(-1deg) invert(0.2%) contrast(0.97) brightness(0.93) sepia(0.1) saturate(0.8) drop-shadow(5px 20px 50px rgba(0, 0, 0, 0.7));
-          filter: hue-rotate(-1deg) invert(0.2%) contrast(0.97) brightness(0.93) sepia(0.1) saturate(0.8) drop-shadow(5px 20px 50px rgba(0, 0, 0, 0.7));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-filter: hue-rotate(-1deg) invert(0.2%) contrast(0.97) brightness(0.93) sepia(0.1) saturate(0.8) drop-shadow(2px 10px 20px rgba(0, 0, 0, 0.027));
+          filter: hue-rotate(-1deg) invert(0.2%) contrast(0.97) brightness(0.93) sepia(0.1) saturate(0.8) drop-shadow(2px 10px 20px rgba(0, 0, 0, 0.027));
 }
 
 .hero #hero-container {
   text-align: center;
   position: relative;
+  width: 100%;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 100%;
-  padding: 0.3em;
-  /*
-    svg {
-      margin: auto;
-      width: 30%;
-      min-width: 320px;
-      max-height: 100%;
-    }
-    svg circle {
-      fill: rgb(221, 84, 60);
-      mix-blend-mode: multiply;
-    }
-    .herotext {
-      font-size: 3.9px;
-      width: 100px;
-      height: 100%;
-      text-align: center;
-      line-height: 1.6;
-      visibility: hidden;
-      opacity: 0;
-      margin: 0 auto;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      p {
-        margin: 0;
-        text-align: justify;
-        text-align-last: center;
-        @include h3Text;
-        // letter-spacing: 0.08em;
-        //  color: $white-02;
-        text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
-        @include desktop690 {
-          //  @include h2Text;
-          // color: $white-02;
-        }
-      }
-      h2 {
-        color: $white;
-        @include bodyText;
-      }
-    }*/
+  padding: 6.25%;
 }
 
-.hero #hero-container svg {
-  margin: auto;
-  padding: 30px 20px;
-  width: 50%;
-  min-width: 300px;
-  max-height: 100%;
-}
-
-.hero #hero-container svg circle {
-  fill: #3b9b04;
-  mix-blend-mode: multiply;
-}
-
-.hero #hero-container .text {
-  width: 100px;
-  height: 100%;
-  text-align: center;
-  line-height: 1.6;
-  color: white;
+.hero #hero-container .herotext {
   text-shadow: 0 0.2px 0.3px rgba(0, 0, 0, 0.3);
 }
 
-.hero #hero-container .text p {
-  text-align: justify;
-  text-align-last: center;
+.hero #hero-container .herotext p {
+  text-align: center;
   line-height: 18px;
   text-decoration: none;
   color: #333;
@@ -460,10 +399,9 @@ SECTION 01
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
   color: white;
-  font-size: 4.9px;
 }
 
-.hero #hero-container .text h2 {
+.hero #hero-container .herotext h2 {
   font-size: 0.9em;
   /* 2 x 1.063 = 2.126*/
   line-height: 0.9;
@@ -475,7 +413,6 @@ SECTION 01
   color: #484a47;
   font-family: "Raleway", sans-serif;
   font-family: "Open Sans";
-  font-size: 2.5px;
   color: #eddcd2;
 }
 
