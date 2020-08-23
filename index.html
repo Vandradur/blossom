@@ -14,6 +14,14 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,669;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,400;0,700;1,700&family=Assistant:wght@300;400;800&family=Bad+Script&family=Great+Vibes&family=Libre+Baskerville:wght@400;700&family=Luckiest+Guy&family=Mada:wght@300;700&family=Markazi+Text:wght@400;600&family=Merriweather+Sans:ital,wght@0,400;0,800;1,300&family=Montserrat:ital,wght@0,300;0,400;0,600;0,900;1,200&family=Nanum+Myeongjo:wght@400;700;800&family=Pacifico&family=Quattrocento+Sans:wght@400;700&family=Rowdies:wght@300;400&display=swap"
       rel="stylesheet"
     />
@@ -57,16 +65,108 @@
     <!-- owl-slider SECTION 100 -->
 
     <div id="owl-demo" class="owl-carousel owl-theme">
-      <div class="item"><img src="img/hero-012.jpg" /></div>
-      <div class="item"><img src="img/hero-2.jpg" /></div>
-      <div class="item"><img src="img/hero-04.jpg" /></div>
-      <div class="item"><img src="img/hero-05.jpg" /></div>
-      <div class="item"><img src="img/hero-06.jpg" /></div>
-      <div class="item"><img src="img/hero-07.jpg" /></div>
-      <div class="item"><img src="img/hero-08.jpg" /></div>
-      <div class="item"><img src="img/hero-09.jpg" /></div>
-      <div class="item"><img src="img/hero-10.jpg" /></div>
-      <div class="item"><img src="img/hero-11.jpg" /></div>
+      <div class="item">
+        <img src="img/hero-2.png" />
+        <div class="text-block">
+          <h1>Rosa</h1>
+          <p>
+            Make a statement with 3 dozen white roses or arrange it yourself
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/hero-011.jpg" />
+        <div class="text-block">
+          <h1>Cheerfulness</h1>
+          <p>
+            Lets have a great smile, cheerful thoughts and sunshine.
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/hero-010.jpg" />
+        <div class="text-block">
+          <h1>Morning Table</h1>
+          <p>
+            Good morning Sunshine.
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/hero-05.jpg" />
+        <div class="text-block">
+          <h1>A Duo</h1>
+          <p>
+            You can’t go wrong with a bouquet of fresh pink and white 50 roses
+            which has all overwritten it's gentleness, dignity and elegance.
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/hero-06.jpg" />
+        <div class="text-block">
+          <h1>Bubble Gum</h1>
+          <p>
+            Excitement and enthusiasm is the message of this soft color
+            blossoms. However, some flowers may vary on seasons supply
+            challenges, but for sure you will get a combo in pink than orange to
+            darker than peach almost the color of bubble gum.
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/hero-07.jpg" />
+        <div class="text-block">
+          <h1>Do it yourself</h1>
+          <p>
+            Your life is a work of art, admit it.
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/hero-08.jpg" />
+        <div class="text-block">
+          <h1>Bellis perennis</h1>
+          <p>
+            The name "daisy" is considered a corruption of "day's eye", because
+            the whole head closes at night and opens in the morning. Chaucer
+            called it "eye of the day". In Medieval times, Bellis perennis or
+            the English Daisy was commonly known as "Mary's Rose". It is also
+            known as bone flower.
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/hero-09.jpg" />
+        <div class="text-block">
+          <h1>Heavenly Roses Handtied</h1>
+          <p>
+            Sending this 50 white roses is a statement. It suitable anything
+            from a wedding ceremony, building trust, convey peace and represent
+            reunion.
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/hero-01.jpg" />
+        <div class="text-block">
+          <h1>Premium Red Roses Bouquet</h1>
+          <p>
+            When only red roses is the option, send this hand-tied bouquet red
+            roses with greens. Always perfect.
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/hero-04.jpg" />
+        <div class="text-block">
+          <h1>BubbleGum</h1>
+          <p>
+            When only red roses is the option, send this hand-tied bouquet red
+            roses with greens. Always perfect.
+          </p>
+        </div>
+      </div>
     </div>
 
     <!-- Start: .hero SECTION 01 -->
@@ -520,8 +620,24 @@
         </ul>
       </div>
     </footer>
-    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#owl-demo").owlCarousel({
+          navigation: true, // Show next and prev buttons
+          slideSpeed: 210,
+          paginationSpeed: 400,
+          items: 2,
+          itemsDesktop: false,
+          itemsDesktopSmall: false,
+          itemsTablet: false,
+          itemsMobile: false,
+          loop: true,
+          autoplay: true,
+        });
+      });
+    </script>
   </body>
 </html>
