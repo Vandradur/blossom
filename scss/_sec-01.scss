@@ -153,7 +153,7 @@ SECTION 01
 @keyframes ekit-glitch {
   0% {
     background-position: 0 0;
-    filter: invert(0deg);
+    filter: contrast(0deg);
   }
   10% {
     background-position: 0 -2px;
@@ -184,7 +184,7 @@ SECTION 01
   }
   100% {
     background-position: 0 0;
-    filter: saturate(360deg);
+    filter: contrast(360deg);
   }
 }
 

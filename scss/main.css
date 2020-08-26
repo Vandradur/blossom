@@ -554,8 +554,8 @@ SECTION 01
 @-webkit-keyframes ekit-glitch {
   0% {
     background-position: 0 0;
-    -webkit-filter: invert(0deg);
-            filter: invert(0deg);
+    -webkit-filter: contrast(0deg);
+            filter: contrast(0deg);
   }
   10% {
     background-position: 0 -2px;
@@ -586,16 +586,16 @@ SECTION 01
   }
   100% {
     background-position: 0 0;
-    -webkit-filter: saturate(360deg);
-            filter: saturate(360deg);
+    -webkit-filter: contrast(360deg);
+            filter: contrast(360deg);
   }
 }
 
 @keyframes ekit-glitch {
   0% {
     background-position: 0 0;
-    -webkit-filter: invert(0deg);
-            filter: invert(0deg);
+    -webkit-filter: contrast(0deg);
+            filter: contrast(0deg);
   }
   10% {
     background-position: 0 -2px;
@@ -626,8 +626,8 @@ SECTION 01
   }
   100% {
     background-position: 0 0;
-    -webkit-filter: saturate(360deg);
-            filter: saturate(360deg);
+    -webkit-filter: contrast(360deg);
+            filter: contrast(360deg);
   }
 }
 
