@@ -9,7 +9,7 @@ SECTION 01
   align-items: center;
   text-align: center;
   color: white;
-  background-image: url(../img/hero-01.jpg);
+  background-image: url(../img/hero-2.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -138,7 +138,11 @@ SECTION 01
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(../img/hero-01.jpg);
+  background: url(../img/hero-2.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   opacity: 0.5;
   mix-blend-mode: hard-light;
 }
@@ -149,7 +153,7 @@ SECTION 01
 @keyframes ekit-glitch {
   0% {
     background-position: 0 0;
-    filter: hue-rotate(0deg);
+    filter: invert(0deg);
   }
   10% {
     background-position: 0 -2px;
@@ -180,7 +184,7 @@ SECTION 01
   }
   100% {
     background-position: 0 0;
-    filter: hue-rotate(360deg);
+    filter: saturate(360deg);
   }
 }
 
@@ -188,7 +192,7 @@ SECTION 01
   position: relative;
   width: 100%;
   height: 100%;
-  background: url(../img/hero-01.jpg) no-repeat 50% 50% fixed;
+  background: url(../img/hero-2.png) no-repeat 50% 50% fixed;
   background-size: 130%;
   overflow: hidden;
   @include flexCenter;
