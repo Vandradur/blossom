@@ -13,10 +13,10 @@
       height: auto;
       border-radius: 3px;
       object-fit: cover;
-      filter: brightness(0.5);
+      filter: brightness(1);
       transition: filter 0.8s;
       &:hover {
-        filter: brightness(1);
+        filter: brightness(0.7);
       }
     }
     .text-block {
@@ -40,16 +40,15 @@
 
       h1 {
         @include h1Text;
-        font-family: "Lora", serif;
-        font-family: "Playfair Display", serif;
+        font-size: 1em;
         color: $primaryLight;
-        text-shadow: #474747 3px 5px 2px;
+        text-shadow: #474747 1px 1px 1px;
         line-height: 0.98;
         @include desktop480 {
-          font-size: 20px;
+          font-size: 1.3em;
         }
         @include desktop690 {
-          font-size: 30px;
+          font-size: 2em;
         }
       }
       p {

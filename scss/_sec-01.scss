@@ -15,27 +15,30 @@ SECTION 01
   background-repeat: no-repeat;
   background-attachment: fixed;
   #hero-container {
-    text-align: center;
-    position: relative;
-    width: 100%;
+    position: absolute;
+    width: 70%;
+    height: 100%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     padding: 6.25%;
+    z-index: 5;
     .herotext {
       text-shadow: 0 0.2px 0.3px rgba(0, 0, 0, 0.3);
       p {
         text-align: center;
         @include h1Text;
+        font-size: 2em;
         color: $primaryLight;
         text-shadow: #474747 3px 5px 2px;
         line-height: 0.98;
         @include desktop690 {
-          font-size: 60px;
+          font-size: 3em;
         }
       }
       h2 {
         @include bodyText;
+        font-family: "Open Sans";
         color: $white-03;
         text-shadow: #474747 1px 2px 1px;
         margin-top: 3%;
@@ -55,96 +58,7 @@ SECTION 01
       animation: fade-third 14s linear infinite;
     }
   }
-
-  /*
-
- */
 }
-#news-wrapper:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../img/hero-01.jpg);
-  opacity: 0.5;
-  mix-blend-mode: hard-light;
-}
-#news-wrapper:before {
-  animation: ekit-glitch 3s linear infinite;
-  animation-direction: reverse;
-}
-@keyframes ekit-glitch {
-  0% {
-    background-position: 0 0;
-    filter: hue-rotate(0deg);
-  }
-  10% {
-    background-position: 0 -10px;
-  }
-  20% {
-    background-position: -5px 0;
-  }
-  30% {
-    background-position: 5px 0;
-  }
-  40% {
-    background-position: 0 -5px;
-  }
-  50% {
-    background-position: 0 0;
-  }
-  60% {
-    background-position: 0 -10px;
-  }
-  70% {
-    background-position: 0 -5px;
-  }
-  80% {
-    background-position: 0 -8px;
-  }
-  81% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 0 0;
-    filter: hue-rotate(360deg);
-  }
-}
-
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: url(../img/hero-01.jpg) no-repeat 50% 50% fixed;
-  background-size: 130%;
-  overflow: hidden;
-  @include flexCenter;
-  #news-content {
-    max-width: 70%;
-    z-index: 3;
-    #news-title {
-      @include h1Text;
-      color: $primaryLight;
-      text-shadow: #474747 3px 5px 2px;
-      line-height: 0.98;
-      @include desktop690 {
-        font-size: 60px;
-      }
-    }
-    #news-text {
-      @include bodyText;
-      color: $white-03;
-      text-shadow: #474747 1px 2px 1px;
-      margin-top: 3%;
-      @include desktop690 {
-        font-size: 1.3em;
-      }
-    }
-  }
-}
-
 @keyframes fade-first {
   0% {
     opacity: 0;
@@ -215,6 +129,90 @@ SECTION 01
   100% {
     opacity: 0;
     visibility: hidden;
+  }
+}
+#news-wrapper:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/hero-01.jpg);
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+}
+#news-wrapper:before {
+  animation: ekit-glitch 3s linear infinite;
+  animation-direction: reverse;
+}
+@keyframes ekit-glitch {
+  0% {
+    background-position: 0 0;
+    filter: hue-rotate(0deg);
+  }
+  10% {
+    background-position: 0 -2px;
+  }
+  20% {
+    background-position: -2px 0;
+  }
+  30% {
+    background-position: 1px 0;
+  }
+  40% {
+    background-position: 0 -1px;
+  }
+  50% {
+    background-position: 0 0;
+  }
+  60% {
+    background-position: 0 -2px;
+  }
+  70% {
+    background-position: 0 -2px;
+  }
+  80% {
+    background-position: 0 -1px;
+  }
+  81% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 0;
+    filter: hue-rotate(360deg);
+  }
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/hero-01.jpg) no-repeat 50% 50% fixed;
+  background-size: 130%;
+  overflow: hidden;
+  @include flexCenter;
+  #news-content {
+    max-width: 70%;
+    z-index: 3;
+    #news-title {
+      @include h1Text;
+      color: $primaryLight;
+      text-shadow: #474747 3px 5px 2px;
+      line-height: 0.98;
+      @include desktop690 {
+        font-size: 60px;
+      }
+    }
+    #news-text {
+      @include bodyText;
+      color: $white-03;
+      text-shadow: #474747 1px 2px 1px;
+      margin-top: 3%;
+      @include desktop690 {
+        font-size: 1.3em;
+      }
+    }
   }
 }
 

@@ -300,20 +300,18 @@ SECTION 01
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /*
-
- */
 }
 
 #news-wrapper #hero-container {
-  text-align: center;
-  position: relative;
-  width: 100%;
+  position: absolute;
+  width: 70%;
+  height: 100%;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 6.25%;
+  z-index: 5;
 }
 
 #news-wrapper #hero-container .herotext {
@@ -326,7 +324,13 @@ SECTION 01
   font-size: 3.4em;
   color: #333;
   color: #484a47;
+  font-family: "Lora", serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
+  font-family: "Open Sans";
   font-weight: 900;
+  font-size: 2em;
   color: #fff1e6;
   text-shadow: #474747 3px 5px 2px;
   line-height: 0.98;
@@ -334,7 +338,7 @@ SECTION 01
 
 @media (min-width: 690px) {
   #news-wrapper #hero-container .herotext p {
-    font-size: 60px;
+    font-size: 3em;
   }
 }
 
@@ -352,6 +356,7 @@ SECTION 01
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
+  font-family: "Open Sans";
   color: #fefee3;
   text-shadow: #474747 1px 2px 1px;
   margin-top: 3%;
@@ -376,169 +381,6 @@ SECTION 01
 #news-wrapper #hero-container #third {
   -webkit-animation: fade-third 14s linear infinite;
           animation: fade-third 14s linear infinite;
-}
-
-#news-wrapper:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../img/hero-01.jpg);
-  opacity: 0.5;
-  mix-blend-mode: hard-light;
-}
-
-#news-wrapper:before {
-  -webkit-animation: ekit-glitch 3s linear infinite;
-          animation: ekit-glitch 3s linear infinite;
-  animation-direction: reverse;
-}
-
-@-webkit-keyframes ekit-glitch {
-  0% {
-    background-position: 0 0;
-    -webkit-filter: hue-rotate(0deg);
-            filter: hue-rotate(0deg);
-  }
-  10% {
-    background-position: 0 -10px;
-  }
-  20% {
-    background-position: -5px 0;
-  }
-  30% {
-    background-position: 5px 0;
-  }
-  40% {
-    background-position: 0 -5px;
-  }
-  50% {
-    background-position: 0 0;
-  }
-  60% {
-    background-position: 0 -10px;
-  }
-  70% {
-    background-position: 0 -5px;
-  }
-  80% {
-    background-position: 0 -8px;
-  }
-  81% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 0 0;
-    -webkit-filter: hue-rotate(360deg);
-            filter: hue-rotate(360deg);
-  }
-}
-
-@keyframes ekit-glitch {
-  0% {
-    background-position: 0 0;
-    -webkit-filter: hue-rotate(0deg);
-            filter: hue-rotate(0deg);
-  }
-  10% {
-    background-position: 0 -10px;
-  }
-  20% {
-    background-position: -5px 0;
-  }
-  30% {
-    background-position: 5px 0;
-  }
-  40% {
-    background-position: 0 -5px;
-  }
-  50% {
-    background-position: 0 0;
-  }
-  60% {
-    background-position: 0 -10px;
-  }
-  70% {
-    background-position: 0 -5px;
-  }
-  80% {
-    background-position: 0 -8px;
-  }
-  81% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 0 0;
-    -webkit-filter: hue-rotate(360deg);
-            filter: hue-rotate(360deg);
-  }
-}
-
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: url(../img/hero-01.jpg) no-repeat 50% 50% fixed;
-  background-size: 130%;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.hero #news-content {
-  max-width: 70%;
-  z-index: 3;
-}
-
-.hero #news-content #news-title {
-  font-family: var(--fontSans);
-  font-size: 3.4em;
-  color: #333;
-  color: #484a47;
-  font-weight: 900;
-  color: #fff1e6;
-  text-shadow: #474747 3px 5px 2px;
-  line-height: 0.98;
-}
-
-@media (min-width: 690px) {
-  .hero #news-content #news-title {
-    font-size: 60px;
-  }
-}
-
-.hero #news-content #news-text {
-  line-height: 18px;
-  text-decoration: none;
-  color: #333;
-  color: #00171f;
-  font-size: 1.033em;
-  /* 17px / 16px = 1.063em */
-  line-height: 1.25;
-  outline: none;
-  border: none;
-  font-weight: 500;
-  letter-spacing: 2px;
-  font-family: "Raleway", sans-serif;
-  font-family: "Arima Madurai", cursive;
-  color: #fefee3;
-  text-shadow: #474747 1px 2px 1px;
-  margin-top: 3%;
-}
-
-@media (min-width: 690px) {
-  .hero #news-content #news-text {
-    font-size: 1.3em;
-  }
 }
 
 @-webkit-keyframes fade-first {
@@ -684,6 +526,174 @@ SECTION 01
   100% {
     opacity: 0;
     visibility: hidden;
+  }
+}
+
+#news-wrapper:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/hero-01.jpg);
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+}
+
+#news-wrapper:before {
+  -webkit-animation: ekit-glitch 3s linear infinite;
+          animation: ekit-glitch 3s linear infinite;
+  animation-direction: reverse;
+}
+
+@-webkit-keyframes ekit-glitch {
+  0% {
+    background-position: 0 0;
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  10% {
+    background-position: 0 -2px;
+  }
+  20% {
+    background-position: -2px 0;
+  }
+  30% {
+    background-position: 1px 0;
+  }
+  40% {
+    background-position: 0 -1px;
+  }
+  50% {
+    background-position: 0 0;
+  }
+  60% {
+    background-position: 0 -2px;
+  }
+  70% {
+    background-position: 0 -2px;
+  }
+  80% {
+    background-position: 0 -1px;
+  }
+  81% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 0;
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes ekit-glitch {
+  0% {
+    background-position: 0 0;
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  10% {
+    background-position: 0 -2px;
+  }
+  20% {
+    background-position: -2px 0;
+  }
+  30% {
+    background-position: 1px 0;
+  }
+  40% {
+    background-position: 0 -1px;
+  }
+  50% {
+    background-position: 0 0;
+  }
+  60% {
+    background-position: 0 -2px;
+  }
+  70% {
+    background-position: 0 -2px;
+  }
+  80% {
+    background-position: 0 -1px;
+  }
+  81% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 0;
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/hero-01.jpg) no-repeat 50% 50% fixed;
+  background-size: 130%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero #news-content {
+  max-width: 70%;
+  z-index: 3;
+}
+
+.hero #news-content #news-title {
+  font-family: var(--fontSans);
+  font-size: 3.4em;
+  color: #333;
+  color: #484a47;
+  font-family: "Lora", serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
+  font-family: "Open Sans";
+  font-weight: 900;
+  color: #fff1e6;
+  text-shadow: #474747 3px 5px 2px;
+  line-height: 0.98;
+}
+
+@media (min-width: 690px) {
+  .hero #news-content #news-title {
+    font-size: 60px;
+  }
+}
+
+.hero #news-content #news-text {
+  line-height: 18px;
+  text-decoration: none;
+  color: #333;
+  color: #00171f;
+  font-size: 1.033em;
+  /* 17px / 16px = 1.063em */
+  line-height: 1.25;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
+  color: #fefee3;
+  text-shadow: #474747 1px 2px 1px;
+  margin-top: 3%;
+}
+
+@media (min-width: 690px) {
+  .hero #news-content #news-text {
+    font-size: 1.3em;
   }
 }
 
@@ -855,6 +865,11 @@ Parallax cards
   font-size: 3.4em;
   color: #333;
   color: #484a47;
+  font-family: "Lora", serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
+  font-family: "Open Sans";
   font-weight: 900;
 }
 
@@ -1296,6 +1311,11 @@ Hand Tied
   font-size: 3.4em;
   color: #333;
   color: #484a47;
+  font-family: "Lora", serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
+  font-family: "Open Sans";
   font-weight: 900;
   line-height: 0.85;
   margin-top: 20px;
@@ -1681,6 +1701,11 @@ img {
   font-size: 3.4em;
   color: #333;
   color: #484a47;
+  font-family: "Lora", serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
+  font-family: "Open Sans";
   font-weight: 900;
   line-height: 0.98;
 }
@@ -1954,6 +1979,11 @@ img {
   font-size: 3.4em;
   color: #333;
   color: #484a47;
+  font-family: "Lora", serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
+  font-family: "Open Sans";
   font-weight: 900;
   line-height: 0.98;
 }
@@ -2111,8 +2141,8 @@ img {
   border-radius: 3px;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-filter: brightness(0.5);
-          filter: brightness(0.5);
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
   -webkit-transition: -webkit-filter 0.8s;
   transition: -webkit-filter 0.8s;
   transition: filter 0.8s;
@@ -2120,8 +2150,8 @@ img {
 }
 
 #owl-demo .item img:hover {
-  -webkit-filter: brightness(1);
-          filter: brightness(1);
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
 }
 
 #owl-demo .item .text-block {
@@ -2163,23 +2193,27 @@ img {
   font-size: 3.4em;
   color: #333;
   color: #484a47;
-  font-weight: 900;
   font-family: "Lora", serif;
   font-family: "Playfair Display", serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
+  font-family: "Open Sans";
+  font-weight: 900;
+  font-size: 1em;
   color: #fff1e6;
-  text-shadow: #474747 3px 5px 2px;
+  text-shadow: #474747 1px 1px 1px;
   line-height: 0.98;
 }
 
 @media (min-width: 480px) {
   #owl-demo .item .text-block h1 {
-    font-size: 20px;
+    font-size: 1.3em;
   }
 }
 
 @media (min-width: 690px) {
   #owl-demo .item .text-block h1 {
-    font-size: 30px;
+    font-size: 2em;
   }
 }
 
@@ -2243,6 +2277,11 @@ img {
   font-size: 3.4em;
   color: #333;
   color: #484a47;
+  font-family: "Lora", serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
+  font-family: "Open Sans";
   font-weight: 900;
   line-height: 0.85;
 }
@@ -2449,6 +2488,11 @@ Hand Tied
   font-size: 3.4em;
   color: #333;
   color: #484a47;
+  font-family: "Lora", serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
+  font-family: "Open Sans";
   font-weight: 900;
   line-height: 0.85;
   color: #fffcf2;
