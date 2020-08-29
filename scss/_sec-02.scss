@@ -1,7 +1,11 @@
 /* ==========================================================================
 Parallax cards 
 ========================================================================== */
-
+.section-02 {
+  background: #4444;
+  background: $black-02;
+  padding: 20px 0;
+}
 #collection {
   flex-direction: column;
   justify-content: center;
@@ -69,17 +73,20 @@ Parallax cards
       }
     }
   }
-
   h1 {
     @include h1Text;
+    font-family: "Lora", serif;
+    color: $primaryLight;
+    text-shadow: #474747 3px 5px 2px;
+    line-height: 0.98;
 
     @include desktop690 {
-      font-size: 5.189em;
+      font-size: 60px;
     }
   }
   h2 {
     @include h2Text;
-    color: $primaryDark;
+    color: $gold-01;
     margin-top: 10px;
     @include desktop690 {
       font-size: 1.526em;
@@ -91,12 +98,12 @@ Parallax cards
   h3 {
     @include h3Text;
     margin: 1em 0;
-    text-transform: uppercase;
     color: $secondary;
   }
 
   p {
     @include bodyText;
+    color: $white;
 
     @include desktop690 {
       font-size: 1.2em;

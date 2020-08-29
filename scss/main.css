@@ -57,8 +57,8 @@ header .menu .bar::after {
   position: absolute;
   height: 2px;
   width: 2.3rem;
-  background: #000;
-  background-color: #00171f;
+  background: #ffd700;
+  background-color: #b08f26;
   top: 0;
   left: 0;
   right: 0;
@@ -99,8 +99,8 @@ header .nav {
   width: 100%;
   height: 4.4rem;
   position: relative;
-  background: #fff;
-  background-color: #fffcf2;
+  background: #000;
+  background-color: #0c090d;
 }
 
 @media (min-width: 690px) {
@@ -139,7 +139,7 @@ header .nav #logo img {
 }
 
 header .nav .nav-bar {
-  background: #fffcf2;
+  background: #0c090d;
   position: fixed;
   right: 0;
   left: 0;
@@ -195,7 +195,7 @@ header .nav .nav-bar ul li {
   letter-spacing: 0.23rem;
   font-weight: 900;
   color: #333;
-  color: #484a47;
+  color: #161a1d;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -220,7 +220,7 @@ header .nav .nav-bar ul a {
   line-height: 18px;
   text-decoration: none;
   color: #333;
-  color: #00171f;
+  color: #0c090d;
   font-size: 1.033em;
   /* 17px / 16px = 1.063em */
   line-height: 1.25;
@@ -230,15 +230,13 @@ header .nav .nav-bar ul a {
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
-  color: #000;
-  color: #33415c;
+  color: #ffd700;
+  color: #b08f26;
   padding: 1.7rem 6rem;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Open Sans";
-  color: #7d8597;
+  font-family: "Montserrat";
   font-family: "Open Sans";
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   font-size: 12px;
 }
 
@@ -250,7 +248,7 @@ header .nav .nav-bar ul a {
 
 header .nav .nav-bar ul a:hover,
 header .nav .nav-bar ul a:active:hover {
-  color: #00171f;
+  color: #fefee3;
 }
 
 header .nav-bar.menu-open {
@@ -294,7 +292,6 @@ SECTION 01
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  color: white;
   background-image: url(../img/hero-2.png);
   background-size: cover;
   background-position: center center;
@@ -323,7 +320,7 @@ SECTION 01
   font-family: var(--fontSans);
   font-size: 3.4em;
   color: #333;
-  color: #484a47;
+  color: #161a1d;
   font-family: "Lora", serif;
   font-family: "Playfair Display", serif;
   font-family: "Raleway", sans-serif;
@@ -331,7 +328,8 @@ SECTION 01
   font-family: "Open Sans";
   font-weight: 900;
   font-size: 2em;
-  color: #fff1e6;
+  color: #fff;
+  font-family: "Georgia";
   text-shadow: #474747 3px 5px 2px;
   line-height: 0.98;
 }
@@ -346,7 +344,7 @@ SECTION 01
   line-height: 18px;
   text-decoration: none;
   color: #333;
-  color: #00171f;
+  color: #0c090d;
   font-size: 1.033em;
   /* 17px / 16px = 1.063em */
   line-height: 1.25;
@@ -356,9 +354,9 @@ SECTION 01
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
-  font-family: "Open Sans";
-  color: #fefee3;
-  text-shadow: #474747 1px 2px 1px;
+  font-family: "Raleway";
+  color: #fff;
+  text-shadow: #0b090a 1px 2px 1px;
   margin-top: 3%;
 }
 
@@ -658,7 +656,7 @@ SECTION 01
   font-family: var(--fontSans);
   font-size: 3.4em;
   color: #333;
-  color: #484a47;
+  color: #161a1d;
   font-family: "Lora", serif;
   font-family: "Playfair Display", serif;
   font-family: "Raleway", sans-serif;
@@ -680,7 +678,7 @@ SECTION 01
   line-height: 18px;
   text-decoration: none;
   color: #333;
-  color: #00171f;
+  color: #0c090d;
   font-size: 1.033em;
   /* 17px / 16px = 1.063em */
   line-height: 1.25;
@@ -703,45 +701,51 @@ SECTION 01
 
 .text--glitch,
 .text--hover:hover {
-  -webkit-animation: animateTxt 0.5s linear infinite;
-          animation: animateTxt 0.5s linear infinite;
+  -webkit-animation: animateTxt 010s linear infinite;
+          animation: animateTxt 010s linear infinite;
 }
 
 @-webkit-keyframes animateTxt {
   0%,
   100% {
-    text-shadow: -1.5px -1.5px 0 #0ff, 2px 2px 0 #f00;
+    text-shadow: -1.5px -1.5px 0 #0b090a, 2px 2px 0 #b08f26;
   }
   25% {
-    text-shadow: 2px 2px 0 #0ff, -1.5px -1.5px 0 #f00;
+    text-shadow: 2px 2px 0 #0b090a, -1.5px -1.5px 0 #b08f26;
   }
   50% {
-    text-shadow: 1.5px -2px 0 #0ff, -2px 1.5px 0 #f00;
+    text-shadow: 1.5px -2px 0 #0b090a, -2px 1.5px 0 #b08f26;
   }
   75% {
-    text-shadow: -2px 1.5px 0 #0ff, 1.5px -2px 0 #f00;
+    text-shadow: -2px 1.5px 0 #0b090a, 1.5px -2px 0 #b08f26;
   }
 }
 
 @keyframes animateTxt {
   0%,
   100% {
-    text-shadow: -1.5px -1.5px 0 #0ff, 2px 2px 0 #f00;
+    text-shadow: -1.5px -1.5px 0 #0b090a, 2px 2px 0 #b08f26;
   }
   25% {
-    text-shadow: 2px 2px 0 #0ff, -1.5px -1.5px 0 #f00;
+    text-shadow: 2px 2px 0 #0b090a, -1.5px -1.5px 0 #b08f26;
   }
   50% {
-    text-shadow: 1.5px -2px 0 #0ff, -2px 1.5px 0 #f00;
+    text-shadow: 1.5px -2px 0 #0b090a, -2px 1.5px 0 #b08f26;
   }
   75% {
-    text-shadow: -2px 1.5px 0 #0ff, 1.5px -2px 0 #f00;
+    text-shadow: -2px 1.5px 0 #0b090a, 1.5px -2px 0 #b08f26;
   }
 }
 
 /* ==========================================================================
 Parallax cards 
 ========================================================================== */
+.section-02 {
+  background: #4444;
+  background: #161a1d;
+  padding: 20px 0;
+}
+
 #collection {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -868,18 +872,22 @@ Parallax cards
   font-family: var(--fontSans);
   font-size: 3.4em;
   color: #333;
-  color: #484a47;
+  color: #161a1d;
   font-family: "Lora", serif;
   font-family: "Playfair Display", serif;
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
   font-family: "Open Sans";
   font-weight: 900;
+  font-family: "Lora", serif;
+  color: #fff1e6;
+  text-shadow: #474747 3px 5px 2px;
+  line-height: 0.98;
 }
 
 @media (min-width: 690px) {
   #collection h1 {
-    font-size: 5.189em;
+    font-size: 60px;
   }
 }
 
@@ -892,10 +900,10 @@ Parallax cards
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: #000;
-  color: #484a47;
+  color: #161a1d;
   font-family: "Raleway", sans-serif;
   font-family: "Open Sans";
-  color: #cb997e;
+  color: #b08f26;
   margin-top: 10px;
 }
 
@@ -916,9 +924,8 @@ Parallax cards
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
   color: #333;
-  color: #484a47;
+  color: #161a1d;
   margin: 1em 0;
-  text-transform: uppercase;
   color: #5c677d;
 }
 
@@ -926,7 +933,7 @@ Parallax cards
   line-height: 18px;
   text-decoration: none;
   color: #333;
-  color: #00171f;
+  color: #0c090d;
   font-size: 1.033em;
   /* 17px / 16px = 1.063em */
   line-height: 1.25;
@@ -936,6 +943,7 @@ Parallax cards
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
+  color: #fff;
 }
 
 @media (min-width: 690px) {
@@ -1062,7 +1070,7 @@ Parallax cards
   font-size: 13px;
   border: 2px solid #7d8597;
   background-color: #fffcf2;
-  color: #00171f;
+  color: #0c090d;
   padding: 6px 20px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1070,7 +1078,7 @@ Parallax cards
 }
 
 .inner #prdt-button:hover {
-  background-color: #00171f;
+  background-color: #0c090d;
   color: #fff;
   text-decoration: none;
 }
@@ -1113,7 +1121,7 @@ Parallax cards
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
   color: #333;
-  color: #484a47;
+  color: #161a1d;
   color: #fff1e6;
 }
 
@@ -1121,7 +1129,7 @@ Parallax cards
   line-height: 18px;
   text-decoration: none;
   color: #333;
-  color: #00171f;
+  color: #0c090d;
   font-size: 1.033em;
   /* 17px / 16px = 1.063em */
   line-height: 1.25;
@@ -1134,7 +1142,7 @@ Parallax cards
   font-size: 0.78em;
   margin-bottom: 2rem;
   position: relative;
-  color: #000;
+  color: #0b090a;
 }
 
 .front .inner p:after {
@@ -1154,7 +1162,7 @@ Parallax cards
   line-height: 18px;
   text-decoration: none;
   color: #333;
-  color: #00171f;
+  color: #0c090d;
   font-size: 1.033em;
   /* 17px / 16px = 1.063em */
   line-height: 1.25;
@@ -1274,7 +1282,7 @@ LOOSE FLOWERS
   font-size: 13px;
   border: 2px solid #7d8597;
   background-color: #fffcf2;
-  color: #00171f;
+  color: #0c090d;
   padding: 6px 20px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1282,7 +1290,7 @@ LOOSE FLOWERS
 }
 
 #collection-02 .overlap-wrapper .overlap-cards #prdt-button:hover {
-  background-color: #00171f;
+  background-color: #0c090d;
   color: #fff;
   text-decoration: none;
 }
@@ -1314,7 +1322,7 @@ Hand Tied
   font-family: var(--fontSans);
   font-size: 3.4em;
   color: #333;
-  color: #484a47;
+  color: #161a1d;
   font-family: "Lora", serif;
   font-family: "Playfair Display", serif;
   font-family: "Raleway", sans-serif;
@@ -1337,7 +1345,7 @@ Hand Tied
   line-height: 18px;
   text-decoration: none;
   color: #333;
-  color: #00171f;
+  color: #0c090d;
   font-size: 1.033em;
   /* 17px / 16px = 1.063em */
   line-height: 1.25;
@@ -1391,8 +1399,8 @@ Hand Tied
 
 #collection-03 .cards .cards_item .card .card_content {
   padding: 1rem;
-  background: -webkit-gradient(linear, right top, left bottom, color-stop(40%, #33415c), to(#00171f));
-  background: linear-gradient(to bottom left, #33415c 40%, #00171f 100%);
+  background: -webkit-gradient(linear, right top, left bottom, color-stop(40%, #33415c), to(#0c090d));
+  background: linear-gradient(to bottom left, #33415c 40%, #0c090d 100%);
 }
 
 #collection-03 .cards .cards_item .card .card_content .card_title {
@@ -1402,7 +1410,7 @@ Hand Tied
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
   color: #333;
-  color: #484a47;
+  color: #161a1d;
   color: #fffcf2;
 }
 
@@ -1410,7 +1418,7 @@ Hand Tied
   line-height: 18px;
   text-decoration: none;
   color: #333;
-  color: #00171f;
+  color: #0c090d;
   font-size: 1.033em;
   /* 17px / 16px = 1.063em */
   line-height: 1.25;
@@ -1442,7 +1450,7 @@ img {
   font-family: montserrat;
   font-size: 13px;
   border: 2px solid #7d8597;
-  background-color: #00171f;
+  background-color: #0c090d;
   background: -webkit-gradient(linear, left top, right top, from(#7d8597), to(#33415c));
   background: linear-gradient(to right, #7d8597, #33415c);
   color: #fffcf2;
@@ -1456,7 +1464,7 @@ img {
 .btn:hover {
   background: -webkit-gradient(linear, left top, right top, from(#fff1e6), to(#fffcf2));
   background: linear-gradient(to right, #fff1e6, #fffcf2);
-  color: #00171f;
+  color: #0c090d;
   text-decoration: none;
   border: none;
 }
@@ -1704,7 +1712,7 @@ img {
   font-family: var(--fontSans);
   font-size: 3.4em;
   color: #333;
-  color: #484a47;
+  color: #161a1d;
   font-family: "Lora", serif;
   font-family: "Playfair Display", serif;
   font-family: "Raleway", sans-serif;
@@ -1721,7 +1729,7 @@ img {
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
   color: #333;
-  color: #484a47;
+  color: #161a1d;
   color: #cb997e;
 }
 
@@ -1736,7 +1744,7 @@ img {
   line-height: 18px;
   text-decoration: none;
   color: #333;
-  color: #00171f;
+  color: #0c090d;
   font-size: 1.033em;
   /* 17px / 16px = 1.063em */
   line-height: 1.25;
@@ -1864,7 +1872,7 @@ img {
   font-size: 13px;
   border: 2px solid #7d8597;
   background-color: #fffcf2;
-  color: #00171f;
+  color: #0c090d;
   padding: 6px 20px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1873,7 +1881,7 @@ img {
 }
 
 .content #prdt-button:hover {
-  background-color: #00171f;
+  background-color: #0c090d;
   color: #fff;
   text-decoration: none;
 }
@@ -1886,7 +1894,7 @@ img {
   line-height: 1.2;
   margin-bottom: 1rem;
   color: #222222;
-  color: #00171f;
+  color: #0c090d;
   font-size: 30px;
   line-height: 1.25;
   z-index: 3;
@@ -1922,7 +1930,7 @@ img {
 }
 
 .theme-black {
-  background: #484a47;
+  background: #161a1d;
   color: #fff;
 }
 
@@ -1982,7 +1990,7 @@ img {
   font-family: var(--fontSans);
   font-size: 3.4em;
   color: #333;
-  color: #484a47;
+  color: #161a1d;
   font-family: "Lora", serif;
   font-family: "Playfair Display", serif;
   font-family: "Raleway", sans-serif;
@@ -2007,7 +2015,7 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: #000;
-  color: #484a47;
+  color: #161a1d;
   font-family: "Raleway", sans-serif;
   font-family: "Open Sans";
   color: #cb997e;
@@ -2021,7 +2029,7 @@ img {
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
   color: #333;
-  color: #484a47;
+  color: #161a1d;
   margin: 1em 0;
   color: #33415c;
 }
@@ -2030,7 +2038,7 @@ img {
   line-height: 18px;
   text-decoration: none;
   color: #333;
-  color: #00171f;
+  color: #0c090d;
   font-size: 1.033em;
   /* 17px / 16px = 1.063em */
   line-height: 1.25;
@@ -2125,7 +2133,7 @@ img {
 }
 
 #owl-demo {
-  background: #fff;
+  background: #161a1d;
   padding-top: 1rem;
 }
 
@@ -2133,8 +2141,7 @@ img {
   margin: 0.5rem;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
-  border-radius: 3px;
-  border: 4px solid #fff;
+  border-radius: 2px;
   position: relative;
 }
 
@@ -2142,11 +2149,10 @@ img {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 3px;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-filter: brightness(1);
-          filter: brightness(1);
+  -webkit-filter: brightness(0.1);
+          filter: brightness(0.1);
   -webkit-transition: -webkit-filter 0.8s;
   transition: -webkit-filter 0.8s;
   transition: filter 0.8s;
@@ -2154,8 +2160,8 @@ img {
 }
 
 #owl-demo .item img:hover {
-  -webkit-filter: brightness(0.7);
-          filter: brightness(0.7);
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
 }
 
 #owl-demo .item .text-block {
@@ -2196,7 +2202,7 @@ img {
   font-family: var(--fontSans);
   font-size: 3.4em;
   color: #333;
-  color: #484a47;
+  color: #161a1d;
   font-family: "Lora", serif;
   font-family: "Playfair Display", serif;
   font-family: "Raleway", sans-serif;
@@ -2205,19 +2211,27 @@ img {
   font-weight: 900;
   font-size: 1em;
   color: #fff1e6;
+  font-family: "Georgia";
+  font-family: "Lora", serif;
   text-shadow: #474747 1px 1px 1px;
   line-height: 0.98;
 }
 
 @media (min-width: 480px) {
   #owl-demo .item .text-block h1 {
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 }
 
 @media (min-width: 690px) {
   #owl-demo .item .text-block h1 {
-    font-size: 2em;
+    font-size: 2.4em;
+  }
+}
+
+@media (min-width: 767px) {
+  #owl-demo .item .text-block h1 {
+    font-size: 4.6em;
   }
 }
 
@@ -2225,7 +2239,7 @@ img {
   line-height: 18px;
   text-decoration: none;
   color: #333;
-  color: #00171f;
+  color: #0c090d;
   font-size: 1.033em;
   /* 17px / 16px = 1.063em */
   line-height: 1.25;
@@ -2235,13 +2249,24 @@ img {
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
-  color: #fefee3;
-  font-size: 0.4em;
+  font-size: 0.2em;
   margin: 1em 0;
-  text-transform: uppercase;
   color: #fff1e6;
+  font-family: "Raleway";
   text-shadow: #474747 1px 2px 1px;
   margin-top: 2%;
+}
+
+@media (min-width: 690px) {
+  #owl-demo .item .text-block p {
+    font-size: 0.4em;
+  }
+}
+
+@media (min-width: 767px) {
+  #owl-demo .item .text-block p {
+    font-size: 1em;
+  }
 }
 
 #top-header {
@@ -2280,7 +2305,7 @@ img {
   font-family: var(--fontSans);
   font-size: 3.4em;
   color: #333;
-  color: #484a47;
+  color: #161a1d;
   font-family: "Lora", serif;
   font-family: "Playfair Display", serif;
   font-family: "Raleway", sans-serif;
@@ -2300,7 +2325,7 @@ img {
   line-height: 18px;
   text-decoration: none;
   color: #333;
-  color: #00171f;
+  color: #0c090d;
   font-size: 1.033em;
   /* 17px / 16px = 1.063em */
   line-height: 1.25;
@@ -2369,7 +2394,7 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: #000;
-  color: #484a47;
+  color: #161a1d;
   font-family: "Raleway", sans-serif;
   font-family: "Open Sans";
   letter-spacing: 0.3em;
@@ -2378,7 +2403,7 @@ img {
 }
 
 #top-header .hero #hero-container .herotext h2 {
-  color: #484a47;
+  color: #161a1d;
 }
 
 #top-header .hero #hero-container #first {
@@ -2491,7 +2516,7 @@ Hand Tied
   font-family: var(--fontSans);
   font-size: 3.4em;
   color: #333;
-  color: #484a47;
+  color: #161a1d;
   font-family: "Lora", serif;
   font-family: "Playfair Display", serif;
   font-family: "Raleway", sans-serif;
@@ -2515,7 +2540,7 @@ Hand Tied
   line-height: 18px;
   text-decoration: none;
   color: #333;
-  color: #00171f;
+  color: #0c090d;
   font-size: 1.033em;
   /* 17px / 16px = 1.063em */
   line-height: 1.25;
@@ -2590,15 +2615,15 @@ Hand Tied
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
   color: #333;
-  color: #484a47;
-  color: #484a47;
+  color: #161a1d;
+  color: #161a1d;
 }
 
 #sec-33 #container .cards .cards_item .card .card_content .card_text {
   line-height: 18px;
   text-decoration: none;
   color: #333;
-  color: #00171f;
+  color: #0c090d;
   font-size: 1.033em;
   /* 17px / 16px = 1.063em */
   line-height: 1.25;
@@ -2608,7 +2633,7 @@ Hand Tied
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
-  color: #484a47;
+  color: #161a1d;
 }
 
 #sec-33 .img-1 {
@@ -2648,7 +2673,7 @@ Hand Tied
   font-family: montserrat;
   font-size: 13px;
   border: 2px solid #7d8597;
-  background-color: #00171f;
+  background-color: #0c090d;
   background: -webkit-gradient(linear, left top, right top, from(#7d8597), to(#33415c));
   background: linear-gradient(to right, #7d8597, #33415c);
   color: #fffcf2;
@@ -2662,7 +2687,7 @@ Hand Tied
 #sec-33 .btn:hover {
   background: -webkit-gradient(linear, left top, right top, from(#fff1e6), to(#fffcf2));
   background: linear-gradient(to right, #fff1e6, #fffcf2);
-  color: #00171f;
+  color: #0c090d;
   text-decoration: none;
   border: none;
 }
@@ -2707,7 +2732,7 @@ footer a {
   line-height: 18px;
   text-decoration: none;
   color: #333;
-  color: #00171f;
+  color: #0c090d;
   font-size: 1.033em;
   /* 17px / 16px = 1.063em */
   line-height: 1.25;
@@ -2726,7 +2751,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #00171f;
+  color: #0c090d;
 }
 
 footer li:last-child {

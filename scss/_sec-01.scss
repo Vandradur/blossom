@@ -8,7 +8,6 @@ SECTION 01
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
   background-image: url(../img/hero-2.png);
   background-size: cover;
   background-position: center center;
@@ -29,7 +28,8 @@ SECTION 01
         text-align: center;
         @include h1Text;
         font-size: 2em;
-        color: $primaryLight;
+        color: $white;
+        font-family: "Georgia";
         text-shadow: #474747 3px 5px 2px;
         line-height: 0.98;
         @include desktop690 {
@@ -38,9 +38,9 @@ SECTION 01
       }
       h2 {
         @include bodyText;
-        font-family: "Open Sans";
-        color: $white-03;
-        text-shadow: #474747 1px 2px 1px;
+        font-family: "Raleway";
+        color: $white;
+        text-shadow: $black 1px 2px 1px;
         margin-top: 3%;
         @include desktop690 {
           font-size: 1.3em;
@@ -222,21 +222,21 @@ SECTION 01
 
 .text--glitch,
 .text--hover:hover {
-  animation: animateTxt 0.5s linear infinite;
+  animation: animateTxt 010s linear infinite;
 }
 
 @keyframes animateTxt {
   0%,
   100% {
-    text-shadow: -1.5px -1.5px 0 #0ff, 2px 2px 0 #f00;
+    text-shadow: -1.5px -1.5px 0 $black, 2px 2px 0 $gold-01;
   }
   25% {
-    text-shadow: 2px 2px 0 #0ff, -1.5px -1.5px 0 #f00;
+    text-shadow: 2px 2px 0 $black, -1.5px -1.5px 0 $gold-01;
   }
   50% {
-    text-shadow: 1.5px -2px 0 #0ff, -2px 1.5px 0 #f00;
+    text-shadow: 1.5px -2px 0 $black, -2px 1.5px 0 $gold-01;
   }
   75% {
-    text-shadow: -2px 1.5px 0 #0ff, 1.5px -2px 0 #f00;
+    text-shadow: -2px 1.5px 0 $black, 1.5px -2px 0 $gold-01;
   }
 }
