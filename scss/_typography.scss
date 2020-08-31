@@ -15,7 +15,7 @@ $strong: 700;
 $italic: italic;
 
 // HEADINGS
-$font-size-h1: 40px;
+$font-size-h1: 55px;
 $font-size-h2: 19px;
 $font-size-h3: 20px;
 $font-size-h4: 15px;
@@ -42,12 +42,12 @@ $line-height-article-header: 39px; // Styles
   text-decoration: none;
   color: #333;
   color: $black-03;
-  font-size: 1.033em; /* 17px / 16px = 1.063em */
-  line-height: 1.25;
+  font-size: 16px;
+  line-height: 1;
   outline: none;
   border: none;
   font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
 }
@@ -66,38 +66,32 @@ $line-height-article-header: 39px; // Styles
 /* H1 TEXT ========================================================================== */
 @mixin h1Text {
   font-family: var(--fontSans);
-  font-size: 3.4em;
-  color: #333;
-  color: $black-02;
+  color: $primaryLight;
+  font-size: $font-size-h1;
+  text-shadow: #474747 3px 5px 2px;
+  line-height: 0.78;
   font-family: "Lora", serif;
   font-family: "Playfair Display", serif;
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
   font-family: "Open Sans";
-  font-weight: 900;
 }
 
 @mixin h1Text480 {
   font-family: var(--fontSans);
-  font-size: $font-size-h1;
-  line-height: $line-height-article-header;
-  color: #333;
-  color: $black-02;
   font-weight: 600;
+  font-size: 2.4rem;
 }
 
 @mixin h1Text690 {
   font-weight: 700;
   letter-spacing: 0.01rem;
-  font-size: 5.4rem;
-  line-height: 5rem;
 }
 
 @mixin h1Text767 {
-  font-weight: 700;
+  font-weight: 900;
+  font-size: 5.4rem;
   letter-spacing: 0.01rem;
-  font-size: 8.4rem;
-  line-height: 8rem;
 }
 
 /* H2 TEXT ========================================================================== */

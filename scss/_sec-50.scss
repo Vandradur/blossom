@@ -4,9 +4,17 @@
     padding: 40px 27%;
     h1 {
       @include h1Text;
-      line-height: 0.98;
-      @include desktop690 {
-        font-size: 60px;
+      color: $black;
+      text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff,
+        1px 1px 0 white;
+      font-size: 5em;
+      font-weight: 900;
+      line-height: 1;
+      @include desktop480 {
+        @include h1Text480;
+      }
+      @include desktop767 {
+        @include h1Text767;
       }
     }
     h2 {
@@ -21,9 +29,17 @@
     }
     p {
       @include bodyText;
-      margin-top: 2%;
+      color: $black-05;
+      // text-shadow: #474747 1px 2px 1px;
+      margin-top: 3%;
+      @include desktop480 {
+        //font-size: 1.1em;
+      }
       @include desktop690 {
-        font-size: 1.3em;
+        // font-size: 1.4em;
+      }
+      @include desktop767 {
+        font-size: 1.2rem;
       }
     }
   }

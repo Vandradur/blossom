@@ -2,8 +2,8 @@
 Parallax cards 
 ========================================================================== */
 .section-02 {
-  background: #4444;
-  background: $black-02;
+  background: #fff;
+  background: $primaryLight;
   padding: 20px 0;
 }
 #collection {
@@ -75,13 +75,17 @@ Parallax cards
   }
   h1 {
     @include h1Text;
-    font-family: "Lora", serif;
-    color: $primaryLight;
-    text-shadow: #474747 3px 5px 2px;
-    line-height: 0.98;
-
-    @include desktop690 {
-      font-size: 60px;
+    color: $black;
+    text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff,
+      1px 1px 0 white;
+    font-size: 5em;
+    font-weight: 900;
+    line-height: 1;
+    @include desktop480 {
+      @include h1Text480;
+    }
+    @include desktop767 {
+      @include h1Text767;
     }
   }
   h2 {
@@ -103,10 +107,17 @@ Parallax cards
 
   p {
     @include bodyText;
-    color: $white;
-
+    color: $black-05;
+    // text-shadow: #474747 1px 2px 1px;
+    margin-top: 3%;
+    @include desktop480 {
+      //font-size: 1.1em;
+    }
     @include desktop690 {
-      font-size: 1.2em;
+      // font-size: 1.4em;
+    }
+    @include desktop767 {
+      font-size: 1.2rem;
     }
   }
 }

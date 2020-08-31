@@ -29,8 +29,8 @@ header {
       position: absolute;
       height: 2px;
       width: 2.3rem;
-      background: #ffd700;
-      background-color: $gold-01;
+      background: #710004ff;
+      background-color: $secondary-03;
       top: 0;
       left: 0;
       right: 0;
@@ -62,8 +62,8 @@ header {
     width: 100%;
     height: 4.4rem;
     position: relative;
-    background: #000;
-    background-color: $black-03;
+    background: #fff;
+    background-color: $white;
     @include desktop690 {
       display: flex;
       justify-content: space-between;
@@ -83,7 +83,8 @@ header {
       }
     }
     .nav-bar {
-      background: $black-03;
+      background: #eddcd2;
+      background: $white;
       position: fixed;
       right: 0;
       left: 0;
@@ -130,8 +131,8 @@ header {
           transition: all 650ms;
           text-decoration: none;
           @include bodyText;
-          color: #ffd700;
-          color: $gold-01;
+          color: #710004ff;
+          color: $secondary-03;
           padding: 1.7rem 6rem;
           font-family: "Montserrat";
           font-family: "Open Sans";
@@ -144,7 +145,7 @@ header {
         }
         a:hover,
         a:active:hover {
-          color: $white-03;
+          color: $goldenrod;
         }
       }
     }
