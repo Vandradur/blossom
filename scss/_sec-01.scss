@@ -10,10 +10,10 @@ SECTION 01
   background-size: 130%;
   overflow: hidden;
   @include flexCenter;
-  #news-content {
+  #hero-content {
     max-width: 70%;
     z-index: 3;
-    #news-title {
+    #hero-title {
       @include h1Text;
       color: $primaryLight;
       text-shadow: #474747 3px 5px 2px;
@@ -22,7 +22,7 @@ SECTION 01
         font-size: 60px;
       }
     }
-    #news-text {
+    #hero-text {
       @include bodyText;
       color: $white-03;
       text-shadow: #474747 1px 2px 1px;

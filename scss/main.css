@@ -1059,12 +1059,12 @@ SECTION 01
           align-items: center;
 }
 
-.hero #news-content {
+.hero #hero-content {
   max-width: 70%;
   z-index: 3;
 }
 
-.hero #news-content #news-title {
+.hero #hero-content #hero-title {
   font-family: var(--fontSans);
   color: #fff1e6;
   font-size: 55px;
@@ -1081,12 +1081,12 @@ SECTION 01
 }
 
 @media (min-width: 690px) {
-  .hero #news-content #news-title {
+  .hero #hero-content #hero-title {
     font-size: 60px;
   }
 }
 
-.hero #news-content #news-text {
+.hero #hero-content #hero-text {
   line-height: 18px;
   text-decoration: none;
   color: #333;
@@ -1105,7 +1105,7 @@ SECTION 01
 }
 
 @media (min-width: 690px) {
-  .hero #news-content #news-text {
+  .hero #hero-content #hero-text {
     font-size: 1.3em;
   }
 }
