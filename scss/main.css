@@ -1144,7 +1144,7 @@ Parallax cards
 
 @media (min-width: 690px) {
   #collection h2 {
-    font-size: 1.526em;
+    font-size: 1.526rem;
   }
 }
 
@@ -2317,9 +2317,25 @@ img {
 }
 
 #sec-50 .main-text {
-  padding: 2em 3em 1em 3em;
   background: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
+  margin: auto;
+  margin-top: 2%;
+  padding: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
 }
 
 #sec-50 .main-text h1 {
@@ -2362,7 +2378,7 @@ img {
 
 @media (min-width: 690px) {
   #sec-50 .main-text h2 {
-    font-size: 1.526em;
+    font-size: 1.526rem;
   }
 }
 
