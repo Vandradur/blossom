@@ -32,18 +32,10 @@
       left: 50%;
       transform: translate(-50%, -50%);
       h1 {
-        @include h1Text;
+        @include h1Text480;
         color: $white;
-        font-weight: 900;
         line-height: 1;
         animation: flicker 3s linear infinite;
-
-        @include desktop480 {
-          @include h1Text480;
-        }
-        @include desktop767 {
-          @include h1Text767;
-        }
       }
       p {
         @include bodyText;

@@ -320,36 +320,12 @@ header .nav-bar.menu-open {
 
 .owl-slider #carousel .text-block h1 {
   font-family: var(--fontSans);
-  color: #fff1e6;
-  font-size: 55px;
-  text-shadow: #474747 3px 5px 2px;
-  line-height: 0.78;
-  font-family: "Lora", serif;
-  font-family: "Playfair Display", serif;
-  font-family: "Raleway", sans-serif;
-  font-family: "Arima Madurai", cursive;
-  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 2.4rem;
   color: #fff;
-  font-weight: 900;
   line-height: 1;
   -webkit-animation: flicker 3s linear infinite;
           animation: flicker 3s linear infinite;
-}
-
-@media (min-width: 480px) {
-  .owl-slider #carousel .text-block h1 {
-    font-family: var(--fontSans);
-    font-weight: 600;
-    font-size: 2.4rem;
-  }
-}
-
-@media (min-width: 767px) {
-  .owl-slider #carousel .text-block h1 {
-    font-weight: 900;
-    font-size: 5.4rem;
-    letter-spacing: 0.01rem;
-  }
 }
 
 .owl-slider #carousel .text-block p {
@@ -458,23 +434,12 @@ header .nav-bar.menu-open {
   font-family: "Open Sans";
   color: #020d13ff;
   text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff, 1px 1px 0 white;
-  font-weight: 900;
-  line-height: 1;
+  line-height: 0.98;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 690px) {
   .video-sec .video-header h1 {
-    font-family: var(--fontSans);
-    font-weight: 600;
-    font-size: 2.4rem;
-  }
-}
-
-@media (min-width: 767px) {
-  .video-sec .video-header h1 {
-    font-weight: 900;
-    font-size: 5.4rem;
-    letter-spacing: 0.01rem;
+    font-size: 60px;
   }
 }
 
