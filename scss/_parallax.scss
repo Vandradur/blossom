@@ -10,6 +10,8 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  filter: hue-rotate(-1deg) invert(0.2%) contrast(0.97) brightness(0.93)
+    sepia(0.1) saturate(0.8) drop-shadow(5px 20px 50px rgba(0, 0, 0, 0.7));
   #hero-container {
     position: absolute;
     width: 70%;
