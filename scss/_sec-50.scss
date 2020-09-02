@@ -1,32 +1,37 @@
 #sec-50 {
   background: #fff;
   .main-text {
+    padding: 2em 3em 1em 3em;
+    background: #fff;
     text-align: center;
-    padding: 40px 27%;
+
     h1 {
       @include h1Text;
       color: $black;
       text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff,
         1px 1px 0 white;
-      font-size: 5em;
-      font-weight: 900;
-      line-height: 1;
-      @include desktop480 {
-        @include h1Text480;
-      }
-      @include desktop767 {
-        @include h1Text767;
+      line-height: 0.98;
+      //animation: flicker 3s linear infinite;
+
+      @include desktop690 {
+        font-size: 60px;
       }
     }
     h2 {
       @include h2Text;
-      color: $primaryDark;
+      color: $gold-01;
       margin-top: 10px;
+      @include desktop690 {
+        font-size: 1.526em;
+      }
+    }
+    h2:first-letter {
+      font-weight: bold;
     }
     h3 {
       @include h3Text;
       margin: 1em 0;
-      color: $secondaryDark;
+      color: $secondary;
     }
     p {
       @include bodyText;

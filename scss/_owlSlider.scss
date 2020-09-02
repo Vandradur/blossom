@@ -40,13 +40,14 @@
       p {
         @include bodyText;
         color: $white-03;
+        font-size: 0.9rem;
         text-shadow: #474747 1px 2px 1px;
         margin-top: 3%;
         @include desktop480 {
-          font-size: 1.1em;
+          font-size: 0.8em;
         }
         @include desktop690 {
-          font-size: 1.2em;
+          font-size: 1rem;
         }
         @include desktop767 {
           font-size: 1.3rem;

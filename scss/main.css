@@ -342,19 +342,20 @@ header .nav-bar.menu-open {
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
   color: #fefee3;
+  font-size: 0.9rem;
   text-shadow: #474747 1px 2px 1px;
   margin-top: 3%;
 }
 
 @media (min-width: 480px) {
   .owl-slider #carousel .text-block p {
-    font-size: 1.1em;
+    font-size: 0.8em;
   }
 }
 
 @media (min-width: 690px) {
   .owl-slider #carousel .text-block p {
-    font-size: 1.2em;
+    font-size: 1rem;
   }
 }
 
@@ -1103,107 +1104,6 @@ Parallax cards
   width: 70%;
 }
 
-#collection .flower-icon {
-  margin-top: 1rem;
-}
-
-#collection .flower-icon svg {
-  height: 100%;
-  width: 100%;
-}
-
-#collection .flower-icon svg #pink {
-  -webkit-animation: fadeIn 2s infinite;
-          animation: fadeIn 2s infinite;
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-  -webkit-animation-duration: 15s;
-          animation-duration: 15s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-}
-
-#collection .flower-icon svg #green {
-  -webkit-animation: fadeIn 5s infinite;
-          animation: fadeIn 5s infinite;
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-}
-
-#collection .flower-icon svg path {
-  stroke-dasharray: 100;
-  -webkit-animation: draw 7s infinite;
-          animation: draw 7s infinite;
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-}
-
-@-webkit-keyframes draw {
-  from {
-    stroke-dashoffset: 0;
-  }
-  to {
-    stroke-dashoffset: 200;
-  }
-}
-
-@keyframes draw {
-  from {
-    stroke-dashoffset: 0;
-  }
-  to {
-    stroke-dashoffset: 200;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 #collection h1 {
   font-family: var(--fontSans);
   color: #fff1e6;
@@ -1217,24 +1117,12 @@ Parallax cards
   font-family: "Open Sans";
   color: #020d13ff;
   text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff, 1px 1px 0 white;
-  font-size: 5em;
-  font-weight: 900;
-  line-height: 1;
+  line-height: 0.98;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 690px) {
   #collection h1 {
-    font-family: var(--fontSans);
-    font-weight: 600;
-    font-size: 2.4rem;
-  }
-}
-
-@media (min-width: 767px) {
-  #collection h1 {
-    font-weight: 900;
-    font-size: 5.4rem;
-    letter-spacing: 0.01rem;
+    font-size: 60px;
   }
 }
 
@@ -1296,6 +1184,107 @@ Parallax cards
 @media (min-width: 767px) {
   #collection p {
     font-size: 1.2rem;
+  }
+}
+
+.flower-icon {
+  margin-top: 1rem;
+}
+
+.flower-icon svg {
+  height: 100%;
+  width: 100%;
+}
+
+.flower-icon svg #pink {
+  -webkit-animation: fadeIn 2s infinite;
+          animation: fadeIn 2s infinite;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.flower-icon svg #green {
+  -webkit-animation: fadeIn 5s infinite;
+          animation: fadeIn 5s infinite;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.flower-icon svg path {
+  stroke-dasharray: 100;
+  -webkit-animation: draw 7s infinite;
+          animation: draw 7s infinite;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes draw {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 200;
+  }
+}
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 200;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -2328,8 +2317,9 @@ img {
 }
 
 #sec-50 .main-text {
+  padding: 2em 3em 1em 3em;
+  background: #fff;
   text-align: center;
-  padding: 40px 27%;
 }
 
 #sec-50 .main-text h1 {
@@ -2345,24 +2335,12 @@ img {
   font-family: "Open Sans";
   color: #020d13ff;
   text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff, 1px 1px 0 white;
-  font-size: 5em;
-  font-weight: 900;
-  line-height: 1;
+  line-height: 0.98;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 690px) {
   #sec-50 .main-text h1 {
-    font-family: var(--fontSans);
-    font-weight: 600;
-    font-size: 2.4rem;
-  }
-}
-
-@media (min-width: 767px) {
-  #sec-50 .main-text h1 {
-    font-weight: 900;
-    font-size: 5.4rem;
-    letter-spacing: 0.01rem;
+    font-size: 60px;
   }
 }
 
@@ -2378,8 +2356,18 @@ img {
   color: #161a1d;
   font-family: "Raleway", sans-serif;
   font-family: "Open Sans";
-  color: #cb997e;
+  color: #b08f26;
   margin-top: 10px;
+}
+
+@media (min-width: 690px) {
+  #sec-50 .main-text h2 {
+    font-size: 1.526em;
+  }
+}
+
+#sec-50 .main-text h2:first-letter {
+  font-weight: bold;
 }
 
 #sec-50 .main-text h3 {
@@ -2391,7 +2379,7 @@ img {
   color: #333;
   color: #161a1d;
   margin: 1em 0;
-  color: #33415c;
+  color: #5c677d;
 }
 
 #sec-50 .main-text p {

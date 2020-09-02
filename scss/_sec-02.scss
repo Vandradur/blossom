@@ -16,76 +16,16 @@ Parallax cards
   padding: 1%;
   display: flex;
   width: 70%;
-  .flower-icon {
-    margin-top: 1rem;
-    svg {
-      height: 100%;
-      width: 100%;
-      #pink {
-        animation: fadeIn 2s infinite;
-        transform-origin: 50% 50%;
-        animation-duration: 15s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-        animation-direction: alternate;
-      }
-      #green {
-        animation: fadeIn 5s infinite;
-        transform-origin: 50% 50%;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-        animation-direction: alternate;
-      }
-
-      path {
-        stroke-dasharray: 100;
-        animation: draw 7s infinite;
-        animation-duration: 8s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-        animation-direction: alternate;
-      }
-      @keyframes draw {
-        from {
-          stroke-dashoffset: 0;
-        }
-        to {
-          stroke-dashoffset: 200;
-        }
-      }
-      @keyframes fadeIn {
-        0% {
-          opacity: 0;
-        }
-
-        50% {
-          opacity: 1;
-        }
-
-        75% {
-          opacity: 1;
-        }
-
-        100% {
-          opacity: 0;
-        }
-      }
-    }
-  }
   h1 {
     @include h1Text;
     color: $black;
     text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff,
       1px 1px 0 white;
-    font-size: 5em;
-    font-weight: 900;
-    line-height: 1;
-    @include desktop480 {
-      @include h1Text480;
-    }
-    @include desktop767 {
-      @include h1Text767;
+    line-height: 0.98;
+    //animation: flicker 3s linear infinite;
+
+    @include desktop690 {
+      font-size: 60px;
     }
   }
   h2 {
@@ -104,7 +44,6 @@ Parallax cards
     margin: 1em 0;
     color: $secondary;
   }
-
   p {
     @include bodyText;
     color: $black-05;
@@ -118,6 +57,63 @@ Parallax cards
     }
     @include desktop767 {
       font-size: 1.2rem;
+    }
+  }
+}
+.flower-icon {
+  margin-top: 1rem;
+  svg {
+    height: 100%;
+    width: 100%;
+    #pink {
+      animation: fadeIn 2s infinite;
+      transform-origin: 50% 50%;
+      animation-duration: 15s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate;
+    }
+    #green {
+      animation: fadeIn 5s infinite;
+      transform-origin: 50% 50%;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate;
+    }
+
+    path {
+      stroke-dasharray: 100;
+      animation: draw 7s infinite;
+      animation-duration: 8s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate;
+    }
+    @keyframes draw {
+      from {
+        stroke-dashoffset: 0;
+      }
+      to {
+        stroke-dashoffset: 200;
+      }
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      75% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
     }
   }
 }
