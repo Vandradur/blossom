@@ -17,6 +17,14 @@
         font-size: 60px;
       }
     }
+    .divider {
+      margin: 0 auto;
+      margin-top: 20px;
+      text-align: center;
+      background-color: $black-03;
+      width: 150px;
+      height: 5px;
+    }
 
     p {
       @include bodyText;

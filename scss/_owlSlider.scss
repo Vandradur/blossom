@@ -37,6 +37,33 @@
         line-height: 1;
         animation: flicker 3s linear infinite;
       }
+      .hr-text {
+        display: inline-block;
+        font-size: 14px;
+        margin-bottom: 2px;
+        padding: 0 20px;
+        position: relative;
+      }
+
+      .hr-text:before,
+      .hr-text:after {
+        background: #fff;
+        content: "";
+        display: block;
+        height: 2.2px;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+      }
+
+      .hr-text:before {
+        left: 100%;
+      }
+
+      .hr-text:after {
+        right: 100%;
+      }
+
       p {
         @include bodyText;
         color: $white-03;
