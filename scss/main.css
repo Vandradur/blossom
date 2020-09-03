@@ -119,7 +119,7 @@ header .nav {
   height: 4.4rem;
   position: relative;
   background: #fff1e6;
-  background-color: #fff;
+  background-color: #f5f1ee;
 }
 
 @media (min-width: 690px) {
@@ -2002,7 +2002,7 @@ Parallax cards
 #mag blockquote {
   margin-left: -1.5em;
   width: 60%;
-  color: #333533;
+  color: #33415c;
   border-left: 3px solid #b08f26;
   padding-left: 0.5em;
   margin-top: 1em;
