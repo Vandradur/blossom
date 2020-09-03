@@ -3,8 +3,6 @@ Parallax cards
 ========================================================================== */
 .section-02 {
   background: #fff;
-  background: $white-02;
-  padding: 20px 0;
 }
 #collection {
   flex-direction: column;
@@ -12,7 +10,6 @@ Parallax cards
   align-items: center;
   text-align: center;
   margin: auto;
-  margin-top: 2%;
   padding: 1%;
   display: flex;
   width: 70%;
@@ -25,7 +22,7 @@ Parallax cards
     //animation: flicker 3s linear infinite;
 
     @include desktop690 {
-      font-size: 60px;
+      font-size: 66px;
     }
   }
   h2 {
@@ -36,19 +33,16 @@ Parallax cards
       font-size: 1.526rem;
     }
   }
-  h2:first-letter {
-    font-weight: bold;
-  }
   h3 {
     @include h3Text;
-    margin: 1em 0;
+    margin: 1rem 0 0 0;
     color: $secondary;
   }
   p {
     @include bodyText;
     color: $black-05;
     // text-shadow: #474747 1px 2px 1px;
-    margin-top: 3%;
+    margin-top: 1%;
     @include desktop480 {
       //font-size: 1.1em;
     }
@@ -57,63 +51,6 @@ Parallax cards
     }
     @include desktop767 {
       font-size: 1.2rem;
-    }
-  }
-}
-.flower-icon {
-  margin-top: 1rem;
-  svg {
-    height: 100%;
-    width: 100%;
-    #pink {
-      animation: fadeIn 2s infinite;
-      transform-origin: 50% 50%;
-      animation-duration: 15s;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
-      animation-direction: alternate;
-    }
-    #green {
-      animation: fadeIn 5s infinite;
-      transform-origin: 50% 50%;
-      animation-duration: 5s;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
-      animation-direction: alternate;
-    }
-
-    path {
-      stroke-dasharray: 100;
-      animation: draw 7s infinite;
-      animation-duration: 8s;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
-      animation-direction: alternate;
-    }
-    @keyframes draw {
-      from {
-        stroke-dashoffset: 0;
-      }
-      to {
-        stroke-dashoffset: 200;
-      }
-    }
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-      }
-
-      50% {
-        opacity: 1;
-      }
-
-      75% {
-        opacity: 1;
-      }
-
-      100% {
-        opacity: 0;
-      }
     }
   }
 }
@@ -211,9 +148,9 @@ Parallax cards
     .front .inner p:after {
       content: "";
       width: 6rem;
-      height: 2px;
+      height: 3px;
       position: absolute;
-      background: #4a3637;
+      background: $gold-01;
       display: block;
       left: 0;
       right: 0;

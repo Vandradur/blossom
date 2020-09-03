@@ -64,8 +64,7 @@ header {
     height: 4.4rem;
     position: relative;
     background: #fff1e6;
-    background: $primaryLight;
-    background-color: $white-02;
+    background-color: $white;
     @include desktop690 {
       display: flex;
       justify-content: space-between;

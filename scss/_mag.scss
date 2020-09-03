@@ -21,7 +21,7 @@
     height: auto;
   }
   .h1header {
-    color: $black-03;
+    color: $black-04;
     line-height: 0.8;
     font-family: "Arima Madurai", cursive;
     font-size: 800%;
@@ -36,16 +36,18 @@
     letter-spacing: 0.04rem;
   }
   h3 {
-    color: $secondaryLight;
     font-family: "Montserrat", sans-serif;
     font-size: 8px;
     margin: 0.5rem;
+    color: $black-04;
   }
   .h3header:before {
     content: "- ";
+    color: $gold-01;
   }
   .h3header:after {
     content: " -";
+    color: $gold-01;
   }
   .mag__article {
     padding-top: 5%;
@@ -93,7 +95,7 @@
   blockquote {
     margin-left: -1.5em;
     width: 60%;
-    color: $secondaryDark;
+    color: $black-04;
     border-left: 3px solid $gold-01;
     padding-left: 0.5em;
     margin-top: 1em;
