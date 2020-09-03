@@ -64,7 +64,8 @@ header {
     height: 4.4rem;
     position: relative;
     background: #fff1e6;
-    background-color: #f5f1ee;
+    background-color: #f8f6f5;
+    box-shadow: -1px 8px 10px -12px $black-04;
     @include desktop690 {
       display: flex;
       justify-content: space-between;
@@ -117,6 +118,7 @@ header {
         li {
           text-transform: uppercase;
           margin: 0.1rem 0.1rem;
+          display: inline-block;
           @include links;
 
           @include desktop480 {
@@ -129,17 +131,18 @@ header {
           }
         }
         a {
-          display: inline-block;
+          display: block;
+          position: relative;
           transition: all 650ms;
           text-decoration: none;
           @include bodyText;
-          color: #5c677d;
-          color: $secondary;
-          padding: 1.7rem 6rem;
+          color: $black-03;
+          padding: 1.3rem 6rem;
           font-family: "Montserrat";
           font-family: "Open Sans";
           text-transform: uppercase;
-          letter-spacing: 3px;
+          font-weight: 500;
+          letter-spacing: 2.2px;
           font-size: 12px;
           @include desktop690 {
             padding: 1.7rem;
@@ -148,6 +151,39 @@ header {
         a:hover,
         a:active:hover {
           color: $goldenrod;
+        }
+        a:after {
+          content: "";
+          width: 0%;
+          transition: all 0.4s ease;
+          left: 50%;
+        }
+
+        a:before {
+          content: "";
+          width: 0%;
+          transition: all 0.4s ease;
+          left: 50%;
+        }
+
+        a:hover:after {
+          content: "";
+          position: absolute;
+          bottom: 0px;
+          left: 50%;
+          background: $goldenrod;
+          height: 3px;
+          width: 50%;
+        }
+
+        a:hover:before {
+          content: "";
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          background: $goldenrod;
+          height: 3px;
+          width: 50%;
         }
       }
     }
