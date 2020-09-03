@@ -308,3 +308,27 @@ Parallax cards
     margin: 0 0 2rem 0;
   }
 }
+
+.disclaimer {
+  text-align: center;
+  margin: auto;
+  margin-top: 2%;
+  padding: 1%;
+  display: flex;
+  width: 70%;
+  p {
+    @include bodyText;
+    color: $black-05;
+    // text-shadow: #474747 1px 2px 1px;
+    margin-top: 3%;
+    @include desktop480 {
+      //font-size: 1.1em;
+    }
+    @include desktop690 {
+      // font-size: 1.4em;
+    }
+    @include desktop767 {
+      font-size: 1.2rem;
+    }
+  }
+}

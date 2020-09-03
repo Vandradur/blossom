@@ -1,0 +1,145 @@
+#mag {
+  background: #fff;
+  padding: 3rem;
+  .mag__header {
+    max-width: 1120px;
+    background-color: #fff;
+    background-position: 50% 100%;
+    margin: 0 auto;
+    .headline {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  .mag__body {
+    max-width: 1120px;
+    min-height: 900px;
+    background-color: #fff;
+    background-size: 90%;
+    background-position: 50% 100%;
+    margin: 0 auto;
+    height: auto;
+  }
+  .h1header {
+    color: $black-03;
+    line-height: 0.8;
+    font-family: "Arima Madurai", cursive;
+    font-size: 800%;
+  }
+  .h4header {
+    text-align: left;
+    font-size: 175%;
+    padding-top: 1%;
+    color: $gold-01;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    letter-spacing: 0.04rem;
+  }
+  h3 {
+    color: $secondaryLight;
+    font-family: "Montserrat", sans-serif;
+    font-size: 8px;
+    margin: 0.5rem;
+  }
+  .h3header:before {
+    content: "- ";
+  }
+  .h3header:after {
+    content: " -";
+  }
+  .mag__article {
+    padding-top: 5%;
+    margin-right: 5%;
+    color: white;
+    background: transparent;
+    font-family: "Raleway", sans-serif;
+    font-family: "Open Sans";
+    color: $secondary;
+    height: auto;
+  }
+  .mag__leftbox {
+    float: left;
+    width: 50%;
+    min-height: 600px;
+  }
+  .mag__rightbox {
+    float: right;
+    width: 50%;
+    min-height: 600px;
+  }
+  .borderline {
+    padding-top: 1.5%;
+    width: 100%;
+    border-bottom: 3px solid $gold-01;
+  }
+  .img {
+    width: 80%;
+    margin-left: 20%;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+  }
+  .mag__imgbox {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 5%;
+    padding-right: 0.5em;
+    border-right: 3px solid $gold-01;
+    margin-left: 1em;
+  }
+  .mag__imgbox:hover .img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+  blockquote {
+    margin-left: -1.5em;
+    width: 60%;
+    color: $secondaryDark;
+    border-left: 3px solid $gold-01;
+    padding-left: 0.5em;
+    margin-top: 1em;
+    margin-bottom: -0.5em;
+    font-size: 1.3em;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+  }
+  blockquote:hover {
+    color: black;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  @media only screen and (max-width: 600px) {
+    * {
+      -webkit-transition: all 0.7s ease;
+      transition: all 0.7s ease;
+    }
+    .h1header {
+      font-size: 300%;
+    }
+    .h4header {
+      font-size: 90%;
+      margin-left: 0.4em;
+      margin-right: 0.4em;
+    }
+    blockquote {
+      margin-left: 0.1em;
+      margin-bottom: 0.3em;
+    }
+    .img {
+      margin-left: 3em;
+    }
+    .mag__imgbox {
+      margin-left: -1em;
+    }
+    .mag__leftbox {
+      float: none;
+      width: 90%;
+      margin: 0 auto;
+    }
+    .mag__rightbox {
+      float: none;
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
