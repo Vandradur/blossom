@@ -51,6 +51,7 @@ header {
           flex-direction: column;
   text-align: center;
   position: relative;
+  background: #eddcd2;
   z-index: 99;
 }
 
@@ -76,8 +77,8 @@ header .menu .bar::after {
   position: absolute;
   height: 2px;
   width: 2.3rem;
-  background: #fff;
-  background-color: #b08f26;
+  background: #5c677d;
+  background-color: #5c677d;
   top: 0;
   left: 0;
   right: 0;
@@ -118,8 +119,9 @@ header .nav {
   width: 100%;
   height: 4.4rem;
   position: relative;
-  background: header .nav black;
-  background-color: #000000;
+  background: #fff1e6;
+  background: #fff1e6;
+  background-color: #fffcf2;
 }
 
 @media (min-width: 690px) {
@@ -158,7 +160,9 @@ header .nav #logo img {
 }
 
 header .nav .nav-bar {
-  background: #000000;
+  background: #fff1e6;
+  background: #fff1e6;
+  background-color: #fff1e6;
   position: fixed;
   right: 0;
   left: 0;
@@ -248,8 +252,8 @@ header .nav .nav-bar ul a {
   letter-spacing: 1.5px;
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
-  color: #fff;
-  color: #ffcc00;
+  color: #5c677d;
+  color: #5c677d;
   padding: 1.7rem 6rem;
   font-family: "Montserrat";
   font-family: "Open Sans";
@@ -1113,7 +1117,7 @@ Parallax cards
 ========================================================================== */
 .section-02 {
   background: #fff;
-  background: #fff1e6;
+  background: #fffcf2;
   padding: 20px 0;
 }
 
@@ -1322,13 +1326,13 @@ Parallax cards
   }
 }
 
-.parallax-wrapper {
+.product-wrapper {
   width: 90%;
   margin: 20px auto;
   max-width: 120rem;
 }
 
-.parallax-wrapper .cols {
+.product-wrapper .cols {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1345,15 +1349,15 @@ Parallax cards
   cursor: pointer;
 }
 
-.container {
+.col .container {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-perspective: 1000px;
   perspective: 1000px;
 }
 
-.front,
-.back {
+.col .container .front,
+.col .container .back {
   background-size: cover;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
@@ -1372,13 +1376,20 @@ Parallax cards
   border: 4px solid #fff;
 }
 
-.back {
+.col .container .back {
   background: #fefee3;
   color: #33415c;
   background: linear-gradient(45deg, #cedce7 0%, #eddcd2 100%);
 }
 
-.front:after {
+.col .container .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.col .container .front:after {
   position: absolute;
   top: 0;
   left: 0;
@@ -1394,24 +1405,70 @@ Parallax cards
   border-radius: 10px;
 }
 
-.container:hover .front,
-.container:hover .back {
-  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  -webkit-filter: grayscale(60%);
-          filter: grayscale(60%);
+.col .container .front .inner p {
+  font-size: 2em;
+  margin-bottom: 2rem;
+  position: relative;
+  line-height: 0.9em;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Raleway", sans-serif;
+  color: #333;
+  color: #161a1d;
+  color: #fff1e6;
 }
 
-.back {
+.col .container .back .inner p {
+  line-height: 18px;
+  text-decoration: none;
+  color: #333;
+  color: #0c090d;
+  font-size: 16px;
+  line-height: 1;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
+  font-size: 0.78em;
+  margin-bottom: 2rem;
+  position: relative;
+  color: #020d13ff;
+}
+
+.col .container .front .inner p:after {
+  content: "";
+  width: 6rem;
+  height: 2px;
   position: absolute;
-  top: 0;
+  background: #4a3637;
+  display: block;
   left: 0;
-  width: 100%;
+  right: 0;
+  margin: 0 auto;
+  bottom: -0.75rem;
 }
 
-.inner {
+.col .container .front .inner span {
+  line-height: 18px;
+  text-decoration: none;
+  color: #333;
+  color: #0c090d;
+  font-size: 16px;
+  line-height: 1;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
+  color: #fff;
+  font-weight: 700;
+}
+
+.col .container .inner {
   -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
   transform: translateY(-50%) translateZ(60px) scale(0.94);
   top: 50%;
@@ -1427,7 +1484,7 @@ Parallax cards
   z-index: 2;
 }
 
-.inner #prdt-button {
+.col .container .inner #prdt-button {
   display: inline-block;
   margin-top: 6%;
   width: 60%;
@@ -1447,10 +1504,20 @@ Parallax cards
   cursor: pointer;
 }
 
-.inner #prdt-button:hover {
+.col .container .inner #prdt-button:hover {
   background-color: #0c090d;
   color: #fff;
   text-decoration: none;
+}
+
+.container:hover .front,
+.container:hover .back {
+  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -webkit-filter: grayscale(60%);
+          filter: grayscale(60%);
 }
 
 .container .back {
@@ -1479,69 +1546,6 @@ Parallax cards
   transform: rotateY(-180deg);
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-}
-
-.front .inner p {
-  font-size: 2em;
-  margin-bottom: 2rem;
-  position: relative;
-  line-height: 0.9em;
-  font-size: 1em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-family: "Raleway", sans-serif;
-  color: #333;
-  color: #161a1d;
-  color: #fff1e6;
-}
-
-.back .inner p {
-  line-height: 18px;
-  text-decoration: none;
-  color: #333;
-  color: #0c090d;
-  font-size: 16px;
-  line-height: 1;
-  outline: none;
-  border: none;
-  font-weight: 500;
-  letter-spacing: 1.5px;
-  font-family: "Raleway", sans-serif;
-  font-family: "Arima Madurai", cursive;
-  font-size: 0.78em;
-  margin-bottom: 2rem;
-  position: relative;
-  color: #020d13ff;
-}
-
-.front .inner p:after {
-  content: "";
-  width: 6rem;
-  height: 2px;
-  position: absolute;
-  background: #4a3637;
-  display: block;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  bottom: -0.75rem;
-}
-
-.front .inner span {
-  line-height: 18px;
-  text-decoration: none;
-  color: #333;
-  color: #0c090d;
-  font-size: 16px;
-  line-height: 1;
-  outline: none;
-  border: none;
-  font-weight: 500;
-  letter-spacing: 1.5px;
-  font-family: "Raleway", sans-serif;
-  font-family: "Arima Madurai", cursive;
-  color: #fff;
-  font-weight: 700;
 }
 
 @media screen and (max-width: 64rem) {
@@ -1577,23 +1581,7 @@ Parallax cards
   background-size: cover;
 }
 
-.sec-06 .loose-flowers-wrapper {
-  width: 100%;
-}
-
-.sec-06 .loose-flowers-wrapper img {
-  width: 100%;
-  border-radius: 2px;
-}
-
-.sec-06 .loose-flowers-wrapper .spl-text {
-  width: 100%;
-  margin-top: -20%;
-  position: relative;
-  padding: 2rem;
-}
-
-.sec-06 .loose-flowers-wrapper .spl-text h1 {
+.sec-06 h1 {
   text-align: center;
   color: #fffcf2;
   font-size: 8vw;
@@ -1606,7 +1594,28 @@ Parallax cards
   -webkit-text-fill-color: transparent;
 }
 
-.sec-06 .loose-flowers-wrapper .spl-text h2 {
+.sec-06 .animt-banner {
+  width: 100%;
+  height: auto;
+}
+
+.sec-06 .animt-banner img {
+  width: 100%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: 4px solid #fff;
+  z-index: 5;
+}
+
+.sec-06 .animt-banner .spl-text {
+  width: 100%;
+  margin-top: -40%;
+  position: relative;
+  padding: 2rem;
+}
+
+.sec-06 .animt-banner .spl-text h2 {
   text-align: center;
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
   font-family: "Raleway", sans-serif;
@@ -1620,7 +1629,7 @@ Parallax cards
   font-family: "Raleway", sans-serif;
 }
 
-.sec-06 span:before {
+.spl-text span:before {
   content: "p";
   -webkit-animation: animate infinite 8s;
           animation: animate infinite 8s;
@@ -2130,214 +2139,6 @@ Parallax cards
           transform: rotateY(-15deg);
   -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
           box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-}
-
-/* ==========================================================================
-Hand Tied
-========================================================================== */
-#sec-33 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/loose-02.png);
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/loose-02.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 30px 10px;
-}
-
-#sec-33 #container {
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-#sec-33 #container h1 {
-  font-family: var(--fontSans);
-  color: #fff1e6;
-  font-size: 55px;
-  text-shadow: #474747 3px 5px 2px;
-  line-height: 0.78;
-  font-family: "Lora", serif;
-  font-family: "Playfair Display", serif;
-  font-family: "Raleway", sans-serif;
-  font-family: "Arima Madurai", cursive;
-  font-family: "Open Sans";
-  line-height: 0.85;
-  color: #fffcf2;
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
-}
-
-@media (min-width: 690px) {
-  #sec-33 #container h1 {
-    font-size: 60px;
-  }
-}
-
-#sec-33 #container p {
-  padding: 1%;
-  margin-top: 1%;
-  line-height: 18px;
-  text-decoration: none;
-  color: #333;
-  color: #0c090d;
-  font-size: 16px;
-  line-height: 1;
-  outline: none;
-  border: none;
-  font-weight: 500;
-  letter-spacing: 1.5px;
-  font-family: "Raleway", sans-serif;
-  font-family: "Arima Madurai", cursive;
-  color: #fffcf2;
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
-  margin-top: 3%;
-}
-
-@media (min-width: 690px) {
-  #sec-33 #container p {
-    font-size: 1.6em;
-  }
-}
-
-#sec-33 #container .cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-#sec-33 #container .cards .cards_item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1rem;
-}
-
-#sec-33 #container .cards .cards_item .card {
-  background: -webkit-gradient(linear, right top, left bottom, color-stop(40%, #fff), to(#fefee3));
-  background: linear-gradient(to bottom left, #fff 40%, #fefee3 100%);
-  border-radius: 0.25rem;
-  -webkit-box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 2rem;
-  overflow: hidden;
-}
-
-#sec-33 #container .cards .cards_item .card .img {
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
-  background-position: center;
-  background-size: cover;
-  border-radius: 50%;
-}
-
-#sec-33 #container .cards .cards_item .card .card_content .card_title {
-  line-height: 0.9em;
-  font-size: 1em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-family: "Raleway", sans-serif;
-  color: #333;
-  color: #161a1d;
-  color: #161a1d;
-}
-
-#sec-33 #container .cards .cards_item .card .card_content .card_text {
-  line-height: 18px;
-  text-decoration: none;
-  color: #333;
-  color: #0c090d;
-  font-size: 16px;
-  line-height: 1;
-  outline: none;
-  border: none;
-  font-weight: 500;
-  letter-spacing: 1.5px;
-  font-family: "Raleway", sans-serif;
-  font-family: "Arima Madurai", cursive;
-  color: #161a1d;
-}
-
-#sec-33 .img-1 {
-  background: url("../img/footer-5.png");
-}
-
-#sec-33 .img-2 {
-  background: url("../img/footer-6.png");
-}
-
-#sec-33 .img-3 {
-  background: url("../img/footer-5.png");
-}
-
-#sec-33 .img-4 {
-  background: url("../img/footer-5.png");
-}
-
-#sec-33 .img-5 {
-  background: url("../img/footer-6.png");
-}
-
-#sec-33 .img-6 {
-  background: url("../img/footer-5.png");
-}
-
-#sec-33 .btn {
-  display: inline-block;
-  margin-top: 6%;
-  width: 60%;
-  height: 45px;
-  font-size: 15px;
-  border-radius: 0.3em;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  outline: none;
-  font-family: montserrat;
-  font-size: 13px;
-  border: 2px solid #7d8597;
-  background-color: #0c090d;
-  background: -webkit-gradient(linear, left top, right top, from(#7d8597), to(#33415c));
-  background: linear-gradient(to right, #7d8597, #33415c);
-  color: #fffcf2;
-  padding: 6px 20px;
-  -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease;
-  cursor: pointer;
-  width: 100%;
-}
-
-#sec-33 .btn:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#fff1e6), to(#fffcf2));
-  background: linear-gradient(to right, #fff1e6, #fffcf2);
-  color: #0c090d;
-  text-decoration: none;
-  border: none;
-}
-
-@media (min-width: 40rem) {
-  #sec-33 .cards_item {
-    width: 50%;
-  }
-}
-
-@media (min-width: 56rem) {
-  #sec-33 .cards_item {
-    width: 33.3333%;
-  }
 }
 
 footer ul {
