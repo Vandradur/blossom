@@ -2,50 +2,46 @@
 Parallax cards 
 ========================================================================== */
 .section-02 {
+  padding: 3.3em 2em 1em 2em;
 }
 #collection {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   margin: auto;
   padding: 1%;
   display: flex;
   max-width: 1120px;
-  width: 70%;
+  width: 100%;
+  max-width: 1120px;
+  background-position: 50% 100%;
+  .mag__headline {
+    width: 100%;
+    margin: 0 auto;
+  }
+
   .h1header {
-    //@include h1Text;
-    // color: $black;
-    // text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff,
-    //   1px 1px 0 white;
-    // line-height: 0.98;
-    // @include desktop690 {
-    //   font-size: 66px;
-    // }
-    color: $black-04;
-    text-align: left;
-    line-height: 0.8;
-    font-family: "Arima Madurai", cursive;
+    @include h1Text;
     font-size: 300%;
     @include desktop690 {
-      font-size: 800%;
+      font-size: 700%;
     }
   }
-  h2 {
+  .h2header {
     text-align: left;
-    font-size: 90%;
-    margin-left: 0.4em;
+    font-size: 120%;
     margin-right: 0.4em;
     padding-top: 1%;
-    color: $gold-01;
-    font-family: "Open Sans";
-    text-transform: uppercase;
+    color: $black;
+    font-family: "Lora";
     letter-spacing: 0.04em;
     @include desktop690 {
       font-size: 175%;
     }
   }
-  h3 {
+  .mag__borderline {
+    padding-top: 1.5%;
+    width: 100%;
+    border-bottom: 3px solid $gold-01;
+  }
+  .h3header {
     font-family: "Montserrat", sans-serif;
     font-size: 8px;
     margin: 0.5em;

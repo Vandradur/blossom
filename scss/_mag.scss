@@ -4,7 +4,7 @@
     max-width: 1120px;
     background-position: 50% 100%;
     margin: 0 auto;
-    .headline {
+    .mag__headline {
       width: 100%;
       margin: 0 auto;
     }
@@ -19,25 +19,25 @@
     height: auto;
   }
   .h1header {
-    color: $black-04;
-    line-height: 0.8;
-    font-family: "Arima Madurai", cursive;
-    font-size: 800%;
+    @include h1Text;
+    font-size: 300%;
+    @include desktop690 {
+      font-size: 700%;
+    }
   }
-  .h4header {
+  .h2header {
     text-align: left;
-    font-size: 175%;
+    font-size: 100%;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
     padding-top: 1%;
-    color: $gold-01;
-    font-family: "Open Sans";
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
+    @include h2Text;
+    @include desktop690 {
+      font-size: 175%;
+    }
   }
   h3 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 8px;
-    margin: 0.5em;
-    color: $black-04;
+    @include h3Text;
   }
   .h3header:before {
     content: "- ";
@@ -48,47 +48,160 @@
     color: $gold-01;
   }
   .mag__article {
+    @include bodyText;
     padding-top: 5%;
     margin-right: 5%;
     background: transparent;
-    font-family: "Raleway", sans-serif;
-    font-family: "Open Sans";
     color: $secondary;
     height: auto;
   }
   .mag__leftbox {
-    float: left;
-    width: 50%;
-    min-height: 600px;
+    float: none;
+    width: 90%;
+    margin: 0 auto;
+    @include desktop690 {
+      float: left;
+      width: 50%;
+      min-height: 600px;
+    }
   }
   .mag__rightbox {
-    float: right;
-    width: 50%;
-    min-height: 600px;
+    float: none;
+    width: 90%;
+    margin: 0 auto;
+    @include desktop690 {
+      float: right;
+      width: 50%;
+      min-height: 600px;
+    }
   }
   .mag__borderline {
     padding-top: 1.5%;
     width: 100%;
     border-bottom: 3px solid $gold-01;
   }
-  .img {
-    width: 80%;
-    margin-left: 20%;
-    -webkit-transition: all 0.7s ease;
-    transition: all 0.7s ease;
-  }
-  .mag__imgbox {
+  .mag__sliderbox {
     overflow: hidden;
     width: 100%;
     margin-top: 5%;
     padding-right: 0.5em;
     border-right: 3px solid $gold-01;
-    margin-left: 1em;
+    margin-left: -1em;
+    .owl-slider {
+      #carousel {
+        .item {
+          width: 100%;
+          position: relative;
+          img {
+            filter: grayscale(40%);
+          }
+          &:hover {
+            filter: grayscale(70%);
+          }
+        }
+        .text-block {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          margin: 22% auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          h1 {
+            @include bodyText;
+            color: $white;
+            animation: flicker 3s linear infinite;
+          }
+          .hr-text {
+            display: inline-block;
+            font-size: 10px;
+            margin-bottom: 2px;
+            padding: 0 20px;
+            position: relative;
+          }
+          .hr-text:before,
+          .hr-text:after {
+            background: #fff;
+            content: "";
+            display: block;
+            height: 2.2px;
+            position: absolute;
+            top: 50%;
+            width: 60%;
+          }
+
+          .hr-text:before {
+            left: 100%;
+          }
+
+          .hr-text:after {
+            right: 100%;
+          }
+
+          p {
+            font-size: 0.6em;
+          }
+        }
+      }
+      .owl-nav button {
+        top: 40%;
+        transform: translateY(-50%);
+        background: $primaryLight !important;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+        border-width: 3px;
+        margin: 0 auto;
+        margin: 30px;
+        //box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        transition: all 0.2s ease;
+      }
+      .owl-nav button.owl-prev {
+        left: 0;
+      }
+      .owl-nav button.owl-next {
+        right: 0;
+      }
+      .owl-nav button:focus {
+        outline: none;
+      }
+    }
+
+    //Animation Keyframes
+    @keyframes flicker {
+      0%,
+      19.999%,
+      22%,
+      62.999%,
+      64%,
+      64.999%,
+      70%,
+      100% {
+        opacity: 0.99;
+        text-shadow: -1px -1px 0 $outline, 1px -1px 0 $outline,
+          -1px 1px 0 $outline, 1px 1px 0 $black-05, 0 -2px 8px, 0 0 2px,
+          0 0 5px #ff7e00, 0 0 15px $gold-01, 0 0 2px $goldenrod, 0 2px 3px #000;
+      }
+      20%,
+      21.999%,
+      63%,
+      63.999%,
+      65%,
+      69.999% {
+        opacity: 0.4;
+        text-shadow: none;
+      }
+    }
   }
+
+  /*
   .mag__imgbox:hover .img {
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
-  }
+  }*/
   blockquote {
     margin-left: -1.5em;
     width: 60%;
@@ -96,10 +209,14 @@
     border-left: 3px solid $gold-01;
     padding-left: 0.5em;
     margin-top: 1em;
-    margin-bottom: -0.5em;
     font-size: 1.3em;
+    margin-left: 0.1em;
+    margin-bottom: 0.3em;
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
+    @include desktop690 {
+      margin-bottom: -0.5em;
+    }
   }
   blockquote:hover {
     color: black;
@@ -107,38 +224,8 @@
     transform: scale(1.3);
   }
 
-  @media only screen and (max-width: 600px) {
-    * {
-      -webkit-transition: all 0.7s ease;
-      transition: all 0.7s ease;
-    }
-    .h1header {
-      font-size: 300%;
-    }
-    .h4header {
-      font-size: 90%;
-      margin-left: 0.4em;
-      margin-right: 0.4em;
-    }
-    blockquote {
-      margin-left: 0.1em;
-      margin-bottom: 0.3em;
-    }
-    .img {
-      margin-left: 3em;
-    }
-    .mag__imgbox {
-      margin-left: -1em;
-    }
-    .mag__leftbox {
-      float: none;
-      width: 90%;
-      margin: 0 auto;
-    }
-    .mag__rightbox {
-      float: none;
-      width: 90%;
-      margin: 0 auto;
-    }
+  * {
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
   }
 }

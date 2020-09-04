@@ -50,6 +50,7 @@ $line-height-article-header: 39px; // Styles
   letter-spacing: 1.5px;
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
+  font-family: "Open Sans";
 }
 
 /* LINKS ========================================================================== */
@@ -66,15 +67,18 @@ $line-height-article-header: 39px; // Styles
 /* H1 TEXT ========================================================================== */
 @mixin h1Text {
   font-family: var(--fontSans);
-  color: $primaryLight;
   font-size: $font-size-h1;
-  text-shadow: #474747 3px 5px 2px;
   line-height: 0.78;
   font-family: "Lora", serif;
   font-family: "Playfair Display", serif;
+  font-family: "Open Sans";
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
-  font-family: "Open Sans";
+  text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff,
+    1px 1px 0 white;
+  color: $black-04;
+  text-align: left;
+  line-height: 0.8;
 }
 
 @mixin h1Text480 {
@@ -96,15 +100,12 @@ $line-height-article-header: 39px; // Styles
 
 /* H2 TEXT ========================================================================== */
 @mixin h2Text {
-  font-size: 0.9em; /* 2 x 1.063 = 2.126*/
+  font-size: 1.2em; /* 2 x 1.063 = 2.126*/
   line-height: 0.9; /* 1.3 / 2.126 = 0.6 */
   font-weight: $semibold;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  color: #000;
-  color: $black-02;
-  font-family: "Raleway", sans-serif;
-  font-family: "Open Sans";
+  color: $black-03;
+  font-family: "Lora";
+  letter-spacing: 0.04em;
 }
 
 @mixin h2Text480 {
@@ -132,10 +133,11 @@ $line-height-article-header: 39px; // Styles
   line-height: 0.9em;
   font-size: 1em;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  font-family: "Raleway", sans-serif;
-  color: #333;
-  color: $black-02;
+  letter-spacing: 1.2px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  margin: 0.5em;
+  color: $black-04;
 }
 
 @mixin h3Text480 {

@@ -254,6 +254,7 @@ header .nav .nav-bar ul a {
   letter-spacing: 1.5px;
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
+  font-family: "Open Sans";
   color: #0c090d;
   padding: 1.3rem 6rem;
   font-family: "Montserrat";
@@ -317,179 +318,6 @@ header .nav-bar.menu-open {
   opacity: 1;
 }
 
-.owl-slider {
-  width: 100%;
-}
-
-.owl-slider .owl-nav button {
-  top: 40%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background: #fff1e6 !important;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 30px;
-  border-style: solid;
-  border-width: 3px;
-  margin: 0 auto;
-  margin: 30px;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-.owl-slider .owl-nav button.owl-prev {
-  left: 0;
-}
-
-.owl-slider .owl-nav button.owl-next {
-  right: 0;
-}
-
-.owl-slider .owl-nav button:focus {
-  outline: none;
-}
-
-.owl-slider #carousel .text-block {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-align: center;
-  margin: 2% auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.owl-slider #carousel .text-block h1 {
-  font-family: var(--fontSans);
-  font-weight: 600;
-  font-size: 2.4rem;
-  color: #fff;
-  line-height: 1;
-  -webkit-animation: flicker 3s linear infinite;
-          animation: flicker 3s linear infinite;
-}
-
-.owl-slider #carousel .text-block .hr-text {
-  display: inline-block;
-  font-size: 14px;
-  margin-bottom: 2px;
-  padding: 0 20px;
-  position: relative;
-}
-
-.owl-slider #carousel .text-block .hr-text:before,
-.owl-slider #carousel .text-block .hr-text:after {
-  background: #fff;
-  content: "";
-  display: block;
-  height: 2.2px;
-  position: absolute;
-  top: 50%;
-  width: 100%;
-}
-
-.owl-slider #carousel .text-block .hr-text:before {
-  left: 100%;
-}
-
-.owl-slider #carousel .text-block .hr-text:after {
-  right: 100%;
-}
-
-.owl-slider #carousel .text-block p {
-  line-height: 18px;
-  text-decoration: none;
-  color: #333;
-  color: #0c090d;
-  font-size: 16px;
-  line-height: 1;
-  outline: none;
-  border: none;
-  font-weight: 500;
-  letter-spacing: 1.5px;
-  font-family: "Raleway", sans-serif;
-  font-family: "Arima Madurai", cursive;
-  color: #fefee3;
-  font-size: 0.9rem;
-  text-shadow: #474747 1px 2px 1px;
-  margin-top: 3%;
-}
-
-@media (min-width: 480px) {
-  .owl-slider #carousel .text-block p {
-    font-size: 0.8em;
-  }
-}
-
-@media (min-width: 690px) {
-  .owl-slider #carousel .text-block p {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 767px) {
-  .owl-slider #carousel .text-block p {
-    font-size: 1.3rem;
-  }
-}
-
-@-webkit-keyframes flicker {
-  0%,
-  19.999%,
-  22%,
-  62.999%,
-  64%,
-  64.999%,
-  70%,
-  100% {
-    opacity: 0.99;
-    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 #2f3e46, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #b08f26, 0 0 2px #daa520, 0 2px 3px #000;
-  }
-  20%,
-  21.999%,
-  63%,
-  63.999%,
-  65%,
-  69.999% {
-    opacity: 0.4;
-    text-shadow: none;
-  }
-}
-
-@keyframes flicker {
-  0%,
-  19.999%,
-  22%,
-  62.999%,
-  64%,
-  64.999%,
-  70%,
-  100% {
-    opacity: 0.99;
-    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 #2f3e46, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #b08f26, 0 0 2px #daa520, 0 2px 3px #000;
-  }
-  20%,
-  21.999%,
-  63%,
-  63.999%,
-  65%,
-  69.999% {
-    opacity: 0.4;
-    text-shadow: none;
-  }
-}
-
 .video-sec {
   background: #fff;
   overflow: hidden;
@@ -503,15 +331,17 @@ header .nav-bar.menu-open {
 
 .video-sec .video-header h1 {
   font-family: var(--fontSans);
-  color: #fff1e6;
   font-size: 55px;
-  text-shadow: #474747 3px 5px 2px;
   line-height: 0.78;
   font-family: "Lora", serif;
   font-family: "Playfair Display", serif;
+  font-family: "Open Sans";
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
-  font-family: "Open Sans";
+  text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff, 1px 1px 0 white;
+  color: #333533;
+  text-align: left;
+  line-height: 0.8;
   color: #020d13ff;
   text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff, 1px 1px 0 white;
   line-height: 0.98;
@@ -545,6 +375,7 @@ header .nav-bar.menu-open {
   letter-spacing: 1.5px;
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
+  font-family: "Open Sans";
   color: #2f3e46;
   margin-top: 3%;
 }
@@ -744,15 +575,17 @@ header .nav-bar.menu-open {
 #parallax-wrapper #hero-container .herotext p {
   text-align: center;
   font-family: var(--fontSans);
-  color: #fff1e6;
   font-size: 55px;
-  text-shadow: #474747 3px 5px 2px;
   line-height: 0.78;
   font-family: "Lora", serif;
   font-family: "Playfair Display", serif;
+  font-family: "Open Sans";
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
-  font-family: "Open Sans";
+  text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff, 1px 1px 0 white;
+  color: #333533;
+  text-align: left;
+  line-height: 0.8;
   font-size: 2em;
   color: #fff;
   font-family: "Georgia";
@@ -779,6 +612,7 @@ header .nav-bar.menu-open {
   letter-spacing: 1.5px;
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
+  font-family: "Open Sans";
   font-family: "Raleway";
   color: #fff;
   text-shadow: #020d13ff 1px 2px 1px;
@@ -1117,15 +951,17 @@ SECTION 01
 
 .hero #hero-content #hero-title {
   font-family: var(--fontSans);
-  color: #fff1e6;
   font-size: 55px;
-  text-shadow: #474747 3px 5px 2px;
   line-height: 0.78;
   font-family: "Lora", serif;
   font-family: "Playfair Display", serif;
+  font-family: "Open Sans";
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
-  font-family: "Open Sans";
+  text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff, 1px 1px 0 white;
+  color: #333533;
+  text-align: left;
+  line-height: 0.8;
   color: #fff1e6;
   text-shadow: #474747 3px 5px 2px;
   line-height: 0.98;
@@ -1150,6 +986,7 @@ SECTION 01
   letter-spacing: 1.5px;
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
+  font-family: "Open Sans";
   color: #fefee3;
   text-shadow: #474747 1px 2px 1px;
   margin-top: 3%;
@@ -1164,60 +1001,72 @@ SECTION 01
 /* ==========================================================================
 Parallax cards 
 ========================================================================== */
+.section-02 {
+  padding: 3.3em 2em 1em 2em;
+}
+
 #collection {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
   margin: auto;
   padding: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   max-width: 1120px;
-  width: 70%;
+  width: 100%;
+  max-width: 1120px;
+  background-position: 50% 100%;
+}
+
+#collection .mag__headline {
+  width: 100%;
+  margin: 0 auto;
 }
 
 #collection .h1header {
+  font-family: var(--fontSans);
+  font-size: 55px;
+  line-height: 0.78;
+  font-family: "Lora", serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Open Sans";
+  font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
+  text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff, 1px 1px 0 white;
   color: #333533;
   text-align: left;
   line-height: 0.8;
-  font-family: "Arima Madurai", cursive;
   font-size: 300%;
 }
 
 @media (min-width: 690px) {
   #collection .h1header {
-    font-size: 800%;
+    font-size: 700%;
   }
 }
 
-#collection h2 {
+#collection .h2header {
   text-align: left;
-  font-size: 90%;
-  margin-left: 0.4em;
+  font-size: 120%;
   margin-right: 0.4em;
   padding-top: 1%;
-  color: #b08f26;
-  font-family: "Open Sans";
-  text-transform: uppercase;
+  color: #020d13ff;
+  font-family: "Lora";
   letter-spacing: 0.04em;
 }
 
 @media (min-width: 690px) {
-  #collection h2 {
+  #collection .h2header {
     font-size: 175%;
   }
 }
 
-#collection h3 {
+#collection .mag__borderline {
+  padding-top: 1.5%;
+  width: 100%;
+  border-bottom: 3px solid #b08f26;
+}
+
+#collection .h3header {
   font-family: "Montserrat", sans-serif;
   font-size: 8px;
   margin: 0.5em;
@@ -1334,10 +1183,11 @@ Parallax cards
   line-height: 0.9em;
   font-size: 1em;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  font-family: "Raleway", sans-serif;
-  color: #333;
-  color: #161a1d;
+  letter-spacing: 1.2px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  margin: 0.5em;
+  color: #333533;
   color: #fff1e6;
 }
 
@@ -1354,6 +1204,7 @@ Parallax cards
   letter-spacing: 1.5px;
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
+  font-family: "Open Sans";
   font-size: 0.78em;
   margin-bottom: 2rem;
   position: relative;
@@ -1386,6 +1237,7 @@ Parallax cards
   letter-spacing: 1.5px;
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
+  font-family: "Open Sans";
   color: #fff;
   font-weight: 700;
 }
@@ -1513,6 +1365,7 @@ Parallax cards
   letter-spacing: 1.5px;
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
+  font-family: "Open Sans";
   color: #2f3e46;
   margin-top: 3%;
 }
@@ -1753,15 +1606,17 @@ Parallax cards
 
 #sec-50 .main-text h1 {
   font-family: var(--fontSans);
-  color: #fff1e6;
   font-size: 55px;
-  text-shadow: #474747 3px 5px 2px;
   line-height: 0.78;
   font-family: "Lora", serif;
   font-family: "Playfair Display", serif;
+  font-family: "Open Sans";
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
-  font-family: "Open Sans";
+  text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff, 1px 1px 0 white;
+  color: #333533;
+  text-align: left;
+  line-height: 0.8;
   color: #020d13ff;
   text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff, 1px 1px 0 white;
   line-height: 0.98;
@@ -1774,17 +1629,14 @@ Parallax cards
 }
 
 #sec-50 .main-text h2 {
-  font-size: 0.9em;
+  font-size: 1.2em;
   /* 2 x 1.063 = 2.126*/
   line-height: 0.9;
   /* 1.3 / 2.126 = 0.6 */
   font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  color: #000;
-  color: #161a1d;
-  font-family: "Raleway", sans-serif;
-  font-family: "Open Sans";
+  color: #0c090d;
+  font-family: "Lora";
+  letter-spacing: 0.04em;
   color: #b08f26;
   margin-top: 10px;
 }
@@ -1803,10 +1655,11 @@ Parallax cards
   line-height: 0.9em;
   font-size: 1em;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  font-family: "Raleway", sans-serif;
-  color: #333;
-  color: #161a1d;
+  letter-spacing: 1.2px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  margin: 0.5em;
+  color: #333533;
   margin: 1em 0;
   color: #5c677d;
 }
@@ -1824,6 +1677,7 @@ Parallax cards
   letter-spacing: 1.5px;
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
+  font-family: "Open Sans";
   color: #2f3e46;
   margin-top: 3%;
 }
@@ -1911,6 +1765,11 @@ Parallax cards
 
 #mag {
   padding: 3.3em 2em 1em 2em;
+  /*
+  .mag__imgbox:hover .img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }*/
 }
 
 #mag .mag__header {
@@ -1919,7 +1778,7 @@ Parallax cards
   margin: 0 auto;
 }
 
-#mag .mag__header .headline {
+#mag .mag__header .mag__headline {
   width: 100%;
   margin: 0 auto;
 }
@@ -1934,23 +1793,54 @@ Parallax cards
 }
 
 #mag .h1header {
-  color: #333533;
-  line-height: 0.8;
+  font-family: var(--fontSans);
+  font-size: 55px;
+  line-height: 0.78;
+  font-family: "Lora", serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Open Sans";
+  font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
-  font-size: 800%;
+  text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff, 1px 1px 0 white;
+  color: #333533;
+  text-align: left;
+  line-height: 0.8;
+  font-size: 300%;
 }
 
-#mag .h4header {
+@media (min-width: 690px) {
+  #mag .h1header {
+    font-size: 700%;
+  }
+}
+
+#mag .h2header {
   text-align: left;
-  font-size: 175%;
+  font-size: 100%;
+  margin-left: 0.4em;
+  margin-right: 0.4em;
   padding-top: 1%;
-  color: #b08f26;
-  font-family: "Open Sans";
-  text-transform: uppercase;
+  font-size: 1.2em;
+  /* 2 x 1.063 = 2.126*/
+  line-height: 0.9;
+  /* 1.3 / 2.126 = 0.6 */
+  font-weight: 500;
+  color: #0c090d;
+  font-family: "Lora";
   letter-spacing: 0.04em;
 }
 
+@media (min-width: 690px) {
+  #mag .h2header {
+    font-size: 175%;
+  }
+}
+
 #mag h3 {
+  line-height: 0.9em;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
   font-family: "Montserrat", sans-serif;
   font-size: 8px;
   margin: 0.5em;
@@ -1968,25 +1858,52 @@ Parallax cards
 }
 
 #mag .mag__article {
+  line-height: 18px;
+  text-decoration: none;
+  color: #333;
+  color: #0c090d;
+  font-size: 16px;
+  line-height: 1;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
+  font-family: "Open Sans";
   padding-top: 5%;
   margin-right: 5%;
   background: transparent;
-  font-family: "Raleway", sans-serif;
-  font-family: "Open Sans";
   color: #5c677d;
   height: auto;
 }
 
 #mag .mag__leftbox {
-  float: left;
-  width: 50%;
-  min-height: 600px;
+  float: none;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 690px) {
+  #mag .mag__leftbox {
+    float: left;
+    width: 50%;
+    min-height: 600px;
+  }
 }
 
 #mag .mag__rightbox {
-  float: right;
-  width: 50%;
-  min-height: 600px;
+  float: none;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 690px) {
+  #mag .mag__rightbox {
+    float: right;
+    width: 50%;
+    min-height: 600px;
+  }
 }
 
 #mag .mag__borderline {
@@ -1995,25 +1912,172 @@ Parallax cards
   border-bottom: 3px solid #b08f26;
 }
 
-#mag .img {
-  width: 80%;
-  margin-left: 20%;
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-#mag .mag__imgbox {
+#mag .mag__sliderbox {
   overflow: hidden;
   width: 100%;
   margin-top: 5%;
   padding-right: 0.5em;
   border-right: 3px solid #b08f26;
-  margin-left: 1em;
+  margin-left: -1em;
 }
 
-#mag .mag__imgbox:hover .img {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
+#mag .mag__sliderbox .owl-slider #carousel .item {
+  width: 100%;
+  position: relative;
+}
+
+#mag .mag__sliderbox .owl-slider #carousel .item img {
+  -webkit-filter: grayscale(40%);
+          filter: grayscale(40%);
+}
+
+#mag .mag__sliderbox .owl-slider #carousel .item:hover {
+  -webkit-filter: grayscale(70%);
+          filter: grayscale(70%);
+}
+
+#mag .mag__sliderbox .owl-slider #carousel .text-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 22% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#mag .mag__sliderbox .owl-slider #carousel .text-block h1 {
+  line-height: 18px;
+  text-decoration: none;
+  color: #333;
+  color: #0c090d;
+  font-size: 16px;
+  line-height: 1;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
+  font-family: "Open Sans";
+  color: #fff;
+  -webkit-animation: flicker 3s linear infinite;
+          animation: flicker 3s linear infinite;
+}
+
+#mag .mag__sliderbox .owl-slider #carousel .text-block .hr-text {
+  display: inline-block;
+  font-size: 10px;
+  margin-bottom: 2px;
+  padding: 0 20px;
+  position: relative;
+}
+
+#mag .mag__sliderbox .owl-slider #carousel .text-block .hr-text:before,
+#mag .mag__sliderbox .owl-slider #carousel .text-block .hr-text:after {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 2.2px;
+  position: absolute;
+  top: 50%;
+  width: 60%;
+}
+
+#mag .mag__sliderbox .owl-slider #carousel .text-block .hr-text:before {
+  left: 100%;
+}
+
+#mag .mag__sliderbox .owl-slider #carousel .text-block .hr-text:after {
+  right: 100%;
+}
+
+#mag .mag__sliderbox .owl-slider #carousel .text-block p {
+  font-size: 0.6em;
+}
+
+#mag .mag__sliderbox .owl-slider .owl-nav button {
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #fff1e6 !important;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  border-width: 3px;
+  margin: 0 auto;
+  margin: 30px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#mag .mag__sliderbox .owl-slider .owl-nav button.owl-prev {
+  left: 0;
+}
+
+#mag .mag__sliderbox .owl-slider .owl-nav button.owl-next {
+  right: 0;
+}
+
+#mag .mag__sliderbox .owl-slider .owl-nav button:focus {
+  outline: none;
+}
+
+@-webkit-keyframes flicker {
+  0%,
+  19.999%,
+  22%,
+  62.999%,
+  64%,
+  64.999%,
+  70%,
+  100% {
+    opacity: 0.99;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 #2f3e46, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #b08f26, 0 0 2px #daa520, 0 2px 3px #000;
+  }
+  20%,
+  21.999%,
+  63%,
+  63.999%,
+  65%,
+  69.999% {
+    opacity: 0.4;
+    text-shadow: none;
+  }
+}
+
+@keyframes flicker {
+  0%,
+  19.999%,
+  22%,
+  62.999%,
+  64%,
+  64.999%,
+  70%,
+  100% {
+    opacity: 0.99;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 #2f3e46, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #b08f26, 0 0 2px #daa520, 0 2px 3px #000;
+  }
+  20%,
+  21.999%,
+  63%,
+  63.999%,
+  65%,
+  69.999% {
+    opacity: 0.4;
+    text-shadow: none;
+  }
 }
 
 #mag blockquote {
@@ -2023,10 +2087,17 @@ Parallax cards
   border-left: 3px solid #b08f26;
   padding-left: 0.5em;
   margin-top: 1em;
-  margin-bottom: -0.5em;
   font-size: 1.3em;
+  margin-left: 0.1em;
+  margin-bottom: 0.3em;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
+}
+
+@media (min-width: 690px) {
+  #mag blockquote {
+    margin-bottom: -0.5em;
+  }
 }
 
 #mag blockquote:hover {
@@ -2035,39 +2106,9 @@ Parallax cards
   transform: scale(1.3);
 }
 
-@media only screen and (max-width: 600px) {
-  #mag * {
-    -webkit-transition: all 0.7s ease;
-    transition: all 0.7s ease;
-  }
-  #mag .h1header {
-    font-size: 300%;
-  }
-  #mag .h4header {
-    font-size: 90%;
-    margin-left: 0.4em;
-    margin-right: 0.4em;
-  }
-  #mag blockquote {
-    margin-left: 0.1em;
-    margin-bottom: 0.3em;
-  }
-  #mag .img {
-    margin-left: 3em;
-  }
-  #mag .mag__imgbox {
-    margin-left: -1em;
-  }
-  #mag .mag__leftbox {
-    float: none;
-    width: 90%;
-    margin: 0 auto;
-  }
-  #mag .mag__rightbox {
-    float: none;
-    width: 90%;
-    margin: 0 auto;
-  }
+#mag * {
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
 }
 
 footer ul {
@@ -2107,6 +2148,7 @@ footer a {
   letter-spacing: 1.5px;
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
+  font-family: "Open Sans";
   color: white;
   color: #7d8597;
   font-family: "Open Sans";
