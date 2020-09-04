@@ -2,7 +2,6 @@
 Parallax cards 
 ========================================================================== */
 .section-02 {
-  background: #fff;
 }
 #collection {
   flex-direction: column;
@@ -12,35 +11,59 @@ Parallax cards
   margin: auto;
   padding: 1%;
   display: flex;
+  max-width: 1120px;
   width: 70%;
-  h1 {
-    @include h1Text;
-    color: $black;
-    text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff,
-      1px 1px 0 white;
-    line-height: 0.98;
-    //animation: flicker 3s linear infinite;
-
+  .h1header {
+    //@include h1Text;
+    // color: $black;
+    // text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff,
+    //   1px 1px 0 white;
+    // line-height: 0.98;
+    // @include desktop690 {
+    //   font-size: 66px;
+    // }
+    color: $black-04;
+    text-align: left;
+    line-height: 0.8;
+    font-family: "Arima Madurai", cursive;
+    font-size: 300%;
     @include desktop690 {
-      font-size: 66px;
+      font-size: 800%;
     }
   }
   h2 {
-    @include h2Text;
+    text-align: left;
+    font-size: 90%;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+    padding-top: 1%;
     color: $gold-01;
-    margin-top: 10px;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
     @include desktop690 {
-      font-size: 1.526rem;
+      font-size: 175%;
     }
   }
   h3 {
-    @include h3Text;
-    margin: 1rem 0 0 0;
-    color: $secondary;
+    font-family: "Montserrat", sans-serif;
+    font-size: 8px;
+    margin: 0.5em;
+    color: $black-04;
+  }
+  .h3header:before {
+    content: "- ";
+    color: $gold-01;
+  }
+  .h3header:after {
+    content: " -";
+    color: $gold-01;
   }
   p {
-    @include bodyText;
-    color: $black-05;
+    font-family: "Raleway", sans-serif;
+    font-family: "Open Sans";
+    text-align: left;
+    color: $secondary;
     // text-shadow: #474747 1px 2px 1px;
     margin-top: 1%;
     @include desktop480 {

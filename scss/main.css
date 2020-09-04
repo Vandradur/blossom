@@ -1164,10 +1164,6 @@ SECTION 01
 /* ==========================================================================
 Parallax cards 
 ========================================================================== */
-.section-02 {
-  background: #fff;
-}
-
 #collection {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1185,79 +1181,64 @@ Parallax cards
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 1120px;
   width: 70%;
 }
 
-#collection h1 {
-  font-family: var(--fontSans);
-  color: #fff1e6;
-  font-size: 55px;
-  text-shadow: #474747 3px 5px 2px;
-  line-height: 0.78;
-  font-family: "Lora", serif;
-  font-family: "Playfair Display", serif;
-  font-family: "Raleway", sans-serif;
+#collection .h1header {
+  color: #333533;
+  text-align: left;
+  line-height: 0.8;
   font-family: "Arima Madurai", cursive;
-  font-family: "Open Sans";
-  color: #020d13ff;
-  text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff, 1px 1px 0 white;
-  line-height: 0.98;
+  font-size: 300%;
 }
 
 @media (min-width: 690px) {
-  #collection h1 {
-    font-size: 66px;
+  #collection .h1header {
+    font-size: 800%;
   }
 }
 
 #collection h2 {
-  font-size: 0.9em;
-  /* 2 x 1.063 = 2.126*/
-  line-height: 0.9;
-  /* 1.3 / 2.126 = 0.6 */
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  color: #000;
-  color: #161a1d;
-  font-family: "Raleway", sans-serif;
-  font-family: "Open Sans";
+  text-align: left;
+  font-size: 90%;
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+  padding-top: 1%;
   color: #b08f26;
-  margin-top: 10px;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 @media (min-width: 690px) {
   #collection h2 {
-    font-size: 1.526rem;
+    font-size: 175%;
   }
 }
 
 #collection h3 {
-  line-height: 0.9em;
-  font-size: 1em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-family: "Raleway", sans-serif;
-  color: #333;
-  color: #161a1d;
-  margin: 1rem 0 0 0;
-  color: #5c677d;
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  margin: 0.5em;
+  color: #333533;
+}
+
+#collection .h3header:before {
+  content: "- ";
+  color: #b08f26;
+}
+
+#collection .h3header:after {
+  content: " -";
+  color: #b08f26;
 }
 
 #collection p {
-  line-height: 18px;
-  text-decoration: none;
-  color: #333;
-  color: #0c090d;
-  font-size: 16px;
-  line-height: 1;
-  outline: none;
-  border: none;
-  font-weight: 500;
-  letter-spacing: 1.5px;
   font-family: "Raleway", sans-serif;
-  font-family: "Arima Madurai", cursive;
-  color: #2f3e46;
+  font-family: "Open Sans";
+  text-align: left;
+  color: #5c677d;
   margin-top: 1%;
 }
 
@@ -1929,13 +1910,11 @@ Parallax cards
 }
 
 #mag {
-  background: #fff;
-  padding: 4rem 3rem 1rem 3rem;
+  padding: 3.3em 2em 1em 2em;
 }
 
 #mag .mag__header {
   max-width: 1120px;
-  background-color: #fff;
   background-position: 50% 100%;
   margin: 0 auto;
 }
@@ -1947,8 +1926,7 @@ Parallax cards
 
 #mag .mag__body {
   max-width: 1120px;
-  min-height: 900px;
-  background-color: #fff;
+  padding-bottom: 2em;
   background-size: 90%;
   background-position: 50% 100%;
   margin: 0 auto;
@@ -1969,13 +1947,13 @@ Parallax cards
   color: #b08f26;
   font-family: "Open Sans";
   text-transform: uppercase;
-  letter-spacing: 0.04rem;
+  letter-spacing: 0.04em;
 }
 
 #mag h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 8px;
-  margin: 0.5rem;
+  margin: 0.5em;
   color: #333533;
 }
 
@@ -1992,7 +1970,6 @@ Parallax cards
 #mag .mag__article {
   padding-top: 5%;
   margin-right: 5%;
-  color: white;
   background: transparent;
   font-family: "Raleway", sans-serif;
   font-family: "Open Sans";
@@ -2012,7 +1989,7 @@ Parallax cards
   min-height: 600px;
 }
 
-#mag .borderline {
+#mag .mag__borderline {
   padding-top: 1.5%;
   width: 100%;
   border-bottom: 3px solid #b08f26;
@@ -2091,15 +2068,6 @@ Parallax cards
     width: 90%;
     margin: 0 auto;
   }
-}
-
-.divider {
-  margin: 0 auto;
-  margin-top: 20px;
-  text-align: center;
-  background-color: #0c090d;
-  width: 70%;
-  height: 5px;
 }
 
 footer ul {
