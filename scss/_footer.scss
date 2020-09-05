@@ -1,56 +1,94 @@
-footer {
-  ul {
-    display: inline-grid;
-    grid-auto-flow: row;
-    grid-gap: 24px;
-    justify-items: center;
-    margin: auto;
-    li {
-      text-decoration: none;
+#footer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/hero-2.png) no-repeat 50% 50% fixed;
+  background-size: 130%;
+  overflow: hidden;
+  @include flexCenter;
+  flex-direction: column;
+  #hero-content {
+    max-width: 70%;
+    z-index: 3;
+    #hero-title {
+      @include h1Text;
+      color: $primaryLight;
+      text-shadow: #474747 3px 5px 2px;
+      line-height: 0.98;
+      @include desktop690 {
+        font-size: 60px;
+      }
+    }
+    #hero-text {
+      @include bodyText;
+      color: $white-03;
+      text-shadow: #474747 1px 2px 1px;
+      margin-top: 3%;
+      @include desktop690 {
+        font-size: 1.3em;
+      }
     }
   }
 
-  @media (min-width: 700px) {
-    ul {
-      grid-auto-flow: column;
-    }
-    .tag {
-      display: none;
-    }
-  }
-
-  a {
-    text-decoration: none;
-    //box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
-    text-decoration: none;
-    @include bodyText;
-    color: rgb(255, 255, 255);
-    color: $secondaryLight;
-    font-family: "Open Sans";
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 12px;
-  }
-
-  a:hover {
-    color: $black-03;
-  }
-
-  li:last-child {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-
-  div {
-    display: flex;
-    height: 50vh;
+  #footer-btm {
+    margin-top: 1em;
+    padding: 1em;
     width: 100%;
     background-color: $primary;
+    @include flexCenter;
+    ul {
+      display: inline-grid;
+      grid-auto-flow: row;
+      grid-gap: 24px;
+      justify-items: center;
+      margin: auto;
+      li {
+        text-decoration: none;
+      }
+    }
 
-    .tag {
-      color: $secondaryDark;
+    @media (min-width: 700px) {
+      ul {
+        grid-auto-flow: column;
+      }
+      .tag {
+        display: none;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      //box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+      text-decoration: none;
+      @include bodyText;
+      color: rgb(255, 255, 255);
+      color: $secondaryLight;
       font-family: "Open Sans";
-      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-size: 12px;
+    }
+
+    a:hover {
+      color: $black-03;
+    }
+
+    li:last-child {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+
+    div {
+      display: flex;
+      height: 50vh;
+      width: 100%;
+      background-color: $primary;
+
+      .tag {
+        color: $secondaryDark;
+        font-family: "Open Sans";
+        font-weight: 900;
+      }
     }
   }
 }
