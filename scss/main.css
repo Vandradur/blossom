@@ -541,7 +541,7 @@ header .nav-bar.menu-open {
 .video-sec .panels .panel > .overlay .description {
   font-family: "Raleway", sans-serif;
   font-size: 0.7em;
-  line-height: 1.5;
+  line-height: 1;
   color: #fff;
 }
 
@@ -1106,6 +1106,7 @@ SECTION 01
   font-size: 8px;
   margin: 0.5em;
   color: #333533;
+  margin-top: 1em;
 }
 
 #collection .h3header:before {
@@ -1178,7 +1179,7 @@ SECTION 01
   text-align: center;
   min-height: 280px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 4px solid #fff;
 }
 
@@ -1208,39 +1209,27 @@ SECTION 01
   background-color: #fff;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .col .container .front .inner p {
-  font-size: 2em;
   margin-bottom: 2rem;
   position: relative;
-  line-height: 0.9em;
+  font-family: "Libre Baskerville", serif;
+  font-family: "Arima Madurai", cursive;
+  color: #fff;
+  text-shadow: -2px -2px 2px black;
   font-size: 1em;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 8px;
-  margin: 0.5em;
-  color: #333533;
-  color: #fff1e6;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  line-height: 1.25;
 }
 
 .col .container .back .inner p {
-  line-height: 18px;
-  text-decoration: none;
-  color: #333;
-  color: #0c090d;
-  font-size: 16px;
-  line-height: 1;
-  outline: none;
-  border: none;
-  font-weight: 500;
-  letter-spacing: 1.5px;
   font-family: "Raleway", sans-serif;
-  font-family: "Arima Madurai", cursive;
-  font-family: "Open Sans";
-  font-size: 0.78em;
+  font-size: 0.7em;
+  line-height: 1;
   margin-bottom: 2rem;
   position: relative;
   color: #020d13ff;
@@ -1260,21 +1249,11 @@ SECTION 01
 }
 
 .col .container .front .inner span {
-  line-height: 18px;
-  text-decoration: none;
-  color: #333;
-  color: #0c090d;
-  font-size: 16px;
-  line-height: 1;
-  outline: none;
-  border: none;
-  font-weight: 500;
-  letter-spacing: 1.5px;
-  font-family: "Raleway", sans-serif;
-  font-family: "Arima Madurai", cursive;
-  font-family: "Open Sans";
   color: #fff;
-  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .col .container .inner {
@@ -1629,63 +1608,48 @@ SECTION 01
           transform: translate(-50%, -50%);
   text-align: center;
   margin: 22% auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #fff1e6;
+  display: block;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+}
+
+.owl--sliderbox .owl-slider #carousel .text-block:hover {
+  background: transparent;
 }
 
 .owl--sliderbox .owl-slider #carousel .text-block h1 {
-  line-height: 18px;
-  text-decoration: none;
-  color: #333;
-  color: #0c090d;
-  font-size: 16px;
-  line-height: 1;
-  outline: none;
-  border: none;
-  font-weight: 500;
-  letter-spacing: 1.5px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-family: "Arima Madurai", cursive;
-  font-family: "Open Sans";
-  color: #fff;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #222222;
+  color: #0c090d;
+  font-size: 30px;
+  line-height: 1.25;
+  z-index: 3;
+}
+
+.owl--sliderbox .owl-slider #carousel .text-block .hr-text {
+  color: #020d13ff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
   -webkit-animation: flicker 3s linear infinite;
           animation: flicker 3s linear infinite;
 }
 
-.owl--sliderbox .owl-slider #carousel .text-block .hr-text {
-  display: inline-block;
-  font-size: 10px;
-  margin-bottom: 2px;
-  padding: 0 20px;
-  position: relative;
-}
-
-.owl--sliderbox .owl-slider #carousel .text-block .hr-text:before,
-.owl--sliderbox .owl-slider #carousel .text-block .hr-text:after {
-  background: #fff;
-  content: "";
-  display: block;
-  height: 2.2px;
-  position: absolute;
-  top: 50%;
-  width: 60%;
-}
-
-.owl--sliderbox .owl-slider #carousel .text-block .hr-text:before {
-  left: 100%;
-}
-
-.owl--sliderbox .owl-slider #carousel .text-block .hr-text:after {
-  right: 100%;
-}
-
 .owl--sliderbox .owl-slider #carousel .text-block p {
-  font-size: 0.6em;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.7em;
+  line-height: 1;
+  margin-top: 0.6rem;
+  color: #020d13ff;
 }
 
 .owl--sliderbox .owl-slider .owl-nav button {
@@ -1726,7 +1690,7 @@ SECTION 01
   70%,
   100% {
     opacity: 0.99;
-    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 #2f3e46, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #b08f26, 0 0 2px #daa520, 0 2px 3px #000;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 0 -2px 8px, 0 0 2px, 0 0 5px #fff, 0 0 15px #fffcf2, 0 0 2px #fff, 0 2px 3px #fff;
   }
   20%,
   21.999%,
@@ -1749,7 +1713,7 @@ SECTION 01
   70%,
   100% {
     opacity: 0.99;
-    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 #2f3e46, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #b08f26, 0 0 2px #daa520, 0 2px 3px #000;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 0 -2px 8px, 0 0 2px, 0 0 5px #fff, 0 0 15px #fffcf2, 0 0 2px #fff, 0 2px 3px #fff;
   }
   20%,
   21.999%,
@@ -2046,6 +2010,7 @@ SECTION 01
   font-size: 8px;
   margin: 0.5em;
   color: #333533;
+  margin-top: 1em;
 }
 
 #mag .h3header:before {
@@ -2125,7 +2090,7 @@ SECTION 01
   width: 100%;
   height: 300px;
   overflow: hidden;
-  border: 5px solid #b08f26;
+  border: 5px solid #fff;
 }
 
 #mag .mag__rightbox .imgbox #cssSlider .slider-wrap {
