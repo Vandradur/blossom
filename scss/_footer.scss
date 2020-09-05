@@ -35,6 +35,7 @@
     padding: 1em;
     width: 100%;
     background-color: $primary;
+    background-color: $black-03;
     @include flexCenter;
     ul {
       display: inline-grid;
@@ -61,8 +62,8 @@
       //box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
       text-decoration: none;
       @include bodyText;
-      color: rgb(255, 255, 255);
-      color: $secondaryLight;
+      color: #fff;
+      color: $white-02;
       font-family: "Open Sans";
       text-transform: uppercase;
       letter-spacing: 5px;
@@ -70,7 +71,7 @@
     }
 
     a:hover {
-      color: $black-03;
+      color: $primaryDark;
     }
 
     li:last-child {

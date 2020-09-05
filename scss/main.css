@@ -2248,6 +2248,7 @@ header .nav-bar.menu-open {
   padding: 1em;
   width: 100%;
   background-color: #eddcd2;
+  background-color: #0c090d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2297,8 +2298,8 @@ header .nav-bar.menu-open {
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
   font-family: "Open Sans";
-  color: white;
-  color: #7d8597;
+  color: #fff;
+  color: #fffcf2;
   font-family: "Open Sans";
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -2306,7 +2307,7 @@ header .nav-bar.menu-open {
 }
 
 #footer #footer-btm a:hover {
-  color: #0c090d;
+  color: #cb997e;
 }
 
 #footer #footer-btm li:last-child {
