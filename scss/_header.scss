@@ -171,9 +171,12 @@ header {
           position: absolute;
           bottom: 0px;
           left: 50%;
-          background: $goldenrod;
+          background: transparent;
           height: 3px;
           width: 50%;
+          @include desktop690 {
+            background: $goldenrod;
+          }
         }
 
         a:hover:before {
@@ -181,9 +184,12 @@ header {
           position: absolute;
           bottom: 0px;
           left: 0px;
-          background: $goldenrod;
+          background: transparent;
           height: 3px;
           width: 50%;
+          @include desktop690 {
+            background: $goldenrod;
+          }
         }
       }
     }
