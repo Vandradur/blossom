@@ -8,7 +8,6 @@
   text-align: center;
   padding: 20% 10%;
   .content {
-    background: $black;
     padding: 15px;
     display: inline-block;
     max-width: 300px;
@@ -172,23 +171,13 @@
   letter-spacing: 20px;
 }
 
-.mag__owl--sliderbox {
+.owl--sliderbox {
   overflow: hidden;
-  padding: 10px;
   width: 100%;
-  margin-top: 5%;
-  border-right: 3px solid $gold-01;
-  margin-left: 0.2em;
   .owl-slider {
     #carousel {
       .item {
         position: relative;
-        img {
-          filter: grayscale(30%);
-        }
-        &:hover {
-          filter: grayscale(70%);
-        }
       }
       .text-block {
         position: absolute;

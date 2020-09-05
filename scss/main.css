@@ -1432,7 +1432,6 @@ SECTION 01
 }
 
 .parallax-section .content {
-  background: #020d13ff;
   padding: 15px;
   display: inline-block;
   max-width: 300px;
@@ -1613,30 +1612,16 @@ SECTION 01
   letter-spacing: 20px;
 }
 
-.mag__owl--sliderbox {
+.owl--sliderbox {
   overflow: hidden;
-  padding: 10px;
   width: 100%;
-  margin-top: 5%;
-  border-right: 3px solid #b08f26;
-  margin-left: 0.2em;
 }
 
-.mag__owl--sliderbox .owl-slider #carousel .item {
+.owl--sliderbox .owl-slider #carousel .item {
   position: relative;
 }
 
-.mag__owl--sliderbox .owl-slider #carousel .item img {
-  -webkit-filter: grayscale(30%);
-          filter: grayscale(30%);
-}
-
-.mag__owl--sliderbox .owl-slider #carousel .item:hover {
-  -webkit-filter: grayscale(70%);
-          filter: grayscale(70%);
-}
-
-.mag__owl--sliderbox .owl-slider #carousel .text-block {
+.owl--sliderbox .owl-slider #carousel .text-block {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1653,7 +1638,7 @@ SECTION 01
           flex-direction: column;
 }
 
-.mag__owl--sliderbox .owl-slider #carousel .text-block h1 {
+.owl--sliderbox .owl-slider #carousel .text-block h1 {
   line-height: 18px;
   text-decoration: none;
   color: #333;
@@ -1672,7 +1657,7 @@ SECTION 01
           animation: flicker 3s linear infinite;
 }
 
-.mag__owl--sliderbox .owl-slider #carousel .text-block .hr-text {
+.owl--sliderbox .owl-slider #carousel .text-block .hr-text {
   display: inline-block;
   font-size: 10px;
   margin-bottom: 2px;
@@ -1680,8 +1665,8 @@ SECTION 01
   position: relative;
 }
 
-.mag__owl--sliderbox .owl-slider #carousel .text-block .hr-text:before,
-.mag__owl--sliderbox .owl-slider #carousel .text-block .hr-text:after {
+.owl--sliderbox .owl-slider #carousel .text-block .hr-text:before,
+.owl--sliderbox .owl-slider #carousel .text-block .hr-text:after {
   background: #fff;
   content: "";
   display: block;
@@ -1691,19 +1676,19 @@ SECTION 01
   width: 60%;
 }
 
-.mag__owl--sliderbox .owl-slider #carousel .text-block .hr-text:before {
+.owl--sliderbox .owl-slider #carousel .text-block .hr-text:before {
   left: 100%;
 }
 
-.mag__owl--sliderbox .owl-slider #carousel .text-block .hr-text:after {
+.owl--sliderbox .owl-slider #carousel .text-block .hr-text:after {
   right: 100%;
 }
 
-.mag__owl--sliderbox .owl-slider #carousel .text-block p {
+.owl--sliderbox .owl-slider #carousel .text-block p {
   font-size: 0.6em;
 }
 
-.mag__owl--sliderbox .owl-slider .owl-nav button {
+.owl--sliderbox .owl-slider .owl-nav button {
   top: 40%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -1719,15 +1704,15 @@ SECTION 01
   transition: all 0.2s ease;
 }
 
-.mag__owl--sliderbox .owl-slider .owl-nav button.owl-prev {
+.owl--sliderbox .owl-slider .owl-nav button.owl-prev {
   left: 0;
 }
 
-.mag__owl--sliderbox .owl-slider .owl-nav button.owl-next {
+.owl--sliderbox .owl-slider .owl-nav button.owl-next {
   right: 0;
 }
 
-.mag__owl--sliderbox .owl-slider .owl-nav button:focus {
+.owl--sliderbox .owl-slider .owl-nav button:focus {
   outline: none;
 }
 
