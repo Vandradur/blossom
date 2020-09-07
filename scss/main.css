@@ -1638,14 +1638,17 @@ header .nav-bar.menu-open {
   font-size: 30px;
   line-height: 1.25;
   z-index: 3;
+  -webkit-animation: blink linear infinite 30.7s;
+          animation: blink linear infinite 30.7s;
 }
 
 .owl--sliderbox .owl-slider #carousel .owl-text-block .hr-text {
   font-size: 1em;
+  font-family: "Open Sans";
   color: transparent;
   text-stroke-width: 2px;
-  text-stroke-color: gold;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em gold, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444;
+  text-stroke-color: #ffd700;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ffd700, 0 0 0.5em #eddcd2, 0 0 0.1em #fff;
   -webkit-animation: blink linear infinite 5s;
           animation: blink linear infinite 5s;
 }

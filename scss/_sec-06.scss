@@ -273,14 +273,16 @@
           font-size: 30px;
           line-height: 1.25;
           z-index: 3;
+          animation: blink linear infinite 30.7s;
         }
         .hr-text {
           font-size: 1em;
+          font-family: "Open Sans";
           color: transparent;
           text-stroke-width: 2px;
-          text-stroke-color: gold;
-          text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em gold, 0 0 0.5em #ff4444,
-            0 0 0.1em #ff4444;
+          text-stroke-color: $gold;
+          text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em $gold, 0 0 0.5em $primary,
+            0 0 0.1em $white;
           animation: blink linear infinite 5s;
         }
         p {
