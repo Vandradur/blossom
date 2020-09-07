@@ -1607,7 +1607,6 @@ header .nav-bar.menu-open {
   left: 50%;
   overflow: hidden;
   text-align: center;
-  border-radius: 10px;
   -webkit-box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
           box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
   border: 0.2em solid #3d4b5e;
@@ -1626,6 +1625,7 @@ header .nav-bar.menu-open {
   background-image: repeating-linear-gradient(to bottom, transparent 8px, rgba(0, 0, 0, 0.8) 9px, rgba(0, 0, 0, 0.8) 10px, transparent 7px);
   width: 100%;
   height: 100%;
+  /* 16 */
 }
 
 .owl--sliderbox .owl-slider #carousel .owl-text-block:hover {
@@ -1664,6 +1664,60 @@ header .nav-bar.menu-open {
   color: #fefee3;
 }
 
+.owl--sliderbox .owl-slider #carousel .owl-text-block .custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 3px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: #fffcf2;
+  margin-top: 1em;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  -webkit-box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.owl--sliderbox .owl-slider #carousel .owl-text-block .btn-16 {
+  border: none;
+  color: #000;
+}
+
+.owl--sliderbox .owl-slider #carousel .owl-text-block .btn-16:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  -webkit-box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+          box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.owl--sliderbox .owl-slider #carousel .owl-text-block .btn-16:hover {
+  color: #000;
+}
+
+.owl--sliderbox .owl-slider #carousel .owl-text-block .btn-16:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+.owl--sliderbox .owl-slider #carousel .owl-text-block .btn-16:active {
+  top: 2px;
+}
+
 .owl--sliderbox .owl-slider .owl-nav button {
   top: 40%;
   -webkit-transform: translateY(-50%);
@@ -1678,6 +1732,8 @@ header .nav-bar.menu-open {
   margin: 1em;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.164), -1px -1px 1px 0px rgba(255, 255, 255, 0.171), 2px 2px 3px 0px #0002, 4px 4px 2px 0px #0001;
+          box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.164), -1px -1px 1px 0px rgba(255, 255, 255, 0.171), 2px 2px 3px 0px #0002, 4px 4px 2px 0px #0001;
 }
 
 .owl--sliderbox .owl-slider .owl-nav button.owl-prev {
