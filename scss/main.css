@@ -1028,6 +1028,18 @@ header .nav-bar.menu-open {
   }
 }
 
+#collection .h2header span {
+  color: #d47b1aff;
+}
+
+#collection .h2header a:hover {
+  text-decoration: none;
+}
+
+#collection .h2header a:hover span {
+  text-decoration: underline;
+}
+
 #collection .mag__borderline {
   padding-top: 1.5%;
   width: 100%;
