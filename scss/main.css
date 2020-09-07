@@ -1528,6 +1528,71 @@ header .nav-bar.menu-open {
   letter-spacing: 20px;
 }
 
+.text-block-svg {
+  background: url(../img/footer-04.jpg) no-repeat top center;
+  background-size: cover;
+  min-height: 50vh;
+  padding: 40px;
+  border-radius: 3px;
+}
+
+.text-block-svg .content-svg {
+  position: relative;
+  padding: 40px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+}
+
+.text-block-svg .svg-text {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  z-index: 10;
+}
+
+.text-block-svg svg {
+  width: 100%;
+  height: inherit;
+}
+
+.text-block-svg svg text {
+  text-anchor: middle;
+}
+
+.text-block-svg svg #alpha {
+  fill: #666666;
+}
+
+.text-block-svg svg #title {
+  font-family: "Libre Baskerville", serif;
+  font-family: "Arima Madurai", cursive;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #222222;
+  color: #0c090d;
+  font-size: 30px;
+  line-height: 1.25;
+  z-index: 3;
+}
+
+.text-block-svg svg #subtitle {
+  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans";
+  color: #5c677d;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.text-block-svg svg #base {
+  fill: #0c090d;
+  -webkit-mask: url(#mask);
+          mask: url(#mask);
+}
+
 .owl--sliderbox {
   overflow: hidden;
 }
@@ -1544,48 +1609,53 @@ header .nav-bar.menu-open {
   border-radius: 10px;
   -webkit-box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
           box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  border: 0.2em solid #fcf8f6;
+  -webkit-box-shadow: inset 0 0 0.4em #eddcd2, 0 0 0.4em #eddcd2;
+          box-shadow: inset 0 0 0.4em #eddcd2, 0 0 0.4em #eddcd2;
 }
 
-.owl--sliderbox .owl-slider #carousel .text-block {
-  text-align: center;
-  margin: 70px 0 0 0;
+.owl--sliderbox .owl-slider #carousel .owl-text-block {
   position: absolute;
-  z-index: 20;
-  width: 100%;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  padding: 1em;
+  border-radius: 2px;
+  background-image: repeating-linear-gradient(to bottom, transparent 8px, rgba(0, 0, 0, 0.8) 9px, rgba(0, 0, 0, 0.8) 10px, transparent 7px);
+  border: 0.2em solid #fcf8f6;
+  -webkit-box-shadow: inset 0 0 0.4em #eddcd2, 0 0 0.4em #eddcd2;
+          box-shadow: inset 0 0 0.4em #eddcd2, 0 0 0.4em #eddcd2;
 }
 
-.owl--sliderbox .owl-slider #carousel .text-block h1 {
+.owl--sliderbox .owl-slider #carousel .owl-text-block h1 {
   font-family: "Libre Baskerville", serif;
   font-family: "Arima Madurai", cursive;
   font-size: 2rem;
   font-weight: 900;
   line-height: 1.2;
-  color: #222222;
-  color: #0c090d;
+  color: #fefee3;
   font-size: 30px;
   line-height: 1.25;
   z-index: 3;
 }
 
-.owl--sliderbox .owl-slider #carousel .text-block .hr-text {
-  color: #ccf;
-  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5), 0 0 20px #fff, 0 0 10px #7d26cd, 0 0 50px #7d26cd;
-  font-family: "Montserrat", sans-serif;
-  font-size: 8px;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  -webkit-animation: flicker 3s linear infinite;
-          animation: flicker 3s linear infinite;
+.owl--sliderbox .owl-slider #carousel .owl-text-block .hr-text {
+  font-size: 1em;
+  color: transparent;
+  text-stroke-width: 2px;
+  text-stroke-color: gold;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em gold, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444;
+  -webkit-animation: blink linear infinite 5s;
+          animation: blink linear infinite 5s;
 }
 
-.owl--sliderbox .owl-slider #carousel .text-block p {
+.owl--sliderbox .owl-slider #carousel .owl-text-block p {
   font-family: "Raleway", sans-serif;
   font-size: 0.7em;
   line-height: 1;
   margin-top: 0.6rem;
-  color: #020d13ff;
+  color: #fefee3;
 }
 
 .owl--sliderbox .owl-slider .owl-nav button {
@@ -1616,49 +1686,141 @@ header .nav-bar.menu-open {
   outline: none;
 }
 
-@-webkit-keyframes flicker {
-  0%,
-  19.999%,
-  22%,
-  62.999%,
-  64%,
-  64.999%,
-  70%,
-  100% {
-    opacity: 0.99;
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 0 -2px 8px, 0 0 2px, 0 0 5px #fff, 0 0 15px #fffcf2, 0 0 2px #fff, 0 2px 3px #fff;
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
   }
-  20%,
-  21.999%,
-  63%,
-  63.999%,
-  65%,
-  69.999% {
+  5% {
+    opacity: 0;
+  }
+  6% {
+    opacity: 1;
+  }
+  11% {
     opacity: 0.4;
-    text-shadow: none;
+  }
+  11.25% {
+    opacity: 0.6;
+  }
+  11.5% {
+    opacity: 0.4;
+  }
+  18% {
+    opacity: 1;
+  }
+  18.5% {
+    opacity: 0.9;
+  }
+  22% {
+    opacity: 1;
+  }
+  38.5% {
+    opacity: 1;
+  }
+  39% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  60.5% {
+    opacity: 0;
+  }
+  62% {
+    opacity: 0;
+  }
+  63% {
+    opacity: 0.2;
+  }
+  63.25% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  73% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  79% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
-@keyframes flicker {
-  0%,
-  19.999%,
-  22%,
-  62.999%,
-  64%,
-  64.999%,
-  70%,
-  100% {
-    opacity: 0.99;
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 0 -2px 8px, 0 0 2px, 0 0 5px #fff, 0 0 15px #fffcf2, 0 0 2px #fff, 0 2px 3px #fff;
+@keyframes blink {
+  0% {
+    opacity: 0;
   }
-  20%,
-  21.999%,
-  63%,
-  63.999%,
-  65%,
-  69.999% {
+  5% {
+    opacity: 0;
+  }
+  6% {
+    opacity: 1;
+  }
+  11% {
     opacity: 0.4;
-    text-shadow: none;
+  }
+  11.25% {
+    opacity: 0.6;
+  }
+  11.5% {
+    opacity: 0.4;
+  }
+  18% {
+    opacity: 1;
+  }
+  18.5% {
+    opacity: 0.9;
+  }
+  22% {
+    opacity: 1;
+  }
+  38.5% {
+    opacity: 1;
+  }
+  39% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  60.5% {
+    opacity: 0;
+  }
+  62% {
+    opacity: 0;
+  }
+  63% {
+    opacity: 0.2;
+  }
+  63.25% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  73% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  79% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
