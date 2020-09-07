@@ -2093,6 +2093,136 @@ header .nav-bar.menu-open {
           box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }
 
+.gallery-box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 90%;
+          flex: 0 1 90%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gallery-box {
+  display: block;
+  color: #fff;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 calc(25% - 0px);
+          flex: 0 1 calc(25% - 0px);
+  height: 400px;
+  background: #eddcd2;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .gallery-box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 calc(50% - 0px);
+            flex: 0 1 calc(50% - 0px);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .gallery-box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 calc(100% - 0px);
+            flex: 0 1 calc(100% - 0px);
+  }
+}
+
+.gallery-box__img-container {
+  display: block;
+  width: 135%;
+  height: 350px;
+  border: 10px solid #fefee3;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+  position: absolute;
+  left: -15%;
+  top: -85px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .gallery-box__img-container {
+    height: 420px;
+    top: -180px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .gallery-box__img-container {
+    height: 420px;
+    top: -120px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .gallery-box__img-container {
+    height: 450px;
+    top: -190px;
+  }
+}
+
+.gallery-box__img {
+  display: block;
+  width: 100%;
+  -webkit-transform: rotate(-5deg) scale(1.1);
+          transform: rotate(-5deg) scale(1.1);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.gallery-box__text-wrapper {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  position: absolute;
+  left: 15px;
+  top: 250px;
+  width: 80%;
+}
+
+.gallery-box__text {
+  font-family: "Arima Madurai", cursive;
+  font-size: 1em;
+  color: #fff;
+  padding: 8px 0;
+  -webkit-box-shadow: 8px 0 0 rgba(0, 0, 0, 0.7), -8px 0 0 rgba(0, 0, 0, 0.7);
+          box-shadow: 8px 0 0 rgba(0, 0, 0, 0.7), -8px 0 0 rgba(0, 0, 0, 0.7);
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+  line-height: 2;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.gallery-box:hover .gallery-box__img-container {
+  width: 110%;
+  height: 450px;
+  border-radius: 0;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  left: -2px;
+  top: -100px;
+}
+
+.gallery-box:hover .gallery-box__img {
+  display: block;
+  width: 100%;
+  -webkit-transform: rotate(0deg) scale(1);
+          transform: rotate(0deg) scale(1);
+}
+
+.gallery-box:hover .gallery-box__text-wrapper {
+  top: 288px;
+}
+
 #mag {
   padding: 3.3em 2em 1em 2em;
 }
