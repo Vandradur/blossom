@@ -1595,6 +1595,7 @@ header .nav-bar.menu-open {
 
 .owl--sliderbox {
   overflow: hidden;
+  background: #29323f;
 }
 
 .owl--sliderbox .owl-slider {
@@ -1609,9 +1610,9 @@ header .nav-bar.menu-open {
   border-radius: 10px;
   -webkit-box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
           box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
-  border: 0.2em solid #fcf8f6;
-  -webkit-box-shadow: inset 0 0 0.4em #eddcd2, 0 0 0.4em #eddcd2;
-          box-shadow: inset 0 0 0.4em #eddcd2, 0 0 0.4em #eddcd2;
+  border: 0.2em solid #3d4b5e;
+  -webkit-box-shadow: inset 0 0 0.4em #29323f, 0 0 0.4em #29323f;
+          box-shadow: inset 0 0 0.4em #29323f, 0 0 0.4em #29323f;
 }
 
 .owl--sliderbox .owl-slider #carousel .owl-text-block {
@@ -1620,12 +1621,15 @@ header .nav-bar.menu-open {
   left: 50%;
   -webkit-transform: translateY(-50%) translateX(-50%);
           transform: translateY(-50%) translateX(-50%);
-  padding: 1em;
+  padding: 2em 5em;
   border-radius: 2px;
   background-image: repeating-linear-gradient(to bottom, transparent 8px, rgba(0, 0, 0, 0.8) 9px, rgba(0, 0, 0, 0.8) 10px, transparent 7px);
-  border: 0.2em solid #fcf8f6;
-  -webkit-box-shadow: inset 0 0 0.4em #eddcd2, 0 0 0.4em #eddcd2;
-          box-shadow: inset 0 0 0.4em #eddcd2, 0 0 0.4em #eddcd2;
+  width: 100%;
+  height: 100%;
+}
+
+.owl--sliderbox .owl-slider #carousel .owl-text-block:hover {
+  background-image: repeating-linear-gradient(to bottom, transparent 8px, rgba(0, 0, 0, 0.096) 9px, rgba(0, 0, 0, 0) 10px, transparent 7px);
 }
 
 .owl--sliderbox .owl-slider #carousel .owl-text-block h1 {
@@ -1633,10 +1637,9 @@ header .nav-bar.menu-open {
   font-family: "Arima Madurai", cursive;
   font-size: 2rem;
   font-weight: 900;
-  line-height: 1.2;
   color: #fefee3;
   font-size: 30px;
-  line-height: 1.25;
+  line-height: 1;
   z-index: 3;
   -webkit-animation: blink linear infinite 30.7s;
           animation: blink linear infinite 30.7s;
@@ -1647,8 +1650,8 @@ header .nav-bar.menu-open {
   font-family: "Open Sans";
   color: transparent;
   text-stroke-width: 2px;
-  text-stroke-color: #ffd700;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ffd700, 0 0 0.5em #eddcd2, 0 0 0.1em #fff;
+  text-stroke-color: #fcee6d;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #fcee6d, 0 0 0.5em #fcee6d, 0 0 0.1em #fcee6d;
   -webkit-animation: blink linear infinite 5s;
           animation: blink linear infinite 5s;
 }
@@ -1665,7 +1668,7 @@ header .nav-bar.menu-open {
   top: 40%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background: #fff1e6 !important;
+  background: #29323f !important;
   position: absolute;
   width: 33px;
   height: 33px;
