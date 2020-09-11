@@ -1,0 +1,76 @@
+/* ==========================================================================
+Cards with links to Bleems online shop flexible sizes
+========================================================================== */
+.products-card-wrapper {
+  width: 90%;
+  max-width: 120rem;
+  margin: 1em auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 15px;
+  .card {
+    min-height: 100%;
+    background: $white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: 4px solid $white;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: $black-04;
+    position: relative;
+    top: 0;
+    transition: all 0.1s ease-in;
+    &:hover {
+      top: -2px;
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    }
+    article {
+      padding: 20px;
+      display: flex;
+
+      flex: 1;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+    .thumb {
+      padding-bottom: 60%;
+      background-size: cover;
+      background-position: center center;
+    }
+    p {
+      flex: 1;
+      line-height: 1.4;
+      @include bodyText;
+    }
+    h1 {
+      @include h2Text;
+      margin: 0;
+      color: $black-02;
+    }
+    span {
+      @include h3Text;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin: 2em 0 0 0;
+    }
+  }
+}
+@media only screen and (min-width: 500px) {
+  .products-card-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .item-1 {
+    grid-column: 1 / span 2;
+  }
+  .item-1 h1 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 850px) {
+  .products-card-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

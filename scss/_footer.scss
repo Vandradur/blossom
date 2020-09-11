@@ -7,13 +7,21 @@
   overflow: hidden;
   @include flexCenter;
   flex-direction: column;
+  margin: 60px auto;
   #hero-content {
-    max-width: 70%;
+    width: 90%;
+    background: $black-03;
+    text-align: center;
+    height: 100%;
+    padding: 3em 2em;
     z-index: 3;
+    @include desktop690 {
+      max-width: 60%;
+    }
     #hero-title {
-      @include h1Text;
+      @include h2Text;
       color: $primaryLight;
-      text-shadow: #474747 3px 5px 2px;
+      text-shadow: #474747 1px 1px 2px;
       line-height: 0.98;
       @include desktop690 {
         font-size: 60px;
@@ -23,17 +31,18 @@
       @include bodyText;
       color: $white-03;
       text-shadow: #474747 1px 2px 1px;
-      margin-top: 3%;
+      margin-bottom: 3%;
       @include desktop690 {
         font-size: 1.3em;
       }
     }
   }
 
-  #footer-btm {
-    margin-top: 1em;
+  #footer-links {
+    margin: 7em auto;
     padding: 1em;
     width: 100%;
+    height: 100%;
     background-color: $primary;
     background-color: $black-03;
     @include flexCenter;

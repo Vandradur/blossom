@@ -1,0 +1,197 @@
+#chapter-01 {
+  padding: 0.2rem 2rem;
+  .logo-circle {
+    margin: 2em auto;
+    display: block;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    background: $primary;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.8s ease-out;
+    &::after {
+      content: "";
+      display: block;
+      background: $primary url(../svg/flower.svg) no-repeat;
+      width: 99px;
+      height: 99px;
+      border-radius: 50%;
+      position: absolute;
+      top: 5px;
+      left: 8px;
+      background-position: center 8px;
+    }
+    &::before {
+      content: "";
+      border-radius: 50%;
+      display: block;
+      width: 107px;
+      height: 107px;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      background: $secondary;
+      background: url(../svg/flower.svg);
+      background: -moz-linear-gradient(
+        left,
+        $gold 0%,
+        $primary-02 33%,
+        $gold-01 52%,
+        $darkorange 71%,
+        $goldenrod 100%
+      );
+      background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(0%, $goldenrod),
+        color-stop(33%, $gold),
+        color-stop(52%, $gold-01),
+        color-stop(71%, $yellow),
+        color-stop(100%, $darkorange)
+      );
+      background: -webkit-linear-gradient(
+        left,
+        $yellow 0%,
+        $gold-01 33%,
+        $darkorange 52%,
+        $goldenrod 71%,
+        $primary-02 100%
+      );
+      background: -o-linear-gradient(
+        left,
+        $primary-02 0%,
+        $goldenrod 33%,
+        $gold-01 52%,
+        $yellow 71%,
+        $darkorange 100%
+      );
+      background: -ms-linear-gradient(
+        left,
+        $darkorange 0%,
+        $yellow 33%,
+        $gold-01 52%,
+        $primary-02 71%,
+        $darkorange 100%
+      );
+      background: linear-gradient(
+        to right,
+        $gold-01 0%,
+        $darkorange 33%,
+        $gold-01 52%,
+        $yellow 71%,
+        $yellow 100%
+      );
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6e0653', endColorstr='#ff0608',GradientType=1 );
+
+      -webkit-animation: spin 10s linear 0s infinite both;
+      -moz-animation: spin 10s linear 0s infinite both;
+      animation: spin 10s linear 0s infinite both;
+    }
+    &:hover {
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05);
+    }
+    &:hover:before {
+      -webkit-animation: spinHover 0.8s ease-out 0s 1 both;
+      -moz-animation: spinHover 0.8s ease-out 0s 1 both;
+      animation: spinHover 0.8s ease-out 0s 1 both;
+    }
+  }
+  #chapter {
+    margin: auto;
+    padding: 1%;
+    display: flex;
+    width: 100%;
+    max-width: 1120px;
+    background-position: 50% 100%;
+    .mag__headline {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .h1header {
+      @include h1Text;
+      font-size: 300%;
+      @include desktop690 {
+        font-size: 700%;
+      }
+    }
+    .h2header {
+      text-align: left;
+      font-size: 120%;
+      margin-right: 0.4em;
+      padding-top: 1%;
+      color: $black;
+      font-family: "Lora";
+      letter-spacing: 0.04em;
+      @include desktop690 {
+        font-size: 175%;
+      }
+      span {
+        color: $primary-03;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      a:hover span {
+        text-decoration: underline;
+      }
+    }
+    .mag__borderline {
+      padding-top: 1.5%;
+      width: 100%;
+      border-bottom: 3px solid $gold-01;
+    }
+    .h3header {
+      @include h3Text;
+      margin-top: 1em;
+    }
+    .h3header:before {
+      content: "- ";
+      color: $gold-01;
+    }
+    .h3header:after {
+      content: " -";
+      color: $gold-01;
+    }
+    p {
+      font-family: "Raleway", sans-serif;
+      font-family: "Open Sans";
+      text-align: left;
+      color: $secondary;
+      // text-shadow: #474747 1px 2px 1px;
+      margin-top: 1%;
+      @include desktop480 {
+        //font-size: 1.1em;
+      }
+      @include desktop690 {
+        // font-size: 1.4em;
+      }
+      @include desktop767 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  @-webkit-keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    100% {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes spinHover {
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @keyframes spinHover {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
