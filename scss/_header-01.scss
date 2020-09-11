@@ -61,7 +61,7 @@ HEADER
     height: 4.4rem;
     position: relative;
     background: #fff1e6;
-    background-color: #f8f6f5;
+    background-color: #fff;
     box-shadow: -1px 8px 10px -12px $black-04;
     @include desktop690 {
       display: flex;
@@ -83,8 +83,7 @@ HEADER
     }
     .nav-bar {
       background: #fff1e6;
-      background: $primaryLight;
-      background-color: $primaryLight;
+      background-color: $white;
       position: fixed;
       right: 0;
       left: 0;
