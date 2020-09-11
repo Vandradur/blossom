@@ -1283,10 +1283,6 @@ Cards with links to Bleems online shop flexible sizes
   overflow: hidden;
 }
 
-#slider .owl--sliderbox .owl-slider {
-  padding: 1em;
-}
-
 #slider .owl--sliderbox .owl-slider #carousel .item {
   top: 50%;
   left: 50%;
@@ -1302,7 +1298,7 @@ Cards with links to Bleems online shop flexible sizes
           transform: translateY(-50%) translateX(-50%);
   padding: 2em 5em;
   border-radius: 2px;
-  background-image: repeating-linear-gradient(to bottom, transparent 8px, rgba(0, 0, 0, 0.8) 9px, rgba(0, 0, 0, 0.8) 10px, transparent 7px);
+  background-image: repeating-linear-gradient(to bottom, transparent 8px, rgba(0, 0, 0, 0.6) 9px, rgba(0, 0, 0, 0.8) 10px, transparent 7px);
   width: 100%;
   height: 100%;
   /* 16 */
@@ -1310,6 +1306,12 @@ Cards with links to Bleems online shop flexible sizes
 
 #slider .owl--sliderbox .owl-slider #carousel .owl-text-block:hover {
   background-image: repeating-linear-gradient(to bottom, transparent 8px, rgba(0, 0, 0, 0.1) 9px, rgba(0, 0, 0, 0.1) 10px, transparent 2px);
+}
+
+@media (min-width: 690px) {
+  #slider .owl--sliderbox .owl-slider #carousel .owl-text-block .owl-text-block__block {
+    padding-top: 9em;
+  }
 }
 
 #slider .owl--sliderbox .owl-slider #carousel .owl-text-block h1 {
@@ -1345,28 +1347,38 @@ Cards with links to Bleems online shop flexible sizes
 }
 
 #slider .owl--sliderbox .owl-slider #carousel .owl-text-block .custom-btn {
-  width: 130px;
-  height: 40px;
-  color: #fff;
-  border-radius: 3px;
-  padding: 10px 25px;
-  font-family: "Lato", sans-serif;
-  font-weight: 500;
-  background: #fffcf2;
-  margin-top: 1em;
-  cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   position: relative;
-  display: inline-block;
   -webkit-box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
           box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
+  display: inline-block;
+  margin-top: 6%;
+  width: 60%;
+  height: 45px;
+  font-size: 15px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: montserrat;
+  font-size: 13px;
+  border: 2px solid #7d8597;
+  background-color: #fffcf2;
+  color: #0c090d;
+  padding: 6px 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+@media (min-width: 690px) {
+  #slider .owl--sliderbox .owl-slider #carousel .owl-text-block .custom-btn {
+    width: 30%;
+  }
 }
 
 #slider .owl--sliderbox .owl-slider #carousel .owl-text-block .btn-16 {
   border: none;
-  color: #000;
 }
 
 #slider .owl--sliderbox .owl-slider #carousel .owl-text-block .btn-16:after {
@@ -1384,10 +1396,6 @@ Cards with links to Bleems online shop flexible sizes
   transition: all 0.3s ease;
 }
 
-#slider .owl--sliderbox .owl-slider #carousel .owl-text-block .btn-16:hover {
-  color: #000;
-}
-
 #slider .owl--sliderbox .owl-slider #carousel .owl-text-block .btn-16:hover:after {
   left: auto;
   right: 0;
@@ -1402,7 +1410,7 @@ Cards with links to Bleems online shop flexible sizes
   top: 40%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background: #fff !important;
+  background: transparent !important;
   position: absolute;
   width: 33px;
   height: 33px;
