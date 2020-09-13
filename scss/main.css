@@ -623,6 +623,7 @@ HEADER
   background-attachment: fixed;
   opacity: 0.1;
   mix-blend-mode: hard-light;
+  z-index: -2;
 }
 
 #chapter-01 {
