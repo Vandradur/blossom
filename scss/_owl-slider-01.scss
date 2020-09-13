@@ -110,43 +110,44 @@
             margin-top: 0.6rem;
             color: $white-03;
           }
-          /* 16 */
-          .custom-btn {
-            transition: all 0.3s ease;
-            position: relative;
-            box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
-              7px 7px 20px 0px rgba(0, 0, 0, 0.1),
-              4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-            outline: none;
-            @include btn_primary;
-            @include desktop690 {
-              width: 30%;
-            }
+
+          //Spl Btn
+          .noselect {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
           }
-          .btn-16 {
+
+          button {
+            width: 150px;
+            height: 50px;
+            cursor: pointer;
             border: none;
+            transition: 500ms;
+            border-radius: 50px;
+            margin-top: 1em;
+            text-shadow: 1px 0px 0px #333;
+            background: rgba(0, 0, 0, 0.1);
+            border-bottom: 5px solid rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+            @include links;
+            color: $primary;
           }
-          .btn-16:after {
-            position: absolute;
-            content: "";
-            width: 0;
-            height: 100%;
-            top: 0;
-            left: 0;
-            direction: rtl;
-            z-index: -1;
-            box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
-              7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
-            transition: all 0.3s ease;
+
+          button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.2);
           }
-          .btn-16:hover:after {
-            left: auto;
-            right: 0;
-            width: 100%;
+
+          button:focus {
+            outline: none;
           }
-          .btn-16:active {
-            top: 2px;
-          }
+
+          // End Spl Btn
         }
       }
       .owl-nav button {
@@ -176,7 +177,7 @@
         outline: none;
       }
     }
-    //Animation Keyframes
+
     @keyframes blink {
       0% {
         opacity: 0;
