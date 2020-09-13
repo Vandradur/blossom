@@ -1180,6 +1180,11 @@ Cards with links to Bleems online shop flexible sizes
   cursor: pointer;
   -webkit-transition: all 0.8s ease-out;
   transition: all 0.8s ease-out;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #chapter-01 .logo-circle::after {
