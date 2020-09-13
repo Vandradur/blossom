@@ -131,7 +131,6 @@ HEADER
           position: relative;
           transition: all 650ms;
           text-decoration: none;
-          @include bodyText;
           color: $black-03;
           padding: 1.3rem 6rem;
           font-family: "Montserrat";

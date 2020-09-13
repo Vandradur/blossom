@@ -58,4 +58,34 @@ var onPanelMouseOut = function (evt) {
 
 $(window).ready(init);
 
-/*--- 2 Video ---*/
+/*--- slideshow ---*/
+
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function () {
+  $("#slideshow > div:first")
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo("#slideshow");
+}, 3000);
+$("#slideshow-2 > div:gt(0)").hide();
+
+setInterval(function () {
+  $("#slideshow-2 > div:first")
+    .fadeOut(800)
+    .next()
+    .fadeIn(800)
+    .end()
+    .appendTo("#slideshow-2");
+}, 4000);
+$("#slideshow-3 > div:gt(0)").hide();
+setInterval(function () {
+  $("#slideshow-3 > div:first")
+    .fadeOut(900)
+    .next()
+    .fadeIn(900)
+    .end()
+    .appendTo("#slideshow-3");
+}, 2000);

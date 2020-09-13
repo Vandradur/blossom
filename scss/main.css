@@ -202,6 +202,12 @@ HEADER
   color: #161a1d;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: "Montserrat";
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2.2px;
+  font-size: 12px;
 }
 
 @media (min-width: 480px) {
@@ -222,19 +228,6 @@ HEADER
   -webkit-transition: all 650ms;
   transition: all 650ms;
   text-decoration: none;
-  line-height: 18px;
-  text-decoration: none;
-  color: #333;
-  color: #0c090d;
-  font-size: 16px;
-  line-height: 1;
-  outline: none;
-  border: none;
-  font-weight: 500;
-  letter-spacing: 1.5px;
-  font-family: "Raleway", sans-serif;
-  font-family: "Arima Madurai", cursive;
-  font-family: "Open Sans";
   color: #0c090d;
   padding: 1.3rem 6rem;
   font-family: "Montserrat";
@@ -308,6 +301,225 @@ HEADER
   -webkit-transform: scale(1);
           transform: scale(1);
   opacity: 1;
+}
+
+h2 {
+  font-size: 1.2em;
+  /* 2 x 1.063 = 2.126*/
+  line-height: 0.9;
+  /* 1.3 / 2.126 = 0.6 */
+  font-weight: 500;
+  color: #0c090d;
+  font-family: "Lora";
+  letter-spacing: 0.04em;
+}
+
+p {
+  line-height: 18px;
+  text-decoration: none;
+  color: #333;
+  color: #0c090d;
+  font-size: 16px;
+  line-height: 1;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
+  font-family: "Open Sans";
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 120rem;
+  margin: 1em auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 15px;
+}
+
+@media only screen and (min-width: 500px) {
+  .wrapper {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .story-1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .wrapper {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.story {
+  background: #fff;
+  background: #fff;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (min-width: 800px) {
+  .story {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 300px;
+            flex: 1 1 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .story > * {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .story {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 200px;
+            flex: 1 1 200px;
+  }
+}
+
+.story__media {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.story__media #slideshow,
+.story__media #slideshow-2,
+.story__media #slideshow-3 {
+  position: relative;
+  max-width: 100%;
+  height: 430px;
+}
+
+.story__media #slideshow > div {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+}
+
+.story__media #slideshow-2 > div {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+}
+
+.story__media #slideshow-3 > div {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+}
+
+.story__media #svg-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.story__media #svg-1 {
+  margin: 0 auto;
+  display: block;
+}
+
+.story__taxonomy {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  padding: 0.8em 0.8em;
+  background: #fff;
+  line-height: 0.9em;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  margin: 0.5em;
+  color: #333533;
+  text-transform: uppercase;
+}
+
+.story__body,
+.read-more {
+  margin: 0 0.7em;
+}
+
+.story__body p:last-of-type {
+  margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 800px) {
+  .story__body {
+    min-height: 100px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .story__body {
+    min-height: 100px;
+  }
+}
+
+.read-more {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 1em;
+  line-height: 0.9em;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  margin: 0.5em;
+  color: #333533;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.story__title {
+  margin: 0.6em 0 0.6em 0.5em;
 }
 
 #magazine {
@@ -612,275 +824,6 @@ HEADER
 }
 
 /* ==========================================================================
-3D rotating cards - product section with links to Bleems
-========================================================================== */
-#onlineShop .product-wrapper {
-  width: 93%;
-  margin: 0 auto;
-  max-width: 120rem;
-}
-
-#onlineShop .product-wrapper .cols {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.col {
-  width: calc(25% - 2rem);
-  margin: 1rem;
-  cursor: pointer;
-}
-
-.col .container {
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
-}
-
-.col .container .front,
-.col .container .back {
-  background-size: cover;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  background-position: center;
-  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  text-align: center;
-  min-height: 280px;
-  height: auto;
-  border-radius: 5px;
-  border: 4px solid #fff;
-}
-
-.col .container .back {
-  background: #fefee3;
-  color: #33415c;
-  background: linear-gradient(45deg, #cedce7 0%, #eddcd2 100%);
-}
-
-.col .container .back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.col .container .front:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  content: "";
-  display: block;
-  opacity: 0.1;
-  background-color: #fff;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  border-radius: 5px;
-}
-
-.col .container .front .inner p {
-  margin-bottom: 2rem;
-  position: relative;
-  font-family: "Libre Baskerville", serif;
-  font-family: "Arima Madurai", cursive;
-  color: #fff;
-  text-shadow: -2px -2px 2px black;
-  font-size: 1em;
-  font-weight: 900;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-  line-height: 1.25;
-}
-
-.col .container .back .inner p {
-  font-family: "Raleway", sans-serif;
-  font-size: 0.7em;
-  line-height: 1;
-  margin-bottom: 2rem;
-  position: relative;
-  color: #020d13ff;
-}
-
-.col .container .front .inner p:after {
-  content: "";
-  width: 6rem;
-  height: 3px;
-  position: absolute;
-  background: #b08f26;
-  display: block;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  bottom: -0.75rem;
-}
-
-.col .container .front .inner span {
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-size: 8px;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-}
-
-.col .container .inner {
-  -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
-          transform: translateY(-50%) translateZ(60px) scale(0.94);
-  top: 50%;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  padding: 2rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  outline: 1px solid transparent;
-  -webkit-perspective: inherit;
-          perspective: inherit;
-  z-index: 2;
-}
-
-.col .container .inner #prdt-button {
-  display: inline-block;
-  margin-top: 6%;
-  width: 60%;
-  height: 45px;
-  font-size: 15px;
-  border-radius: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-family: montserrat;
-  font-size: 13px;
-  border: 2px solid #7d8597;
-  background-color: #fffcf2;
-  color: #0c090d;
-  padding: 6px 20px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.col .container .inner #prdt-button:hover {
-  background-color: #0c090d;
-  color: #fff;
-  text-decoration: none;
-}
-
-.container:hover .front,
-.container:hover .back {
-  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
-}
-
-.container .back {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-
-.container .front {
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-
-.container:hover .back {
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-
-.container:hover .front {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-
-@media screen and (max-width: 64rem) {
-  .col {
-    width: calc(33.333333% - 2rem);
-  }
-}
-
-@media screen and (max-width: 48rem) {
-  .col {
-    width: calc(50% - 2rem);
-  }
-}
-
-@media screen and (max-width: 32rem) {
-  .col {
-    width: 100%;
-    margin: 0 0 2rem 0;
-  }
-}
-
-.disclaimer {
-  text-align: center;
-  margin: auto;
-  margin-top: 2%;
-  padding: 1%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 70%;
-}
-
-.disclaimer p {
-  line-height: 18px;
-  text-decoration: none;
-  color: #333;
-  color: #0c090d;
-  font-size: 16px;
-  line-height: 1;
-  outline: none;
-  border: none;
-  font-weight: 500;
-  letter-spacing: 1.5px;
-  font-family: "Raleway", sans-serif;
-  font-family: "Arima Madurai", cursive;
-  font-family: "Open Sans";
-  color: #2f3e46;
-  margin-top: 3%;
-}
-
-@media (min-width: 767px) {
-  .disclaimer p {
-    font-size: 1.2rem;
-  }
-}
-
-.divider {
-  margin: 0 auto;
-  margin-bottom: 3em;
-  text-align: center;
-  background-color: #0c090d;
-  width: 150px;
-  height: 5px;
-}
-
-/* ==========================================================================
 Cards with links to Bleems online shop flexible sizes
 ========================================================================== */
 .products-card-wrapper {
@@ -993,6 +936,190 @@ Cards with links to Bleems online shop flexible sizes
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin: 2em 0 0 0;
+}
+
+.products-card-wrapper .col {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.products-card-wrapper .col .container {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.products-card-wrapper .col .container .front,
+.products-card-wrapper .col .container .back {
+  background-size: cover;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+  background-position: center;
+  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  text-align: center;
+  min-height: 280px;
+  height: auto;
+  border-radius: 5px;
+  border: 4px solid #fff;
+}
+
+.products-card-wrapper .col .container .back {
+  background: #fefee3;
+  color: #33415c;
+  background: linear-gradient(45deg, #cedce7 0%, #eddcd2 100%);
+}
+
+.products-card-wrapper .col .container .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.products-card-wrapper .col .container .front:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  content: "";
+  display: block;
+  opacity: 0.1;
+  background-color: #fff;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 5px;
+}
+
+.products-card-wrapper .col .container .front .inner p {
+  margin-bottom: 2rem;
+  position: relative;
+  font-family: "Libre Baskerville", serif;
+  font-family: "Arima Madurai", cursive;
+  color: #fff;
+  text-shadow: -2px -2px 2px black;
+  font-size: 1em;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+}
+
+.products-card-wrapper .col .container .back .inner p {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.7em;
+  line-height: 1;
+  margin-bottom: 2rem;
+  position: relative;
+  color: #020d13ff;
+}
+
+.products-card-wrapper .col .container .front .inner p:after {
+  content: "";
+  width: 6rem;
+  height: 3px;
+  position: absolute;
+  background: #b08f26;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -0.75rem;
+}
+
+.products-card-wrapper .col .container .front .inner span {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.products-card-wrapper .col .container .inner {
+  -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+          transform: translateY(-50%) translateZ(60px) scale(0.94);
+  top: 50%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 1px solid transparent;
+  -webkit-perspective: inherit;
+          perspective: inherit;
+  z-index: 2;
+}
+
+.products-card-wrapper .col .container .inner #prdt-button {
+  display: inline-block;
+  margin-top: 6%;
+  width: 60%;
+  height: 45px;
+  font-size: 15px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: montserrat;
+  font-size: 13px;
+  border: 2px solid #7d8597;
+  background-color: #fffcf2;
+  color: #0c090d;
+  padding: 6px 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.products-card-wrapper .col .container .inner #prdt-button:hover {
+  background-color: #0c090d;
+  color: #fff;
+  text-decoration: none;
+}
+
+.products-card-wrapper .container:hover .front,
+.products-card-wrapper .container:hover .back {
+  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.products-card-wrapper .container .back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.products-card-wrapper .container .front {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.products-card-wrapper .container:hover .back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.products-card-wrapper .container:hover .front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 @media only screen and (min-width: 500px) {
