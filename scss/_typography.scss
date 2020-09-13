@@ -84,9 +84,8 @@ $line-height-article-header: 39px; // Styles
   text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff,
     1px 1px 0 white;
   color: $black-04;
-  text-align: left;
   line-height: 0.8;
-  padding: 0.3em 0;
+  padding: 0.1em 0;
 }
 
 @mixin h1Text480 {
