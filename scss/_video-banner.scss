@@ -1,0 +1,12 @@
+#video-banner {
+  background: rgb(7, 0, 0);
+  .banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 16%;
+    @include desktop690 {
+      width: 10%;
+    }
+  }
+}

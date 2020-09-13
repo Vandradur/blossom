@@ -1701,6 +1701,23 @@ Cards with links to Bleems online shop flexible sizes
   }
 }
 
+#video-banner {
+  background: #070000;
+}
+
+#video-banner .banner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 16%;
+}
+
+@media (min-width: 690px) {
+  #video-banner .banner {
+    width: 10%;
+  }
+}
+
 #vids {
   overflow: hidden;
   background-position: 50% 100%;
