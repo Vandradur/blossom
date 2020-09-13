@@ -89,3 +89,12 @@ setInterval(function () {
     .end()
     .appendTo("#slideshow-3");
 }, 2000);
+$("#slideshow-4 > div:gt(0)").hide();
+setInterval(function () {
+  $("#slideshow-4 > div:first")
+    .fadeOut(1800)
+    .next()
+    .fadeIn(1800)
+    .end()
+    .appendTo("#slideshow-4");
+}, 3000);

@@ -540,17 +540,19 @@ img {
 
 #magazine .magazine-header__headline .h1header {
   font-family: var(--fontSans);
-  font-size: 55px;
   line-height: 0.78;
   font-family: "Lora", serif;
   font-family: "Playfair Display", serif;
   font-family: "Open Sans";
   font-family: "Raleway", sans-serif;
-  font-family: "Arima Madurai", cursive;
+  font-family: "Lora", "Arima Madurai", serif;
+  font-weight: 900;
+  font-style: italic;
   text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff, 1px 1px 0 white;
   color: #333533;
   text-align: left;
   line-height: 0.8;
+  padding: 0.3em 0;
   font-size: 300%;
 }
 
@@ -771,6 +773,26 @@ img {
   100% {
     left: -400%;
   }
+}
+
+#magazine .mag__rightbox .imgbox #cssSlider .story__media {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#magazine .mag__rightbox .imgbox #cssSlider .story__media #slideshow-4 {
+  position: relative;
+  max-width: 100%;
+  height: 430px;
+}
+
+#magazine .mag__rightbox .imgbox #cssSlider .story__media #slideshow-4 > div {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
 }
 
 @media (min-width: 690px) {
@@ -1220,17 +1242,19 @@ Cards with links to Bleems online shop flexible sizes
 
 #chapter-01 #chapter .h1header {
   font-family: var(--fontSans);
-  font-size: 55px;
   line-height: 0.78;
   font-family: "Lora", serif;
   font-family: "Playfair Display", serif;
   font-family: "Open Sans";
   font-family: "Raleway", sans-serif;
-  font-family: "Arima Madurai", cursive;
+  font-family: "Lora", "Arima Madurai", serif;
+  font-weight: 900;
+  font-style: italic;
   text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff, 1px 1px 0 white;
   color: #333533;
   text-align: left;
   line-height: 0.8;
+  padding: 0.3em 0;
   font-size: 300%;
 }
 
@@ -1363,17 +1387,19 @@ Cards with links to Bleems online shop flexible sizes
 
 #slider .magazine-header__headline .h1header {
   font-family: var(--fontSans);
-  font-size: 55px;
   line-height: 0.78;
   font-family: "Lora", serif;
   font-family: "Playfair Display", serif;
   font-family: "Open Sans";
   font-family: "Raleway", sans-serif;
-  font-family: "Arima Madurai", cursive;
+  font-family: "Lora", "Arima Madurai", serif;
+  font-weight: 900;
+  font-style: italic;
   text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff, 1px 1px 0 white;
   color: #333533;
   text-align: left;
   line-height: 0.8;
+  padding: 0.3em 0;
   text-align: center;
   color: #0c090d;
   font-size: 300%;
@@ -1730,17 +1756,19 @@ Cards with links to Bleems online shop flexible sizes
 
 #vids .video-sec .h1header {
   font-family: var(--fontSans);
-  font-size: 55px;
   line-height: 0.78;
   font-family: "Lora", serif;
   font-family: "Playfair Display", serif;
   font-family: "Open Sans";
   font-family: "Raleway", sans-serif;
-  font-family: "Arima Madurai", cursive;
+  font-family: "Lora", "Arima Madurai", serif;
+  font-weight: 900;
+  font-style: italic;
   text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff, 1px 1px 0 white;
   color: #333533;
   text-align: left;
   line-height: 0.8;
+  padding: 0.3em 0;
   color: #fefee3;
   font-size: 300%;
 }
@@ -2030,17 +2058,19 @@ Cards with links to Bleems online shop flexible sizes
 #parallax-wrapper #hero-container .herotext p {
   text-align: center;
   font-family: var(--fontSans);
-  font-size: 55px;
   line-height: 0.78;
   font-family: "Lora", serif;
   font-family: "Playfair Display", serif;
   font-family: "Open Sans";
   font-family: "Raleway", sans-serif;
-  font-family: "Arima Madurai", cursive;
+  font-family: "Lora", "Arima Madurai", serif;
+  font-weight: 900;
+  font-style: italic;
   text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff, 1px 1px 0 white;
   color: #333533;
   text-align: left;
   line-height: 0.8;
+  padding: 0.3em 0;
   font-size: 2em;
   color: #fff;
   font-family: "Georgia";
