@@ -1,4 +1,4 @@
-#parallax-wrapper {
+#parallax-wrapper-1 {
   height: 100%;
   position: relative;
   display: flex;
@@ -131,7 +131,7 @@
     visibility: hidden;
   }
 }
-#parallax-wrapper:before {
+#parallax-wrapper-1:before {
   content: "";
   position: absolute;
   top: 0;
@@ -143,7 +143,7 @@
   opacity: 0.5;
   mix-blend-mode: hard-light;
 }
-#parallax-wrapper:before {
+#parallax-wrapper-1:before {
   animation: ekit-glitch 3s linear infinite;
   animation-direction: reverse;
 }

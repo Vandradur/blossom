@@ -1,6 +1,6 @@
-/* ==========================================================================
-Cards with links to Bleems online shop flexible sizes
-========================================================================== */
+#products-04 {
+  background: #fff;
+}
 .products-card-wrapper {
   width: 90%;
   max-width: 120rem;
@@ -191,6 +191,7 @@ Cards with links to Bleems online shop flexible sizes
     transform-style: preserve-3d;
   }
 }
+
 @media only screen and (min-width: 500px) {
   .products-card-wrapper {
     grid-template-columns: 1fr 1fr;
