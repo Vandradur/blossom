@@ -1701,23 +1701,6 @@ Cards with links to Bleems online shop flexible sizes
   }
 }
 
-#video-banner {
-  background: #070000;
-}
-
-#video-banner .banner {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 16%;
-}
-
-@media (min-width: 690px) {
-  #video-banner .banner {
-    width: 10%;
-  }
-}
-
 #vids {
   overflow: hidden;
   background-position: 50% 100%;
@@ -2669,11 +2652,9 @@ Cards with links to Bleems online shop flexible sizes
 }
 
 #footer {
-  position: relative;
   width: 100%;
   height: 100%;
   background: url(../img/hero-2.png) no-repeat 50% 50% fixed;
-  background-size: 130%;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2688,16 +2669,29 @@ Cards with links to Bleems online shop flexible sizes
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 60px auto;
+  margin: 2em auto;
 }
 
 #footer #hero-content {
   width: 90%;
-  background: #0c090d;
+  background: #070000;
   text-align: center;
   height: 100%;
   padding: 3em 2em;
   z-index: 3;
+}
+
+#footer #hero-content .banner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 16%;
+}
+
+@media (min-width: 690px) {
+  #footer #hero-content .banner {
+    width: 20%;
+  }
 }
 
 @media (min-width: 690px) {
@@ -2793,20 +2787,6 @@ Cards with links to Bleems online shop flexible sizes
 
 #footer #footer-links a {
   text-decoration: none;
-  text-decoration: none;
-  line-height: 18px;
-  text-decoration: none;
-  color: #333;
-  color: #0c090d;
-  font-size: 16px;
-  line-height: 1;
-  outline: none;
-  border: none;
-  font-weight: 500;
-  letter-spacing: 1.5px;
-  font-family: "Raleway", sans-serif;
-  font-family: "Arima Madurai", cursive;
-  font-family: "Open Sans";
   color: #fff;
   color: #fffcf2;
   font-family: "Open Sans";
@@ -2826,21 +2806,6 @@ Cards with links to Bleems online shop flexible sizes
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
-}
-
-#footer #footer-links div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 50vh;
-  width: 100%;
-  background-color: #eddcd2;
-}
-
-#footer #footer-links div .tag {
-  color: #33415c;
-  font-family: "Open Sans";
-  font-weight: 900;
 }
 
 /* GLOBAL */

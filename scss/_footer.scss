@@ -1,16 +1,24 @@
 #footer {
-  position: relative;
   width: 100%;
   height: 100%;
   background: url(../img/hero-2.png) no-repeat 50% 50% fixed;
-  background-size: 130%;
+  //background-size: 130%;
   overflow: hidden;
   @include flexCenter;
   flex-direction: column;
-  margin: 60px auto;
+  margin: 2em auto;
   #hero-content {
+    .banner {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 16%;
+      @include desktop690 {
+        width: 20%;
+      }
+    }
     width: 90%;
-    background: $black-03;
+    background: rgb(7, 0, 0);
     text-align: center;
     height: 100%;
     padding: 3em 2em;
@@ -68,9 +76,6 @@
 
     a {
       text-decoration: none;
-      //box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
-      text-decoration: none;
-      @include bodyText;
       color: #fff;
       color: $white-02;
       font-family: "Open Sans";
@@ -86,19 +91,6 @@
     li:last-child {
       grid-column: 1 / 2;
       grid-row: 1 / 2;
-    }
-
-    div {
-      display: flex;
-      height: 50vh;
-      width: 100%;
-      background-color: $primary;
-
-      .tag {
-        color: $secondaryDark;
-        font-family: "Open Sans";
-        font-weight: 900;
-      }
     }
   }
 }
