@@ -87,9 +87,8 @@
         left: 0;
         width: 100%;
       }
-
+      /*
       .front:after {
-        position: absolute;
         top: 0;
         left: 0;
         z-index: 1;
@@ -101,11 +100,10 @@
         background-color: $white;
         backface-visibility: hidden;
         border-radius: 5px;
-      }
+      }*/
       .front .inner p {
         margin-bottom: 2rem;
         position: relative;
-        font-family: "Libre Baskerville", serif;
         font-family: "Arima Madurai", cursive;
         color: $white;
         text-shadow: -2px -2px 2px black;

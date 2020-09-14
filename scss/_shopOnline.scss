@@ -6,7 +6,7 @@
   justify-content: center;
   background: $primaryLight;
   .prdt-crd {
-    @include cardContainer($boxShdColor);
+    @include cardContent;
     z-index: 3;
   }
   &::before {

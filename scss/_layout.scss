@@ -1,13 +1,12 @@
 /* ==========================================================================
 LAYOUT
 ========================================================================== */
-$padding: 10px;
-$brandBlue: $white;
-$supportGray: #ccc;
-$bgColor: $primary;
-$bdColor: $primary;
 $boxShdColor: rgba(black, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px,
   inset rgba(white, 0.5) 0 0 0 6px;
+
+$section-padding-regular: 125px 0;
+$section-padding-tall: 160px 0;
+
 $desktop480: 480px;
 $desktop690: 690px;
 $desktop767: 767px;
@@ -36,26 +35,23 @@ $desktop767: 767px;
   align-items: center;
 }
 
-$section-padding-regular: 125px 0;
-$section-padding-tall: 160px 0;
-
 section {
   margin: 0 auto;
   box-sizing: border-box;
   width: 100%;
 }
 
-@mixin cardContainer($boxShdColor) {
+@mixin cardContent {
   box-shadow: $boxShdColor;
   transform-style: preserve-3d;
   perspective: 1000px;
   position: relative;
-  flex: 0 0 90%;
+  flex: 0 0 96%;
   height: 100%;
   margin: 7px;
   @include desktop690() {
-    flex: 0 0 40%;
-    max-width: 250px;
+    flex: 0 0 45%;
+    max-width: 300px;
   }
   @include desktop767() {
     flex: 0 0 30%;
@@ -67,12 +63,12 @@ section {
     transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
     backface-visibility: hidden;
     text-align: center;
-    min-height: 320px;
+    min-height: 300px;
     height: auto;
   }
   .back {
     background: $white-03;
-    background: linear-gradient(45deg, #cedce7 0%, $primary 100%);
+    background: linear-gradient(45deg, $white 0%, $primary 100%);
   }
   .back {
     position: absolute;
@@ -84,46 +80,49 @@ section {
       font-size: 0.7em;
       line-height: 1;
       margin-bottom: 2rem;
+      text-shadow: none;
       position: relative;
-      color: $black;
+      color: $black-02;
     }
   }
-  .front:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    content: "";
-    display: block;
-    opacity: 0.1;
-    background-color: $white;
-    backface-visibility: hidden;
-  }
   .front .inner span {
-    color: $white;
+    color: $white-02;
+    text-shadow: -1px -1px 1px black;
     font-family: "Montserrat", sans-serif;
     font-size: 8px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
   }
+  .front .inner p:after {
+    content: "";
+    width: 6rem;
+    height: 3px;
+    position: absolute;
+    background: $gold-01;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+
   .inner {
     transform: translateY(-50%) translateZ(60px) scale(0.94);
     top: 50%;
     position: absolute;
     left: 0;
     width: 100%;
-    padding: 2rem;
+    padding: 3em;
     box-sizing: border-box;
-    outline: none;
+
     perspective: inherit;
     z-index: 2;
     p {
-      margin-bottom: 2rem;
+      margin-bottom: 2em;
       position: relative;
       font-family: "Arima Madurai", cursive;
       color: $white;
+      text-shadow: -1px -1.5px 2px black;
       font-size: 1em;
       font-weight: 900;
       line-height: 1.2;
@@ -137,27 +136,34 @@ section {
       }
     }
   }
-  .container:hover .front,
-  .container:hover .back {
+
+  .pcrd-container:hover,
+  .pcrd-container:active,
+  .pcrd-container:focus {
+    outline: none;
+  }
+
+  .pcrd-container:hover .front,
+  .pcrd-container:hover .back {
     transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
   }
 
-  .container .back {
+  .pcrd-container .back {
     transform: rotateY(180deg);
     transform-style: preserve-3d;
   }
 
-  .container .front {
+  .pcrd-container .front {
     transform: rotateY(0deg);
     transform-style: preserve-3d;
   }
 
-  .container:hover .back {
+  .pcrd-container:hover .back {
     transform: rotateY(0deg);
     transform-style: preserve-3d;
   }
 
-  .container:hover .front {
+  .pcrd-container:hover .front {
     transform: rotateY(-180deg);
     transform-style: preserve-3d;
   }
