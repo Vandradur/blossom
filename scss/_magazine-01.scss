@@ -1,6 +1,8 @@
 #magazine {
   padding: 3.3em 2em 1em 2em;
   width: 100%;
+  position: relative;
+  height: auto;
   .magazine-header {
     max-width: 1120px;
     background-position: 50% 100%;
@@ -40,6 +42,7 @@
       color: $gold-01;
     }
   }
+
   .mag__body {
     max-width: 1120px;
     min-height: 60em;
@@ -201,6 +204,7 @@
     transition: all 0.7s ease;
   }
 }
+
 #magazine:before {
   content: "";
   position: absolute;
@@ -210,7 +214,7 @@
   height: 100%;
   background: url(../img/dot.png);
   background-attachment: fixed;
-  opacity: 0.1;
+  opacity: 0.15;
   mix-blend-mode: hard-light;
   z-index: -2;
 }

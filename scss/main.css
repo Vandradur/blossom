@@ -303,9 +303,221 @@ HEADER
   opacity: 1;
 }
 
+#shopOnline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff1e6;
+}
+
+#shopOnline .prdt-crd {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+          box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 90%;
+          flex: 0 0 90%;
+  height: 100%;
+  margin: 7px;
+  z-index: 3;
+}
+
+@media (min-width: 690px) {
+  #shopOnline .prdt-crd {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 767px) {
+  #shopOnline .prdt-crd {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%;
+  }
+}
+
+#shopOnline .prdt-crd .front,
+#shopOnline .prdt-crd .back {
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  text-align: center;
+  min-height: 320px;
+  height: auto;
+}
+
+#shopOnline .prdt-crd .back {
+  background: #fefee3;
+  background: linear-gradient(45deg, #cedce7 0%, #eddcd2 100%);
+}
+
+#shopOnline .prdt-crd .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#shopOnline .prdt-crd .back .inner p {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.7em;
+  line-height: 1;
+  margin-bottom: 2rem;
+  position: relative;
+  color: #020d13ff;
+}
+
+#shopOnline .prdt-crd .front:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  content: "";
+  display: block;
+  opacity: 0.1;
+  background-color: #fff;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+#shopOnline .prdt-crd .front .inner span {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+#shopOnline .prdt-crd .inner {
+  -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+          transform: translateY(-50%) translateZ(60px) scale(0.94);
+  top: 50%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  -webkit-perspective: inherit;
+          perspective: inherit;
+  z-index: 2;
+}
+
+#shopOnline .prdt-crd .inner p {
+  margin-bottom: 2rem;
+  position: relative;
+  font-family: "Arima Madurai", cursive;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+}
+
+#shopOnline .prdt-crd .inner #prdt-button {
+  display: inline-block;
+  margin-top: 6%;
+  width: 60%;
+  height: 45px;
+  font-size: 15px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: montserrat;
+  font-size: 13px;
+  border: 2px solid #7d8597;
+  background-color: #fffcf2;
+  color: #0c090d;
+  padding: 6px 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#shopOnline .prdt-crd .inner #prdt-button:hover {
+  background-color: #0c090d;
+  color: #fff;
+  text-decoration: none;
+}
+
+#shopOnline .prdt-crd .container:hover .front,
+#shopOnline .prdt-crd .container:hover .back {
+  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+#shopOnline .prdt-crd .container .back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+#shopOnline .prdt-crd .container .front {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+#shopOnline .prdt-crd .container:hover .back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+#shopOnline .prdt-crd .container:hover .front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+#shopOnline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/dot.png);
+  background-attachment: fixed;
+  opacity: 0.1;
+  mix-blend-mode: hard-light;
+  z-index: 2;
+}
+
 #magazine {
   padding: 3.3em 2em 1em 2em;
   width: 100%;
+  position: relative;
+  height: auto;
 }
 
 #magazine .magazine-header {
@@ -621,7 +833,7 @@ HEADER
   height: 100%;
   background: url(../img/dot.png);
   background-attachment: fixed;
-  opacity: 0.1;
+  opacity: 0.15;
   mix-blend-mode: hard-light;
   z-index: -2;
 }
@@ -1081,7 +1293,7 @@ HEADER
   width: 60%;
   height: 45px;
   font-size: 15px;
-  border-radius: 10px;
+  border-radius: 2px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-family: montserrat;
