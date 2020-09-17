@@ -314,12 +314,10 @@ HEADER
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #fff1e6;
+  background: #fff;
 }
 
 #shopOnline .prdt-crd {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
-          box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 1000px;
@@ -363,10 +361,11 @@ HEADER
   text-align: center;
   min-height: 300px;
   height: auto;
+  -webkit-box-shadow: -1px -1px 17px -5px rgba(0, 0, 0, 0.75);
+          box-shadow: -1px -1px 17px -5px rgba(0, 0, 0, 0.75);
 }
 
 #shopOnline .prdt-crd .back {
-  background: #fefee3;
   background: linear-gradient(45deg, #fff 0%, #eddcd2 100%);
 }
 
@@ -461,12 +460,6 @@ HEADER
   background-color: #0c090d;
   color: #fff;
   text-decoration: none;
-}
-
-#shopOnline .prdt-crd .pcrd-container:hover,
-#shopOnline .prdt-crd .pcrd-container:active,
-#shopOnline .prdt-crd .pcrd-container:focus {
-  outline: none;
 }
 
 #shopOnline .prdt-crd .pcrd-container:hover .front,

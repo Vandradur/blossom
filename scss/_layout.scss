@@ -42,8 +42,8 @@ section {
 }
 
 @mixin cardContent {
-  box-shadow: $boxShdColor;
   transform-style: preserve-3d;
+
   perspective: 1000px;
   position: relative;
   flex: 0 0 96%;
@@ -65,9 +65,9 @@ section {
     text-align: center;
     min-height: 300px;
     height: auto;
+    box-shadow: -1px -1px 17px -5px rgba(0, 0, 0, 0.75);
   }
   .back {
-    background: $white-03;
     background: linear-gradient(45deg, $white 0%, $primary 100%);
   }
   .back {
@@ -114,7 +114,6 @@ section {
     width: 100%;
     padding: 3em;
     box-sizing: border-box;
-
     perspective: inherit;
     z-index: 2;
     p {
@@ -135,12 +134,6 @@ section {
         @include btn_secondary_hover;
       }
     }
-  }
-
-  .pcrd-container:hover,
-  .pcrd-container:active,
-  .pcrd-container:focus {
-    outline: none;
   }
 
   .pcrd-container:hover .front,
