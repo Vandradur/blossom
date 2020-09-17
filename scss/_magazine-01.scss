@@ -60,9 +60,7 @@
     @include bodyText;
     padding-top: 5%;
     margin-right: 5%;
-    background: transparent;
     height: auto;
-    margin-bottom: 1em;
   }
   .mag__leftbox {
     float: none;
@@ -96,8 +94,7 @@
       #cssSlider {
         width: 100%;
         overflow: hidden;
-        background: #fff;
-        border: 5px solid $white;
+        background: transparent;
         .slider-wrap {
           position: relative;
           width: 100%;

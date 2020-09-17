@@ -308,13 +308,12 @@ HEADER
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  width: 100%;
+  width: 93%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #fff;
   padding: 2em 0 0.01em 0;
 }
 
@@ -629,9 +628,7 @@ HEADER
   font-family: "Open Sans";
   padding-top: 5%;
   margin-right: 5%;
-  background: transparent;
   height: auto;
-  margin-bottom: 1em;
 }
 
 #magazine .mag__leftbox {
@@ -675,8 +672,7 @@ HEADER
 #magazine .mag__rightbox .imgbox #cssSlider {
   width: 100%;
   overflow: hidden;
-  background: #fff;
-  border: 5px solid #fff;
+  background: transparent;
 }
 
 #magazine .mag__rightbox .imgbox #cssSlider .slider-wrap {
