@@ -336,13 +336,13 @@ HEADER
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  width: 93%;
+  padding: 3.3em 2em 1em 2em;
+  width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 2em 0 0.01em 0;
 }
 
 #shopOnline .prdt-crd {
@@ -352,10 +352,10 @@ HEADER
           perspective: 1000px;
   position: relative;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 96%;
-          flex: 0 0 96%;
+      -ms-flex: 0 0 90%;
+          flex: 0 0 90%;
   height: 100%;
-  margin: 7px;
+  margin: 15px;
   z-index: 3;
 }
 
@@ -364,15 +364,15 @@ HEADER
     -webkit-box-flex: 0;
         -ms-flex: 0 0 45%;
             flex: 0 0 45%;
-    max-width: 300px;
+    max-width: 400px;
   }
 }
 
 @media (min-width: 767px) {
   #shopOnline .prdt-crd {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 30%;
-            flex: 0 0 30%;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
   }
 }
 

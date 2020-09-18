@@ -43,18 +43,17 @@ section {
 
 @mixin cardContent {
   transform-style: preserve-3d;
-
   perspective: 1000px;
   position: relative;
-  flex: 0 0 96%;
+  flex: 0 0 90%;
   height: 100%;
-  margin: 7px;
+  margin: 15px;
   @include desktop690() {
     flex: 0 0 45%;
-    max-width: 300px;
+    max-width: 400px;
   }
   @include desktop767() {
-    flex: 0 0 30%;
+    flex: 0 0 50%;
   }
   .front,
   .back {
