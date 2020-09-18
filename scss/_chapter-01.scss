@@ -1,7 +1,15 @@
 #chapter-01 {
-  padding: 0.2rem 2rem;
+  padding: 0.3em 2em 1em 2em;
   position: relative;
   width: 100%;
+  .divider {
+    margin: 0 auto;
+    margin-top: 3em;
+    text-align: center;
+    background-color: $black-03;
+    width: 150px;
+    height: 5px;
+  }
 
   .logo-circle {
     margin: 2em auto;
@@ -110,7 +118,7 @@
   #chapter {
     margin: auto;
     padding: 1%;
-    display: flex;
+    //display: flex;
     width: 100%;
     max-width: 1120px;
     background-position: 50% 100%;
@@ -121,19 +129,19 @@
 
     .h1header {
       @include h1Text;
+      text-align: center;
+      color: $black-03;
       font-size: 300%;
       @include desktop690 {
         font-size: 700%;
       }
     }
     .h2header {
-      text-align: left;
-      font-size: 120%;
-      margin-right: 0.4em;
+      text-align: center;
+      font-size: 100%;
       padding-top: 1%;
-      color: $black;
-      font-family: "Lora";
-      letter-spacing: 0.04em;
+      @include h2Text;
+      color: $black-03;
       @include desktop690 {
         font-size: 175%;
       }

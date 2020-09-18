@@ -1,8 +1,9 @@
 #shopOnline {
   display: flex;
   position: relative;
-  padding: 3.3em 2em 1em 2em;
   width: 100%;
+  max-width: 120rem;
+  margin: 1em auto;
   flex-wrap: wrap;
   justify-content: center;
 
