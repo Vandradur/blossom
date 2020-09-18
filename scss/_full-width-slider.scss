@@ -20,9 +20,11 @@
   right: 0;
   bottom: 0;
   z-index: 1;
+  color: $black-02;
 }
 .hero p {
   @include bodyText;
+  color: $black-02;
   margin: auto;
   position: absolute;
   top: 220px;

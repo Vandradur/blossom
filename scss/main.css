@@ -366,6 +366,7 @@ HEADER
   right: 0;
   bottom: 0;
   z-index: 1;
+  color: #161a1d;
 }
 
 .hero p {
@@ -382,6 +383,7 @@ HEADER
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
   font-family: "Open Sans";
+  color: #161a1d;
   margin: auto;
   position: absolute;
   top: 220px;
