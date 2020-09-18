@@ -1,11 +1,10 @@
-#magazine {
+#magazine-1 {
   padding: 3.3em 2em 1em 2em;
   width: 100%;
   position: relative;
-  height: auto;
+
   .magazine-header {
     max-width: 1120px;
-    background-position: 50% 100%;
     margin: 0 auto;
     &__headline {
       width: 100%;
@@ -45,7 +44,7 @@
 
   .mag__body {
     max-width: 1120px;
-    min-height: 60em;
+    min-height: 50em;
     padding-bottom: 2em;
     background-size: 90%;
     margin: 0 auto;
@@ -201,8 +200,7 @@
     transition: all 0.7s ease;
   }
 }
-
-#magazine:before {
+#magazine-1:before {
   content: "";
   position: absolute;
   top: 0;
@@ -211,7 +209,7 @@
   height: 100%;
   background: url(../img/dot.png);
   background-attachment: fixed;
-  opacity: 0.15;
+  opacity: 0.1;
   mix-blend-mode: hard-light;
   z-index: -2;
 }
