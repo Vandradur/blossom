@@ -331,6 +331,109 @@ HEADER
   z-index: -2;
 }
 
+#full-width-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero {
+  width: 100%;
+  max-width: 2000px;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero h1 {
+  font-family: var(--fontSans);
+  line-height: 0.78;
+  font-family: "Lora", serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Open Sans";
+  font-family: "Raleway", sans-serif;
+  font-family: "Lora", "Arima Madurai", serif;
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff, 1px 1px 0 white;
+  color: #333533;
+  line-height: 0.8;
+  padding: 0.1em 0;
+  margin: auto;
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.hero p {
+  line-height: 18px;
+  text-decoration: none;
+  color: #333;
+  color: #0c090d;
+  font-size: 16px;
+  line-height: 1;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  font-family: "Raleway", sans-serif;
+  font-family: "Arima Madurai", cursive;
+  font-family: "Open Sans";
+  margin: auto;
+  position: absolute;
+  top: 220px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.bar {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(161deg, #eddcd2 0%, #fff 36%, #5c677d 100%);
+  opacity: 0.3;
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 90px;
+  -webkit-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+  -webkit-animation: roll-out 1.2s ease-out;
+  animation: roll-out 1.2s ease-out;
+}
+
+.hero h1,
+.hero p {
+  -webkit-animation: scale-in 1.3s ease-out;
+  animation: scale-in 1.3s ease-out;
+}
+
+@media all and (max-width: 768px) {
+  .hero {
+    height: 50vw;
+  }
+  .bar {
+    height: 26vw;
+    top: 10vw;
+  }
+  .hero h1 {
+    font-size: 8vw;
+    top: 13vw;
+  }
+  .hero p {
+    font-size: 3vw;
+    top: 27vw;
+  }
+}
+
 #shopOnline {
   display: -webkit-box;
   display: -ms-flexbox;
