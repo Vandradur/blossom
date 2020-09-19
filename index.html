@@ -28,21 +28,128 @@
       </div>
     </nav>
   </header>
-
-
-<div id="full-width-slider">
-
-  
-  <div class="hero">
-    <h1>Welcome to Blossoms</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <img src="./img/hero-21.png" />
-     <div class="bar"></div>
+ <!-- Hero Owl Carousal -->
+<div id="hero-slider">  
+  <div class="hero-owl-slider" id="hero-owl-slider">
+    <!-- slide 01 -->
+    <div class="slides">
+      <div class="owl-slide">
+        <div class="owl-text-center">
+          <span>Our Rose Collection.</span> 
+          <a href="#chapter-01" class="owl-btn"><button >Read more</button></a>
+        </div>
+      </div>
+    </div>
+    <!-- slide 02 -->
+    <div class="slides">
+      <div class="owl-slide">
+        <div class="owl-text-center">
+          <span>Essential tips for longer lasting flowers.</span>
+          <a href="#magazine-1" class="owl-btn"><button >Read more</button></a>
+        </div>
+      </div>
+    </div>
+    <!-- slide 03 -->
+    <div class="slides">
+      <div class="owl-slide">
+        <div class="owl-text-center">
+          <span>5 tips for Creating and maintaining your flowers Successfully.</span>
+          <a href="#vids" class="owl-btn"><button >Read more</button></a>
+        </div>
+      </div>
+    </div>
   </div>
-
 </div>
-
-
+<div id="product-slider">
+  <div id="prdt-carousel" class="container-fluid">
+    <div class="owl-carousel owl-theme">
+        <div class="item mdh-item-overlay">
+            <div class="pic a"></div>
+            <div class="info">
+                <h3>Rosa</h3>
+                <small>BLEEMS</small>
+                <p>Make a statement with 3 dozen white roses or arrange it yourself.<br><span>QAR 360.00</span>
+                </p>
+            </div>
+            <div class="item-overlay">
+                <div class="item-overlay-info">
+                  <a href="https://www.bleems.com/qa/flower/blossom/rosa" class="ord-btn" target="_blank">Buy Now</a>
+                </div>
+            </div>
+        </div>
+      <div class="item mdh-item-overlay">
+            <div class="pic b"></div>
+            <div class="info">
+              <h3>Bliss</h3>
+              <small>BLEEMS</small>
+              <p>This 50 red roses wrapped in Kraft paper conveys how significant you to other.<br><span>QAR 470.00</span>
+              </p>
+            </div>
+            <div class="item-overlay">
+                <div class="item-overlay-info">
+                  <a href="https://www.bleems.com/qa/flower/blossom/bliss" class="ord-btn" target="_blank">Buy Now</a>
+                </div>
+            </div>
+        </div>
+      <div class="item mdh-item-overlay">
+            <div class="pic c"></div>
+            <div class="info">
+              <h3>Al Reem</h3>
+              <small>BLEEMS</small>
+              <p>When consider either the recipient or the occasion, this modern wrapped 66 rose bouquet will never change what it delivers. Comes along with a mini fragrance bottle.<br><span>QAR 650.00</span>
+              </p>
+            </div>
+            <div class="item-overlay">
+                <div class="item-overlay-info">
+                  <a href="https://www.bleems.com/qa/flower/blossom/al-reem" class="ord-btn" target="_blank">Buy Now</a>
+                </div>
+            </div>
+        </div>
+      <div class="item mdh-item-overlay">
+            <div class="pic d"></div>
+            <div class="info">
+              <h3>Goodness</h3>
+              <small>BLEEMS</small>
+              <p>Sending this 50 white roses is a statement. It suitable anything from a wedding ceremony, building trust, convey peace and represent reunion.<br><span>QAR 550.00</span>
+              </p>
+            </div>
+            <div class="item-overlay">
+                <div class="item-overlay-info">
+                  <a href="https://www.bleems.com/qa/flower/blossom/goodness" class="ord-btn" target="_blank">Buy Now</a>
+                </div>
+            </div>
+        </div>
+      <div class="item mdh-item-overlay">
+            <div class="pic e"></div>
+            <div class="info">
+              <h3>A Duo</h3>
+              <small>BLEEMS</small>
+              <p>You can’t go wrong with a bouquet of fresh pink and white 50 roses which has all overwritten it's gentleness, dignity and elegance.<br><span>QAR 470.00</span>
+              </p>
+            </div>
+            <div class="item-overlay">
+                <div class="item-overlay-info">
+                  <a href="https://www.bleems.com/qa/flower/blossom/a-duo" class="ord-btn" target="_blank">Buy Now</a>
+                </div>
+            </div>
+        </div>
+      <div class="item mdh-item-overlay">
+            <div class="pic f"></div>
+            <div class="info">
+              <h3>Cottage Garden</h3>
+              <small>BLEEMS</small>
+              <p>This simple yet delightful bouquet includes 25 blooms of bright white and yellow daisies.<br><span>QAR 300.00</span>
+              </p>
+            </div>
+            <div class="item-overlay">
+                <div class="item-overlay-info">
+                  <a href="https://www.bleems.com/qa/flower/blossom/cottage-garden" class="ord-btn" target="_blank">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
   <!-- SECTION chapter-01 -->
   <section id="chapter-01">
       <div class="logo-circle"></div>
@@ -1330,6 +1437,47 @@ This observance is very similar to National Random Acts of Kindness Day, which i
   <script src="js/main.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script>
+
+// Owl Carousal
+$("#hero-owl-slider").owlCarousel({
+  items: 1,
+  nav: false,
+  dots: true,
+  loop: true,
+  autoplay: true,
+  autoplayTimeout:6000,
+  responsive: {
+    0: {
+      items: 1
+    }
+  }
+});
+/*  End img-hero-slider */
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:20,
+    responsive:{
+      0:{
+        items:1
+      },
+      600:{
+        items:2
+      },
+      1000:{
+        items:3
+      },
+      1400:{
+        items:4
+      }
+    },
+    autoplay:true,
+    autoplayTimeout:2500,
+    autoplayHoverPause:true
+  })
+});
+    
+    /*   */
 
 
 
