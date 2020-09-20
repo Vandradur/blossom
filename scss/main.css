@@ -386,6 +386,7 @@ HEADER
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  padding: 1em 7em;
   z-index: 0;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
