@@ -37,21 +37,27 @@
         text-align: center;
         padding: 1em 7em;
         z-index: 0;
-        filter: grayscale(100%);
-        background: linear-gradient(
+        //filter: grayscale(100%);
+        /* background: linear-gradient(
           161deg,
           $white-02 0%,
           $black-02 36%,
           $primary 100%
-        );
-        mix-blend-mode: lighten;
-        opacity: 0.88;
+        );*/
+        //@at-root: luminosity;
+        //mix-blend-mode: hard-light;
+        //opacity: 0.48;
+        //filter: invert(1);
         animation: roll-out 1.2s ease-out;
         span {
           @include h1Text;
-          font-size: 300%;
+          font-size: 200%;
           margin-top: -22px;
-          color: #fff;
+          color: $primary-04;
+          text-shadow: #474747 3px 5px 2px;
+          @include desktop690 {
+            font-size: 340%;
+          }
         }
         button {
           text-transform: uppercase;
@@ -59,14 +65,17 @@
           font-family: montserrat;
           font-size: 13px;
           padding: 6px 20px;
-          margin-top: 6%;
+          margin-top: 12%;
           color: $white-03;
-          border: 3px solid $white-03;
+          border: 4px solid $primary-04;
           width: 90%;
           height: 45px;
           border-radius: 2px;
           background: transparent;
+          text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+            1px 1px 1px rgba(0, 0, 0, 0.5);
           transition: all 0.3s ease;
+          box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.15);
           cursor: pointer;
           &:hover {
             @include btn_primary_hover;

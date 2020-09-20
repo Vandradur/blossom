@@ -64,6 +64,7 @@ $card-height: 500px;
           top: 0;
           left: 0;
           transition: all 0.3s ease;
+          padding: 1em;
 
           h3 {
             @include h2Text;
@@ -111,15 +112,16 @@ $card-height: 500px;
           padding: 0;
           width: 100%;
           li {
-            margin: 0 15px 0 0;
+            margin: 3px 15px 0 0;
             padding: 0 0 0 22px;
             display: inline-block;
             @include h3Text;
-            font-size: 14px;
+            font-size: 18px;
             color: $goldenrod;
             &.comments {
-              background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1765/icon-chat.svg)
-                no-repeat 0 0.1em;
+              width: 15%;
+              background: url(../svg/flower.svg) no-repeat 0 0.1em;
+              background-size: cover;
             }
             &.date {
               background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1765/icon-calendar.svg)
