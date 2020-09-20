@@ -349,15 +349,27 @@ TYPOGRAPHY
 }
 
 #hero-slider .hero-owl-slider .slides .owl-slide.s1 {
-  background-image: url("../img/hero-011.jpg");
+  background-image: url("../img/hero-32.png");
 }
 
 #hero-slider .hero-owl-slider .slides .owl-slide.s2 {
-  background-image: url("../img/hero-37.png");
+  background-image: url("../img/hero-703.png");
 }
 
 #hero-slider .hero-owl-slider .slides .owl-slide.s3 {
-  background-image: url("../img/hero-31.png");
+  background-image: url("../img/hero-700.png");
+}
+
+#hero-slider .hero-owl-slider .slides .owl-slide.s4 {
+  background-image: url("../img/hero-04.jpg");
+}
+
+#hero-slider .hero-owl-slider .slides .owl-slide.s5 {
+  background-image: url("../img/hero-012.JPG");
+}
+
+#hero-slider .hero-owl-slider .slides .owl-slide.s6 {
+  background-image: url("../img/hero-011.jpg");
 }
 
 #hero-slider .hero-owl-slider .slides .owl-slide img {
@@ -408,8 +420,8 @@ TYPOGRAPHY
   padding: 0.1em 0;
   font-size: 200%;
   margin-top: -22px;
-  color: #fff1e6;
-  text-shadow: #474747 3px 5px 2px;
+  color: #fff;
+  text-shadow: #474747 2px 2px 1px;
 }
 
 @media (min-width: 690px) {
@@ -426,7 +438,7 @@ TYPOGRAPHY
   padding: 6px 20px;
   margin-top: 12%;
   color: #fefee3;
-  border: 4px solid #fff1e6;
+  border: 4px solid #fff;
   width: 90%;
   height: 45px;
   border-radius: 2px;
@@ -434,8 +446,8 @@ TYPOGRAPHY
   text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
 
@@ -723,6 +735,16 @@ TYPOGRAPHY
 
 #product-slider-2 #prdt-carousel .owl-carousel .item .pic.f {
   background-image: url(https://cdn-img.bleems.com/225715110820175834824545_item.png);
+  background-size: cover;
+}
+
+#product-slider-2 #prdt-carousel .owl-carousel .item .pic.g {
+  background-image: url(../img/7.png);
+  background-size: cover;
+}
+
+#product-slider-2 #prdt-carousel .owl-carousel .item .pic.h {
+  background-image: url(../img/8.png);
   background-size: cover;
 }
 

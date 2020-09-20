@@ -53,6 +53,14 @@ $card-height: 500px;
             background-image: url(https://cdn-img.bleems.com/225715110820175834824545_item.png);
             background-size: cover;
           }
+          &.g {
+            background-image: url(../img/7.png);
+            background-size: cover;
+          }
+          &.h {
+            background-image: url(../img/8.png);
+            background-size: cover;
+          }
         }
 
         .info {
