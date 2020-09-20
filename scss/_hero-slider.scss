@@ -48,10 +48,10 @@
         opacity: 0.88;
         animation: roll-out 1.2s ease-out;
         span {
-          @include h3Text;
+          @include h1Text;
           font-size: 300%;
           margin-top: -22px;
-          color: $white-03;
+          color: #fff;
         }
         button {
           text-transform: uppercase;

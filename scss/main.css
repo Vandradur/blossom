@@ -17,9 +17,6 @@ TYPOGRAPHY
 /* H2 TEXT ========================================================================== */
 /* H3 TEXT ========================================================================== */
 /* H4 TEXT ========================================================================== */
-/* ==========================================================================
-HEADER
-========================================================================== */
 #topnav {
   width: 100%;
   display: -webkit-box;
@@ -303,6 +300,7 @@ HEADER
   opacity: 1;
 }
 
+/*
 .nav-bar:before {
   content: "";
   position: absolute;
@@ -330,7 +328,7 @@ HEADER
   mix-blend-mode: hard-light;
   z-index: -2;
 }
-
+*/
 #hero-slider .hero-owl-slider {
   width: 100%;
   overflow-x: hidden;
@@ -398,17 +396,22 @@ HEADER
 }
 
 #hero-slider .hero-owl-slider .slides .owl-text-center span {
-  line-height: 0.9em;
-  font-size: 1em;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 8px;
-  margin: 0.5em;
+  font-family: var(--fontSans);
+  line-height: 0.78;
+  font-family: "Lora", serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Open Sans";
+  font-family: "Raleway", sans-serif;
+  font-family: "Lora", "Arima Madurai", serif;
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff, 1px 1px 0 white;
   color: #333533;
+  line-height: 0.8;
+  padding: 0.1em 0;
   font-size: 300%;
   margin-top: -22px;
-  color: #fefee3;
+  color: #fff;
 }
 
 #hero-slider .hero-owl-slider .slides .owl-text-center button {
