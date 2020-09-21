@@ -96,6 +96,10 @@ $card-height: 500px;
             margin: 0;
             color: $black-03;
           }
+          small {
+            @include h3Text;
+            color: $goldenrod;
+          }
 
           p {
             @include bodyText;
@@ -106,8 +110,9 @@ $card-height: 500px;
           h4 {
             position: absolute;
             background: $primary;
-            padding: 2em;
+            padding: 1.6em;
             @include h3Text;
+            font-size: 11px;
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 0.05em;
@@ -115,10 +120,6 @@ $card-height: 500px;
             top: -240px;
             right: 0;
             z-index: 20;
-          }
-          small {
-            @include h3Text;
-            color: $primaryDark;
           }
 
           span {
@@ -222,7 +223,7 @@ $card-height: 500px;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: $black-03;
+  background-color: $white;
   transition: all 0.3s ease;
   opacity: 0;
   visibility: hidden;
@@ -233,32 +234,34 @@ $card-height: 500px;
   margin: 0 auto;
   z-index: 10;
   transition: background 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+
   .card-info {
     padding: 2em;
     h3 {
       @include bodyText;
-      color: $white-02;
+      color: $black-03;
     }
     hr {
       width: 70px;
       height: 3px;
-      margin: 20px auto;
+      margin: 10px auto;
       border: 0;
       background: $goldenrod;
     }
     ul li {
       @include bodyText;
-      color: $primaryLight;
+      color: $black-02;
       font-size: 12px;
       span {
         @include h3Text;
         color: $goldenrod;
+        text-transform: none;
         font-size: 12px;
       }
     }
     p {
       @include bodyText;
-      color: $primaryLight;
+      color: $black;
       font-size: 12px;
     }
   }

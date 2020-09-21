@@ -592,7 +592,6 @@ TYPOGRAPHY
   background: #eddcd2;
   padding: 1em;
   line-height: 0.9em;
-  font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   font-family: "Montserrat", sans-serif;
@@ -606,7 +605,6 @@ TYPOGRAPHY
 
 #product-slider #prdt-carousel .owl-carousel .item .info small {
   line-height: 0.9em;
-  font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   font-family: "Montserrat", sans-serif;
@@ -811,6 +809,17 @@ TYPOGRAPHY
   color: #0c090d;
 }
 
+#product-slider-2 #prdt-carousel .owl-carousel .item .info small {
+  line-height: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  margin: 0.5em;
+  color: #333533;
+  color: #daa520;
+}
+
 #product-slider-2 #prdt-carousel .owl-carousel .item .info p {
   line-height: 18px;
   text-decoration: none;
@@ -833,15 +842,15 @@ TYPOGRAPHY
 #product-slider-2 #prdt-carousel .owl-carousel .item .info h4 {
   position: absolute;
   background: #eddcd2;
-  padding: 2em;
+  padding: 1.6em;
   line-height: 0.9em;
-  font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   font-family: "Montserrat", sans-serif;
   font-size: 8px;
   margin: 0.5em;
   color: #333533;
+  font-size: 11px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -849,18 +858,6 @@ TYPOGRAPHY
   top: -240px;
   right: 0;
   z-index: 20;
-}
-
-#product-slider-2 #prdt-carousel .owl-carousel .item .info small {
-  line-height: 0.9em;
-  font-size: 1em;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 8px;
-  margin: 0.5em;
-  color: #333533;
-  color: #cb997e;
 }
 
 #product-slider-2 #prdt-carousel .owl-carousel .item .info span {
@@ -886,7 +883,6 @@ TYPOGRAPHY
   padding: 20px;
   display: inline-block;
   line-height: 0.9em;
-  font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   font-family: "Montserrat", sans-serif;
@@ -957,7 +953,7 @@ TYPOGRAPHY
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #0c090d;
+  background-color: #fff;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   opacity: 0;
@@ -996,13 +992,13 @@ TYPOGRAPHY
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
   font-family: "Open Sans";
-  color: #fffcf2;
+  color: #0c090d;
 }
 
 .item-layer-overlay .card-info hr {
   width: 70px;
   height: 3px;
-  margin: 20px auto;
+  margin: 10px auto;
   border: 0;
   background: #daa520;
 }
@@ -1021,13 +1017,12 @@ TYPOGRAPHY
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
   font-family: "Open Sans";
-  color: #fff1e6;
+  color: #161a1d;
   font-size: 12px;
 }
 
 .item-layer-overlay .card-info ul li span {
   line-height: 0.9em;
-  font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   font-family: "Montserrat", sans-serif;
@@ -1035,6 +1030,7 @@ TYPOGRAPHY
   margin: 0.5em;
   color: #333533;
   color: #daa520;
+  text-transform: none;
   font-size: 12px;
 }
 
@@ -1052,7 +1048,7 @@ TYPOGRAPHY
   font-family: "Raleway", sans-serif;
   font-family: "Arima Madurai", cursive;
   font-family: "Open Sans";
-  color: #fff1e6;
+  color: #020d13ff;
   font-size: 12px;
 }
 
@@ -1325,7 +1321,6 @@ TYPOGRAPHY
 
 #magazine-1 .magazine-header h3 {
   line-height: 0.9em;
-  font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   font-family: "Montserrat", sans-serif;
@@ -1729,7 +1724,6 @@ TYPOGRAPHY
 
 #chapter-01 #chapter .h3header {
   line-height: 0.9em;
-  font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   font-family: "Montserrat", sans-serif;
@@ -1914,7 +1908,6 @@ TYPOGRAPHY
 
 .products-card-wrapper .card span {
   line-height: 0.9em;
-  font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   font-family: "Montserrat", sans-serif;
@@ -2247,7 +2240,6 @@ TYPOGRAPHY
   padding: 0.8em 0.8em;
   background: #eddcd2;
   line-height: 0.9em;
-  font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   font-family: "Montserrat", sans-serif;
@@ -2286,7 +2278,6 @@ TYPOGRAPHY
       align-self: flex-end;
   padding: 1em;
   line-height: 0.9em;
-  font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   font-family: "Montserrat", sans-serif;
@@ -2696,7 +2687,6 @@ img {
 
 #vids .video-sec h3 {
   line-height: 0.9em;
-  font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   font-family: "Montserrat", sans-serif;
