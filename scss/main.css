@@ -692,6 +692,7 @@ TYPOGRAPHY
   width: 100%;
   top: 0;
   left: 0;
+  background: #fff;
   position: relative;
 }
 
@@ -817,7 +818,7 @@ TYPOGRAPHY
   font-size: 8px;
   margin: 0.5em;
   color: #333533;
-  color: #daa520;
+  color: #fff;
 }
 
 #product-slider-2 #prdt-carousel .owl-carousel .item .info p {
@@ -911,11 +912,10 @@ TYPOGRAPHY
 
 .link-btn {
   position: absolute;
-  text-transform: uppercase;
   letter-spacing: 0.1em;
   font-family: montserrat;
   font-size: 13px;
-  color: #020d13ff;
+  color: #daa520;
   text-decoration: none;
   cursor: pointer;
   display: block;
@@ -926,7 +926,7 @@ TYPOGRAPHY
 }
 
 .link-btn:hover {
-  color: #daa520;
+  color: #eddcd2;
 }
 
 .gradientOverlay {
@@ -934,13 +934,13 @@ TYPOGRAPHY
   top: 0;
   right: 0;
   background: #fbfbfb;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e5e5e5+37,ffffff+75&0+61,1+100 */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffd687+4,fffaf4+100&0+26,1+100 */
   /* FF3.6-15 */
   /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(37%, rgba(229, 229, 229, 0)), color-stop(61%, rgba(245, 245, 245, 0)), color-stop(75%, rgba(255, 255, 255, 0.36)), to(white));
-  background: linear-gradient(to bottom, rgba(229, 229, 229, 0) 37%, rgba(245, 245, 245, 0) 61%, rgba(255, 255, 255, 0.36) 75%, white 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, rgba(255, 214, 135, 0)), color-stop(26%, rgba(255, 222, 160, 0)), to(#fffaf4));
+  background: linear-gradient(to bottom, rgba(255, 214, 135, 0) 4%, rgba(255, 222, 160, 0) 26%, #fffaf4 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e5e5e5', endColorstr='#ffffff',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffd687', endColorstr='#fffaf4',GradientType=0 );
   /* IE6-9 */
   width: 100%;
   height: 500px;
@@ -953,7 +953,7 @@ TYPOGRAPHY
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #fff;
+  background-color: #fffaf6;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   opacity: 0;
@@ -1087,9 +1087,8 @@ TYPOGRAPHY
   height: 150%;
   background: url(../img/dot.png);
   background-attachment: fixed;
-  opacity: 0.1;
-  mix-blend-mode: hard-light;
-  z-index: -2;
+  opacity: 0.15;
+  z-index: 1;
 }
 
 #shopOnline {

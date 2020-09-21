@@ -5,6 +5,7 @@ $card-height: 500px;
   width: 100%;
   top: 0;
   left: 0;
+  background: $white;
   position: relative;
   #prdt-carousel {
     .owl-carousel {
@@ -98,7 +99,7 @@ $card-height: 500px;
           }
           small {
             @include h3Text;
-            color: $goldenrod;
+            color: $white;
           }
 
           p {
@@ -167,11 +168,11 @@ $card-height: 500px;
 }
 .link-btn {
   position: absolute;
-  text-transform: uppercase;
   letter-spacing: 0.1em;
   font-family: montserrat;
   font-size: 13px;
-  color: $black;
+
+  color: $goldenrod;
   text-decoration: none;
   cursor: pointer;
   display: block;
@@ -180,7 +181,7 @@ $card-height: 500px;
   right: 5px;
   z-index: 40;
   &:hover {
-    color: $goldenrod;
+    color: $primary;
   }
 }
 .gradientOverlay {
@@ -188,29 +189,26 @@ $card-height: 500px;
   top: 0;
   right: 0;
   background: rgb(251, 251, 251);
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e5e5e5+37,ffffff+75&0+61,1+100 */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffd687+4,fffaf4+100&0+26,1+100 */
   background: -moz-linear-gradient(
     top,
-    rgba(229, 229, 229, 0) 37%,
-    rgba(245, 245, 245, 0) 61%,
-    rgba(255, 255, 255, 0.36) 75%,
-    rgba(255, 255, 255, 1) 100%
+    rgba(255, 214, 135, 0) 4%,
+    rgba(255, 222, 160, 0) 26%,
+    rgba(255, 250, 244, 1) 100%
   ); /* FF3.6-15 */
   background: -webkit-linear-gradient(
     top,
-    rgba(229, 229, 229, 0) 37%,
-    rgba(245, 245, 245, 0) 61%,
-    rgba(255, 255, 255, 0.36) 75%,
-    rgba(255, 255, 255, 1) 100%
+    rgba(255, 214, 135, 0) 4%,
+    rgba(255, 222, 160, 0) 26%,
+    rgba(255, 250, 244, 1) 100%
   ); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(
     to bottom,
-    rgba(229, 229, 229, 0) 37%,
-    rgba(245, 245, 245, 0) 61%,
-    rgba(255, 255, 255, 0.36) 75%,
-    rgba(255, 255, 255, 1) 100%
+    rgba(255, 214, 135, 0) 4%,
+    rgba(255, 222, 160, 0) 26%,
+    rgba(255, 250, 244, 1) 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e5e5e5', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffd687', endColorstr='#fffaf4',GradientType=0 ); /* IE6-9 */
 
   width: $card-width;
   height: $card-height;
@@ -223,7 +221,7 @@ $card-height: 500px;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: $white;
+  background-color: $primary-04;
   transition: all 0.3s ease;
   opacity: 0;
   visibility: hidden;
@@ -301,7 +299,6 @@ $card-height: 500px;
   height: 150%;
   background: url(../img/dot.png);
   background-attachment: fixed;
-  opacity: 0.1;
-  mix-blend-mode: hard-light;
-  z-index: -2;
+  opacity: 0.15;
+  z-index: 1;
 }
