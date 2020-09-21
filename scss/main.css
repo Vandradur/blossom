@@ -349,27 +349,43 @@ TYPOGRAPHY
 }
 
 #hero-slider .hero-owl-slider .slides .owl-slide.s1 {
-  background-image: url("../img/hero-32.png");
+  background-image: url("../img/hero-012.jpg");
 }
 
 #hero-slider .hero-owl-slider .slides .owl-slide.s2 {
-  background-image: url("../img/hero-703.png");
+  background-image: url("../img/hero-015.jpg");
 }
 
 #hero-slider .hero-owl-slider .slides .owl-slide.s3 {
-  background-image: url("../img/hero-700.png");
+  background-image: url("../img/hero-017.jpg");
 }
 
 #hero-slider .hero-owl-slider .slides .owl-slide.s4 {
-  background-image: url("../img/hero-04.jpg");
+  background-image: url("../img/hero-022.jpg");
 }
 
 #hero-slider .hero-owl-slider .slides .owl-slide.s5 {
-  background-image: url("../img/hero-012.JPG");
+  background-image: url("../img/hero-029.jpg");
 }
 
 #hero-slider .hero-owl-slider .slides .owl-slide.s6 {
-  background-image: url("../img/hero-011.jpg");
+  background-image: url("../img/hero-023.jpg");
+}
+
+#hero-slider .hero-owl-slider .slides .owl-slide.s7 {
+  background-image: url("../img/hero-033.jpg");
+}
+
+#hero-slider .hero-owl-slider .slides .owl-slide.s8 {
+  background-image: url("../img/hero-036.jpg");
+}
+
+#hero-slider .hero-owl-slider .slides .owl-slide.s9 {
+  background-image: url("../img/hero-030.jpg");
+}
+
+#hero-slider .hero-owl-slider .slides .owl-slide.s10 {
+  background-image: url("../img/hero-032.jpg");
 }
 
 #hero-slider .hero-owl-slider .slides .owl-slide img {
@@ -694,6 +710,7 @@ TYPOGRAPHY
           box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.6);
   text-align: center;
   padding: 0.3em;
+  position: relative;
 }
 
 #product-slider-2 #prdt-carousel .owl-carousel .item:hover {
@@ -709,42 +726,62 @@ TYPOGRAPHY
 }
 
 #product-slider-2 #prdt-carousel .owl-carousel .item .pic.a {
-  background-image: url(https://cdn-img.bleems.com/220137230720213959474661_item.png);
+  background-image: url(../img/white-rose-eucalyptus-bouquet-01.jpg);
   background-size: cover;
 }
 
 #product-slider-2 #prdt-carousel .owl-carousel .item .pic.b {
-  background-image: url(https://cdn-img.bleems.com/219289210720185714685744_item.png);
+  background-image: url(../img/red-rose-kraft-paper-bouquet-01.jpg);
   background-size: cover;
 }
 
 #product-slider-2 #prdt-carousel .owl-carousel .item .pic.c {
-  background-image: url(https://cdn-img.bleems.com/224070040820193011287705_item.png);
+  background-image: url(../img/rose-frutteto-kraft-paper-bouquet-01.jpg);
   background-size: cover;
 }
 
 #product-slider-2 #prdt-carousel .owl-carousel .item .pic.d {
-  background-image: url(https://cdn-img.bleems.com/216539150720182353358386_item.jpg);
+  background-image: url(../img/white-rose-italian-ruscus-sea-lavender-Limonium-bouquet-02.jpg);
   background-size: cover;
 }
 
 #product-slider-2 #prdt-carousel .owl-carousel .item .pic.e {
-  background-image: url(https://cdn-img.bleems.com/227786160820201810009139_item.png);
+  background-image: url(../img/white-rose-pink-roshlyn-bouquet-01.jpg);
   background-size: cover;
 }
 
 #product-slider-2 #prdt-carousel .owl-carousel .item .pic.f {
-  background-image: url(https://cdn-img.bleems.com/225715110820175834824545_item.png);
+  background-image: url(../img/daisy-bellis-perennis-bouquet-01.jpg);
   background-size: cover;
 }
 
 #product-slider-2 #prdt-carousel .owl-carousel .item .pic.g {
-  background-image: url(../img/7.png);
+  background-image: url(../img/red-101-rose-bouquet-01.jpg);
   background-size: cover;
 }
 
 #product-slider-2 #prdt-carousel .owl-carousel .item .pic.h {
-  background-image: url(../img/8.png);
+  background-image: url(../img/white-tulips-bouquet-03.jpg);
+  background-size: cover;
+}
+
+#product-slider-2 #prdt-carousel .owl-carousel .item .pic.i {
+  background-image: url(../img/white-rose-daisy-yellow-tulip-bouquet-03.jpg);
+  background-size: cover;
+}
+
+#product-slider-2 #prdt-carousel .owl-carousel .item .pic.j {
+  background-image: url(../img/red-rose-italian-ruscus-eucalyptus-bouquet-03.jpg);
+  background-size: cover;
+}
+
+#product-slider-2 #prdt-carousel .owl-carousel .item .pic.k {
+  background-image: url(../img/pink-roshlyn-bouquet-02.jpg);
+  background-size: cover;
+}
+
+#product-slider-2 #prdt-carousel .owl-carousel .item .pic.l {
+  background-image: url(../img/pink-fuchsia-rose-bouquet-04.jpg);
   background-size: cover;
 }
 
@@ -876,6 +913,26 @@ TYPOGRAPHY
   padding: 12px;
 }
 
+.link-btn {
+  position: absolute;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: montserrat;
+  font-size: 13px;
+  color: #020d13ff;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  padding: 10px 20px;
+  bottom: 4px;
+  right: 5px;
+  z-index: 40;
+}
+
+.link-btn:hover {
+  color: #daa520;
+}
+
 .gradientOverlay {
   position: absolute;
   top: 0;
@@ -1001,23 +1058,6 @@ TYPOGRAPHY
 
 .item-layer-overlay .item-overlay-info {
   width: 70%;
-}
-
-.item-layer-overlay .item-overlay-info .link-btn {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-family: montserrat;
-  font-size: 13px;
-  color: #fff;
-  text-decoration: none;
-  cursor: pointer;
-  display: block;
-  margin-top: 20px;
-  padding: 10px 20px;
-}
-
-.item-layer-overlay .item-overlay-info .link-btn:hover {
-  color: #daa520;
 }
 
 .mdh-item-overlay {

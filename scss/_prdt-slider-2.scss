@@ -17,6 +17,7 @@ $card-height: 500px;
         box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.6);
         text-align: center;
         padding: 0.3em;
+        position: relative;
         &:hover {
           box-shadow: $shadow-03;
           top: -1px;
@@ -25,40 +26,56 @@ $card-height: 500px;
         .pic {
           height: 350px;
           &.a {
-            background-image: url(https://cdn-img.bleems.com/220137230720213959474661_item.png);
+            background-image: url(../img/white-rose-eucalyptus-bouquet-01.jpg);
             background-size: cover;
           }
 
           &.b {
-            background-image: url(https://cdn-img.bleems.com/219289210720185714685744_item.png);
+            background-image: url(../img/red-rose-kraft-paper-bouquet-01.jpg);
             background-size: cover;
           }
 
           &.c {
-            background-image: url(https://cdn-img.bleems.com/224070040820193011287705_item.png);
+            background-image: url(../img/rose-frutteto-kraft-paper-bouquet-01.jpg);
             background-size: cover;
           }
 
           &.d {
-            background-image: url(https://cdn-img.bleems.com/216539150720182353358386_item.jpg);
+            background-image: url(../img/white-rose-italian-ruscus-sea-lavender-Limonium-bouquet-02.jpg);
             background-size: cover;
           }
 
           &.e {
-            background-image: url(https://cdn-img.bleems.com/227786160820201810009139_item.png);
+            background-image: url(../img/white-rose-pink-roshlyn-bouquet-01.jpg);
             background-size: cover;
           }
 
           &.f {
-            background-image: url(https://cdn-img.bleems.com/225715110820175834824545_item.png);
+            background-image: url(../img/daisy-bellis-perennis-bouquet-01.jpg);
             background-size: cover;
           }
           &.g {
-            background-image: url(../img/7.png);
+            background-image: url(../img/red-101-rose-bouquet-01.jpg);
             background-size: cover;
           }
           &.h {
-            background-image: url(../img/8.png);
+            background-image: url(../img/white-tulips-bouquet-03.jpg);
+            background-size: cover;
+          }
+          &.i {
+            background-image: url(../img/white-rose-daisy-yellow-tulip-bouquet-03.jpg);
+            background-size: cover;
+          }
+          &.j {
+            background-image: url(../img/red-rose-italian-ruscus-eucalyptus-bouquet-03.jpg);
+            background-size: cover;
+          }
+          &.k {
+            background-image: url(../img/pink-roshlyn-bouquet-02.jpg);
+            background-size: cover;
+          }
+          &.l {
+            background-image: url(../img/pink-fuchsia-rose-bouquet-04.jpg);
             background-size: cover;
           }
         }
@@ -147,6 +164,24 @@ $card-height: 500px;
     }
   }
 }
+.link-btn {
+  position: absolute;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: montserrat;
+  font-size: 13px;
+  color: $black;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  padding: 10px 20px;
+  bottom: 4px;
+  right: 5px;
+  z-index: 40;
+  &:hover {
+    color: $goldenrod;
+  }
+}
 .gradientOverlay {
   position: absolute;
   top: 0;
@@ -229,21 +264,6 @@ $card-height: 500px;
   }
   .item-overlay-info {
     width: 70%;
-    .link-btn {
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      font-family: montserrat;
-      font-size: 13px;
-      color: #fff;
-      text-decoration: none;
-      cursor: pointer;
-      display: block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      &:hover {
-        color: $goldenrod;
-      }
-    }
   }
 }
 
