@@ -68,7 +68,7 @@ $card-height: 500px;
             background-size: cover;
           }
           &.j {
-            background-image: url(../img/red-rose-italian-ruscus-eucalyptus-bouquet-03.jpg);
+            background-image: url(../img/red-rose-italian-ruscus-eucalyptus-bouquet-01.jpg);
             background-size: cover;
           }
           &.k {
@@ -99,7 +99,7 @@ $card-height: 500px;
           }
           small {
             @include h3Text;
-            color: $white;
+            color: $goldenrod;
           }
 
           p {
@@ -171,7 +171,6 @@ $card-height: 500px;
   letter-spacing: 0.1em;
   font-family: montserrat;
   font-size: 13px;
-
   color: $goldenrod;
   text-decoration: none;
   cursor: pointer;
@@ -181,7 +180,7 @@ $card-height: 500px;
   right: 5px;
   z-index: 40;
   &:hover {
-    color: $primary;
+    color: $black-03;
   }
 }
 .gradientOverlay {

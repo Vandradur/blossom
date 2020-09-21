@@ -770,7 +770,7 @@ TYPOGRAPHY
 }
 
 #product-slider-2 #prdt-carousel .owl-carousel .item .pic.j {
-  background-image: url(../img/red-rose-italian-ruscus-eucalyptus-bouquet-03.jpg);
+  background-image: url(../img/red-rose-italian-ruscus-eucalyptus-bouquet-01.jpg);
   background-size: cover;
 }
 
@@ -818,7 +818,7 @@ TYPOGRAPHY
   font-size: 8px;
   margin: 0.5em;
   color: #333533;
-  color: #fff;
+  color: #daa520;
 }
 
 #product-slider-2 #prdt-carousel .owl-carousel .item .info p {
@@ -926,7 +926,7 @@ TYPOGRAPHY
 }
 
 .link-btn:hover {
-  color: #eddcd2;
+  color: #0c090d;
 }
 
 .gradientOverlay {
