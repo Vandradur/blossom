@@ -2,18 +2,24 @@
   width: 100%;
   height: 100%;
   background: url(../img/hero-2.png) no-repeat 50% 50% fixed;
+  background: linear-gradient(
+    to right,
+    rgba(36, 31, 31, 1) 0%,
+    rgba(36, 31, 31, 1) 32%,
+    rgba(74, 71, 70, 1) 100%
+  );
   //background-size: 130%;
   overflow: hidden;
   @include flexCenter;
   flex-direction: column;
-  margin: 2em auto;
+  margin: 0 auto;
   #hero-content {
     .banner {
       display: block;
       margin-left: auto;
       margin-right: auto;
       width: 18%;
-      @include desktop690 {
+      @include desktop768 {
         width: 20%;
       }
     }
@@ -23,24 +29,24 @@
     height: 100%;
     padding: 3em 2em;
     z-index: 3;
-    @include desktop690 {
+    @include desktop768 {
       max-width: 60%;
     }
     #hero-title {
-      @include h2Text;
+      @include h2text;
       color: $primaryLight;
       text-shadow: #474747 1px 1px 2px;
       line-height: 0.98;
-      @include desktop690 {
+      @include desktop768 {
         font-size: 60px;
       }
     }
     #hero-text {
-      @include bodyText;
+      @include bodytext;
       color: $white-03;
       text-shadow: #474747 1px 2px 1px;
       margin-bottom: 3%;
-      @include desktop690 {
+      @include desktop768 {
         font-size: 1.3em;
       }
     }

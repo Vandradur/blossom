@@ -1,10 +1,10 @@
-#topnav {
+#header {
   width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
   position: relative;
-  background: $primary;
+  background: $white;
   z-index: 99;
   .menu {
     padding: 2rem 1.5rem;
@@ -13,7 +13,7 @@
     right: 1.3rem;
     z-index: 999;
     cursor: pointer;
-    @include desktop690 {
+    @include desktop576 {
       display: none;
     }
     .bar,
@@ -23,8 +23,7 @@
       position: absolute;
       height: 2px;
       width: 2.3rem;
-      background: #5c677d;
-      background-color: $secondary;
+      background-color: $black-02;
       top: 0;
       left: 0;
       right: 0;
@@ -57,13 +56,13 @@
     height: 4.4rem;
     position: relative;
     background: $white;
-    box-shadow: -1px 8px 10px -12px $black-04;
-    @include desktop690 {
+    box-shadow: -1px 8px 10px -12px $black-02;
+    @include desktop576 {
       display: flex;
       justify-content: space-between;
     }
     #logo {
-      width: 6.7rem;
+      width: 4.7rem;
       height: 4.7rem;
       background: transparent;
       position: relative;
@@ -77,7 +76,6 @@
       }
     }
     .nav-bar {
-      background: #fff1e6;
       background-color: $white;
       position: fixed;
       right: 0;
@@ -89,7 +87,7 @@
       transform: scale(0);
       opacity: 0;
 
-      @include desktop690 {
+      @include desktop576 {
         position: initial;
         background: none;
         opacity: initial;
@@ -103,21 +101,22 @@
         justify-content: center;
         list-style: none;
 
-        @include desktop690 {
+        @include desktop576 {
           flex-direction: row;
         }
         li {
           text-transform: uppercase;
           margin: 0.1rem 0.1rem;
           display: inline-block;
-          @include links;
-
-          @include desktop480 {
+          @include linktext;
+          font-family: "Montserrat";
+          font-family: "Open Sans";
+          @include desktop576 {
             margin: 0rem 0.1rem;
           }
         }
         li:last-child {
-          @include desktop480 {
+          @include desktop576 {
             margin-right: 1rem;
           }
         }
@@ -128,13 +127,11 @@
           text-decoration: none;
           color: $black-03;
           padding: 1.3rem 6rem;
-          font-family: "Montserrat";
-          font-family: "Open Sans";
           text-transform: uppercase;
           font-weight: 500;
           letter-spacing: 2.2px;
           font-size: 12px;
-          @include desktop690 {
+          @include desktop576 {
             padding: 1.7rem;
           }
         }
@@ -164,7 +161,7 @@
           background: transparent;
           height: 3px;
           width: 50%;
-          @include desktop690 {
+          @include desktop576 {
             background: $goldenrod;
           }
         }
@@ -177,7 +174,7 @@
           background: transparent;
           height: 3px;
           width: 50%;
-          @include desktop690 {
+          @include desktop576 {
             background: $goldenrod;
           }
         }
@@ -189,7 +186,7 @@
     opacity: 1;
   }
 }
-/*
+
 .nav-bar:before {
   content: "";
   position: absolute;
@@ -199,12 +196,13 @@
   height: 100%;
   background: url(../img/dot.png);
   background-attachment: fixed;
-  opacity: 0.1;
+  opacity: 0.05;
   mix-blend-mode: hard-light;
   z-index: -2;
 }
 
 .nav:before {
+  content: "";
   content: "";
   position: absolute;
   top: 0;
@@ -213,8 +211,7 @@
   height: 100%;
   background: url(../img/dot.png);
   background-attachment: fixed;
-  opacity: 0.1;
+  opacity: 0.03;
   mix-blend-mode: hard-light;
-  z-index: -2;
+  z-index: 1;
 }
-*/

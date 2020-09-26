@@ -1,0 +1,225 @@
+#featured {
+  background: $white;
+  margin-top: 20px;
+
+  .section-title {
+    text-align: center;
+    padding: 0 1em;
+    @include h3text;
+    line-height: 0.9;
+    font-size: 20px;
+    letter-spacing: 1.3px;
+    font-weight: 500;
+  }
+
+  .container__card-wrapper {
+    width: 93%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    .card {
+      background-color: $white;
+      height: $card-height;
+      width: $card-width;
+      border-radius: 12px 12px 2px 12px;
+      max-width: 20em;
+      margin: 2em 0.7em;
+      box-shadow: $shadow-01;
+      text-align: center;
+      position: relative;
+
+      &:hover {
+        box-shadow: $shadow-02;
+      }
+
+      .img {
+        height: $img-height;
+        background-repeat: no-repeat;
+        background-position: center center;
+        &.a {
+          background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/56613797-3ba9-471e-be14-141949d3ec5e/de5mxap-1937e2ca-ba4e-47f1-9f1a-673193fcf349.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNTY2MTM3OTctM2JhOS00NzFlLWJlMTQtMTQxOTQ5ZDNlYzVlXC9kZTVteGFwLTE5MzdlMmNhLWJhNGUtNDdmMS05ZjFhLTY3MzE5M2ZjZjM0OS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.TJtGCjxzuFvGIS6WbY9MFDPaAcZkVqbI-_wnnXAjUFA);
+          background-size: cover;
+        }
+        &.b {
+          background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/56613797-3ba9-471e-be14-141949d3ec5e/de5mxc7-9ab46ae7-2d17-4057-abda-11286e1fb307.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNTY2MTM3OTctM2JhOS00NzFlLWJlMTQtMTQxOTQ5ZDNlYzVlXC9kZTVteGM3LTlhYjQ2YWU3LTJkMTctNDA1Ny1hYmRhLTExMjg2ZTFmYjMwNy5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.F-eBNDZpMKE633UUA8CQs_PvVEEn9IExU5HCw_4HTWs);
+          background-size: cover;
+        }
+        &.c {
+          background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/56613797-3ba9-471e-be14-141949d3ec5e/de5mxdx-4ff65579-1ac7-4247-9bf8-489e76a65146.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNTY2MTM3OTctM2JhOS00NzFlLWJlMTQtMTQxOTQ5ZDNlYzVlXC9kZTVteGR4LTRmZjY1NTc5LTFhYzctNDI0Ny05YmY4LTQ4OWU3NmE2NTE0Ni5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.r8VM3f87snHaI-B4MHBEhd-F1CCVr69SVOkzao5bG-8);
+          background-size: cover;
+        }
+        &.d {
+          background-image: url(https://cdn-img.bleems.com/216539150720182353358386_item.jpg);
+          background-size: cover;
+        }
+      }
+
+      .info {
+        top: 0;
+        left: 0;
+        text-align: center;
+        margin: 100px 0 0 0;
+        width: 100%;
+        z-index: 10;
+        .item-no {
+          position: absolute;
+          bottom: 10px;
+          left: 7px;
+          padding: 0 1em;
+          z-index: 20;
+          color: $goldenrod;
+          .logo {
+            background: url(../svg/flower.svg) no-repeat 0 0.1em;
+            background-size: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 40;
+            width: 40%;
+            height: 90%;
+          }
+          .count {
+            background-color: darken($secondary, 5%);
+            border-radius: 50%;
+            padding: 7px 10px;
+          }
+        }
+
+        h3 {
+          @include h3text;
+          position: absolute;
+          padding: 0;
+          margin: 0;
+          top: 10px;
+          left: 15px;
+          font-size: 380%;
+        }
+
+        small {
+          @include smalltext;
+          position: absolute;
+          padding: 0;
+          margin: 0;
+          top: 60px;
+          left: 17px;
+        }
+
+        p {
+          @include bodytext;
+          font-weight: bold;
+          position: absolute;
+          bottom: 42px;
+          left: 17px;
+          padding: 0 1em;
+          z-index: 20;
+        }
+
+        .btn {
+          position: absolute;
+          @include linktext;
+          position: absolute;
+          padding: 2em 1em 0 3em;
+          margin: 0;
+          bottom: 20px;
+          right: 17px;
+          z-index: 33;
+          &:hover {
+            @include linktext-hover;
+          }
+        }
+      }
+
+      .gradient-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(121, 209, 202, 0.329);
+        background: linear-gradient(
+          to bottom,
+          rgba(254, 252, 234, 0.03) 40%,
+          rgba(252, 250, 235, 0.03) 9%,
+          rgba(239, 239, 239, 1) 100%
+        );
+        width: $card-width;
+        height: $card-width;
+        z-index: 9;
+      }
+
+      .cardlayer-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: lighten($secondary, 2%);
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        z-index: 20;
+        transition: $transition-01;
+        &__content {
+          padding: 2em;
+
+          h3 {
+            @include h3text;
+            position: absolute;
+            padding: 0;
+            margin: 0;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            top: 30px;
+          }
+
+          hr {
+            width: 70px;
+            height: 3px;
+            margin: 3px auto;
+            border: 0;
+            background: $primary;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            top: 150px;
+          }
+
+          p {
+            @include bodytext;
+            position: absolute;
+            padding: 0 1em;
+            margin: 0;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            top: 90px;
+          }
+        }
+      }
+    }
+
+    .card-overlay {
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      overflow: hidden;
+
+      &:hover {
+        .cardlayer-overlay {
+          opacity: 1;
+          visibility: visible;
+          transform: scale(1);
+          transition: $transition-01;
+        }
+      }
+    }
+  }
+}

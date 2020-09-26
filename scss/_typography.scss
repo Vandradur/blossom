@@ -1,165 +1,70 @@
-/* ==========================================================================
-TYPOGRAPHY
-========================================================================== */
-
-// FONTS
-$sans-serif: Raleway, Verdana, Arial, sans-serif;
-$serif: Montserrat, Georgia, "Times New Roman", serif;
-
-// WEIGHTS
-$light: 300;
-$normal: 400;
-$semibold: 500;
-$bold: 650;
-$strong: 700;
-$italic: italic;
-
-// HEADINGS
-$font-size-h1: 55px;
-$font-size-h2: 19px;
-$font-size-h3: 20px;
-$font-size-h4: 15px;
-$font-size-h5: 13px;
-
-// OTHER
-$article-h2: 20px;
-$font-size-base: 15px;
-$font-size-footer: 14px;
-$font-size-nav: 13px;
-$font-size-search-input: 15px;
-$font-size-tag: 13px;
-$font-size-smalltext: 13px;
-$font-size-button: 13px; // Responsive Sizes
-$responsive-h1: 40px;
-
-$line-height-h1: 68px;
-$base-line-height: 18px;
-$line-height-article-header: 39px; // Styles
-
-/* BODYTEXT ========================================================================== */
-@mixin bodyText {
-  line-height: $base-line-height;
-  text-decoration: none;
-  color: #333;
-  color: $black-03;
-  font-size: 16px;
-  line-height: 1;
-  outline: none;
-  border: none;
-  font-weight: 500;
-  letter-spacing: 1.5px;
-  font-family: "Raleway", sans-serif;
-  font-family: "Arima Madurai", cursive;
-  font-family: "Open Sans";
-}
-
-/* LINKS ========================================================================== */
-@mixin links {
-  font-size: $font-size-nav;
-  letter-spacing: 0.23rem;
-  font-weight: 900;
-  color: #333;
-  color: $black-02;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: "Montserrat";
-  font-family: "Open Sans";
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 2.2px;
-  font-size: 12px;
-}
-
-/* H1 TEXT ========================================================================== */
-@mixin h1Text {
-  font-family: var(--fontSans);
-  line-height: 0.78;
-  font-family: "Lora", serif;
-  font-family: "Playfair Display", serif;
-  font-family: "Open Sans";
-  font-family: "Raleway", sans-serif;
-  font-family: "Lora", "Arima Madurai", serif;
-  font-weight: 900;
-  font-style: italic;
-  text-shadow: 1px 2px 3px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff,
-    1px 1px 0 white;
-  color: $black-04;
+@mixin h1text {
   line-height: 0.8;
-  padding: 0.1em 0;
-}
-
-@mixin h1Text480 {
-  font-family: var(--fontSans);
-  font-weight: 600;
-  font-size: 2.4rem;
-}
-
-@mixin h1Text690 {
-  font-weight: 700;
-  letter-spacing: 0.01rem;
-}
-
-@mixin h1Text767 {
-  font-weight: 900;
-  font-size: 5.4rem;
-  letter-spacing: 0.01rem;
-}
-
-/* H2 TEXT ========================================================================== */
-@mixin h2Text {
-  font-size: 1.2em; /* 2 x 1.063 = 2.126*/
-  line-height: 0.9; /* 1.3 / 2.126 = 0.6 */
-  font-weight: $semibold;
-  color: $black-03;
-  font-family: "Lora";
-  letter-spacing: 0.04em;
-}
-
-@mixin h2Text480 {
-  font-size: $font-size-h2;
-  line-height: 1.7rem;
-  font-weight: $semibold;
-  color: #000;
-  color: $black-02;
-}
-
-@mixin h2Text690 {
-  letter-spacing: 0.03rem;
-  font-size: 3rem;
-  line-height: 2.4rem;
-}
-
-@mixin h2Text767 {
-  letter-spacing: 0.03rem;
   font-size: 4rem;
-  line-height: 3rem;
+  font-size: clamp(3rem, calc(5w + 1rem), 4.5);
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  color: $black-03;
+  font-family: "Slabo 27px", serif;
 }
 
-/* H3 TEXT ========================================================================== */
-@mixin h3Text {
-  line-height: 0.9em;
+@mixin h2text {
+  line-height: 1;
+  font-size: 1rem;
+  font-size: clamp(1.5rem, calc(5w + 1rem), 2.1);
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  color: $black-02;
+  font-family: "EB Garamond", serif;
+  font-family: "Zilla Slab", serif;
+}
+
+@mixin h3text {
+  line-height: 0.9;
+  font-size: 20px;
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  color: $grey;
+  font-family: "Slabo 27px", serif;
+}
+
+@mixin h4text {
+  line-height: 1;
+  font-size: 16px;
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  color: $primary;
+  font-family: "Zilla Slab", serif;
+}
+
+@mixin bodytext {
+  line-height: 1;
+  font-size: 16px;
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  color: $black;
+  font-family: "Zilla Slab", serif;
+}
+
+@mixin smalltext {
+  line-height: 0.9;
   text-transform: uppercase;
-  letter-spacing: 1.2px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 8px;
-  margin: 0.5em;
-  color: $black-04;
+  font-size: 10px;
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  color: $primary;
 }
 
-@mixin h3Text480 {
-  line-height: 1.5em;
-  font-size: 1.25rem;
-  font-weight: 300;
-  letter-spacing: 2px;
+@mixin linktext {
+  line-height: 0.9;
+  letter-spacing: 0.12em;
+  font-weight: 900;
+  font-family: "Zilla Slab", serif;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  color: darken($secondary, 70%);
 }
-
-/* H4 TEXT ========================================================================== */
-
-@mixin h4Text {
-  font-family: "Raleway", sans-serif;
-  font-family: "Open Sans";
-  line-height: 0.7em;
-  font-size: 1.05rem;
-  font-weight: 600;
-  letter-spacing: 2px;
+@mixin linktext-hover {
+  color: darken($secondary, 30%);
 }

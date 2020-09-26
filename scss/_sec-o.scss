@@ -1,11 +1,11 @@
-#parallax-wrapper-1 {
+#sec-o {
   height: 90%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(../img/hero-2.png);
+  background-image: url(../img/hero-018.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -26,23 +26,21 @@
       text-shadow: 0 0.2px 0.3px rgba(0, 0, 0, 0.3);
       p {
         text-align: center;
-        @include h1Text;
+        @include h1text;
         font-size: 2em;
         color: $white;
-        font-family: "Georgia";
-        text-shadow: #474747 3px 5px 2px;
         line-height: 0.98;
-        @include desktop690 {
+        @include desktop576 {
           font-size: 3em;
         }
       }
       h2 {
-        @include bodyText;
-        font-family: "Raleway";
+        @include bodytext;
+
         color: $white;
         text-shadow: $black 1px 2px 1px;
         margin-top: 3%;
-        @include desktop690 {
+        @include desktop576 {
           font-size: 1.3em;
         }
       }
@@ -59,79 +57,8 @@
     }
   }
 }
-@keyframes fade-first {
-  0% {
-    opacity: 0;
-    visibility: hidden;
-  }
-  3% {
-    opacity: 1;
-    visibility: visible;
-  }
-  30% {
-    opacity: 1;
-    visibility: visible;
-  }
-  33% {
-    opacity: 0;
-    visibility: hidden;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
 
-@keyframes fade-second {
-  0% {
-    opacity: 0;
-    visibility: hidden;
-  }
-  33% {
-    opacity: 0;
-    visibility: hidden;
-  }
-  36% {
-    opacity: 1;
-    visibility: visible;
-  }
-  63% {
-    opacity: 1;
-    visibility: visible;
-  }
-  66% {
-    opacity: 0;
-    visibility: hidden;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-@keyframes fade-third {
-  0% {
-    opacity: 0;
-    visibility: hidden;
-  }
-  66% {
-    opacity: 0;
-    visibility: hidden;
-  }
-  69% {
-    opacity: 1;
-    visibility: visible;
-  }
-  96% {
-    opacity: 1;
-    visibility: visible;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-#parallax-wrapper-1:before {
+#sec-o:before {
   content: "";
   position: absolute;
   top: 0;
@@ -143,7 +70,7 @@
   opacity: 0.5;
   mix-blend-mode: hard-light;
 }
-#parallax-wrapper-1:before {
+#sec-o:before {
   animation: ekit-glitch 3s linear infinite;
   animation-direction: reverse;
 }

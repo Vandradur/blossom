@@ -8,28 +8,52 @@ $(".nav a").on("click", function () {
   $(".nav-bar").removeClass("menu-open");
 });
 
-/**** HERO IMAGE ANIMATION ****/
+/*   */
 
 $(document).ready(function () {
-  $(window).on("scroll", function () {
-    if ($(window).scrollTop() < 1000) {
-      $(".hero").css(
-        "background-size",
-        130 + parseInt($(window).scrollTop() / 5) + "%"
-      );
-      $(".herotext").css("top", 50 + $(window).scrollTop() * 0.1 + "%");
-      $(".herotext").css("opacity", 1 - $(window).scrollTop() * 0.003);
-    }
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 0,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
+      },
+      1400: {
+        items: 4,
+      },
+    },
+    autoplay: true,
+    autoplayTimeout: 3500,
+    autoplayHoverPause: true,
   });
 });
 
-/**** sec-06  ****/
+/*  */
 
-$(document).ready(function () {
-  $("ul").click(function () {
-    $("ul").toggleClass("active");
-  });
+$("#carousel").owlCarousel({
+  items: 1,
+  nav: false,
+  dots: true,
+  loop: true,
+  autoplay: true,
+  autoplayTimeout: 15000,
+  responsive: {
+    0: {
+      items: 1,
+    },
+  },
+  autoplay: true,
+  autoplayTimeout: 3500,
+  autoplayHoverPause: true,
 });
+
+/**** END ****/
 
 /*** video Gallery ***/
 
@@ -59,42 +83,3 @@ var onPanelMouseOut = function (evt) {
 $(window).ready(init);
 
 /*--- slideshow ---*/
-
-$("#slideshow > div:gt(0)").hide();
-
-setInterval(function () {
-  $("#slideshow > div:first")
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo("#slideshow");
-}, 3000);
-$("#slideshow-2 > div:gt(0)").hide();
-
-setInterval(function () {
-  $("#slideshow-2 > div:first")
-    .fadeOut(800)
-    .next()
-    .fadeIn(800)
-    .end()
-    .appendTo("#slideshow-2");
-}, 4000);
-$("#slideshow-3 > div:gt(0)").hide();
-setInterval(function () {
-  $("#slideshow-3 > div:first")
-    .fadeOut(900)
-    .next()
-    .fadeIn(900)
-    .end()
-    .appendTo("#slideshow-3");
-}, 2000);
-$("#slideshow-4 > div:gt(0)").hide();
-setInterval(function () {
-  $("#slideshow-4 > div:first")
-    .fadeOut(1800)
-    .next()
-    .fadeIn(1800)
-    .end()
-    .appendTo("#slideshow-4");
-}, 3000);

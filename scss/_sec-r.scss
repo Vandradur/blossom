@@ -1,7 +1,6 @@
-#vids {
+#sec-r {
   overflow: hidden;
   background-position: 50% 100%;
-  margin: 0 auto;
   padding: 3.3em 2em 1em 2em;
   background: linear-gradient(
     to right,
@@ -11,7 +10,8 @@
   );
 
   .video-sec {
-    max-width: 1120px;
+    max-width: 1320px;
+    margin: 0 auto;
 
     .divider {
       margin: 0 auto;
@@ -26,10 +26,10 @@
       margin: 0 auto;
     }
     .h1header {
-      @include h1Text;
+      @include h1text;
       color: $white-03;
       font-size: 300%;
-      @include desktop690 {
+      @include desktop768 {
         font-size: 700%;
       }
     }
@@ -38,14 +38,21 @@
       font-size: 100%;
       margin-right: 0.4em;
       padding-top: 1%;
-      @include h2Text;
+      @include h2text;
       color: $white-03;
-      @include desktop690 {
+      @include desktop768 {
         font-size: 175%;
       }
     }
+    p {
+      @include bodytext;
+      color: $white-02;
+      padding: 1em 0;
+    }
     h3 {
-      @include h3Text;
+      @include h3text;
+      font-size: 60%;
+      margin-top: 1em;
       color: $white-03;
     }
     .h3header:before {
@@ -67,7 +74,9 @@
       justify-content: center;
       overflow: hidden;
       flex-direction: column;
-      @include desktop690 {
+      cursor: pointer;
+
+      @include desktop768 {
         flex-direction: row;
         height: 450px;
       }
@@ -79,7 +88,7 @@
         align-items: center;
         justify-content: center;
         position: relative;
-        @include desktop690 {
+        @include desktop768 {
           width: 20%;
           margin: 0 -1px;
           height: 400px;
@@ -91,7 +100,7 @@
           display: block;
           height: auto;
           object-fit: cover;
-          @include desktop690 {
+          @include desktop768 {
             width: 400%;
             height: 600px;
           }
@@ -117,7 +126,7 @@
           box-sizing: border-box;
           border: 1em solid rgba(36, 31, 31, 1);
           border-width: 0.5em 1em 0.5em 1em;
-          @include desktop690 {
+          @include desktop768 {
             border-width: 1em 0.5em 1em 0.5em;
           }
           &:first-child > .overlay {
