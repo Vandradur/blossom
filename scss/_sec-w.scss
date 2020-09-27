@@ -356,7 +356,7 @@ $card-height: 500px;
   }
 }
 
-#product-slider-2:before {
+#sec-w:before {
   content: "";
   position: absolute;
   top: 0;
@@ -365,6 +365,6 @@ $card-height: 500px;
   height: 150%;
   background: url(../img/dot.png);
   background-attachment: fixed;
-  opacity: 0.15;
+  opacity: 0.07;
   z-index: 1;
 }
