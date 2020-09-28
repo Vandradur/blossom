@@ -636,17 +636,17 @@
 }
 
 #featured .container__card-wrapper .card .img.a {
-  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/56613797-3ba9-471e-be14-141949d3ec5e/de5mxap-1937e2ca-ba4e-47f1-9f1a-673193fcf349.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNTY2MTM3OTctM2JhOS00NzFlLWJlMTQtMTQxOTQ5ZDNlYzVlXC9kZTVteGFwLTE5MzdlMmNhLWJhNGUtNDdmMS05ZjFhLTY3MzE5M2ZjZjM0OS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.TJtGCjxzuFvGIS6WbY9MFDPaAcZkVqbI-_wnnXAjUFA);
+  background-image: url(../img/pink-fuchsia-rose-bouquet-03.jpg);
   background-size: cover;
 }
 
 #featured .container__card-wrapper .card .img.b {
-  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/56613797-3ba9-471e-be14-141949d3ec5e/de5mxc7-9ab46ae7-2d17-4057-abda-11286e1fb307.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNTY2MTM3OTctM2JhOS00NzFlLWJlMTQtMTQxOTQ5ZDNlYzVlXC9kZTVteGM3LTlhYjQ2YWU3LTJkMTctNDA1Ny1hYmRhLTExMjg2ZTFmYjMwNy5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.F-eBNDZpMKE633UUA8CQs_PvVEEn9IExU5HCw_4HTWs);
+  background-image: url(../img/white-tulips-bouquet-02.jpg);
   background-size: cover;
 }
 
 #featured .container__card-wrapper .card .img.c {
-  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/56613797-3ba9-471e-be14-141949d3ec5e/de5mxdx-4ff65579-1ac7-4247-9bf8-489e76a65146.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNTY2MTM3OTctM2JhOS00NzFlLWJlMTQtMTQxOTQ5ZDNlYzVlXC9kZTVteGR4LTRmZjY1NTc5LTFhYzctNDI0Ny05YmY4LTQ4OWU3NmE2NTE0Ni5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.r8VM3f87snHaI-B4MHBEhd-F1CCVr69SVOkzao5bG-8);
+  background-image: url(../img/Tanacetum-parthenium-3.jpg);
   background-size: cover;
 }
 
@@ -947,6 +947,21 @@
 
 #sec-w #prdt-carousel .owl-carousel .card .img.h {
   background-image: url(../img/red-101-rose-bouquet-01.jpg);
+  background-size: cover;
+}
+
+#sec-w #prdt-carousel .owl-carousel .card .img.i {
+  background-image: url(../img/frutteto-rose-25-bouquet-001.jpg);
+  background-size: cover;
+}
+
+#sec-w #prdt-carousel .owl-carousel .card .img.j {
+  background-image: url(../img/roses-mix-vase-flower-arrangement-001.png);
+  background-size: cover;
+}
+
+#sec-w #prdt-carousel .owl-carousel .card .img.k {
+  background-image: url(../img/fruttito-rose-50-bouquet-001.png);
   background-size: cover;
 }
 
