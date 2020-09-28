@@ -808,13 +808,13 @@
 }
 
 #featured .container__card-wrapper .card .img {
-  height: 370px;
+  height: 110%;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 #featured .container__card-wrapper .card .img.a {
-  background-image: url(../img/pink-fuchsia-rose-bouquet-03.jpg);
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/56613797-3ba9-471e-be14-141949d3ec5e/de5v584-bedfdd4c-33bf-4ebb-a4f3-8b2075f4fca5.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNTY2MTM3OTctM2JhOS00NzFlLWJlMTQtMTQxOTQ5ZDNlYzVlXC9kZTV2NTg0LWJlZGZkZDRjLTMzYmYtNGViYi1hNGYzLThiMjA3NWY0ZmNhNS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.B1nQFGFldA7_yIaSFJ5d5ByJGEzpeUSpc9ESzyRkfoA);
   background-size: cover;
 }
 
