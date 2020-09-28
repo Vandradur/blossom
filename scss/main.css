@@ -581,8 +581,186 @@
   mix-blend-mode: hard-light;
 }
 
+#container,
+#works,
+#page,
+#about {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+#container .back-img {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/roses-pink-fruttito-hero-img.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+}
+
+#container .primary-nav-bar {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#container .primary-nav-bar ul {
+  padding: 20px;
+  text-align: center;
+}
+
+#container .primary-nav-bar ul li {
+  display: inline-block;
+  padding: 0 14px;
+  line-height: 0.9;
+  letter-spacing: 0.12em;
+  font-weight: 900;
+  font-family: "Zilla Slab", serif;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #184e20;
+}
+
+#container .primary-nav-bar ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff1e6;
+}
+
+#works .second-img {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/roses-red-freedom-hero-img.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+}
+
+#page .third-img {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/roses-white-kraft-paper-flower-hero-img.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+}
+
+#about .fourth-img {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/roses-red-pink-hero-img.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+}
+
+#container .title,
+#works .title,
+#page .title,
+#about .title {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container .title h2,
+#works .title h2,
+#page .title h2,
+#about .title h2 {
+  line-height: 0.9;
+  font-size: 20px;
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  color: #4a4e69;
+  font-family: "Slabo 27px", serif;
+  color: #fffaf5;
+}
+
+.back-img,
+.second-img,
+.third-img,
+.fourth-img {
+  background-attachment: fixed;
+}
+
+#about:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/dot.png);
+  background-attachment: fixed;
+  opacity: 1;
+  z-index: 10;
+}
+
+#page:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/dot.png);
+  background-attachment: fixed;
+  opacity: 1;
+  z-index: 10;
+}
+
+#works:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/dot.png);
+  background-attachment: fixed;
+  opacity: 1;
+  z-index: 10;
+}
+
+#container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/dot.png);
+  background-attachment: fixed;
+  opacity: 1;
+  z-index: 10;
+}
+
 #featured {
-  background-color: #fffaf5;
+  background-color: #fff;
   position: relative;
 }
 
@@ -2634,6 +2812,96 @@
   opacity: 0.29;
   z-index: 1;
 }*/
+.bg {
+  position: relative;
+  height: 100vh;
+  background: url("../img/roses-white-vase-flower-hero-img.jpg");
+  background-size: 300% 200vh;
+  background-position: 0 20%;
+  background-repeat: repeat-x;
+  font-family: "Anonymous Pro", monospace;
+  text-align: center;
+  text-shadow: 1px 1px;
+  -webkit-animation: shift 45s linear infinite;
+          animation: shift 45s linear infinite;
+}
+
+.quote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 18em;
+  border-right: 2px solid #fff1e6;
+  font-size: 200%;
+  white-space: nowrap;
+  line-height: 1;
+  font-size: 16px;
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  color: #555b6e;
+  font-family: "Zilla Slab", serif;
+  color: #d8f3dc;
+  overflow: hidden;
+  -webkit-animation: typewriter 6.5s steps(50) 2s 1 normal both, blinkTextCursor 0.5s steps(40) 18 normal forwards;
+          animation: typewriter 6.5s steps(50) 2s 1 normal both, blinkTextCursor 0.5s steps(40) 18 normal forwards;
+}
+
+@-webkit-keyframes shift {
+  from {
+    background-position: 0 20%;
+  }
+  to {
+    background-position: 100% 20%;
+  }
+}
+
+@keyframes shift {
+  from {
+    background-position: 0 20%;
+  }
+  to {
+    background-position: 100% 20%;
+  }
+}
+
+@-webkit-keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 28em;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 28em;
+  }
+}
+
+@-webkit-keyframes blinkTextCursor {
+  from {
+    border-right-color: #fff1e6;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: #fff1e6;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
 #sec-t {
   padding: 3.3em 2em 1em 2em;
   width: 100%;
