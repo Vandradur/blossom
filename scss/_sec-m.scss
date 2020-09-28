@@ -20,9 +20,9 @@
 
     .card {
       background-color: $white;
-      height: $card-height;
+      height: 300px;
       width: $card-width;
-      border-radius: 12px 12px 2px 12px;
+      border-radius: 50%;
       max-width: 20em;
       margin: 2em 0.7em;
       box-shadow: $shadow-01;

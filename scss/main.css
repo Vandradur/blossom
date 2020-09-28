@@ -791,9 +791,9 @@
 
 #featured .container__card-wrapper .card {
   background-color: #fff;
-  height: 480px;
+  height: 300px;
   width: 100%;
-  border-radius: 12px 12px 2px 12px;
+  border-radius: 50%;
   max-width: 20em;
   margin: 2em 0.7em;
   -webkit-box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.6);
