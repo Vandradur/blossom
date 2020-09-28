@@ -16,7 +16,7 @@
     justify-content: space-around;
     align-items: center;
     animation: expand 0.8s ease forwards;
-    background-color: $primary;
+    background-color: lighten($primary, 3%);
     position: relative;
     transition: $transition-01;
     &__content {

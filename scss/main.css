@@ -329,7 +329,7 @@
           align-items: center;
   -webkit-animation: expand 0.8s ease forwards;
           animation: expand 0.8s ease forwards;
-  background-color: #fff1e6;
+  background-color: #fffaf5;
   position: relative;
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
@@ -582,7 +582,7 @@
 }
 
 #featured {
-  background: #fff1e6;
+  background-color: #fffaf5;
   position: relative;
 }
 
@@ -971,7 +971,6 @@
   text-align: center;
   margin: 100px 0 0 0;
   width: 100%;
-  z-index: 10;
 }
 
 #sec-w #prdt-carousel .owl-carousel .card .info .item-no {
@@ -979,7 +978,7 @@
   bottom: 10px;
   left: 7px;
   padding: 0 1em;
-  z-index: 20;
+  z-index: 30;
   color: #daa520;
 }
 

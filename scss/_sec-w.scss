@@ -81,13 +81,12 @@ $card-height: 500px;
           text-align: center;
           margin: 100px 0 0 0;
           width: 100%;
-          z-index: 10;
           .item-no {
             position: absolute;
             bottom: 10px;
             left: 7px;
             padding: 0 1em;
-            z-index: 20;
+            z-index: 30;
             color: $goldenrod;
             .logo {
               background: url(../svg/flower.svg) no-repeat 0 0.1em;
