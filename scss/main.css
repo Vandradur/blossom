@@ -93,8 +93,8 @@
 }
 
 #header .nav #logo {
-  width: 4.7rem;
-  height: 4.7rem;
+  width: 5.7rem;
+  height: 4.4rem;
   background: transparent;
   position: relative;
   z-index: 999;
@@ -797,10 +797,9 @@
   border-radius: 50%;
   max-width: 20em;
   margin: 2em 5em;
-  -webkit-box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.6);
-          box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.6);
   text-align: center;
   position: relative;
+  border: 10px solid #fff;
 }
 
 #featured .container__card-wrapper .card:hover {
@@ -953,7 +952,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: #f7fdf8;
+  background: #fff;
   opacity: 0;
   visibility: hidden;
   display: -webkit-box;
