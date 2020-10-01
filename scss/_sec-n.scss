@@ -5,6 +5,7 @@
   top: 0;
   left: 0;
   background-color: $white;
+
   .logo-circle {
     margin: 2em auto;
     display: block;
@@ -14,6 +15,7 @@
     background: $primary;
     position: relative;
     cursor: pointer;
+
     transition: all 0.8s ease-out;
     -webkit-touch-callout: none;
     -webkit-user-select: none;

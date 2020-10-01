@@ -18,27 +18,42 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+      margin-top: 3em;
       width: 18%;
+      height: 100%;
       @include desktop768 {
         width: 20%;
       }
     }
-    width: 90%;
+    width: 100%;
     background: rgb(7, 0, 0);
     text-align: center;
     height: 100%;
     padding: 3em 2em;
     z-index: 3;
     @include desktop768 {
-      max-width: 60%;
+      padding: 3em 12em;
     }
+    @include desktop992 {
+      padding: 3em 15em;
+    }
+    @include desktop1200 {
+      padding: 3em 20em;
+    }
+
     #hero-title {
       @include h2text;
       color: $primaryLight;
       text-shadow: #474747 1px 1px 2px;
       line-height: 0.98;
       @include desktop768 {
-        font-size: 60px;
+        font-size: 30px;
+      }
+      @include desktop992 {
+        font-size: 40px;
+      }
+      @include desktop1200 {
+        font-size: 50px;
       }
     }
     #hero-text {
@@ -47,6 +62,12 @@
       text-shadow: #474747 1px 2px 1px;
       margin-bottom: 3%;
       @include desktop768 {
+        font-size: 1.1em;
+      }
+      @include desktop992 {
+        font-size: 1.2em;
+      }
+      @include desktop1200 {
         font-size: 1.3em;
       }
     }

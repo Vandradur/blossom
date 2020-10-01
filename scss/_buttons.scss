@@ -32,6 +32,19 @@
   text-decoration: none;
 }
 
+@mixin btn-spl {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  outline: none;
+  font-family: montserrat;
+  font-size: 12px;
+  color: $white;
+  transition: all 0.6s ease;
+  cursor: pointer;
+  background: none;
+}
+
 //   SPECIAL HOVER EFFECTS
 
 @mixin spl_hover_effect {

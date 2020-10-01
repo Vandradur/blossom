@@ -27,6 +27,11 @@ $desktop1200: 1200px;
     @content;
   }
 }
+@mixin desktop1200 {
+  @media (min-width: #{$desktop1200}) {
+    @content;
+  }
+}
 
 @mixin flexCenter {
   display: flex;
