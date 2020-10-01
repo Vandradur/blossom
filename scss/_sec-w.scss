@@ -99,7 +99,7 @@ $card-height: 500px;
               height: 90%;
             }
             .count {
-              background-color: darken($secondary, 5%);
+              background-color: lighten($secondary, 1%);
               border-radius: 50%;
               padding: 7px 10px;
             }
@@ -171,7 +171,7 @@ $card-height: 500px;
           right: 0;
           bottom: 0;
           left: 0;
-          background: lighten($secondary, 2%);
+          background: lighten($secondary, 5%);
           opacity: 0;
           visibility: hidden;
           display: flex;

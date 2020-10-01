@@ -63,8 +63,8 @@
   font-size: 14px;
   text-decoration: none;
   cursor: pointer;
-  color: darken($secondary, 70%);
+  color: darken($secondary, 25%);
 }
 @mixin linktext-hover {
-  color: darken($secondary, 30%);
+  color: darken($secondary, 33%);
 }

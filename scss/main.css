@@ -177,7 +177,7 @@
   font-size: 14px;
   text-decoration: none;
   cursor: pointer;
-  color: #184e20;
+  color: #77d585;
   font-family: "Montserrat";
   font-family: "Open Sans";
 }
@@ -625,7 +625,7 @@
   font-size: 14px;
   text-decoration: none;
   cursor: pointer;
-  color: #184e20;
+  color: #77d585;
 }
 
 #container .primary-nav-bar ul li a {
@@ -923,7 +923,7 @@
   font-size: 14px;
   text-decoration: none;
   cursor: pointer;
-  color: #184e20;
+  color: #77d585;
   position: absolute;
   padding: 2em 1em 0 3em;
   margin: 0 auto;
@@ -933,7 +933,7 @@
 }
 
 #featured .container__card-wrapper .card .info .btn:hover {
-  color: #63cf73;
+  color: #57cb69;
 }
 
 #featured .container__card-wrapper .card .gradient-overlay {
@@ -1174,7 +1174,7 @@
 }
 
 #sec-w #prdt-carousel .owl-carousel .card .info .item-no .count {
-  background-color: #c5edcb;
+  background-color: #dcf4e0;
   border-radius: 50%;
   padding: 7px 10px;
 }
@@ -1232,7 +1232,7 @@
   font-size: 14px;
   text-decoration: none;
   cursor: pointer;
-  color: #184e20;
+  color: #77d585;
   position: absolute;
   padding: 2em 1em 0 3em;
   margin: 0;
@@ -1242,7 +1242,7 @@
 }
 
 #sec-w #prdt-carousel .owl-carousel .card .info .btn:hover {
-  color: #63cf73;
+  color: #57cb69;
 }
 
 #sec-w #prdt-carousel .owl-carousel .card .gradient-overlay {
@@ -1263,7 +1263,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: #e0f5e3;
+  background: #ecf9ee;
   opacity: 0;
   visibility: hidden;
   display: -webkit-box;
