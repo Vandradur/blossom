@@ -1145,6 +1145,26 @@
   background-size: cover;
 }
 
+#sec-w #prdt-carousel .owl-carousel .card .img.l {
+  background-image: url(../img/tulips_white_yellow_roses_tansy_daisy_bouquet-001.png);
+  background-size: cover;
+}
+
+#sec-w #prdt-carousel .owl-carousel .card .img.m {
+  background-image: url(../img/pink_100_roses_kraft_paper_wrapping_bouquet-01.png);
+  background-size: cover;
+}
+
+#sec-w #prdt-carousel .owl-carousel .card .img.n {
+  background-image: url(../img/yellow_roses_white_flower_arrangement-01.png);
+  background-size: cover;
+}
+
+#sec-w #prdt-carousel .owl-carousel .card .img.o {
+  background-image: url(../img/pink_baby_roses__twig_arrangment-001.png);
+  background-size: cover;
+}
+
 #sec-w #prdt-carousel .owl-carousel .card .info {
   top: 0;
   left: 0;
