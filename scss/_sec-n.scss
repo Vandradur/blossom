@@ -153,11 +153,9 @@
       .bleems {
         color: $primary-03;
       }
-      .bleems-link:hover {
+      .bleems:hover {
         text-decoration: none;
-      }
-      .bleems-link:hover .bleems {
-        text-decoration: underline;
+        color: $primary-02;
       }
     }
     .mag__borderline {

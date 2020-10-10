@@ -2404,12 +2404,9 @@
   color: #d47b1aff;
 }
 
-#sec-n #chapter .h2header .bleems-link:hover {
+#sec-n #chapter .h2header .bleems:hover {
   text-decoration: none;
-}
-
-#sec-n #chapter .h2header .bleems-link:hover .bleems {
-  text-decoration: underline;
+  color: #ffd687ff;
 }
 
 #sec-n #chapter .mag__borderline {
