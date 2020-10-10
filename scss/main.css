@@ -410,7 +410,7 @@
   font-size: 16px;
   letter-spacing: 1.3px;
   font-weight: 500;
-  color: #555b6e;
+  color: #020d13ff;
   font-family: "Zilla Slab", serif;
   line-height: 15px;
   font-size: 12px;
@@ -904,7 +904,7 @@
   font-size: 16px;
   letter-spacing: 1.3px;
   font-weight: 500;
-  color: #555b6e;
+  color: #020d13ff;
   font-family: "Zilla Slab", serif;
   font-weight: bold;
   position: absolute;
@@ -1013,7 +1013,7 @@
   font-size: 16px;
   letter-spacing: 1.3px;
   font-weight: 500;
-  color: #555b6e;
+  color: #020d13ff;
   font-family: "Zilla Slab", serif;
   position: absolute;
   padding: 0 1em;
@@ -1233,7 +1233,7 @@
   font-size: 16px;
   letter-spacing: 1.3px;
   font-weight: 500;
-  color: #555b6e;
+  color: #020d13ff;
   font-family: "Zilla Slab", serif;
   font-weight: bold;
   position: absolute;
@@ -1342,7 +1342,7 @@
   font-size: 16px;
   letter-spacing: 1.3px;
   font-weight: 500;
-  color: #555b6e;
+  color: #020d13ff;
   font-family: "Zilla Slab", serif;
   position: absolute;
   padding: 0 1em;
@@ -1443,7 +1443,7 @@
   font-size: 16px;
   letter-spacing: 1.3px;
   font-weight: 500;
-  color: #555b6e;
+  color: #020d13ff;
   font-family: "Zilla Slab", serif;
   color: #0c090d;
 }
@@ -1461,7 +1461,7 @@
   font-size: 16px;
   letter-spacing: 1.3px;
   font-weight: 500;
-  color: #555b6e;
+  color: #020d13ff;
   font-family: "Zilla Slab", serif;
   color: #161a1d;
   font-size: 12px;
@@ -1484,9 +1484,9 @@
   font-size: 16px;
   letter-spacing: 1.3px;
   font-weight: 500;
-  color: #555b6e;
+  color: #020d13ff;
   font-family: "Zilla Slab", serif;
-  color: #555b6e;
+  color: #020d13ff;
   font-size: 12px;
 }
 
@@ -1608,8 +1608,8 @@
 }
 
 #sec-so .intro-slider .slides:nth-child(1) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url("../img/roses-pink-fruttito-hero-img.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/roses-pink-fruttito-hero-img.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff1e6), to(rgba(0, 0, 0, 0.35))), url("../img/roses-pink-fruttito-hero-img.jpg");
+  background: linear-gradient(#fff1e6, rgba(0, 0, 0, 0.35)), url("../img/roses-pink-fruttito-hero-img.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1617,8 +1617,8 @@
 }
 
 #sec-so .intro-slider .slides:nth-child(2) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url("../img/roses-red-freedom-hero-img.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/roses-red-freedom-hero-img.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff1e6), to(rgba(0, 0, 0, 0.35))), url("../img/roses-red-freedom-hero-img.jpg");
+  background: linear-gradient(#fff1e6, rgba(0, 0, 0, 0.35)), url("../img/roses-red-freedom-hero-img.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1626,8 +1626,8 @@
 }
 
 #sec-so .intro-slider .slides:nth-child(3) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url("../img/roses-white-kraft-paper-flower-hero-img.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/roses-white-kraft-paper-flower-hero-img.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff1e6), to(rgba(0, 0, 0, 0.35))), url("../img/roses-white-kraft-paper-flower-hero-img.jpg");
+  background: linear-gradient(#fff1e6, rgba(0, 0, 0, 0.35)), url("../img/roses-white-kraft-paper-flower-hero-img.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1635,8 +1635,8 @@
 }
 
 #sec-so .intro-slider .slides:nth-child(4) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url("../img/roses-red-pink-hero-img.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/roses-red-pink-hero-img.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff1e6), to(rgba(0, 0, 0, 0.35))), url("../img/roses-red-pink-hero-img.jpg");
+  background: linear-gradient(#fff1e6, rgba(0, 0, 0, 0.35)), url("../img/roses-red-pink-hero-img.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1644,8 +1644,8 @@
 }
 
 #sec-so .intro-slider .slides:nth-child(5) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url("../img/hero-020.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/hero-020.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff1e6), to(rgba(0, 0, 0, 0.35))), url("../img/hero-020.jpg");
+  background: linear-gradient(#fff1e6, rgba(0, 0, 0, 0.35)), url("../img/hero-020.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1694,7 +1694,7 @@
   font-size: 16px;
   letter-spacing: 1.3px;
   font-weight: 500;
-  color: #555b6e;
+  color: #020d13ff;
   font-family: "Zilla Slab", serif;
   color: #fffcf2;
 }
@@ -1739,6 +1739,14 @@
   cursor: pointer;
 }
 
+#sec-so .intro-slider .arrow:before {
+  content: "";
+  border-radius: 50%;
+  padding: 10px 10px;
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+}
+
 #sec-so .intro-slider .right {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
@@ -1753,8 +1761,8 @@
 
 #sec-so .intro-slider a {
   position: absolute;
-  color: #fff;
-  bottom: 15%;
+  color: #161a1d;
+  bottom: 42%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -1776,6 +1784,12 @@
   transition: 0.2s ease-in-out;
   cursor: pointer;
   text-decoration: none;
+}
+
+@media (min-width: 576px) {
+  #sec-so .intro-slider a {
+    bottom: 32%;
+  }
 }
 
 @-webkit-keyframes animateHeading {
@@ -1845,7 +1859,7 @@
     font-size: 16px;
     letter-spacing: 1.3px;
     font-weight: 500;
-    color: #555b6e;
+    color: #020d13ff;
     font-family: "Zilla Slab", serif;
     color: #fff;
     margin-top: 3%;
@@ -2082,10 +2096,10 @@
   font-size: 16px;
   letter-spacing: 1.3px;
   font-weight: 500;
-  color: #555b6e;
+  color: #020d13ff;
   font-family: "Zilla Slab", serif;
   color: #fff;
-  text-shadow: #555b6e 1px 2px 1px;
+  text-shadow: #020d13ff 1px 2px 1px;
   margin-top: 3%;
 }
 
@@ -2218,32 +2232,32 @@
 @-webkit-keyframes animateTxt {
   0%,
   100% {
-    text-shadow: -1.5px -1.5px 0 #555b6e, 2px 2px 0 #b08f26;
+    text-shadow: -1.5px -1.5px 0 #020d13ff, 2px 2px 0 #b08f26;
   }
   25% {
-    text-shadow: 2px 2px 0 #555b6e, -1.5px -1.5px 0 #b08f26;
+    text-shadow: 2px 2px 0 #020d13ff, -1.5px -1.5px 0 #b08f26;
   }
   50% {
-    text-shadow: 1.5px -2px 0 #555b6e, -2px 1.5px 0 #b08f26;
+    text-shadow: 1.5px -2px 0 #020d13ff, -2px 1.5px 0 #b08f26;
   }
   75% {
-    text-shadow: -2px 1.5px 0 #555b6e, 1.5px -2px 0 #b08f26;
+    text-shadow: -2px 1.5px 0 #020d13ff, 1.5px -2px 0 #b08f26;
   }
 }
 
 @keyframes animateTxt {
   0%,
   100% {
-    text-shadow: -1.5px -1.5px 0 #555b6e, 2px 2px 0 #b08f26;
+    text-shadow: -1.5px -1.5px 0 #020d13ff, 2px 2px 0 #b08f26;
   }
   25% {
-    text-shadow: 2px 2px 0 #555b6e, -1.5px -1.5px 0 #b08f26;
+    text-shadow: 2px 2px 0 #020d13ff, -1.5px -1.5px 0 #b08f26;
   }
   50% {
-    text-shadow: 1.5px -2px 0 #555b6e, -2px 1.5px 0 #b08f26;
+    text-shadow: 1.5px -2px 0 #020d13ff, -2px 1.5px 0 #b08f26;
   }
   75% {
-    text-shadow: -2px 1.5px 0 #555b6e, 1.5px -2px 0 #b08f26;
+    text-shadow: -2px 1.5px 0 #020d13ff, 1.5px -2px 0 #b08f26;
   }
 }
 
@@ -2437,7 +2451,7 @@
   font-size: 16px;
   letter-spacing: 1.3px;
   font-weight: 500;
-  color: #555b6e;
+  color: #020d13ff;
   font-family: "Zilla Slab", serif;
   line-height: 15px;
   font-size: 12px;
@@ -2588,7 +2602,7 @@
   font-size: 16px;
   letter-spacing: 1.3px;
   font-weight: 500;
-  color: #555b6e;
+  color: #020d13ff;
   font-family: "Zilla Slab", serif;
 }
 
@@ -2681,7 +2695,7 @@
   line-height: 1;
   margin-bottom: 2rem;
   position: relative;
-  color: #555b6e;
+  color: #020d13ff;
 }
 
 .products-card-wrapper .col .container .front .inner p:after {
@@ -2878,7 +2892,7 @@
   font-size: 16px;
   letter-spacing: 1.3px;
   font-weight: 500;
-  color: #555b6e;
+  color: #020d13ff;
   font-family: "Zilla Slab", serif;
   color: #fffcf2;
   padding: 1em 0;
@@ -3202,7 +3216,7 @@
   font-size: 16px;
   letter-spacing: 1.3px;
   font-weight: 500;
-  color: #555b6e;
+  color: #020d13ff;
   font-family: "Zilla Slab", serif;
   padding-top: 5%;
   margin-right: 5%;
@@ -3770,7 +3784,7 @@
   font-size: 16px;
   letter-spacing: 1.3px;
   font-weight: 500;
-  color: #555b6e;
+  color: #020d13ff;
   font-family: "Zilla Slab", serif;
   color: #fefee3;
   text-shadow: #474747 1px 2px 1px;

@@ -23,7 +23,7 @@
       opacity: 1;
     }
     .slides:nth-child(1) {
-      background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+      background: linear-gradient($primary, rgba(0, 0, 0, 0.35)),
         url("../img/roses-pink-fruttito-hero-img.jpg");
       background-size: cover;
       background-attachment: fixed;
@@ -31,7 +31,7 @@
       background-repeat: no-repeat;
     }
     .slides:nth-child(2) {
-      background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+      background: linear-gradient($primary, rgba(0, 0, 0, 0.35)),
         url("../img/roses-red-freedom-hero-img.jpg");
       background-size: cover;
       background-attachment: fixed;
@@ -39,7 +39,7 @@
       background-repeat: no-repeat;
     }
     .slides:nth-child(3) {
-      background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+      background: linear-gradient($primary, rgba(0, 0, 0, 0.35)),
         url("../img/roses-white-kraft-paper-flower-hero-img.jpg");
       background-size: cover;
       background-attachment: fixed;
@@ -47,7 +47,7 @@
       background-repeat: no-repeat;
     }
     .slides:nth-child(4) {
-      background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+      background: linear-gradient($primary, rgba(0, 0, 0, 0.35)),
         url("../img/roses-red-pink-hero-img.jpg");
       background-size: cover;
       background-attachment: fixed;
@@ -55,7 +55,7 @@
       background-repeat: no-repeat;
     }
     .slides:nth-child(5) {
-      background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+      background: linear-gradient($primary, rgba(0, 0, 0, 0.35)),
         url("../img/hero-020.jpg");
       background-size: cover;
       background-attachment: fixed;
@@ -159,6 +159,13 @@
       transition: 0.2s ease-in-out;
       cursor: pointer;
     }
+    .arrow:before {
+      content: "";
+      border-radius: 50%;
+      padding: 10px 10px;
+      opacity: 0.5;
+      mix-blend-mode: hard-light;
+    }
     .right {
       transform: rotate(-45deg);
       right: 5%;
@@ -171,8 +178,8 @@
 
     a {
       position: absolute;
-      color: $white;
-      bottom: 15%;
+      color: $black-02;
+      bottom: 42%;
       left: 50%;
       transform: translateX(-50%);
       z-index: 99;
@@ -186,6 +193,9 @@
       transition: 0.2s ease-in-out;
       cursor: pointer;
       text-decoration: none;
+      @include desktop576 {
+        bottom: 32%;
+      }
     }
   }
 
