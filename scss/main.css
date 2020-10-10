@@ -1165,6 +1165,21 @@
   background-size: cover;
 }
 
+#sec-w #prdt-carousel .owl-carousel .card .img.p {
+  background-image: url(../img/red-roses_100-stems_wax-white_hypericum-bouquet-002.png);
+  background-size: cover;
+}
+
+#sec-w #prdt-carousel .owl-carousel .card .img.q {
+  background-image: url(../img/white_roses_hypericum_100_roses_bouquet-002.png);
+  background-size: cover;
+}
+
+#sec-w #prdt-carousel .owl-carousel .card .img.r {
+  background-image: url(../img/roses_hypericum_white_bouquet_003.png);
+  background-size: cover;
+}
+
 #sec-w #prdt-carousel .owl-carousel .card .info {
   top: 0;
   left: 0;
