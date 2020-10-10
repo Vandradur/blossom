@@ -1531,6 +1531,46 @@
 
 #sec-so .intro-slider {
   position: relative;
+  /*
+    .prev {
+      position: absolute;
+      color: #fff;
+      top: 50%;
+      left: 5%;
+      transform: translateY(-50%);
+      z-index: 99;
+      font-size: 1.5em;
+      font-weight: 600;
+      border: 2px solid #fff;
+      padding: 10px 17px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: 0.2s ease-in-out;
+      cursor: pointer;
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
+    }
+    .next {
+      position: absolute;
+      color: #fff;
+      top: 50%;
+      right: 5%;
+      transform: translateY(-50%);
+      z-index: 99;
+      font-size: 1.5em;
+      font-weight: 600;
+      border: 2px solid #fff;
+      padding: 10px 17px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: 0.2s ease-in-out;
+      cursor: pointer;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    */
 }
 
 #sec-so .intro-slider .slider {
@@ -1568,8 +1608,8 @@
 }
 
 #sec-so .intro-slider .slides:nth-child(1) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url("../img/hero-027.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/hero-027.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url("../img/roses-pink-fruttito-hero-img.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/roses-pink-fruttito-hero-img.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1577,8 +1617,8 @@
 }
 
 #sec-so .intro-slider .slides:nth-child(2) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url("../img/hero-030.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/hero-030.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url("../img/roses-red-freedom-hero-img.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/roses-red-freedom-hero-img.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1586,8 +1626,8 @@
 }
 
 #sec-so .intro-slider .slides:nth-child(3) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url("../img/hero-036.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/hero-036.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url("../img/roses-white-kraft-paper-flower-hero-img.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/roses-white-kraft-paper-flower-hero-img.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1595,8 +1635,8 @@
 }
 
 #sec-so .intro-slider .slides:nth-child(4) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url("../img/hero-028.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/hero-028.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url("../img/roses-red-pink-hero-img.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/roses-red-pink-hero-img.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1639,8 +1679,8 @@
 #sec-so .intro-slider .slides.current h1 {
   -webkit-animation: animateHeading 0.3s linear forwards 1;
           animation: animateHeading 0.3s linear forwards 1;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 #sec-so .intro-slider .slides p {
@@ -1668,8 +1708,8 @@
 #sec-so .intro-slider .slides.current p {
   -webkit-animation: animateparagraph 0.3s linear forwards 1;
           animation: animateparagraph 0.3s linear forwards 1;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
 }
 
 #sec-so .intro-slider .slides:before {
@@ -1685,72 +1725,30 @@
   mix-blend-mode: hard-light;
 }
 
-#sec-so .intro-slider .prev {
+#sec-so .intro-slider .arrow {
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
   position: absolute;
   color: #fff;
   top: 50%;
-  left: 5%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   z-index: 99;
-  font-size: 1.5em;
-  font-weight: 600;
-  border: 2px solid #fff;
-  padding: 10px 17px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 50%;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   cursor: pointer;
-  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
-          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
 }
 
-#sec-so .intro-slider .next {
-  position: absolute;
-  color: #fff;
-  top: 50%;
+#sec-so .intro-slider .right {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   right: 5%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  z-index: 99;
-  font-size: 1.5em;
-  font-weight: 600;
-  border: 2px solid #fff;
-  padding: 10px 17px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 50%;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-  cursor: pointer;
-  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-#sec-so .intro-slider .prev:hover,
-#sec-so .intro-slider .next:hover {
-  background: #fff1e6;
-  border-color: #fff1e6;
-}
-
-#sec-so .intro-slider .fas {
-  color: transparent;
+#sec-so .intro-slider .left {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  left: 5%;
 }
 
 #sec-so .intro-slider a {
@@ -1778,10 +1776,6 @@
   transition: 0.2s ease-in-out;
   cursor: pointer;
   text-decoration: none;
-}
-
-#sec-so .intro-slider a:hover {
-  color: #fefee3;
 }
 
 @-webkit-keyframes animateHeading {
