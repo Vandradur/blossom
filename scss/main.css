@@ -1680,9 +1680,8 @@
   font-weight: 500;
   color: #0c090d;
   font-family: "Slabo 27px", serif;
-  font-size: 2em;
+  font-size: 250%;
   z-index: 7;
-  color: #fff;
   padding-top: 3em;
   line-height: 0.98;
   margin-left: -500%;
@@ -1692,7 +1691,19 @@
 
 @media (min-width: 576px) {
   #sec-so .intro-slider .slides h1 {
-    font-size: 3em;
+    font-size: 150%;
+  }
+}
+
+@media (min-width: 768px) {
+  #sec-so .intro-slider .slides h1 {
+    font-size: 250%;
+  }
+}
+
+@media (min-width: 992px) {
+  #sec-so .intro-slider .slides h1 {
+    font-size: 350%;
   }
 }
 
@@ -1704,24 +1715,24 @@
 }
 
 #sec-so .intro-slider .slides p {
-  text-shadow: 0px 0.5px 5px rgba(0, 0, 0, 0.5);
   margin-right: -500%;
   z-index: 7;
   padding-top: 1em;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
-  line-height: 1;
-  font-size: 16px;
+  line-height: 0.9;
+  font-size: 20px;
   letter-spacing: 1.3px;
   font-weight: 500;
-  color: #020d13ff;
-  font-family: "Zilla Slab", serif;
+  color: #4a4e69;
+  font-family: "Slabo 27px", serif;
+  font-size: 80%;
   color: #fffcf2;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   #sec-so .intro-slider .slides p {
-    font-size: 1.3em;
+    font-size: 100%;
   }
 }
 
@@ -1782,14 +1793,11 @@
 #sec-so .intro-slider a {
   position: absolute;
   color: #161a1d;
-  bottom: 42%;
+  bottom: 32%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 99;
-  font-size: 1em;
-  font-weight: 500;
-  line-height: 1.2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1799,16 +1807,25 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 2px;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   cursor: pointer;
   text-decoration: none;
+  line-height: 0.9;
+  font-size: 20px;
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  color: #4a4e69;
+  font-family: "Slabo 27px", serif;
+  font-size: 80%;
+  font-weight: 900;
+  color: #fffcf2;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   #sec-so .intro-slider a {
-    bottom: 32%;
+    font-size: 100%;
+    bottom: 22%;
   }
 }
 
