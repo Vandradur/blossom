@@ -1529,6 +1529,264 @@
   z-index: 1;
 }
 
+#sec-so .intro-slider {
+  position: relative;
+}
+
+#sec-so .intro-slider .slider {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+#sec-so .intro-slider .slider .slides {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+#sec-so .intro-slider .slides.current {
+  z-index: 1;
+  opacity: 1;
+}
+
+#sec-so .intro-slider .slides:nth-child(1) {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url("../img/hero-027.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/hero-027.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#sec-so .intro-slider .slides:nth-child(2) {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url("../img/hero-030.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/hero-030.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#sec-so .intro-slider .slides:nth-child(3) {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url("../img/hero-036.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/hero-036.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#sec-so .intro-slider .slides:nth-child(4) {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url("../img/hero-028.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/hero-028.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#sec-so .intro-slider .slides:nth-child(5) {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url("../img/hero-020.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/hero-020.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#sec-so .intro-slider .slides h1 {
+  line-height: 0.8;
+  font-size: 4rem;
+  font-size: clamp(3rem, calc(5w + 1rem), 4.5);
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  color: #0c090d;
+  font-family: "Slabo 27px", serif;
+  font-size: 2em;
+  color: #fff;
+  line-height: 0.98;
+  margin-left: -500%;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+@media (min-width: 576px) {
+  #sec-so .intro-slider .slides h1 {
+    font-size: 3em;
+  }
+}
+
+#sec-so .intro-slider .slides.current h1 {
+  -webkit-animation: animateHeading 0.3s linear forwards 1;
+          animation: animateHeading 0.3s linear forwards 1;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+#sec-so .intro-slider .slides p {
+  text-shadow: 0px 0.5px 5px rgba(0, 0, 0, 0.5);
+  margin-right: -500%;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  line-height: 1;
+  font-size: 16px;
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  color: #555b6e;
+  font-family: "Zilla Slab", serif;
+  color: #fffcf2;
+}
+
+@media (min-width: 576px) {
+  #sec-so .intro-slider .slides p {
+    font-size: 1.3em;
+  }
+}
+
+#sec-so .intro-slider .slides.current p {
+  -webkit-animation: animateparagraph 0.3s linear forwards 1;
+          animation: animateparagraph 0.3s linear forwards 1;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+#sec-so .intro-slider .prev {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 99;
+  font-size: 1.5em;
+  font-weight: 600;
+  border: 2px solid #fff;
+  padding: 10px 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
+}
+
+#sec-so .intro-slider .next {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  right: 5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 99;
+  font-size: 1.5em;
+  font-weight: 600;
+  border: 2px solid #fff;
+  padding: 10px 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#sec-so .intro-slider .prev:hover,
+#sec-so .intro-slider .next:hover {
+  background: #fff1e6;
+  border-color: #fff1e6;
+}
+
+#sec-so .intro-slider a {
+  position: absolute;
+  color: #fff;
+  bottom: 15%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 99;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 2px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#sec-so .intro-slider a:hover {
+  color: #fefee3;
+}
+
+@-webkit-keyframes animateHeading {
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes animateHeading {
+  to {
+    margin-left: 0;
+  }
+}
+
+@-webkit-keyframes animateparagraph {
+  to {
+    margin-right: 0;
+  }
+}
+
+@keyframes animateparagraph {
+  to {
+    margin-right: 0;
+  }
+}
+
 #sec-h .hero {
   text-align: center;
   position: relative;
