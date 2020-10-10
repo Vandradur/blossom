@@ -1749,6 +1749,10 @@
   border-color: #fff1e6;
 }
 
+#sec-so .intro-slider .fas {
+  color: transparent;
+}
+
 #sec-so .intro-slider a {
   position: absolute;
   color: #fff;
