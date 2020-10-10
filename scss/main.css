@@ -1136,7 +1136,7 @@
 }
 
 #sec-w #prdt-carousel .owl-carousel .card .img.j {
-  background-image: url(../img/roses-mix-vase-flower-arrangement-001.png);
+  background-image: url(../img/pink_roses_hypericum_mix_flower_arrangement-003.png);
   background-size: cover;
 }
 
@@ -1177,6 +1177,11 @@
 
 #sec-w #prdt-carousel .owl-carousel .card .img.r {
   background-image: url(../img/roses_hypericum_white_bouquet_003.png);
+  background-size: cover;
+}
+
+#sec-w #prdt-carousel .owl-carousel .card .img.s {
+  background-image: url(../img/just-because.png);
   background-size: cover;
 }
 
