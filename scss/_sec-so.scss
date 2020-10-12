@@ -23,31 +23,43 @@
       opacity: 1;
     }
     .slides:nth-child(1) {
-      background: linear-gradient($primary, rgba(0, 0, 0, 0.35)),
-        url("../img/roses-pink-fruttito-hero-img.jpg");
+      background: linear-gradient(
+          rgba(255, 241, 230, 0.12),
+          rgba(255, 255, 255, 0)
+        ),
+        url("../img/hero-062.jpg");
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
     }
     .slides:nth-child(2) {
-      background: linear-gradient($primary, rgba(0, 0, 0, 0.35)),
-        url("../img/roses-red-freedom-hero-img.jpg");
+      background: linear-gradient(
+          rgba(255, 241, 230, 0.12),
+          rgba(255, 255, 255, 0)
+        ),
+        url("../img/hero-061.jpg");
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
     }
     .slides:nth-child(3) {
-      background: linear-gradient($primary, rgba(0, 0, 0, 0.35)),
-        url("../img/roses-white-kraft-paper-flower-hero-img.jpg");
+      background: linear-gradient(
+          rgba(255, 241, 230, 0.12),
+          rgba(255, 255, 255, 0)
+        ),
+        url("../img/hero-064.jpg");
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
     }
     .slides:nth-child(4) {
-      background: linear-gradient($primary, rgba(0, 0, 0, 0.35)),
+      background: linear-gradient(
+          rgba(255, 241, 230, 0.12),
+          rgba(255, 255, 255, 0)
+        ),
         url("../img/roses-red-pink-hero-img.jpg");
       background-size: cover;
       background-attachment: fixed;
@@ -55,8 +67,11 @@
       background-repeat: no-repeat;
     }
     .slides:nth-child(5) {
-      background: linear-gradient($primary, rgba(0, 0, 0, 0.35)),
-        url("../img/hero-020.jpg");
+      background: linear-gradient(
+          rgba(255, 241, 230, 0.12),
+          rgba(255, 255, 255, 0)
+        ),
+        url("../img/hero-063.jpg");
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
@@ -64,6 +79,7 @@
     }
     .slides h1 {
       @include h1text;
+      color: $white-02;
       font-size: 250%;
       z-index: 7;
       padding-top: 3em;
@@ -112,7 +128,7 @@
       height: 100%;
       background: url(../img/dot.png);
       background-attachment: fixed;
-      opacity: 0.5;
+      opacity: 0.2;
       mix-blend-mode: hard-light;
     }
     /*
@@ -156,12 +172,11 @@
     }
     */
     .arrow {
-      border: solid $white;
+      border: solid $white-03;
       border-width: 0 3px 3px 0;
       display: inline-block;
       padding: 3px;
       position: absolute;
-      color: #fff;
       top: 50%;
       z-index: 99;
       transition: 0.2s ease-in-out;

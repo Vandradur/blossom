@@ -1185,6 +1185,16 @@
   background-size: cover;
 }
 
+#sec-w #prdt-carousel .owl-carousel .card .img.t {
+  background-image: url(../img/purple-hydrangea_white-rose_snowberry_Symphoricarpos-albus-004.png);
+  background-size: cover;
+}
+
+#sec-w #prdt-carousel .owl-carousel .card .img.u {
+  background-image: url(../img/pink-roses_hypericum_fushia-spray-roses_flower-arrangment-004.png);
+  background-size: cover;
+}
+
 #sec-w #prdt-carousel .owl-carousel .card .info {
   top: 0;
   left: 0;
@@ -1628,8 +1638,8 @@
 }
 
 #sec-so .intro-slider .slides:nth-child(1) {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff1e6), to(rgba(0, 0, 0, 0.35))), url("../img/roses-pink-fruttito-hero-img.jpg");
-  background: linear-gradient(#fff1e6, rgba(0, 0, 0, 0.35)), url("../img/roses-pink-fruttito-hero-img.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 241, 230, 0.12)), to(rgba(255, 255, 255, 0))), url("../img/hero-062.jpg");
+  background: linear-gradient(rgba(255, 241, 230, 0.12), rgba(255, 255, 255, 0)), url("../img/hero-062.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1637,8 +1647,8 @@
 }
 
 #sec-so .intro-slider .slides:nth-child(2) {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff1e6), to(rgba(0, 0, 0, 0.35))), url("../img/roses-red-freedom-hero-img.jpg");
-  background: linear-gradient(#fff1e6, rgba(0, 0, 0, 0.35)), url("../img/roses-red-freedom-hero-img.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 241, 230, 0.12)), to(rgba(255, 255, 255, 0))), url("../img/hero-061.jpg");
+  background: linear-gradient(rgba(255, 241, 230, 0.12), rgba(255, 255, 255, 0)), url("../img/hero-061.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1646,8 +1656,8 @@
 }
 
 #sec-so .intro-slider .slides:nth-child(3) {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff1e6), to(rgba(0, 0, 0, 0.35))), url("../img/roses-white-kraft-paper-flower-hero-img.jpg");
-  background: linear-gradient(#fff1e6, rgba(0, 0, 0, 0.35)), url("../img/roses-white-kraft-paper-flower-hero-img.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 241, 230, 0.12)), to(rgba(255, 255, 255, 0))), url("../img/hero-064.jpg");
+  background: linear-gradient(rgba(255, 241, 230, 0.12), rgba(255, 255, 255, 0)), url("../img/hero-064.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1655,8 +1665,8 @@
 }
 
 #sec-so .intro-slider .slides:nth-child(4) {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff1e6), to(rgba(0, 0, 0, 0.35))), url("../img/roses-red-pink-hero-img.jpg");
-  background: linear-gradient(#fff1e6, rgba(0, 0, 0, 0.35)), url("../img/roses-red-pink-hero-img.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 241, 230, 0.12)), to(rgba(255, 255, 255, 0))), url("../img/roses-red-pink-hero-img.jpg");
+  background: linear-gradient(rgba(255, 241, 230, 0.12), rgba(255, 255, 255, 0)), url("../img/roses-red-pink-hero-img.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1664,8 +1674,8 @@
 }
 
 #sec-so .intro-slider .slides:nth-child(5) {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff1e6), to(rgba(0, 0, 0, 0.35))), url("../img/hero-020.jpg");
-  background: linear-gradient(#fff1e6, rgba(0, 0, 0, 0.35)), url("../img/hero-020.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 241, 230, 0.12)), to(rgba(255, 255, 255, 0))), url("../img/hero-063.jpg");
+  background: linear-gradient(rgba(255, 241, 230, 0.12), rgba(255, 255, 255, 0)), url("../img/hero-063.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1680,6 +1690,7 @@
   font-weight: 500;
   color: #0c090d;
   font-family: "Slabo 27px", serif;
+  color: #fffcf2;
   font-size: 250%;
   z-index: 7;
   padding-top: 3em;
@@ -1756,17 +1767,16 @@
   height: 100%;
   background: url(../img/dot.png);
   background-attachment: fixed;
-  opacity: 0.5;
+  opacity: 0.2;
   mix-blend-mode: hard-light;
 }
 
 #sec-so .intro-slider .arrow {
-  border: solid #fff;
+  border: solid #fefee3;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
   position: absolute;
-  color: #fff;
   top: 50%;
   z-index: 99;
   -webkit-transition: 0.2s ease-in-out;
