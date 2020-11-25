@@ -497,7 +497,7 @@
 }
 
 #sec-x .container .img-wrapper .container_img {
-  width: 100%;
+  width: 90%;
   -webkit-animation: slideIn 1.5s ease-in-out forwards;
           animation: slideIn 1.5s ease-in-out forwards;
 }
