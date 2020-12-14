@@ -3099,8 +3099,7 @@
 
 #sec-z {
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#241f1f), color-stop(32%, #241f1f), to(#4a4746));
-  background: linear-gradient(to right, #241f1f 0%, #241f1f 32%, #4a4746 100%);
+  background: black;
 }
 
 #sec-z .divider {
@@ -3197,14 +3196,13 @@
   padding: 2em 5em;
   -webkit-transition: background 0.5s ease-out;
   transition: background 0.5s ease-out;
-  background: -webkit-gradient(linear, left top, right top, from(#241f1f), color-stop(32%, #241f1f), to(#4a4746));
-  background: linear-gradient(to right, #241f1f 0%, #241f1f 32%, #4a4746 100%);
+  background: black;
   width: 100%;
   height: 100%;
 }
 
 #sec-z .owl--sliderbox .owl-slider #carousel .owl-text-block:hover {
-  background-image: repeating-linear-gradient(to bottom, transparent 8px, #241f1f 8.53px, #4a4746 10px, transparent 2px);
+  background-image: repeating-linear-gradient(to bottom, transparent 8px, #0e0b0b 8.53px, black 10px, transparent 2px);
 }
 
 @media (min-width: 768px) {
