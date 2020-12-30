@@ -1,0 +1,87 @@
+.floating-button-menu {
+  z-index: 1000;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  background: $secondaryLight;
+  border-radius: 50%;
+  min-width: 40px;
+  max-width: 0px;
+  min-height: 40px;
+  max-height: 0px;
+  box-shadow: $shadow-02;
+  transition: all ease-in-out 0.3s;
+  &:hover {
+    background: lighten($secondaryLight, 20%);
+  }
+  .floating-button-menu-links {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s;
+    a {
+      position: relative;
+      @include linktext;
+      color: darken($secondary, 65%);
+      line-height: 50px;
+      display: block;
+      border-bottom: 1px solid $secondaryLight;
+      width: 100%;
+      height: 50px;
+      padding: 0 20px;
+      transition: background ease-in-out 0.3s;
+      background: rgba(0, 0, 0, 0);
+      &:hover {
+        background: rgba(0, 0, 0, 0.1);
+      }
+      &:last-child {
+        border-bottom: 0px solid #fff;
+      }
+    }
+    &.menu-on {
+      background: #fff;
+      width: 450px;
+      height: 400px;
+      border-radius: 10px;
+      opacity: 1;
+      transition: all ease-in-out 0.5s;
+    }
+  }
+  .floating-button-menu-label {
+    text-align: center;
+    line-height: 34px;
+    font-size: 50px;
+    color: $white;
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+  &.menu-on {
+    background: #fff;
+    max-width: 340px;
+    max-height: 3300px;
+    border-radius: 2px;
+    .floating-button-menu-links {
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      transition: all ease-in-out 1s;
+    }
+    .floating-button-menu-label {
+      height: 0px;
+      overflow: hidden;
+    }
+  }
+}
+.floating-button-menu-close {
+  position: fixed;
+  z-index: 2;
+  width: 0%;
+  height: 0%;
+  &.menu-on {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+  }
+}

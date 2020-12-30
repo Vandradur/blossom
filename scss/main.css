@@ -580,6 +580,120 @@
   mix-blend-mode: hard-light;
 }
 
+.floating-button-menu {
+  z-index: 1000;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  background: #7d8597;
+  border-radius: 50%;
+  min-width: 40px;
+  max-width: 0px;
+  min-height: 40px;
+  max-height: 0px;
+  -webkit-box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+.floating-button-menu:hover {
+  background: #b6bac4;
+}
+
+.floating-button-menu .floating-button-menu-links {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.floating-button-menu .floating-button-menu-links a {
+  position: relative;
+  line-height: 0.9;
+  letter-spacing: 0.12em;
+  font-weight: 900;
+  font-family: "Zilla Slab", serif;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #77d585;
+  color: #1e6228;
+  line-height: 50px;
+  display: block;
+  border-bottom: 1px solid #7d8597;
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  -webkit-transition: background ease-in-out 0.3s;
+  transition: background ease-in-out 0.3s;
+  background: rgba(0, 0, 0, 0);
+}
+
+.floating-button-menu .floating-button-menu-links a:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.floating-button-menu .floating-button-menu-links a:last-child {
+  border-bottom: 0px solid #fff;
+}
+
+.floating-button-menu .floating-button-menu-links.menu-on {
+  background: #fff;
+  width: 450px;
+  height: 400px;
+  border-radius: 10px;
+  opacity: 1;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+.floating-button-menu .floating-button-menu-label {
+  text-align: center;
+  line-height: 34px;
+  font-size: 50px;
+  color: #fff;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.floating-button-menu.menu-on {
+  background: #fff;
+  max-width: 340px;
+  max-height: 3300px;
+  border-radius: 2px;
+}
+
+.floating-button-menu.menu-on .floating-button-menu-links {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: all ease-in-out 1s;
+  transition: all ease-in-out 1s;
+}
+
+.floating-button-menu.menu-on .floating-button-menu-label {
+  height: 0px;
+  overflow: hidden;
+}
+
+.floating-button-menu-close {
+  position: fixed;
+  z-index: 2;
+  width: 0%;
+  height: 0%;
+}
+
+.floating-button-menu-close.menu-on {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+}
+
 #container,
 #works,
 #page,

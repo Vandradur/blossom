@@ -10,50 +10,57 @@ $(".nav a").on("click", function () {
 
 /*   */
 
+// floating button
+
+$(".menu-off").click(function () {
+  $(this).removeClass("menu-off");
+  $(this).addClass("menu-on");
+  $(".floating-button-menu-close").addClass("menu-on");
+});
+$(".floating-button-menu-close").click(function () {
+  $(this).addClass("menu-off");
+  $(this).removeClass("menu-on");
+  $(".floating-button-menu").toggleClass("menu-on");
+});
+
 // slider
 
+window.onload = function () {
+  const prevBtn = document.getElementById("prev");
+  const nextBtn = document.getElementById("next");
 
-window.onload = function(){
-  
-  const prevBtn = document.getElementById('prev');
-  const nextBtn = document.getElementById('next');
- 
-  prevBtn.addEventListener("click",function(){
+  prevBtn.addEventListener("click", function () {
     prevSlide();
- });
-  nextBtn.addEventListener("click",function(){
+  });
+  nextBtn.addEventListener("click", function () {
     nextSlide();
- });
-  
-}
+  });
+};
 let slideNumber = 0;
-const prevSlide = () =>{
-  const slides = document.getElementsByClassName('slides');
-const slider = document.getElementById("slider");
-  const currentSlide = slider.getElementsByClassName('current');
+const prevSlide = () => {
+  const slides = document.getElementsByClassName("slides");
+  const slider = document.getElementById("slider");
+  const currentSlide = slider.getElementsByClassName("current");
   currentSlide[0].classList.remove("current");
-  if(slideNumber == 0){
-    slideNumber = slides.length-1;
-  }
-  else{
-      slideNumber = slideNumber-1;
+  if (slideNumber == 0) {
+    slideNumber = slides.length - 1;
+  } else {
+    slideNumber = slideNumber - 1;
   }
   slides[slideNumber].classList.add("current");
-}
-const nextSlide = () =>{
-  const slides = document.getElementsByClassName('slides');
-const slider = document.getElementById("slider");
-  const currentSlide = slider.getElementsByClassName('current');
+};
+const nextSlide = () => {
+  const slides = document.getElementsByClassName("slides");
+  const slider = document.getElementById("slider");
+  const currentSlide = slider.getElementsByClassName("current");
   currentSlide[0].classList.remove("current");
-  if(slideNumber == (slides.length-1)){
+  if (slideNumber == slides.length - 1) {
     slideNumber = 0;
-  }
-  else{
-      slideNumber = slideNumber+1;
+  } else {
+    slideNumber = slideNumber + 1;
   }
   slides[slideNumber].classList.add("current");
-}
-
+};
 
 // End Slider
 
@@ -148,5 +155,3 @@ $(function () {
   });
   // $('.fade').addClass('active')
 });
-
-
