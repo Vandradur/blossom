@@ -28,8 +28,15 @@
           margin: 1em 0;
           @include h3text;
           font-size: 100%;
+
+          @include desktop576 {
+            font-size: 15px;
+          }
           @include desktop768 {
-            font-size: 100%;
+            font-size: 16px;
+          }
+          @include desktop992 {
+            font-size: 17px;
           }
         }
         .title {
@@ -56,9 +63,8 @@
         .text-block {
           height: auto;
           p {
-            @include bodytext;
-            line-height: 15px;
-            font-size: 12px;
+            @include h3text;
+            font-size: 100%;
             transform: translateY(300px);
             animation: slideUp 0.8s ease-in-out forwards 0.8s;
             @include desktop576 {
