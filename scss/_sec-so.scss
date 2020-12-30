@@ -99,6 +99,7 @@
         font-size: 350%;
       }
     }
+
     .slides.current h1 {
       animation: animateHeading 0.8s cubic-bezier(0.5, 1, 0.89, 1) forwards 1;
       animation-delay: 0.4s;
@@ -109,10 +110,16 @@
       padding-top: 1em;
       transition: 0.3s linear;
       @include h3text;
-      font-size: 80%;
-      color: $white-02;
+      color: $white;
+      font-size: 100%;
+      @include desktop576 {
+        font-size: 15px;
+      }
       @include desktop768 {
-        font-size: 100%;
+        font-size: 16px;
+      }
+      @include desktop992 {
+        font-size: 17px;
       }
     }
     .slides.current p {
@@ -172,7 +179,7 @@
     }
     */
     .arrow {
-      border: solid $white-03;
+      border: solid $white;
       border-width: 0 3px 3px 0;
       display: inline-block;
       padding: 3px;
@@ -215,7 +222,7 @@
       @include h3text;
       font-size: 80%;
       font-weight: 900;
-      color: $white-02;
+      color: $primary;
       @include desktop768 {
         font-size: 100%;
         bottom: 22%;

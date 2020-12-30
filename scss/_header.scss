@@ -4,7 +4,7 @@
   flex-direction: column;
   text-align: center;
   position: relative;
-  background: $white;
+  background: $black;
   z-index: 99;
   .menu {
     padding: 2rem 1.5rem;
@@ -23,7 +23,7 @@
       position: absolute;
       height: 2px;
       width: 2.3rem;
-      background-color: $black-02;
+      background-color: $white;
       top: 0;
       left: 0;
       right: 0;
@@ -55,7 +55,7 @@
     width: 100%;
     height: 4.4rem;
     position: relative;
-    background: $white;
+    background: $black;
     box-shadow: -1px 8px 10px -12px $black-02;
     @include desktop576 {
       display: flex;
@@ -76,7 +76,7 @@
       }
     }
     .nav-bar {
-      background-color: $white;
+      background-color: $black;
       position: fixed;
       right: 0;
       left: 0;
@@ -123,12 +123,12 @@
           position: relative;
           transition: all 650ms;
           text-decoration: none;
-          color: $black-03;
-          padding: 1.3rem 6rem;
+          color: #fff;
+          color: $white-02;
+          padding: 1.3rem 4rem;
           font-family: "Open Sans";
           text-transform: uppercase;
-          font-weight: 700;
-          letter-spacing: 3.5px;
+          letter-spacing: 3px;
           font-size: 12px;
           @include desktop576 {
             padding: 1.7rem;
@@ -195,7 +195,7 @@
   height: 100%;
   background: url(../img/dot.png);
   background-attachment: fixed;
-  opacity: 0.01;
+  opacity: 0.08;
   mix-blend-mode: hard-light;
   z-index: -2;
 }
@@ -210,7 +210,7 @@
   height: 100%;
   background: url(../img/dot.png);
   background-attachment: fixed;
-  opacity: 0.01;
+  opacity: 0.08;
   mix-blend-mode: hard-light;
   z-index: 1;
 }
