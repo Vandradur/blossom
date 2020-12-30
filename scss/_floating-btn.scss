@@ -14,7 +14,8 @@
   transition: 0.3s cubic-bezier(0.5, 1, 0.89, 1);
 
   &:hover {
-    background: lighten($secondaryLight, 20%);
+    background: darken($white, 70%);
+    box-shadow: $shadow-01;
   }
   .floating-button-menu-links {
     width: 0;
@@ -29,7 +30,7 @@
       letter-spacing: 5px;
       font-size: 12px;
       font-weight: 700;
-      color: darken($secondary, 73%);
+      color: darken($white, 3%);
       line-height: 50px;
       display: block;
       border-bottom: 1px solid $primary;
@@ -39,14 +40,14 @@
       transition: background ease-in-out 0.3s;
       background: rgba(0, 0, 0, 0);
       &:hover {
-        background: $primary;
+        background: darken($white, 70%);
       }
       &:last-child {
         border-bottom: 0px solid #fff;
       }
     }
     &.menu-on {
-      background: $white;
+      background: $black;
       width: 450px;
       height: 400px;
       border-radius: 10px;
@@ -63,7 +64,7 @@
     transition: opacity 0.3s;
   }
   &.menu-on {
-    background: rgb(255, 255, 255);
+    background: $black;
     max-width: 340px;
     max-height: 3300px;
     border-radius: 2px;

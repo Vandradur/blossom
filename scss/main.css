@@ -601,7 +601,9 @@
 }
 
 .floating-button-menu:hover {
-  background: #b6bac4;
+  background: #4d4d4d;
+  -webkit-box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.6);
+          box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.6);
 }
 
 .floating-button-menu .floating-button-menu-links {
@@ -620,7 +622,7 @@
   letter-spacing: 5px;
   font-size: 12px;
   font-weight: 700;
-  color: #14421b;
+  color: #f7f7f7;
   line-height: 50px;
   display: block;
   border-bottom: 1px solid #fff1e6;
@@ -633,7 +635,7 @@
 }
 
 .floating-button-menu .floating-button-menu-links a:hover {
-  background: #fff1e6;
+  background: #4d4d4d;
 }
 
 .floating-button-menu .floating-button-menu-links a:last-child {
@@ -641,7 +643,7 @@
 }
 
 .floating-button-menu .floating-button-menu-links.menu-on {
-  background: #fff;
+  background: #020d13ff;
   width: 450px;
   height: 400px;
   border-radius: 10px;
@@ -661,7 +663,7 @@
 }
 
 .floating-button-menu.menu-on {
-  background: white;
+  background: #020d13ff;
   max-width: 340px;
   max-height: 3300px;
   border-radius: 2px;
