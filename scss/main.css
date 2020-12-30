@@ -293,11 +293,11 @@
   z-index: 1;
 }
 
-#sec-x {
+#sec-a {
   position: relative;
 }
 
-#sec-x .overlay {
+#sec-a .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -308,7 +308,7 @@
   background-color: #d8f3dc;
 }
 
-#sec-x .container {
+#sec-a .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -326,16 +326,16 @@
   transition: all 0.8s ease;
 }
 
-#sec-x .container__content {
+#sec-a .container__content {
   width: 50%;
 }
 
-#sec-x .container__content .inner-wrapper {
+#sec-a .container__content .inner-wrapper {
   width: 80%;
   margin-left: 55px;
 }
 
-#sec-x .container__content .inner-wrapper h3 {
+#sec-a .container__content .inner-wrapper h3 {
   margin: 1em 0;
   line-height: 0.9;
   font-size: 20px;
@@ -347,29 +347,29 @@
 }
 
 @media (min-width: 576px) {
-  #sec-x .container__content .inner-wrapper h3 {
+  #sec-a .container__content .inner-wrapper h3 {
     font-size: 15px;
   }
 }
 
 @media (min-width: 768px) {
-  #sec-x .container__content .inner-wrapper h3 {
+  #sec-a .container__content .inner-wrapper h3 {
     font-size: 16px;
   }
 }
 
 @media (min-width: 992px) {
-  #sec-x .container__content .inner-wrapper h3 {
+  #sec-a .container__content .inner-wrapper h3 {
     font-size: 17px;
   }
 }
 
-#sec-x .container__content .inner-wrapper .title {
+#sec-a .container__content .inner-wrapper .title {
   overflow: hidden;
   height: auto;
 }
 
-#sec-x .container__content .inner-wrapper .title h1 {
+#sec-a .container__content .inner-wrapper .title h1 {
   line-height: 0.8;
   font-size: 4rem;
   font-size: clamp(3rem, calc(5w + 1rem), 4.5);
@@ -386,28 +386,28 @@
 }
 
 @media (min-width: 576px) {
-  #sec-x .container__content .inner-wrapper .title h1 {
+  #sec-a .container__content .inner-wrapper .title h1 {
     font-size: 150%;
   }
 }
 
 @media (min-width: 768px) {
-  #sec-x .container__content .inner-wrapper .title h1 {
+  #sec-a .container__content .inner-wrapper .title h1 {
     font-size: 250%;
   }
 }
 
 @media (min-width: 992px) {
-  #sec-x .container__content .inner-wrapper .title h1 {
+  #sec-a .container__content .inner-wrapper .title h1 {
     font-size: 350%;
   }
 }
 
-#sec-x .container__content .inner-wrapper .text-block {
+#sec-a .container__content .inner-wrapper .text-block {
   height: auto;
 }
 
-#sec-x .container__content .inner-wrapper .text-block p {
+#sec-a .container__content .inner-wrapper .text-block p {
   line-height: 0.9;
   font-size: 20px;
   letter-spacing: 1.3px;
@@ -422,19 +422,19 @@
 }
 
 @media (min-width: 576px) {
-  #sec-x .container__content .inner-wrapper .text-block p {
+  #sec-a .container__content .inner-wrapper .text-block p {
     font-size: 15px;
   }
 }
 
 @media (min-width: 768px) {
-  #sec-x .container__content .inner-wrapper .text-block p {
+  #sec-a .container__content .inner-wrapper .text-block p {
     font-size: 16px;
   }
 }
 
 @media (min-width: 992px) {
-  #sec-x .container__content .inner-wrapper .text-block p {
+  #sec-a .container__content .inner-wrapper .text-block p {
     font-size: 17px;
     -webkit-column-count: 2;
             column-count: 2;
@@ -443,14 +443,14 @@
   }
 }
 
-#sec-x .container__content .inner-wrapper .btns {
+#sec-a .container__content .inner-wrapper .btns {
   height: 100%;
   position: relative;
   overflow: hidden;
   margin: 3% 0;
 }
 
-#sec-x .container__content .inner-wrapper .btns .btn-hero {
+#sec-a .container__content .inner-wrapper .btns .btn-hero {
   position: relative;
   outline: none;
   text-decoration: none;
@@ -475,29 +475,29 @@
           animation: slideUp 0.8s ease-in-out forwards 1s;
 }
 
-#sec-x .container__content .inner-wrapper .btns .btn-hero:hover {
+#sec-a .container__content .inner-wrapper .btns .btn-hero:hover {
   color: #fffcf2;
   text-decoration: none;
   border: 2px solid #4a4e69;
 }
 
-#sec-x .container__content .inner-wrapper .btns .btn-hero:active {
+#sec-a .container__content .inner-wrapper .btns .btn-hero:active {
   background-color: #333533;
   text-decoration: none;
 }
 
-#sec-x .container__content .inner-wrapper .btns .btn-hero:visited {
+#sec-a .container__content .inner-wrapper .btns .btn-hero:visited {
   background-color: #333533;
   text-decoration: none;
 }
 
-#sec-x .container .img-wrapper {
+#sec-a .container .img-wrapper {
   margin: 50px;
   width: 50%;
   overflow: hidden;
 }
 
-#sec-x .container .img-wrapper .container_img {
+#sec-a .container .img-wrapper .container_img {
   width: 100%;
   -webkit-animation: slideIn 1.5s ease-in-out forwards;
           animation: slideIn 1.5s ease-in-out forwards;
