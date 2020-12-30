@@ -621,7 +621,7 @@
   text-decoration: none;
   cursor: pointer;
   color: #77d585;
-  color: #1e6228;
+  color: #20692b;
   line-height: 50px;
   display: block;
   border-bottom: 1px solid #7d8597;
@@ -1483,8 +1483,8 @@
 }
 
 #sec-so .intro-slider .slides:nth-child(4) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 241, 230, 0.12)), to(rgba(255, 255, 255, 0))), url("https://res.cloudinary.com/dsx500kcj/image/upload/v1606321275/flowerline/IMG_7494_bywcpp.jpg");
-  background: linear-gradient(rgba(255, 241, 230, 0.12), rgba(255, 255, 255, 0)), url("https://res.cloudinary.com/dsx500kcj/image/upload/v1606321275/flowerline/IMG_7494_bywcpp.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 221, 230, 0.12)), to(rgba(255, 255, 255, 0))), url("https://res.cloudinary.com/dsx500kcj/image/upload/v1606321275/flowerline/IMG_7494_bywcpp.jpg");
+  background: linear-gradient(rgba(255, 221, 230, 0.12), rgba(255, 255, 255, 0)), url("https://res.cloudinary.com/dsx500kcj/image/upload/v1606321275/flowerline/IMG_7494_bywcpp.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
