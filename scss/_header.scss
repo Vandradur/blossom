@@ -108,9 +108,7 @@
           text-transform: uppercase;
           margin: 0.1rem 0.1rem;
           display: inline-block;
-          @include linktext;
-          font-family: "Montserrat";
-          font-family: "Open Sans";
+
           @include desktop576 {
             margin: 0rem 0.1rem;
           }
@@ -127,9 +125,10 @@
           text-decoration: none;
           color: $black-03;
           padding: 1.3rem 6rem;
+          font-family: "Open Sans";
           text-transform: uppercase;
-          font-weight: 500;
-          letter-spacing: 2.2px;
+          font-weight: 700;
+          letter-spacing: 3.5px;
           font-size: 12px;
           @include desktop576 {
             padding: 1.7rem;

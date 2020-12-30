@@ -88,6 +88,7 @@
       transition-duration: 7s;
       transition-delay: 0.9s;
       transition-timing-function: linear;
+      transition: 0.6s cubic-bezier(0.5, 1, 0.89, 1);
       @include desktop576 {
         font-size: 150%;
       }
@@ -99,8 +100,7 @@
       }
     }
     .slides.current h1 {
-      animation: animateHeading 0.7s cubic-bezier(0.47, 1.14, 0.61, 0.28)
-        forwards 1;
+      animation: animateHeading 0.8s cubic-bezier(0.5, 1, 0.89, 1) forwards 1;
       animation-delay: 0.4s;
     }
     .slides p {
