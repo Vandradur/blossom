@@ -10,7 +10,7 @@ $(".nav a").on("click", function () {
 
 /*   */
 
-// floating button
+// floating button animation
 
 $(".menu-off").click(function () {
   $(this).removeClass("menu-off");
