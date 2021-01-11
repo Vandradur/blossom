@@ -586,10 +586,13 @@
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, from(#241f1f), color-stop(32%, #241f1f), to(#4a4746));
   background: linear-gradient(to right, #241f1f 0%, #241f1f 32%, #4a4746 100%);
+  overflow: hidden;
 }
 
 #svg-container svg {
   height: auto;
+  -webkit-transform: scale(2.1);
+          transform: scale(2.1);
 }
 
 .floating-button-menu {
@@ -1390,77 +1393,6 @@
 
 #sec-so .intro-slider {
   position: relative;
-  /*
-    .prev {
-      position: absolute;
-      color: #fff;
-      top: 50%;
-      left: 5%;
-      transform: translateY(-50%);
-      z-index: 99;
-      font-size: 1.5em;
-      font-weight: 600;
-      border: 2px solid #fff;
-      padding: 10px 17px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      transition: 0.2s ease-in-out;
-      cursor: pointer;
-      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
-    }
-    .next {
-      position: absolute;
-      color: #fff;
-      top: 50%;
-      right: 5%;
-      transform: translateY(-50%);
-      z-index: 99;
-      font-size: 1.5em;
-      font-weight: 600;
-      border: 2px solid #fff;
-      padding: 10px 17px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      transition: 0.2s ease-in-out;
-      cursor: pointer;
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-    }
-    */
-  /*
-    .arrow {
-      border: solid $white;
-      border-width: 0 3px 3px 0;
-      display: inline-block;
-      padding: 3px;
-      position: absolute;
-      top: 50%;
-      z-index: 99;
-      transition: 0.2s ease-in-out;
-      cursor: pointer;
-      background: $black;
-    }
-    .arrow:before {
-      content: "";
-      border-radius: 50%;
-      padding: 10px 10px;
-      opacity: 0.5;
-      mix-blend-mode: hard-light;
-    }
-    .right {
-      transform: rotate(-45deg);
-      right: 5%;
-    }
-
-    .left {
-      transform: rotate(135deg);
-      left: 5%;
-    }
-
-    */
 }
 
 #sec-so .intro-slider .slider {
@@ -1650,8 +1582,8 @@
   width: 60px;
   height: 60px;
   background: transparent;
-  border-top: 2px solid #bfbfbf;
-  border-left: 2px solid #bfbfbf;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
@@ -1661,7 +1593,7 @@
 }
 
 #sec-so .intro-slider .arrow:hover {
-  border-color: gray;
+  border-color: white;
   border-width: 6px;
 }
 
