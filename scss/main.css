@@ -1498,6 +1498,8 @@
   padding-top: 2em;
   line-height: 0.98;
   margin-left: -500%;
+  position: absolute;
+  top: 2%;
   -webkit-transition-duration: 7s;
           transition-duration: 7s;
   -webkit-transition-delay: 0.9s;
@@ -1535,6 +1537,8 @@
 
 #sec-so .intro-slider .slides p {
   margin-right: -500%;
+  position: absolute;
+  top: 25%;
   z-index: 7;
   padding-top: 1em;
   -webkit-transition: 0.3s linear;
