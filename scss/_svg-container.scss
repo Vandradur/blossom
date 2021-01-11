@@ -1,0 +1,15 @@
+#svg-container {
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(36, 31, 31, 1) 0%,
+    rgba(36, 31, 31, 1) 32%,
+    rgba(74, 71, 70, 1) 100%
+  );
+  svg {
+    // width: 100vw;
+    height: auto;
+    //vertical-align: baseline;
+    //transform: scale(2.1);
+  }
+}

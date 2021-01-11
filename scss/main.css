@@ -582,6 +582,16 @@
   mix-blend-mode: hard-light;
 }
 
+#svg-container {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#241f1f), color-stop(32%, #241f1f), to(#4a4746));
+  background: linear-gradient(to right, #241f1f 0%, #241f1f 32%, #4a4746 100%);
+}
+
+#svg-container svg {
+  height: auto;
+}
+
 .floating-button-menu {
   z-index: 1000;
   position: fixed;
@@ -1420,6 +1430,37 @@
       box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
     }
     */
+  /*
+    .arrow {
+      border: solid $white;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+      position: absolute;
+      top: 50%;
+      z-index: 99;
+      transition: 0.2s ease-in-out;
+      cursor: pointer;
+      background: $black;
+    }
+    .arrow:before {
+      content: "";
+      border-radius: 50%;
+      padding: 10px 10px;
+      opacity: 0.5;
+      mix-blend-mode: hard-light;
+    }
+    .right {
+      transform: rotate(-45deg);
+      right: 5%;
+    }
+
+    .left {
+      transform: rotate(135deg);
+      left: 5%;
+    }
+
+    */
 }
 
 #sec-so .intro-slider .slider {
@@ -1605,36 +1646,44 @@
 }
 
 #sec-so .intro-slider .arrow {
-  border: solid #fff;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
   position: absolute;
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border-top: 2px solid #bfbfbf;
+  border-left: 2px solid #bfbfbf;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: transparent;
+  z-index: 120;
   top: 50%;
-  z-index: 99;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-  cursor: pointer;
+}
+
+#sec-so .intro-slider .arrow:hover {
+  border-color: gray;
+  border-width: 6px;
 }
 
 #sec-so .intro-slider .arrow:before {
+  display: block;
+  height: 100%;
+  width: 100%;
   content: "";
-  border-radius: 50%;
-  padding: 10px 10px;
-  opacity: 0.5;
-  mix-blend-mode: hard-light;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
-#sec-so .intro-slider .right {
+#sec-so .intro-slider .arrow.prev {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  right: 5%;
+  left: 30px;
 }
 
-#sec-so .intro-slider .left {
+#sec-so .intro-slider .arrow.next {
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
-  left: 5%;
+  right: 30px;
 }
 
 #sec-so .intro-slider a {
