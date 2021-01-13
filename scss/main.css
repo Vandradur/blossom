@@ -93,8 +93,6 @@
 }
 
 #header .nav #logo {
-  width: 2.7rem;
-  height: 4.4rem;
   background: transparent;
   position: relative;
   z-index: 999;
@@ -108,10 +106,11 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
-  left: 2rem;
+  left: -11rem;
+  top: 2.2rem;
 }
 
-#header .nav #logo img {
+#header .nav #logo svg {
   position: absolute;
   width: 100%;
 }
