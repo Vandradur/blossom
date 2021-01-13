@@ -113,7 +113,7 @@
       }
     }
     .img-wrapper {
-      margin: 50px;
+      margin: 10px;
       width: 50%;
       overflow: hidden;
       .container_img {
@@ -160,4 +160,16 @@
   background-attachment: fixed;
   opacity: 0.5;
   mix-blend-mode: hard-light;
+}
+
+#svg-container {
+  width: 100%;
+
+  overflow: hidden;
+  svg {
+    // width: 100vw;
+    height: auto;
+    //vertical-align: baseline;
+    transform: scale(2.1);
+  }
 }

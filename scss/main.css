@@ -496,7 +496,7 @@
 }
 
 #sec-a .container .img-wrapper {
-  margin: 50px;
+  margin: 10px;
   width: 50%;
   overflow: hidden;
 }
@@ -588,8 +588,6 @@
 
 #svg-container {
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#241f1f), color-stop(32%, #241f1f), to(#4a4746));
-  background: linear-gradient(to right, #241f1f 0%, #241f1f 32%, #4a4746 100%);
   overflow: hidden;
 }
 
