@@ -585,17 +585,6 @@
   mix-blend-mode: hard-light;
 }
 
-#svg-container {
-  width: 100%;
-  overflow: hidden;
-}
-
-#svg-container svg {
-  height: auto;
-  -webkit-transform: scale(2.1);
-          transform: scale(2.1);
-}
-
 .floating-button-menu {
   z-index: 1000;
   position: fixed;
@@ -1431,7 +1420,8 @@
 }
 
 #sec-so .intro-slider .slides:nth-child(1) {
-  background: #161a1d;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 241, 230, 0.12)), to(rgba(255, 255, 255, 0))), url("https://res.cloudinary.com/dsx500kcj/image/upload/v1605540420/flowerline/IMG_9846_oaangf.jpg");
+  background: linear-gradient(rgba(255, 241, 230, 0.12), rgba(255, 255, 255, 0)), url("https://res.cloudinary.com/dsx500kcj/image/upload/v1605540420/flowerline/IMG_9846_oaangf.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1440,7 +1430,11 @@
 }
 
 #sec-so .intro-slider .slides:nth-child(1):hover {
-  background: #0c090d;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 241, 230, 0.301)), to(rgba(255, 255, 255, 0.26))), url("https://res.cloudinary.com/dsx500kcj/image/upload/v1605540420/flowerline/IMG_9846_oaangf.jpg");
+  background: linear-gradient(rgba(255, 241, 230, 0.301), rgba(255, 255, 255, 0.26)), url("https://res.cloudinary.com/dsx500kcj/image/upload/v1605540420/flowerline/IMG_9846_oaangf.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   -webkit-transition: background 9s ease-out;
   transition: background 9s ease-out;
 }
@@ -1496,7 +1490,9 @@
   line-height: 0.98;
   margin-left: -500%;
   position: absolute;
-  top: 2%;
+  background: #161a1d;
+  padding: 10px 15px;
+  top: 45%;
   -webkit-transition-duration: 7s;
           transition-duration: 7s;
   -webkit-transition-delay: 0.9s;
@@ -1535,12 +1531,14 @@
 #sec-so .intro-slider .slides p {
   margin-right: -500%;
   position: absolute;
-  top: 25%;
+  top: 55%;
   z-index: 7;
   padding-top: 1em;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
   width: 50%;
+  background: #161a1d;
+  padding: 18px 23px;
   text-align: center;
   line-height: 0.9;
   font-size: 20px;
@@ -1635,7 +1633,7 @@
 #sec-so .intro-slider a {
   position: absolute;
   color: #161a1d;
-  bottom: 32%;
+  bottom: 27%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -3748,6 +3746,17 @@
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
+}
+
+#svg-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+#svg-container svg {
+  height: auto;
+  -webkit-transform: scale(2.1);
+          transform: scale(2.1);
 }
 
 /* GLOBAL */

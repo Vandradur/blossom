@@ -161,15 +161,3 @@
   opacity: 0.5;
   mix-blend-mode: hard-light;
 }
-
-#svg-container {
-  width: 100%;
-
-  overflow: hidden;
-  svg {
-    // width: 100vw;
-    height: auto;
-    //vertical-align: baseline;
-    transform: scale(2.1);
-  }
-}

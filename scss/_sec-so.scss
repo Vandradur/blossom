@@ -23,7 +23,11 @@
       opacity: 1;
     }
     .slides:nth-child(1) {
-      background: #161a1d;
+      background: linear-gradient(
+          rgba(255, 241, 230, 0.12),
+          rgba(255, 255, 255, 0)
+        ),
+        url("https://res.cloudinary.com/dsx500kcj/image/upload/v1605540420/flowerline/IMG_9846_oaangf.jpg");
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
@@ -31,7 +35,14 @@
       cursor: pointer;
 
       &:hover {
-        background: $black-03;
+        background: linear-gradient(
+            rgba(255, 241, 230, 0.301),
+            rgba(255, 255, 255, 0.26)
+          ),
+          url("https://res.cloudinary.com/dsx500kcj/image/upload/v1605540420/flowerline/IMG_9846_oaangf.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
         transition: background 9s ease-out;
       }
     }
@@ -88,8 +99,9 @@
       line-height: 0.98;
       margin-left: -500%;
       position: absolute;
-
-      top: 2%;
+      background: $black-02;
+      padding: 10px 15px;
+      top: 45%;
       transition-duration: 7s;
       transition-delay: 0.9s;
       transition-timing-function: linear;
@@ -112,11 +124,13 @@
     .slides p {
       margin-right: -500%;
       position: absolute;
-      top: 25%;
+      top: 55%;
       z-index: 7;
       padding-top: 1em;
       transition: 0.3s linear;
       width: 50%;
+      background: $black-02;
+      padding: 18px 23px;
       text-align: center;
       @include h3text;
       color: $white;
@@ -195,7 +209,7 @@
     a {
       position: absolute;
       color: $black-02;
-      bottom: 32%;
+      bottom: 27%;
       left: 50%;
       transform: translateX(-50%);
       z-index: 99;
