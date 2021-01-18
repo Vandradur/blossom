@@ -1,6 +1,5 @@
 #footer {
   width: 100%;
-  //height: 100%;
   background: url(../img/hero-2.png) no-repeat 50% 50% fixed;
   background: linear-gradient(
     to right,
@@ -8,35 +7,11 @@
     rgba(36, 31, 31, 1) 32%,
     rgba(74, 71, 70, 1) 100%
   );
-  //background-size: 130%;
   overflow: hidden;
   @include flexCenter;
   flex-direction: column;
   margin: 0 auto;
   #hero-content {
-    #svg-container {
-      width: 100%;
-      height: 30%;
-      overflow: hidden;
-      svg {
-        // width: 100vw;
-        height: auto;
-        //vertical-align: baseline;
-        transform: scale(2.1);
-      }
-    }
-
-    .banner {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 3em;
-      width: 18%;
-      height: 100%;
-      @include desktop768 {
-        width: 20%;
-      }
-    }
     width: 100%;
     background: rgb(7, 0, 0);
     text-align: center;
@@ -51,6 +26,25 @@
     }
     @include desktop1200 {
       padding: 3em 20em;
+    }
+    #svg-container {
+      width: 100%;
+      overflow: hidden;
+      svg {
+        transform: scale(2.1);
+      }
+    }
+
+    .banner {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 3em;
+      width: 18%;
+      height: 100%;
+      @include desktop768 {
+        width: 20%;
+      }
     }
 
     #hero-title {
