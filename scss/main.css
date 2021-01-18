@@ -314,7 +314,7 @@
   background-color: #020d13ff;
 }
 
-#sec-a .container {
+#sec-a .animated-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -333,20 +333,20 @@
   padding: 20px 0;
 }
 
-#sec-a .container__content {
+#sec-a .animated-container__content {
   width: 50%;
 }
 
-#sec-a .container__content .inner-wrapper {
+#sec-a .animated-container__content .inner-wrapper {
   width: 80%;
   margin-left: 55px;
 }
 
-#sec-a .container__content .inner-wrapper h3 {
+#sec-a .animated-container__content .inner-wrapper h3 {
   margin: 1em 0;
-  line-height: 0.9;
+  line-height: 1.2;
   font-size: 20px;
-  letter-spacing: 1.3px;
+  letter-spacing: 1.5px;
   font-weight: 500;
   color: #4a4e69;
   font-family: "Slabo 27px", serif;
@@ -355,29 +355,29 @@
 }
 
 @media (min-width: 576px) {
-  #sec-a .container__content .inner-wrapper h3 {
+  #sec-a .animated-container__content .inner-wrapper h3 {
     font-size: 15px;
   }
 }
 
 @media (min-width: 768px) {
-  #sec-a .container__content .inner-wrapper h3 {
+  #sec-a .animated-container__content .inner-wrapper h3 {
     font-size: 16px;
   }
 }
 
 @media (min-width: 992px) {
-  #sec-a .container__content .inner-wrapper h3 {
+  #sec-a .animated-container__content .inner-wrapper h3 {
     font-size: 17px;
   }
 }
 
-#sec-a .container__content .inner-wrapper .title {
+#sec-a .animated-container__content .inner-wrapper .title {
   overflow: hidden;
   height: auto;
 }
 
-#sec-a .container__content .inner-wrapper .title h1 {
+#sec-a .animated-container__content .inner-wrapper .title h1 {
   line-height: 0.8;
   font-size: 4rem;
   font-size: clamp(3rem, calc(5w + 1rem), 4.5);
@@ -395,35 +395,35 @@
 }
 
 @media (min-width: 576px) {
-  #sec-a .container__content .inner-wrapper .title h1 {
+  #sec-a .animated-container__content .inner-wrapper .title h1 {
     font-size: 150%;
   }
 }
 
 @media (min-width: 768px) {
-  #sec-a .container__content .inner-wrapper .title h1 {
+  #sec-a .animated-container__content .inner-wrapper .title h1 {
     font-size: 250%;
   }
 }
 
 @media (min-width: 992px) {
-  #sec-a .container__content .inner-wrapper .title h1 {
+  #sec-a .animated-container__content .inner-wrapper .title h1 {
     font-size: 350%;
   }
 }
 
-#sec-a .container__content .inner-wrapper .text-block {
+#sec-a .animated-container__content .inner-wrapper .text-block {
   height: auto;
 }
 
-#sec-a .container__content .inner-wrapper .text-block p {
-  line-height: 0.9;
+#sec-a .animated-container__content .inner-wrapper .text-block p {
+  line-height: 1.2;
   font-size: 20px;
-  letter-spacing: 1.3px;
+  letter-spacing: 1.5px;
   font-weight: 500;
   color: #4a4e69;
   font-family: "Slabo 27px", serif;
-  color: #fffcf2;
+  color: #fff1e6;
   font-size: 100%;
   -webkit-transform: translateY(300px);
           transform: translateY(300px);
@@ -432,19 +432,19 @@
 }
 
 @media (min-width: 576px) {
-  #sec-a .container__content .inner-wrapper .text-block p {
+  #sec-a .animated-container__content .inner-wrapper .text-block p {
     font-size: 15px;
   }
 }
 
 @media (min-width: 768px) {
-  #sec-a .container__content .inner-wrapper .text-block p {
+  #sec-a .animated-container__content .inner-wrapper .text-block p {
     font-size: 16px;
   }
 }
 
 @media (min-width: 992px) {
-  #sec-a .container__content .inner-wrapper .text-block p {
+  #sec-a .animated-container__content .inner-wrapper .text-block p {
     font-size: 17px;
     -webkit-column-count: 2;
             column-count: 2;
@@ -453,14 +453,14 @@
   }
 }
 
-#sec-a .container__content .inner-wrapper .btns {
+#sec-a .animated-container__content .inner-wrapper .btns {
   height: 100%;
   position: relative;
   overflow: hidden;
   margin: 12% 0;
 }
 
-#sec-a .container__content .inner-wrapper .btns .btn-hero {
+#sec-a .animated-container__content .inner-wrapper .btns .btn-hero {
   position: relative;
   outline: none;
   text-decoration: none;
@@ -485,29 +485,29 @@
           animation: slideUp 0.8s ease-in-out forwards 1s;
 }
 
-#sec-a .container__content .inner-wrapper .btns .btn-hero:hover {
+#sec-a .animated-container__content .inner-wrapper .btns .btn-hero:hover {
   color: #fffcf2;
   text-decoration: none;
   border: 2px solid #4a4e69;
 }
 
-#sec-a .container__content .inner-wrapper .btns .btn-hero:active {
+#sec-a .animated-container__content .inner-wrapper .btns .btn-hero:active {
   background-color: #020d13ff;
   text-decoration: none;
 }
 
-#sec-a .container__content .inner-wrapper .btns .btn-hero:visited {
+#sec-a .animated-container__content .inner-wrapper .btns .btn-hero:visited {
   background-color: #020d13ff;
   text-decoration: none;
 }
 
-#sec-a .container .img-wrapper {
+#sec-a .animated-container .img-wrapper {
   margin: 10px;
   width: 50%;
   overflow: hidden;
 }
 
-#sec-a .container .img-wrapper .container_img {
+#sec-a .animated-container .img-wrapper .container_img {
   width: 100%;
   -webkit-animation: slideIn 1.5s ease-in-out forwards;
           animation: slideIn 1.5s ease-in-out forwards;
@@ -577,6 +577,19 @@
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
+}
+
+.animated-container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/dot.png);
+  background-attachment: fixed;
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
 }
 
 .floating-button-menu {
@@ -802,9 +815,9 @@
 #works .title h2,
 #page .title h2,
 #about .title h2 {
-  line-height: 0.9;
+  line-height: 1.2;
   font-size: 20px;
-  letter-spacing: 1.3px;
+  letter-spacing: 1.5px;
   font-weight: 500;
   color: #4a4e69;
   font-family: "Slabo 27px", serif;
@@ -1046,9 +1059,9 @@
 }
 
 #sec-w #prdt-carousel .owl-carousel .card .info h3 {
-  line-height: 0.9;
+  line-height: 1.2;
   font-size: 20px;
-  letter-spacing: 1.3px;
+  letter-spacing: 1.5px;
   font-weight: 500;
   color: #4a4e69;
   font-family: "Slabo 27px", serif;
@@ -1153,9 +1166,9 @@
 }
 
 #sec-w #prdt-carousel .owl-carousel .card .cardlayer-overlay__content h3 {
-  line-height: 0.9;
+  line-height: 1.2;
   font-size: 20px;
-  letter-spacing: 1.3px;
+  letter-spacing: 1.5px;
   font-weight: 500;
   color: #4a4e69;
   font-family: "Slabo 27px", serif;
@@ -1314,9 +1327,9 @@
 }
 
 .item-layer-overlay .card-info ul li span {
-  line-height: 0.9;
+  line-height: 1.2;
   font-size: 20px;
-  letter-spacing: 1.3px;
+  letter-spacing: 1.5px;
   font-weight: 500;
   color: #4a4e69;
   font-family: "Slabo 27px", serif;
@@ -1534,9 +1547,9 @@
   background: #161a1d;
   padding: 18px 23px;
   text-align: center;
-  line-height: 0.9;
+  line-height: 1.2;
   font-size: 20px;
-  letter-spacing: 1.3px;
+  letter-spacing: 1.5px;
   font-weight: 500;
   color: #4a4e69;
   font-family: "Slabo 27px", serif;
@@ -2292,9 +2305,9 @@
 }
 
 #sec-n #chapter .h3header {
-  line-height: 0.9;
+  line-height: 1.2;
   font-size: 20px;
-  letter-spacing: 1.3px;
+  letter-spacing: 1.5px;
   font-weight: 500;
   color: #4a4e69;
   font-family: "Slabo 27px", serif;
@@ -2480,9 +2493,9 @@
 }
 
 .products-card-wrapper .card span {
-  line-height: 0.9;
+  line-height: 1.2;
   font-size: 20px;
-  letter-spacing: 1.3px;
+  letter-spacing: 1.5px;
   font-weight: 500;
   color: #4a4e69;
   font-family: "Slabo 27px", serif;
@@ -2759,9 +2772,9 @@
 }
 
 #sec-r .video-sec h3 {
-  line-height: 0.9;
+  line-height: 1.2;
   font-size: 20px;
-  letter-spacing: 1.3px;
+  letter-spacing: 1.5px;
   font-weight: 500;
   color: #4a4e69;
   font-family: "Slabo 27px", serif;
@@ -3037,9 +3050,9 @@
 }
 
 #sec-t .magazine-header h3 {
-  line-height: 0.9;
+  line-height: 1.2;
   font-size: 20px;
-  letter-spacing: 1.3px;
+  letter-spacing: 1.5px;
   font-weight: 500;
   color: #4a4e69;
   font-family: "Slabo 27px", serif;
