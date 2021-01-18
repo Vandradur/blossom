@@ -69,11 +69,15 @@
       z-index: 999;
       @include flexCenter;
       padding: 0;
-      left: -11rem;
+      left: -8rem;
       top: 2.2rem;
       svg {
         position: absolute;
         width: 100%;
+      }
+      @include desktop576 {
+        left: -12rem;
+        top: 0.1rem;
       }
     }
     .nav-bar {

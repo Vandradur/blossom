@@ -5,6 +5,7 @@
   top: 0;
   left: 0;
   background-color: $white;
+  z-index: 99;
 
   .logo-circle {
     margin: 2em auto;
@@ -217,19 +218,6 @@
       transform: rotate(360deg);
     }
   }
-}
-#chapter-01:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../img/dot.png);
-  background-attachment: fixed;
-  opacity: 0.1;
-  mix-blend-mode: hard-light;
-  z-index: -2;
 }
 
 .divider {
