@@ -10,7 +10,7 @@
   text-align: center;
   position: relative;
   background: #020d13ff;
-  z-index: 99;
+  z-index: 999;
 }
 
 #header .menu {
