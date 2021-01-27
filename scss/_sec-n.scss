@@ -4,8 +4,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  background-color: $white;
-  z-index: 99;
+  background-color: $white-02;
 
   .logo-circle {
     margin: 2em auto;
@@ -187,6 +186,7 @@
       font-size: 12px;
       color: $secondary;
       margin-top: 1%;
+
       @include desktop576 {
         font-size: 14px;
       }
