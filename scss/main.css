@@ -77,6 +77,7 @@
   height: 4.4rem;
   position: relative;
   background: #020d13ff;
+  z-index: 9;
   -webkit-box-shadow: -1px 8px 10px -12px #161a1d;
           box-shadow: -1px 8px 10px -12px #161a1d;
 }
@@ -95,7 +96,6 @@
 #header .nav #logo {
   background: transparent;
   position: relative;
-  z-index: 9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,8 +106,12 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
-  top: -19rem;
-  left: -11rem;
+}
+
+#header .nav #logo svg {
+  position: absolute;
+  top: -27rem;
+  right: -11.3rem;
 }
 
 #header .nav .nav-bar {
@@ -1729,8 +1733,8 @@
 }
 
 #sec-so .intro-slider .slides:nth-child(1):hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 241, 230, 0.301)), to(rgba(255, 255, 255, 0.26))), url("https://res.cloudinary.com/dsx500kcj/image/upload/v1605540420/flowerline/IMG_9846_oaangf.jpg");
-  background: linear-gradient(rgba(255, 241, 230, 0.301), rgba(255, 255, 255, 0.26)), url("https://res.cloudinary.com/dsx500kcj/image/upload/v1605540420/flowerline/IMG_9846_oaangf.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 241, 230, 0.144)), to(rgba(255, 255, 255, 0.11))), url("https://res.cloudinary.com/dsx500kcj/image/upload/v1605540420/flowerline/IMG_9846_oaangf.jpg");
+  background: linear-gradient(rgba(255, 241, 230, 0.144), rgba(255, 255, 255, 0.11)), url("https://res.cloudinary.com/dsx500kcj/image/upload/v1605540420/flowerline/IMG_9846_oaangf.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1739,8 +1743,8 @@
 }
 
 #sec-so .intro-slider .slides:nth-child(2) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 241, 230, 0.12)), to(rgba(255, 255, 255, 0))), url("https://res.cloudinary.com/dsx500kcj/image/upload/v1604677449/flowerline/IMG_7245_lfp6xn.jpg");
-  background: linear-gradient(rgba(255, 241, 230, 0.12), rgba(255, 255, 255, 0)), url("https://res.cloudinary.com/dsx500kcj/image/upload/v1604677449/flowerline/IMG_7245_lfp6xn.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 241, 230, 0.048)), to(rgba(255, 255, 255, 0))), url("https://res.cloudinary.com/dsx500kcj/image/upload/v1604677449/flowerline/IMG_7245_lfp6xn.jpg");
+  background: linear-gradient(rgba(255, 241, 230, 0.048), rgba(255, 255, 255, 0)), url("https://res.cloudinary.com/dsx500kcj/image/upload/v1604677449/flowerline/IMG_7245_lfp6xn.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1748,8 +1752,8 @@
 }
 
 #sec-so .intro-slider .slides:nth-child(3) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 241, 230, 0.12)), to(rgba(255, 255, 255, 0))), url("https://res.cloudinary.com/dsx500kcj/image/upload/v1609314455/flowerline/hero-066_s8d98m.jpg");
-  background: linear-gradient(rgba(255, 241, 230, 0.12), rgba(255, 255, 255, 0)), url("https://res.cloudinary.com/dsx500kcj/image/upload/v1609314455/flowerline/hero-066_s8d98m.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 241, 230, 0.068)), to(rgba(255, 255, 255, 0))), url("https://res.cloudinary.com/dsx500kcj/image/upload/v1609314455/flowerline/hero-066_s8d98m.jpg");
+  background: linear-gradient(rgba(255, 241, 230, 0.068), rgba(255, 255, 255, 0)), url("https://res.cloudinary.com/dsx500kcj/image/upload/v1609314455/flowerline/hero-066_s8d98m.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1757,8 +1761,8 @@
 }
 
 #sec-so .intro-slider .slides:nth-child(4) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 221, 230, 0.12)), to(rgba(255, 255, 255, 0))), url("https://res.cloudinary.com/dsx500kcj/image/upload/v1606321275/flowerline/IMG_7494_bywcpp.jpg");
-  background: linear-gradient(rgba(255, 221, 230, 0.12), rgba(255, 255, 255, 0)), url("https://res.cloudinary.com/dsx500kcj/image/upload/v1606321275/flowerline/IMG_7494_bywcpp.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 221, 230, 0.089)), to(rgba(255, 255, 255, 0))), url("https://res.cloudinary.com/dsx500kcj/image/upload/v1606321275/flowerline/IMG_7494_bywcpp.jpg");
+  background: linear-gradient(rgba(255, 221, 230, 0.089), rgba(255, 255, 255, 0)), url("https://res.cloudinary.com/dsx500kcj/image/upload/v1606321275/flowerline/IMG_7494_bywcpp.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1766,8 +1770,8 @@
 }
 
 #sec-so .intro-slider .slides:nth-child(5) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 241, 230, 0.12)), to(rgba(255, 255, 255, 0))), url("../img/hero-063.jpg");
-  background: linear-gradient(rgba(255, 241, 230, 0.12), rgba(255, 255, 255, 0)), url("../img/hero-063.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 241, 230, 0.082)), to(rgba(255, 255, 255, 0))), url("../img/hero-063.jpg");
+  background: linear-gradient(rgba(255, 241, 230, 0.082), rgba(255, 255, 255, 0)), url("../img/hero-063.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
