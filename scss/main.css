@@ -106,7 +106,8 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
-  top: 2.2rem;
+  top: -19rem;
+  left: -11rem;
 }
 
 #header .nav .nav-bar {
