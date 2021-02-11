@@ -16,7 +16,7 @@
     justify-content: space-around;
     align-items: center;
     animation: expand 0.8s ease forwards;
-    background-color: $red-10;
+    background-color: $white;
     position: relative;
     transition: $transition-01;
     padding: 20px 0;
@@ -29,7 +29,7 @@
           margin: 1em 0;
           @include h3text;
           font-size: 100%;
-          color: $white-02;
+          color: $black-10;
 
           @include desktop576 {
             font-size: 15px;
@@ -46,7 +46,7 @@
           height: auto;
           h1 {
             @include h1text;
-            color: $white-02;
+            color: $black-10;
             font-size: 250%;
             margin-bottom: 20px;
             transform: translateY(100px);
@@ -67,7 +67,7 @@
           height: auto;
           p {
             @include h3text;
-            color: $primaryLight;
+            color: $black-10;
             font-size: 100%;
             transform: translateY(300px);
             animation: slideUp 0.8s ease-in-out forwards 0.8s;
@@ -158,6 +158,6 @@
   height: 100%;
   background: url(../img/dot.png);
   background-attachment: fixed;
-  opacity: 0.5;
+  opacity: 0.05;
   mix-blend-mode: hard-light;
 }
